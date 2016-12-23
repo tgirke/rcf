@@ -1,3 +1,3 @@
-# New Web Site of UCR's Research Computing Facility
+# Website of UCR's New Research Computing Facility
 
 Under construction!!!
