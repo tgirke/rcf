@@ -1,7 +1,6 @@
 ---
 layout: page
-title: about
-group: navigation
+title: About
 ---
 
 <p class="message">
