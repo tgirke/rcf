@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Lanyon</title>
- <link href="http://lanyon.getpoole.com/atom.xml" rel="self"/>
- <link href="http://lanyon.getpoole.com/"/>
- <updated>2017-01-13T12:07:59-08:00</updated>
- <id>http://lanyon.getpoole.com</id>
+ <title>Research Computing Facility</title>
+ <link href="https://jdhayes.github.io/rcf//atom.xml" rel="self"/>
+ <link href="https://jdhayes.github.io/rcf//"/>
+ <updated>2017-01-13T12:13:11-08:00</updated>
+ <id>https://jdhayes.github.io/rcf/</id>
  <author>
-   <name>Mark Otto</name>
-   <email>markdotto@gmail.com</email>
+   <name>Jordan Hayes</name>
+   <email>jhayes@ucr.edu</email>
  </author>
 
  
  <entry>
    <title>Research Computing Facility</title>
-   <link href="http://lanyon.getpoole.com/2017/01/13/home/"/>
+   <link href="https://jdhayes.github.io/rcf//2017/01/13/home/"/>
    <updated>2017-01-13T00:00:00-08:00</updated>
-   <id>http://lanyon.getpoole.com/2017/01/13/home</id>
+   <id>https://jdhayes.github.io/rcf//2017/01/13/home</id>
    <content type="html">&lt;h2 id=&quot;welcome&quot;&gt;Welcome&lt;/h2&gt;
 
 &lt;p&gt;Our facility’s mission is to provide…&lt;/p&gt;
