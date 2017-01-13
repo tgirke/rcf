@@ -1,0 +1,26 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+# This no longer works after version 3
+#relative_permalinks: true
+
+# Setup
+title:               Research Computing Facility
+tagline:             'High-performance computing and services'
+description:         'Mission...?'
+url:                 https://jdhayes.github.io/rcf/
+baseurl:             ''
+paginate:            5
+
+# About/contact
+author:
+  name:              Jordan Hayes
+  url:               https://twitter.com/jhayes
+  email:             jhayes@ucr.edu
+
+# Custom vars
+version:             1.0.0
+
+# Additional Deps
+gems:                [jekyll-paginate]
