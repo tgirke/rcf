@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Research Computing Facility</title>
- <link href="https://jdhayes.github.io/rcf//atom.xml" rel="self"/>
- <link href="https://jdhayes.github.io/rcf//"/>
- <updated>2017-01-13T12:26:44-08:00</updated>
- <id>https://jdhayes.github.io/rcf/</id>
+ <title>High Performance Computing Center</title>
+ <link href="github.com:ucr-hpcc/hpcc-web.git/atom.xml" rel="self"/>
+ <link href="github.com:ucr-hpcc/hpcc-web.git/"/>
+ <updated>2017-01-18T11:34:06-08:00</updated>
+ <id>github.com:ucr-hpcc/hpcc-web.git</id>
  <author>
    <name>Jordan Hayes</name>
    <email>jhayes@ucr.edu</email>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Research Computing Facility</title>
-   <link href="https://jdhayes.github.io/rcf//2017/01/13/home/"/>
+   <link href="github.com:ucr-hpcc/hpcc-web.git/2017/01/13/home/"/>
    <updated>2017-01-13T00:00:00-08:00</updated>
-   <id>https://jdhayes.github.io/rcf//2017/01/13/home</id>
+   <id>github.com:ucr-hpcc/hpcc-web.git/2017/01/13/home</id>
    <content type="html">&lt;h2 id=&quot;welcome&quot;&gt;Welcome&lt;/h2&gt;
 
 &lt;p&gt;Our facility’s mission is to provide…&lt;/p&gt;

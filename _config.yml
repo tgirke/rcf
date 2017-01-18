@@ -6,10 +6,10 @@ permalink:           pretty
 #relative_permalinks: true
 
 # Setup
-title:               Research Computing Facility
-tagline:             'High-performance computing and services'
+title:               High Performance Computing Center
+tagline:             'bigdata optimizations and research services'
 description:         'Mission...?'
-url:                 https://jdhayes.github.io/rcf/
+url:                 github.com:ucr-hpcc/hpcc-web.git
 baseurl:             ''
 paginate:            5
 
