@@ -67,6 +67,7 @@ Since all machines are mounting a centralized file system, users will always see
 
 #### Login from Mac, Linux, Cygwin
 Open the terminal and type
+
 ```
 ssh -X username@biocluster.ucr.edu
 ```
@@ -98,10 +99,13 @@ More advanced users may want to load modules within their bashrc, bash_profile, 
 
 ##### Available Modules
 To list all available software modules, execute the following:
+
 ```
 module avail
 ```
+
 This should output something like:
+
 ```
 ------------------------- /usr/local/Modules/versions --------------------------
 3.2.9
@@ -118,10 +122,13 @@ module-info
 
 ##### Using Modules
 To load a module, run:
+
 ```
 module load <software name>[/<version>]
 ```
+
 To load the default version of the tophat module, run:
+
 ```
 module load tophat
 ```
@@ -173,6 +180,7 @@ The head nodes are a shared resource and should be accessible by all users. Nega
 
 However you may run memory intensive jobs on Owl.
 Login to Owl like so:
+
 ```
 ssh -X owl.ucr.edu
 ```
@@ -182,6 +190,7 @@ Submitting and managing jobs is at the heart of using the cluster.  A 'job' refe
 
 #### Partitions
 In the past we used queues under the old Torque system, we now refer to these logically grouped nodes as partitions. There are several different partitions available for cluster users to send jobs to:
+
 * batch
     * Nodes: c01-c48
     * Cores: AMD, 256 per user
@@ -206,6 +215,7 @@ In the past we used queues under the old Torque system, we now refer to these lo
 * Group Partition
     * This partition is unique to the group, if your lab has purchased nodes then you will have a priority partition with the same name as your group (ie. girkelab).
 In order to submit a job to different partitions add the optional '-p' parameter with the name of the partition you want to use:
+
 ```
 sbatch -p batch SBATCH_SCRIPT.sh
 sbatch -p highmem SBATCH_SCRIPT.sh
@@ -216,6 +226,7 @@ sbatch -p mygroup SBATCH_SCRIPT.sh
 
 #### Slurm
 Currently all the above partitions are available under Slurm, however Slurm jobs can only be submited from Globus. Therefore after logging into the cluster via ssh, ssh again into globus:
+
 ```
 username@pigeon:~$ ssh -XY globus
 ```
@@ -223,11 +234,13 @@ username@pigeon:~$ ssh -XY globus
 ##### Submitting Jobs
 There are 2 basic ways to submit jobs; non-interactive, interactive. Slurm will automatically start within the directory where you submitted the job from, so keep that in mind when you use relative file paths.
 Non-interactive submission of a SBATCH script:
+
 ```
 sbatch SBATCH_SCRIPT.sh
 ```
 
 Here is an example of an SBATCH script:
+
 ```
 #!/bin/bash -l
 
@@ -257,18 +270,23 @@ samtools cat -h header.sam -o out.bam in1.bam in2.bam
 # Print name of node
 hostname
 ```
+
 The above job will request 1 node, 10 task (assumes 1 cpu core per task), 10GB of memory (1GB per task), for 1 day and 15 minutes. All STDOUT will be redirected to a file called "my.stdout" as well as an email sent to the user when the status of the job changes.
 
 Interactive submission:
+
 ```
 srun --pty bash -l
 ```
+
 If you do not specify a partition then the intel partition is used by default.
 
 Here is a more complete example:
+
 ```
 srun --x11 --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --pty bash -l
 ```
+
 The above example enables X11 forwarding and requests, 1GB of memory, 1 cores, for 10 hours within an interactive session.
 
 ##### Monitoring Jobs
@@ -284,11 +302,14 @@ scontrol show job <JOBID>
 ##### Advanced Jobs
 There is a third way of submitting jobs by using steps.
 Single Step submission:
+
 ```
 srun <command>
 ```
+
 Under a single step job your command will hang until appropriate resources are found and when the step command is finished the results will be sent back on STDOUT. This may take some time depending on the job load of the cluster.
 Multi Step submission:
+
 ```
 salloc -N 4 bash -l
 srun <command>
@@ -296,15 +317,19 @@ srun <command>
 srun <command>
 exit
 ```
+
 Under a multi step job the salloc command will request resources and then your parent shell will be running on the head node. This means that all commands will be executed on the head node unless preceeded by the srun command. You will also need to exit this shell in order to terminate your job.
 
 ##### GPU Jobs
 A single GPU job will no longer reserve an entire node. For each node there are 4 GPUs. This means that you need to request how many GPUs that you would like to use.
 Non-Interactive:
+
 ```
 srun -p gpu --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 ```
+
 Interactive
+
 ```
 srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
 ```
@@ -314,6 +339,7 @@ Of course you should adjust the time argument according to your job requirements
 Once your job starts your code must reference the environment variable "CUDA_VISIBLE_DEVICES" which will indicate which GPUs have been assigned to your job. Most CUDA enabled software, like MegaHIT, will check this environment variable and automatically limit accordingly.
 
 For example, when reserving 4 GPUs for a NAMD2 job:
+
 ```
     echo $CUDA_VISIBLE_DEVICES
     0,1,2,3
@@ -391,19 +417,24 @@ Quota Responsibility | N/A
 
 ### Usage and Quotas
 To quickly check your usage and quota limits:
+
 ```
 check_quota home
 check_quota bigdata
 ```
 
 To get the usage of your current directory, run the following command:
+
 ```
 du -sh .
 ```
+
 To calculate the sizes of each separate sub directory, run:
+
 ```
 du -shc *
 ```
+
 This may take some time to complete, please be patient.
 
 For more information on your home directory, please see the Orientation section in the  Linux Basics manual.
@@ -411,20 +442,26 @@ For more information on your home directory, please see the Orientation section 
 #### Sharing data with other users
 It is useful to share data and results with other users on the cluster, and we encourage collaboration  The easiest way to share a file is to place it in a location that both users can access. Then the second user can simply copy it to a location of their choice. However, this requires that the file permissions permit the second user to read the file.
 Basic file permissions on Linux and other Unix like systems are composed of three groups: owner, group, and other. Each one of these represents the permissions for different groups of people: the user who owns the file, all the group members of the group owner, and everyone else, respectively  Each group has 3 permissions: read, write, and execute, represented as r,w, and x. For example the following file is owned by the user 'jhayes' (with read, write, and execute), owned by the group 'operations' (with read and execute), and everyone else cannot access it.
+
 ```
 jhayes@pigeon:~$ ls -l myFile
 -rwxr-x---   1 jhayes bioinfo 1.6K Nov 19 12:32 myFile
 ```
+
 If you wanted to share this file with someone outside the 'operations' group, read permissions must be added to the file for 'other'.
 Set Default Permissions
 
 In Linux, it is possible to set the default file permission for new files. This is useful if you are collaborating on a project, or frequently share files and  you do not want to be constantly adjusting permissions  The command responsible for this is called 'umask'. You should first check what your default permissions currently are by running 'umask -S'.
+
 ```
 jhayes@pigeon:~$ umask -S
 u=rwx,g=rx,o=rx
 ```
+
 To set your default permissions, simply run umask with the correct options. Please note, that this does not change permissions on any existing files, only new files created after you update the default permissions. For instance, if you wanted to set your default permissions to you having full control, your group being able to read and execute your files, and no one else to have access, you would run:
+
 ```
 jhayes@pigeon:~$ umask u=rwx,g=rx,o=
 ```
+
 It is also important to note that these settings only affect your current session. If you log out and log back in, these settings will be reset. To make your changes permanent you need to add them to your '.bashrc' file, which is a hidden file in your home directory (if you do not have a '.bashrc' file, you will need to create an empty file called '.bashrc' in your home directory). Adding umask to your .bashrc file is as simple as adding your umask command (such as 'umask u=rwx,g=rx,o=r') to the end of the file. Then simply log out and back in for the changes to take affect. You can double check that the settings have taken affect by running 'umask -S'.
