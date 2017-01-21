@@ -252,6 +252,7 @@ Here is an example of an SBATCH script:
 
 #SBATCH --nodes=1
 #SBATCH --ntasks=10
+#SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=1G
 #SBATCH --time=1-00:15:00     # 1 day and 15 minutes
 #SBATCH --output=my.stdout
@@ -277,7 +278,7 @@ samtools cat -h header.sam -o out.bam in1.bam in2.bam
 hostname
 ```
 
-The above job will request 1 node, 10 task (assumes 1 cpu core per task), 10GB of memory (1GB per task), for 1 day and 15 minutes. All STDOUT will be redirected to a file called "my.stdout" as well as an email sent to the user when the status of the job changes.
+The above job will request 1 node, 10 task (1 cpu core per task), 10GB of memory (1GB per task), for 1 day and 15 minutes. All STDOUT will be redirected to a file called "my.stdout" as well as an email sent to the user when the status of the job changes.
 
 Interactive submission:
 
