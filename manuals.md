@@ -139,6 +139,7 @@ To show what modules you have loaded at any time, you can run:
 module list
 ```
 Depending on what modules you have loaded, it will produce something like this:
+
 ```
 Currently Loaded Modulefiles:
 1) maui/3.3.1 2) tophat/1.4.1 3) PeakSeq/1.1
@@ -146,15 +147,18 @@ Currently Loaded Modulefiles:
 
 ##### Unloading Software
 Sometimes you want to no longer have a piece of software in path. To do this you unload the module by running:
+
 ```
 module unload <software name>
 ```
 
 ##### Additional Features
 There are additional features and operations that can be done with the module command. Please run the following to get more information:
+
 ```
 module help
 ```
+
 ### Quotas
 
 #### CPU
@@ -168,10 +172,12 @@ From the Biocluster head node users can submit jobs to the batch queue or the hi
 
 ### What's Next?
 You should now know the following:
+
 1. Basic orginization of Biocluster
 +  How to login to Biocluster
 +  How to use the Module system to gain access to Biocluster software
 +  CPU, storage, and memory limitations (quotas and hardware limits)
+
 Now you can start using Biocluster.
 The recommended way to run your jobs (scripts, pipelines, experiments, etc...) is to submit them to the queuing system by using sbatch.
 Biocluster uses the Slurm queuing system.
@@ -291,10 +297,13 @@ The above example enables X11 forwarding and requests, 1GB of memory, 1 cores, f
 
 ##### Monitoring Jobs
 To check on your jobs states, run the following:
+
 ```
 squeue -u username
 ```
+
 To list all the details of a specific job, run the following:
+
 ```
 scontrol show job <JOBID>
 ```
