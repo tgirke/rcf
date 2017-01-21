@@ -29,6 +29,7 @@ The latest hardware/facility description for grant applications is available her
 
 ##### Head Nodes
 All users should access the cluster via ssh through biocluster.ucr.edu, this address will automatically balance traffic to one of the available head nodes.
+
 * Penguin
     * Resources: 8 cores, 64 GB memory
     * Primary function: submitting jobs to the queuing system (Torque/Maui)
@@ -225,6 +226,7 @@ Non-interactive submission of a SBATCH script:
 ```
 sbatch SBATCH_SCRIPT.sh
 ```
+
 Here is an example of an SBATCH script:
 ```
 #!/bin/bash -l
