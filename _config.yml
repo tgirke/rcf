@@ -2,7 +2,7 @@
 output: web
 # this property is useful for conditional filtering of content that is separate from the PDF.
 
-topnav_title: High-throughput Computing Facility
+topnav_title: High Performance Computing Center
 # this appears on the top navigation bar next to the home button
 
 site_title: HPCC @ UCR
@@ -102,4 +102,4 @@ description: "Intended as a documentation theme based on Jekyll for technical wr
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-url: http://idratherbewriting.com
+url: http://hpcc.ucr.edu
