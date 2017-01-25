@@ -3,8 +3,6 @@
 topnav:
 - title: Topnav
   items:
-    - title: Home
-      url: /home
     - title: About
       url: /about
     - title: Hardware
