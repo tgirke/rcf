@@ -50,7 +50,7 @@ More detailed information about our service rates can be found here: Bioinformat
 
 ## Location
 
-<p>1207 G/E Genomics Building<br/>
-3401 Watkins Drive<br/>
-University of California<br/>
-Riverside, CA 92521</p>
+1207 G/E Genomics Building  
+3401 Watkins Drive  
+University of California  
+Riverside, CA 92521  
