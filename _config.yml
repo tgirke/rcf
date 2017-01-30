@@ -11,7 +11,8 @@ site_title: HPCC @ UCR
 company_name: HPCC
 # this appears in the footer
 
-github_editme_path: ucr-hpcc/ucr-hpcc.github.io
+#github_editme_path: ucr-hpcc/ucr-hpcc.github.io
+github_editme_path:
 # if you're using Github, provide the basepath to the branch you've created for reviews, following the sample here. if not, leave this value blank.
 
 disqus_shortname:
@@ -91,12 +92,12 @@ defaults:
 
 # these are defaults used for the frontmatter for these file types
 
-sidebars:
-- home_sidebar
-- mydoc_sidebar
-- product1_sidebar
-- product2_sidebar
-- other
+#sidebars:
+#- home_sidebar
+#- mydoc_sidebar
+#- product1_sidebar
+#- product2_sidebar
+#- other
 
 description: "Intended as a documentation theme based on Jekyll for technical writers documenting software and other technical products, this theme has all the elements you would need to handle multiple products with both multi-level sidebar navigation, tags, and other documentation features."
 # the description is used in the feed.xml file
