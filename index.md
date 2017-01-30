@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Research Computing Facility
+title: High Performance Computing Center
 permalink: index.html
 ---
 
@@ -10,7 +10,7 @@ Our facility's mission is to provide...
 
 ## Services
 
-The RCF provides access to high-performance compute resources, data analysis and programming expertise.
+The HPCC provides access to high-performance compute resources, data analysis and programming expertise.
 The resources serve scientists at UC Riverside to master the bigdata and informatics needs of their research in a proficient and cost-effective manner. 
 The following services are offered:
 
