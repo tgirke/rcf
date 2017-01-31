@@ -2,7 +2,7 @@
 title: "Events"
 tagName: events
 search: exclude
-permalink: events.html
+permalink: /events
 folder: events
 ---
 {% include taglogic.html %}
