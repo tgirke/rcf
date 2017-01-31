@@ -3,7 +3,7 @@ title: "Events"
 tagName: events
 search: exclude
 permalink: tag_events.html
-folder: tags
+folder: events
 ---
 {% include taglogic.html %}
 
