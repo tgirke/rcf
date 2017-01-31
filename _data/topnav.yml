@@ -12,7 +12,7 @@ topnav:
     - title: Manuals
       url: /manuals
     - title: Events
-      url: /events
+      url: /events.html
 
 #Topnav dropdowns
 #topnav_dropdowns:
