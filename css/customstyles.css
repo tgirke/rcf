@@ -1,5 +1,6 @@
 body {
     font-size:15px;
+    background-image: http://digital.asiaone.com/sites/default/files/original_images/Mar2016/DARPA_Big_Data.jpg
 }
 
 .bs-callout {
@@ -1178,6 +1179,3 @@ h4.panel-title {
     margin-top: 0px;
 }
 
-#container {
-    background-image: http://digital.asiaone.com/sites/default/files/original_images/Mar2016/DARPA_Big_Data.jpg
-}
