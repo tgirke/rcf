@@ -20,8 +20,16 @@ The following services are offered:
 
 ## Facility Description
 
-  * Latest facility description for grant applications: [Facility Description](http://biocluster.ucr.edu/~rkaundal/Documents/HPC_Facility_Description.pdf).
-  * More detailed information can be found on our software and hardware pages.
+Our high performance computing infrastructure is located in the Genomics Cluster Farm.
+It provides access to enterprise level high-performance computing resources, for data analysis and programming.
+These resources serve the scientists at UC  Riverside and elsewhere to master big compute and big data needs of their research in a proficient and cost-effective manner.
+We also host a broad range of free workshops on proper cluster usage that provides a strong training component to successful grants.
+
+More detailed information can be found here:
+
+  * [Compute Hardware](/hardware#head-nodes)
+  * [Central Data Storage System](/hardware#storage)
+  * [Software Resources](/software)
 
 ## Rates
 
@@ -34,12 +42,6 @@ The registration provides access to the following resources:
   * Over 500 software packages and all common research databases. More details are available on the software page.
   * Free attendance of all our workshops
   * Free consultation services (up to 1 hour per month).
-
-Programming and Data Analysis Service for UCR Customers:
-  
-  * $52 per hour labor time.
-
-More detailed information about our service rates can be found here: [Recharging Rates](http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf).
 
 ## Contacts
 
