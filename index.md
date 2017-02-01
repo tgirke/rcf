@@ -15,8 +15,7 @@ The resources serve scientists at UC Riverside to master the bigdata and informa
 The following services are offered:
 
   * Development and maintenance of a high-performance informatics hardware and software infrastructure for our research community at UCR.
-  * Instruction of hands-on tutorials and workshops on a wide variety of bioinformatic topics. Extensive manuals for these tutorials are available on our manual page.
-  * Custom data analysis and consultation services for bioinformatics and cheminformatics projects.
+  * Instruction of hands-on tutorials and workshops on cluster usage. Extensive manuals for these tutorials are available on our manual page.
   * Establishment of research collaborations with experimental scientists from different departments.
 
 ## Facility Description
@@ -33,14 +32,14 @@ The registration provides access to the following resources:
 
   * Over 2500 CPU cores, ~2PB disk space, 512GB-1TB of memory/node, etc. More details are available on the compute hardware page.
   * Over 500 software packages and all common research databases. More details are available on the software page.
-  * Free attendance of all our bioinformatics workshops
+  * Free attendance of all our workshops
   * Free consultation services (up to 1 hour per month).
 
 Programming and Data Analysis Service for UCR Customers:
   
   * $52 per hour labor time.
 
-More detailed information about our service rates can be found here: [Recharging Rates](http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf){:target"_blank"}.
+More detailed information about our service rates can be found here: [Recharging Rates](http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf).
 
 ## Contacts
 
