@@ -12,5 +12,5 @@ entries:
       url: /manuals#getting-sarted
       output: web
     - title: Rates
-      url: "http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf"
-      output: web
+      external_url: http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf
+      output: pdf
