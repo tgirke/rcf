@@ -40,7 +40,7 @@ Programming and Data Analysis Service for UCR Customers:
   
   * $52 per hour labor time.
 
-More detailed information about our service rates can be found here: Bioinformatics Core [Recharging Rates](http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf).
+More detailed information about our service rates can be found here: [Recharging Rates](http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf){:target"_blank"}.
 
 ## Contacts
 
