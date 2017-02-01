@@ -5,12 +5,12 @@ entries:
   levels: one
   folders:
 
-  - title: Links
+  - title: Quick Links
     output: web
     folderitems:
     - title: Getting Started
       url: /manuals#getting-sarted
       output: web
     - title: Rates
-      url: http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf
+      url: "http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf"
       output: web
