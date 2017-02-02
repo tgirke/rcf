@@ -61,7 +61,7 @@ All users should access the cluster via ssh through biocluster.ucr.edu, this add
 * Intel
     * i01-i12: each with 32 Intel Broadwell cores and  512 GB memory
 
-### Getting Sarted
+### Getting Started
 The initial login, brings users into a Biocluster head node (i.e. pigeon, penguin, owl). From there, users can submit jobs via qsub to the compute nodes or log into owl to perform memory intensive tasks.
 Since all machines are mounting a centralized file system, users will always see the same home directory on all systems. Therefore, there is no need to copy files from one machine to another.
 
@@ -116,7 +116,6 @@ SOAP2/2.21(default) samtools/0.1.18(default)
 bowtie2/2.0.0-beta5(default) stajichlab
 cufflinks/1.3.0(default) subread/1.1.3(default)
 matrix2png/1.2.1(default) tophat/1.4.1(default)
-maui/3.3.1(default) trans-ABySS/1.2.0(default)
 module-info
 ```
 
@@ -134,18 +133,23 @@ module load tophat
 ```
 
 ##### Show Loaded Modules
+
 To show what modules you have loaded at any time, you can run:
+
 ```
 module list
 ```
+
 Depending on what modules you have loaded, it will produce something like this:
 
 ```
 Currently Loaded Modulefiles:
-1) maui/3.3.1 2) tophat/1.4.1 3) PeakSeq/1.1
+  1) vim/7.4.1952                  3) slurm/16.05.4                 5) R/3.3.0                       7) less-highlight/1.0            9) python/3.6.0
+  2) tmux/2.2                      4) openmpi/2.0.1-slurm-16.05.4   6) perl/5.20.2                   8) iigb_utilities/1
 ```
 
 ##### Unloading Software
+
 Sometimes you want to no longer have a piece of software in path. To do this you unload the module by running:
 
 ```
@@ -231,10 +235,10 @@ sbatch -p mygroup SBATCH_SCRIPT.sh
 ```
 
 #### Slurm
-Currently all the above partitions are available under Slurm, however Slurm jobs can only be submited from Globus. Therefore after logging into the cluster via ssh, ssh again into globus:
+Slurm is now our default queuing system across all head nodes. [SSH directly into the cluster](#getting-started) and your connection will be automatically load balanced to a head node:
 
 ```
-username@pigeon:~$ ssh -XY globus
+ssh -XY biocluster.ucr.edu
 ```
 
 ##### Submitting Jobs

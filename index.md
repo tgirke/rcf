@@ -22,8 +22,8 @@ The following services are offered:
 
 Our high performance computing infrastructure is located in the Genomics Cluster Farm.
 It provides access to enterprise level high-performance computing resources, for data analysis and programming.
-These resources serve the scientists at UC  Riverside and elsewhere to master big compute and big data needs of their research in a proficient and cost-effective manner.
-We also host a broad range of free workshops on proper cluster usage that provides a strong training component to successful grants.
+These resources serve the scientists at UC Riverside, and elsewhere, to master big compute and big data needs of their research in a proficient and cost-effective manner.
+We also host a broad range of free workshops on proper cluster utilization that provides a strong training component to successful grants.
 
 More detailed information can be found here:
 

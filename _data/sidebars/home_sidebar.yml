@@ -9,7 +9,7 @@ entries:
     output: web
     folderitems:
     - title: Getting Started
-      url: /manuals#getting-sarted
+      url: /manuals#getting-started
       output: web
     - title: Rates
       external_url: "http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf"
