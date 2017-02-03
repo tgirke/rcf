@@ -2,7 +2,6 @@
 layout: page
 title: Manuals
 permalink: manuals_linux-cluster.html
-folder: /manuals/
 ---
 ## Linux Cluster
 
