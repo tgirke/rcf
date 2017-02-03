@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Manuals
-permalink: manauals_linux-basics.html
+permalink: manauals_linux-cluster.html
 folder: /manuals/
 ---
 ## Linux Cluster
