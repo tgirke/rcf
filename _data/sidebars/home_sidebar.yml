@@ -21,22 +21,28 @@ entries:
       url: /about#location
       output: web
       type: frontmatter
-#  - title: Hardware
-#    output: web
-#    folderitems:
-#        - title: Storage
-#            url: /hardware#storage
-#            output: web
-#        - title: Network
-#            url: /hardware#network
-#            output: web
-#        - title: Head Nodes
-#            url: /about#head-nodes
-#            output: web
-#        - title: Worker Nodes
-#            url: /about#worker-nodes
-#            output: web
-#
+
+  - title: Hardware
+    output: web
+    type: frontmatter
+    folderitems:
+    - title: Storage
+      url: /hardware#storage
+      output: web
+      type: frontmatter
+    - title: Network
+      url: /hardware#network
+      output: web
+      type: frontmatter
+    - title: Head Nodes
+      url: /about#head-nodes
+      output: web
+      type: frontmatter
+    - title: Worker Nodes
+      url: /about#worker-nodes
+      output: web
+      type: frontmatter
+
 #  - title: Software
 #    output: web
 #    folderitems:
