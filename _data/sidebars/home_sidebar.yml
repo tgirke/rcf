@@ -2,6 +2,7 @@
 
 entries:
 - title: Main Menu
+  levels: one
   product: Menu
   folders:
 
