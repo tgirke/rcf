@@ -2,7 +2,7 @@
 layout: page
 title: Manuals
 permalink: linux-basics.html
-folder: manuals
+folder: /manuals/
 ---
 ## Linux Cluster
 
