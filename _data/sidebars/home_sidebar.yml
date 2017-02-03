@@ -65,11 +65,11 @@ entries:
     type: frontmatter
     folderitems:
     - title: Linux Basics
-      url: /manuals/linux-basics
+      url: /manuals_linux-basics.html
       output: web 
       type: frontmatter
     - title: Linux Cluster
-      url: /manuals/linux-cluster
+      url: /manuals_linux-cluster.html
       output: web
       type: frontmatter
 
