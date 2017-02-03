@@ -1,16 +1,26 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
 entries:
-- title: Sidebar
-  levels: one
+- title: Main Menu
+  product: Menu
   folders:
 
-  - title: Quick Links
+  - title: About
     output: web
-    folderitems:
-    - title: Getting Started
-      url: /manuals#getting-started
-      output: web
-    - title: Rates
-      external_url: "http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf"
-      output: web, pdf
+    url: /about
+
+  - title: Hardware
+    output: web
+    url: /hardware
+
+  - title: Software
+    output: web
+    url: /software
+
+  - title: Manuals
+    output: web
+    url: /manuals
+
+  - title: Events
+    output: web
+    url: /events
