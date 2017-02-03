@@ -43,26 +43,33 @@ entries:
       output: web
       type: frontmatter
 
-#  - title: Software
-#    output: web
-#    folderitems:
-#        - title: Loadable Modules
-#            url: /software#loadable-modules
-#            output: web
-#        - title: Default RPMs
-#            url: /software#default-rpms
-#            output: web
-#        - title: Services
-#            url: /software#services
-#            output: web
-#
-#  - title: Manuals
-#    output: web
-#    folderitems:
-#        - title: Linux Basics
-#            url: /manuals/linux-basics
-#            output: web
-#        - title: Linux Cluster
-#            url: /manuals/linux-cluster
-#            output: web
+  - title: Software
+    output: web
+    type: frontmatter
+    folderitems:
+    - title: Loadable Modules
+      url: /software#loadable-modules
+      output: web
+      type: frontmatter
+    - title: Default RPMs
+      url: /software#default-rpms
+      output: web
+      type: frontmatter
+    - title: Services
+      url: /software#services
+      output: web
+      type: frontmatter
+
+  - title: Manuals
+    output: web
+    type: frontmatter
+    folderitems:
+    - title: Linux Basics
+      url: /manuals/linux-basics
+      output: web 
+      type: frontmatter
+    - title: Linux Cluster
+      url: /manuals/linux-cluster
+      output: web
+      type: frontmatter
 
