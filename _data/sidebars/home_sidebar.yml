@@ -2,7 +2,6 @@
 
 entries:
 - title: Main Menu
-  levels: one
   product: Menu
   folders:
 
@@ -10,52 +9,51 @@ entries:
     output: web
     folderitems:
         - title: Mission
-        url: /about#mission
-        output: web
+            url: /about#mission
+            output: web
         - title: Contacts
-        url: /about#contacts
-        output: web
+            url: /about#contacts
+            output: web
         - title: Location
-        url: /about#location
-        output: web
-
+            url: /about#location
+            output: web
          
   - title: Hardware
     output: web
     folderitems:
         - title: Storage
-        url: /hardware#storage
-        output: web
+            url: /hardware#storage
+            output: web
         - title: Network
-        url: /hardware#network
-        output: web
+            url: /hardware#network
+            output: web
         - title: Head Nodes
-        url: /about#head-nodes
-        output: web
+            url: /about#head-nodes
+            output: web
         - title: Worker Nodes
-        url: /about#worker-nodes
-        output: web
+            url: /about#worker-nodes
+            output: web
 
   - title: Software
     output: web
     folderitems:
         - title: Loadable Modules
-        url: /software#loadable-modules
-        output: web
+            url: /software#loadable-modules
+            output: web
         - title: Default RPMs
-        url: /software#default-rpms
-        output: web
+            url: /software#default-rpms
+            output: web
         - title: Services
-        url: /software#services
-        output: web
+            url: /software#services
+            output: web
 
   - title: Manuals
     output: web
     folderitems:
         - title: Linux Basics
-        url: /manuals/linux-basics
-        output: web
+            url: /manuals/linux-basics
+            output: web
         - title: Linux Cluster
-        url: /manuals/linux-cluster
-        output: web
+            url: /manuals/linux-cluster
+            output: web
 
