@@ -1,23 +1,5 @@
 # This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
 
-#entries:
-#- title: Main Menu
-#  product: Menu
-#  folders:
-#
-#  - title: About
-#    output: web
-#    folderitems:
-#        - title: Mission
-#            url: /about#mission
-#            output: web
-#        - title: Contacts
-#            url: /about#contacts
-#            output: web
-#        - title: Location
-#            url: /about#location
-#            output: web
-
 entries:
 - title: Main Menu
   product: Menu
@@ -31,7 +13,14 @@ entries:
       url: /about#mission
       output: web
       type: frontmatter
-        
+    - title: Contacts
+      url: /about#contacts
+      output: web
+      type: frontmatter
+    - title: Location
+      url: /about#location
+      output: web
+      type: frontmatter
 #  - title: Hardware
 #    output: web
 #    folderitems:
