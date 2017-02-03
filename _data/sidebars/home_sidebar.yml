@@ -22,7 +22,6 @@ entries:
          
   - title: Hardware
     output: web
-    url: /hardware
     folderitems:
         - title: Storage
         url: /hardware#storage
@@ -39,7 +38,6 @@ entries:
 
   - title: Software
     output: web
-    url: /software
     folderitems:
         - title: Loadable Modules
         url: /software#loadable-modules
@@ -53,7 +51,6 @@ entries:
 
   - title: Manuals
     output: web
-    url: /manuals
     folderitems:
         - title: Linux Basics
         url: /manuals/linux-basics
