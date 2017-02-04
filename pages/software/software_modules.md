@@ -1,9 +1,18 @@
 ---
 layout: page
-title: Software
+title: Software Modules
 ---
 
-## Loadable Modules
+The following packages are available on the cluster as modules.
+
+To load the default version of a module, use:
+`module load [package]`
+
+To load a specific version of a module, use:
+`module load [package]/[version]`
+
+To view this list at the command line, use:
+`module avail`
 
 | Package Name | Versions |
 | --- | --- |

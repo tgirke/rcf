@@ -47,16 +47,16 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Loadable Modules
-      url: /software#loadable-modules
+    - title: Software Modules
+      url: /software_modules
       output: web
       type: frontmatter
-    - title: Default RPMs
-      url: /software#default-rpms
+    - title: System Software
+      url: /software_system
       output: web
       type: frontmatter
     - title: Services
-      url: /software#services
+      url: /software_services
       output: web
       type: frontmatter
 
