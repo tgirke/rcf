@@ -1,6 +1,7 @@
 ---
 layout: page
 title: System Software
+permalink: software_system
 ---
 
 The following packages are provided as part of the CentOS 7 operating system. They can be used without loading any modules.

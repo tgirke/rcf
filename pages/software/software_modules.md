@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Software Modules
+permalink: software_modules
 ---
 
 The following packages are available on the cluster as modules.
