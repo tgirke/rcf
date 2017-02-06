@@ -6,8 +6,8 @@ permalink: index.html
 
 ## Welcome
 
-![alt text](http://rtbforum.ru/wp-content/uploads/2015/11/darpa_big_data-250x175.jpg "Server Bits")
 Our facility's mission is to provide...
+<img style="box-shadow:5px 5px grey" src="/images/darpa_big_data-250x175.jpg" title="Server Bits" alt="Server Bits" />
 
 ## Services
 
