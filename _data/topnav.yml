@@ -7,9 +7,7 @@
 
 #Topnav dropdowns
 topnav_dropdowns:
-- title: Topnav dropdowns
-  subcategories:
-    - title: UCR Facilities
+   - title: UCR Facilities
       items:
         - title: IIGB
           external_url: http://genomics.ucr.edu
