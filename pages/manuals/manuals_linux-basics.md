@@ -801,6 +801,7 @@ perl -p -i -w -e 's/pattern1/pattern2/g' my_input_file
 ```
 
 *Parse lines based on patterns:*
+
 ```
 perl -ne 'print if (/my_pattern1/ ? ($c=1) : (--$c > 0)); print if (/my_pattern2/ ? ($d = 1) : (--$d > 0))' my_infile > my_outfile
             # Parses lines that contain pattern1 and pattern2.
@@ -813,6 +814,7 @@ perl -ne 'print if (/my_pattern1/ ? ($c=1) : (--$c > 0)); print if (/my_pattern2
 ### Wget
 
 Use wget to download a file from the web:
+
 ```
 wget ftp://ftp.ncbi.nih.... # file download from www; add option '-r' to download entire directories
 ```
@@ -820,12 +822,14 @@ wget ftp://ftp.ncbi.nih.... # file download from www; add option '-r' to downloa
 ### SCP
 
 Use scp to copy files between machines (ie. laptop to server):
+
 ```
 scp source target # Use form 'userid@machine_name' if your local and remote user ids are different.
                   # If they are the same you can use only 'machine_name'.
 ```
 
 Here are more scp examples:
+
 ```
 scp user@remote_host:file.name . # Copies file from server to local machine (type from local
                                  # machine prompt). The '.' copies to pwd, you can specify                                              # here any directory, use wildcards to copy many files.
@@ -840,6 +844,7 @@ scp -r user@remote_host:directory/ ~/dir
 ### Nice FTP
 
 From the linux command line run ncftp and use it to get files:
+
 ```
 ncftp
 ncftp> open ftp.ncbi.nih.gov
@@ -880,12 +885,14 @@ tar -jxvf mydir.tar.bz2 # Extracts *.tar.bz2 archive
 ```
 
 Try also:
+
 ```
 tar zxf blast.linux.tar.Z
 tar xvzf file.tgz
 ```
 
 Important options:
+
 ```
 f: use archive file
 p: preserve permissions
@@ -913,6 +920,7 @@ env                            # prints all environment variables
 ```
 
 List of directories that the shell will search when you type a command:
+
 ```
 echo $PATH
 ```
@@ -920,7 +928,7 @@ You can edit your default DISPLAY setting for your account by adding it to file 
 
 ## Exercises
 
-Exercise 1
+## Exercise 1
 1. Download proteome of Halobacterium spec. with wget and look at it:
 module load ncbi-blast/2.2.26 # Loads legacy blastall
 wget ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/archaea/Halobacterium_salinarum/representative/GCA_000069025.1_ASM6902v1/GCA_000069025.1_ASM6902v1_protein.faa.gz
@@ -931,44 +939,53 @@ less AE004437.faa  # press q to quit
 
 2. Simple Analysis:
 
-a) How many predicted proteins are there?
-grep '^>' AE004437.faa --count
+   a. How many predicted proteins are there?
+    
+   ```
+   grep '^>' AE004437.faa --count
+   ```
 
-b) How many proteins contain the pattern "WxHxxH" or "WxHxxHH"?
-egrep 'W.H..H{1,2}' AE004437.faa --count
+   a. How many proteins contain the pattern "WxHxxH" or "WxHxxHH"?
 
-c) Use the find function (/) in 'less' to fish out the protein IDs containing the pattern or more elegantly do it with awk:
-awk --posix -v RS='>' '/W.H..(H){1,2}/ { print ">" $0;}' AE004437.faa | less # press q to quit
+   ```
+   egrep 'W.H..H{1,2}' AE004437.faa --count
+   ```
+
+   c. Use the find function (/) in 'less' to fish out the protein IDs containing the pattern or more elegantly do it with awk:
+
+   ```
+   awk --posix -v RS='>' '/W.H..(H){1,2}/ { print ">" $0;}' AE004437.faa | less # press q to quit
+   ```
 
 3. Create a BLASTable database with formatdb:
 
-    ls # before
-
-    formatdb -i AE004437.faa -p T -o T
-
-    ls # after
-    '-p F' for nucleotide and '-p T' for protein database; '-o T' parse SeqId and create indexes 
+   ```
+   ls # before
+   formatdb -i AE004437.faa -p T -o T
+   ls # after
+   '-p F' for nucleotide and '-p T' for protein database; '-o T' parse SeqId and create indexes 
+   ```
 
 4. Generate myseq.fasta
 
-a) Generate list of sequence IDs for the above pattern match result (i.e. retrieve my_IDs from step 2c). Alternatively, download the pre-generated file with wget.
+   a. Generate list of sequence IDs for the above pattern match result (i.e. retrieve my_IDs from step 2c). Alternatively, download the pre-generated file with wget.
 
-b) Retrieve the corresponding sequences for these IDs with the fastacmd command from the blastable database:
+   b. Retrieve the corresponding sequences for these IDs with the fastacmd command from the blastable database:
 
-    wget http://biocluster.ucr.edu/~tgirke/Documents/UNIX/my_IDs
-
-    fastacmd -d AE004437.faa -i my_IDs > myseq.fasta
-
-    less myseq.fasta # press q to quit
-
+   ```
+   wget http://biocluster.ucr.edu/~tgirke/Documents/UNIX/my_IDs
+   fastacmd -d AE004437.faa -i my_IDs > myseq.fasta
+   less myseq.fasta # press q to quit
+   ```
 
 5. (Optional) Looking at several different patterns:
 
-a) Generate several lists of sequence IDs from various pattern match results (i.e. retrieve a.my_ids, b.my_ids, and  c.my_ids from step 2c).
-
-b) Retrieve the sequences in one step using the fastacmd in a for-loop:
-for i in *.my_ids; do fastacmd -d AE004437.faa -i $i > $i.fasta; done
-
+   a. Generate several lists of sequence IDs from various pattern match results (i.e. retrieve a.my_ids, b.my_ids, and  c.my_ids from step 2c).
+   b. Retrieve the sequences in one step using the fastacmd in a for-loop:
+   
+   ```
+   for i in *.my_ids; do fastacmd -d AE004437.faa -i $i > $i.fasta; done
+   ```
 
 6. Run blastall with a few proteins in myseq.fasta against your newly created Halobacterium proteome database.
 Create first a complete blast output file  including alignments. In a second step use the 'm -8' option to obtain a tabular output (i.e. tab separated values).
@@ -997,58 +1014,80 @@ Is your blastp.out file equivalent to this one?
 
 7. Parse blastall output into Excel spread sheet
 
-    a) Using biocore parser
+   a. Using biocore parser
 
-blastParse -i blastp.out -o blast.xls -c 5
+   ```
+   blastParse -i blastp.out -o blast.xls -c 5
+   ```
 
-    b) Using BioPerl parser
-    bioblastParse.pl blastp.out > blastparse.txt     
+   b. Using BioPerl parser
 
-Exercise 2
+   ```
+   bioblastParse.pl blastp.out > blastparse.txt     
+   ```
 
-    Split sample fasta batch file with csplit (use sequence file myseq.fasta from Exercise 1). 
-    csplit -z myseq.fasta '/>/' '{*}'
-    Delete some of the files generated by csplit
-    Concatenate single fasta files from (step 1) into to one file with cat (e.g. "cat file1 file2 file3 > bigfile") .
-    BLAST two related sequences, retrieve the result in tabular format and use "comm" to identify common hit IDs in the two tables.
+### Exercise 2
 
-Exercise 3
+Split sample fasta batch file with csplit (use sequence file myseq.fasta from Exercise 1). 
 
-    Run HMMPFAM search with proteins from Exercise 1 against Pfam database (will take ~3 minutes)
+```
+csplit -z myseq.fasta '/>/' '{*}'
+```
 
-        hmmscan -E 0.1 --acc /srv/projects/db/pfam/2011-12-09-Pfam26.0/Pfam-A.hmm myseq.fasta > output.pfam
+Delete some of the files generated by csplit
+Concatenate single fasta files from (step 1) into to one file with cat (e.g. `cat file1 file2 file3 > bigfile`).
+BLAST two related sequences, retrieve the result in tabular format and use `comm` to identify common hit IDs in the two tables.
 
-        Easier to parse/process tabular output
-        hmmscan -E 0.1 --acc --tblout output.pfam /srv/projects/db/pfam/2011-12-09-Pfam26.0/Pfam-A.hmm myseq.fasta # also try --domtblout
+### Exercise 3
+
+Run HMMPFAM search with proteins from Exercise 1 against Pfam database (will take ~3 minutes)
+
+```
+hmmscan -E 0.1 --acc /srv/projects/db/pfam/2011-12-09-Pfam26.0/Pfam-A.hmm myseq.fasta > output.pfam
+```
+
+Easier to parse/process tabular output
+
+```
+hmmscan -E 0.1 --acc --tblout output.pfam /srv/projects/db/pfam/2011-12-09-Pfam26.0/Pfam-A.hmm myseq.fasta # also try --domtblout
+```
 
 Which query got the most hits? How many hits were found that query?
 
-Exercise 4
+### Exercise 4
 
-    Create multiple alignment with ClustalW (e.g. use sequences with 'W.H..HH' pattern)
+Create multiple alignment with ClustalW (e.g. use sequences with 'W.H..HH' pattern)
 
-        clustalw myseq.fasta
+```
+clustalw myseq.fasta
+mv myseq.aln myalign.aln
+```
 
-        mv myseq.aln myalign.aln
+### Exercise 5
 
-Exercise 5
+Reformat alignment into PHYILIP format using 'seqret' from EMBOSS
 
-    Reformat alignment into PHYILIP format using 'seqret' from EMBOSS
+```
+seqret clustal::myalign.aln phylip::myalign.phylip
+```
 
-        seqret clustal::myalign.aln phylip::myalign.phylip
+### Exercise 6
 
-Exercise 6
+Create neighbor-joining tree with PHYLIP
 
-    Create neighbor-joining tree with PHYLIP
+```
+cp myalign.phylip infile
+protdist     # creates distance matrix (you may need to press 'R' and then 'Y')
+cp outfile infile
+neighbor     # use default settings (press 'Y')
+cp outtree intree
+```
 
-        cp myalign.phylip infile
-        protdist     # creates distance matrix (you may need to press 'R' and then 'Y')
-        cp outfile infile
+retree # displays tree and can use midpoint method for defining root of tree, my typical command sequence is: 'N' (until you see PHYLIP) 'Y' 'M' 'W' 'R' 'R' 'X'
 
-        neighbor     # use default settings (press 'Y')
-        cp outtree intree
+```
+cp outtree tree.dnd
+```
 
-        retree # displays tree and can use midpoint method for defining root of tree, my typical command sequence is: 'N' (until you see PHYLIP) 'Y' 'M' 'W' 'R' 'R' 'X'
-        cp outtree tree.dnd
-        View your tree in TreeBrowse or open it in TreeView 
+View your tree in TreeBrowse or open it in TreeView
 
