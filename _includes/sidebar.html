@@ -1,7 +1,8 @@
 {% include custom/sidebarconfigs.html %}
 
 <ul id="mysidebar" class="nav">
-    <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li>
+    <!-- <li class="sidebarTitle">{{sidebar[0].product}} {{sidebar[0].version}}</li> -->
+    <li class="sidebarTitle"><img style="box-shadow:5px 5px grey" src="/images/darpa_big_data-250x175.jpg" title="Server Bits" alt="Server Bits"></li> 
     {% for entry in sidebar %}
     {% for folder in entry.folders %}
     {% if folder.output contains "web" %}
