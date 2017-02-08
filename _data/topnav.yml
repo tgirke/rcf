@@ -7,21 +7,21 @@
 
 #Topnav dropdowns
 topnav_dropdowns:
-   - title: UCR Facilities
-      items:
-        - title: IIGB
-          external_url: http://genomics.ucr.edu
-          output: web
-        - title: Genomics Core
-          external_url: http://genomics.ucr.edu/facility/genomics.html
-          output: web
-        - title: Microscopy Core
-          external_url: http://genomics.ucr.edu/facility/microscopy.html
-          output: web
-        - title: Bioinformatics Core
-          external_url: http://genomics.ucr.edu/facility/bioinformatics.html
-          output: web
-        - title: Proteomics Core
-          external_url: http://genomics.ucr.edu/facility/proteomics.html
-          output: web
+  - title: UCR Facilities
+    items:
+    - title: IIGB
+      external_url: http://genomics.ucr.edu
+      output: web
+    - title: Genomics Core
+      external_url: http://genomics.ucr.edu/facility/genomics.html
+      output: web
+    - title: Microscopy Core
+      external_url: http://genomics.ucr.edu/facility/microscopy.html
+      output: web
+    - title: Bioinformatics Core
+      external_url: http://genomics.ucr.edu/facility/bioinformatics.html
+      output: web
+    - title: Proteomics Core
+      external_url: http://genomics.ucr.edu/facility/proteomics.html
+      output: web
 
