@@ -628,7 +628,7 @@ join -1 1 -2 1 <table1> <table2>     # joins two tables based on specified colum
                                      # use the next command:
 sort table1 > table1a; sort table2 > table2a; join -a 1 -t "$(echo -e '\t')" table1a table2a > table3                               # '-a <table>' prints all lines of specified table!
                                      # Default prints only all lines the two tables have in
-                                     # common. '-t "`echo -e '\t'`" ->' forces join to
+                                     # common. '-t "$(echo -e '\t')" ->' forces join to
                                      # use tabs as field separator in its output. Default is
                                      # space(s)!!!
 cat my_table | cut -d , -f1-3        # cut command prints only specified sections of a table,
@@ -677,23 +677,9 @@ screen -r <first-few-letters-of-name> # Type just the first few letters of the n
 
 ### Destroying Screen Sessions
 
-1. Terminate all programs that are running in the screen session. The standard way to do that is:
-
-```
-    Ctrl-c
-```
-
-2. Exit out of your shell.
-
-```
-    exit
-```
-
-3. Repeat steps 1 and 2 until you see the message:
-
-```
-    [screen is terminating]
-```
+1. Terminate all programs that are running in the screen session. The standard way to do that is: `Ctrl-c`
+2. Exit out of your shell: `exit`
+3. Repeat steps 1 and 2 until you see the message: `[screen is terminating]`
 
 There may be programs running in different windows of the same screen session. That's why you may need to terminate programs and exit shells multiple time.
 
@@ -718,24 +704,27 @@ caption always "%{=b dy}{ %{= dm}%H %{=b dy}}%={ %?%{= dc}%-Lw%?%{+b dy}(%{-b r}
 
 Web page for [script download](http://linuxcommand.org/script_library.php).
 
-
 Renames many files *.old to *.new. To test things first, replace 'do mv' with 'do echo mv':
+
 ```
 for i in *.input; do mv $i ${i/\.old/\.new}; done
 for i in *\ *; do mv "$i" "${i// /_}"; done # Replaces spaces in files by underscores
 ```
 
 Run an application in loops on many input files:
+
 ```
 for i in *.input; do ./application $i; done
 ```
 
 Run fastacmd from BLAST program in loops on many *.input files and create corresponding *.out files:
+
 ```
 for i in *.input; do fastacmd -d /data/../database_name -i $i > $i.out; done
 ```
 
 Run SAM's target99 on many input files:
+
 ```
 for i in *.pep; do target99 -db /usr/../database_name -seed $i -out $i; done
 Search in many files for a pattern and print occurrences together with file names.
@@ -743,17 +732,20 @@ for j in 0 1 2 3 4 5 6 7 8 9; do grep -iH <my_pattern> *$j.seq; done
 ```
 
 Example of how to run an interactive application (tmpred) that asks for file name input/output:
+
 ```
 for i in *.pep; do echo -e "$i\n\n17\n33\n\n\n" | ./tmpred $i > $i.out; done
 ```
 
 Run BLAST2 for all *.fasa1/*.fasta2 file pairs in the order specified by file names and write results into one file:
+
 ```
 for i in *.fasta1; do blast2 -p blastp -i $i -j ${i/_*fasta1/_*fasta2} >> my_out_file; done
 ```
     This example uses two variables in a for loop. The content of the second variable gets specified in each loop by a replace function.
 
 Runs BLAST2 in all-against-all mode and writes results into one file ('-F F' turns low-complexity filter off):
+
 ```
 for i in *.fasta; do for j in *.fasta; do blast2 -p blastp -F F -i $i -j $j >> my_out_file; done; done;
 ```
@@ -761,28 +753,28 @@ for i in *.fasta; do for j in *.fasta; do blast2 -p blastp -F F -i $i -j $j >> m
 ### How to write a real shell script
 
 1. Create file which contains an interpreter as the first line:
-```
+    ```
     #!/bin/bash
-```
+    ```
 + Place shell commands in file below the interpreter line using a text editor.
 + Make file executable:
-```
+    ```
     chmod +x my_shell_script
-```
+    ```
 + Run shell script like this:
-```
+    ```
     ./my_shell_script
-```
+    ```
 + Place it into your /rhome/<username>/bin directory
-```
+    ```
     mkdir -p ~/bin
     mv my_shell_script ~/bin/
-```
+    ```
 + Add the bin path to your shell permanently:
-```
+    ```
     echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
-```
+    ```
 
 ## Simple One-Liner Perl Scripts
 
