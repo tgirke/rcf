@@ -984,14 +984,14 @@ You can edit your default DISPLAY setting for your account by adding it to file 
    a. Generate several lists of sequence IDs from various pattern match results (i.e. retrieve a.my_ids, b.my_ids, and  c.my_ids from step 2c).
 
    b. Retrieve the sequences in one step using the fastacmd in a for-loop:
-   
+
    ```bash
    for i in *.my_ids; do fastacmd -d AE004437.faa -i $i > $i.fasta; done
    ```
 
 1. Run blastall with a few proteins in myseq.fasta against your newly created Halobacterium proteome database.
 
-Create first a complete blast output file  including alignments. In a second step use the 'm -8' option to obtain a tabular output (i.e. tab separated values):
+   Create first a complete blast output file  including alignments. In a second step use the 'm -8' option to obtain a tabular output (i.e. tab separated values):
 
    ```bash
    blastall -p blastp -i myseq.fasta -d AE004437.faa -o blastp.out -e 1e-6 -v 10 -b 10
@@ -1000,7 +1000,7 @@ Create first a complete blast output file  including alignments. In a second ste
    less -S blastp.tab # -S disables line wrapping, press q to quit
    ```
 
-The filed descriptions of the Blast tabular output (from the "-m 8" option) are available here:
+   The filed descriptions of the Blast tabular output (from the "-m 8" option) are available here:
 
    ```
    1  Query (The query sequence id)
@@ -1015,7 +1015,7 @@ The filed descriptions of the Blast tabular output (from the "-m 8" option) are 
    10 s.end
    11 e-value
    12 bit score
-```
+   ```
 
 Is your blastp.out file equivalent to this one?
 
