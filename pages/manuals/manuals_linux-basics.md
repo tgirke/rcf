@@ -589,6 +589,7 @@ See [LINUX HOWTOs](http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html)
 By default, UNIX commands read from standard input (STDIN) and send their output to standard out (STDOUT).
 
 You can redirect them by using the following commands:
+
 ```
 <beginning-of-filename>*         # * is wildcard to specify many files
 ls > file                        # prints ls output into specified file
@@ -644,12 +645,14 @@ A Visual Introduction to Screen
 +  http://fosswire.com/post/2008/08/video-tutorial-getting-started-with-gnu-screen/
 
 ### Starting a New Screen Session
+
 ```
 screen                 # Start a new session
 screen -S <some-name>  # Start a new session and gives it a name
 ```
 
 Commands to Control Screen
+
 ```
 Ctrl-a d #  Detach from the screen session
 Ctrl-a c # Create a new window inside the screen session
@@ -661,7 +664,9 @@ Ctrl-a [ # Enters the scrolling mode. Use Page Up and Page Down keys to scroll t
 ```
 
 ### Attaching to Screen Sessions
+
 From any computer, you can attach to a screen session after SSH-ing into a server.
+
 ```
 screen -r              # Attaches to an existing session, if there is only one
 screen -r              # Lists available sessions and their names, if there are more then one session running
@@ -671,6 +676,7 @@ screen -r <first-few-letters-of-name> # Type just the first few letters of the n
 ```
 
 ### Destroying Screen Sessions
+
 1. Terminate all programs that are running in the screen session. The standard way to do that is:
 ```
 Ctrl-c
