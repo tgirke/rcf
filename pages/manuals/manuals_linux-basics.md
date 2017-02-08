@@ -1,11 +1,10 @@
 ---
 layout: page
-title: Manuals
+title: Linux Basics
 permalink: manuals_linux-basics.html
 ---
-## Linux Basics
 
-### Introduction
+## Introduction
 The scope of this manual is a brief introduction on how to get started using powerful Linux command-line utilities.
 
 ## How to Get Access?

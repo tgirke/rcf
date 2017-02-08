@@ -1,25 +1,24 @@
 ---
 layout: page
-title: Manuals
+title: Linux Cluster
 permalink: manuals_linux-cluster.html
 ---
-## Linux Cluster
 
-### Introduction
+## Introduction
 This manual provides an introduction to the usage of the HPCC cluster.
 All servers and compute resources of the HPCC cluster are available to researchers from all departments and colleges at UC Riverside for a minimal recharge fee [(see rates)](http://biocluster.ucr.edu/~rkaundal/Documents/Recharge_Rates.pdf).
 To request an account, please contact Thomas Girke [tgike@ucr.edu](mailto:tgirke.ucr.edu).
 The latest hardware/facility description for grant applications is available here: [Facility Description](http://biocluster.ucr.edu/~rkaundal/Documents/HPC_Facility_Description.pdf).
 
-#### Overview
+## Overview
 
-##### Storage
+### Storage
 * Four enterprise class HPC storage systems
 * Approximately 2 PB (2048 TB) of network storage
 * GPFS (NFS and SAMBA via GPFS)
 * Automatic snapshots and archival backups
 
-##### Network
+### Network
 * Ethernet
     * 1 Gb/s switch x 5
     * 1 Gb/s switch 10 Gig uplink
@@ -28,7 +27,7 @@ The latest hardware/facility description for grant applications is available her
 * Interconnect
     * 56 Gb/s InfiniBand (FDR)
 
-##### Head Nodes
+### Head Nodes
 All users should access the cluster via ssh through biocluster.ucr.edu, this address will automatically balance traffic to one of the available head nodes.
 
 * Penguin
@@ -52,7 +51,7 @@ All users should access the cluster via ssh through biocluster.ucr.edu, this add
     * Primary function: submitting jobs to the queuing system (Slurm)
     * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
 
-##### Worker Nodes
+### Worker Nodes
 * Batch
     * c01-c48: each with 64 AMD cores and 512 GB memory
 * Highmem
@@ -62,21 +61,21 @@ All users should access the cluster via ssh through biocluster.ucr.edu, this add
 * Intel
     * i01-i12: each with 32 Intel Broadwell cores and  512 GB memory
 
-### Getting Started
+## Getting Started
 The initial login, brings users into a Biocluster head node (i.e. pigeon, penguin, owl). From there, users can submit jobs via qsub to the compute nodes or log into owl to perform memory intensive tasks.
 Since all machines are mounting a centralized file system, users will always see the same home directory on all systems. Therefore, there is no need to copy files from one machine to another.
 
-#### Login from Mac, Linux, Cygwin
+### Login from Mac, Linux, Cygwin
 Open the terminal and type
 
 ```
 ssh -X username@biocluster.ucr.edu
 ```
 
-#### Login from Windows
+### Login from Windows
 Please refer to the login instructions of our [Linux Basics manual](#linux-basics).
 
-#### Change Password
+### Change Password
 1. Log-in via SSH using the Terminal on Mac/Linux or Putty on Windows
 +  Once you have logged in type the following command:
 ```
@@ -93,12 +92,12 @@ The password minimum requirements are:
     * Number
     * Punctuation character
 
-#### Modules
+### Modules
 All software used on Biocluster is managed through a simple module system.
 You must explicitly load and unload each package as needed.
 More advanced users may want to load modules within their bashrc, bash_profile, or profile files.
 
-##### Available Modules
+#### Available Modules
 To list all available software modules, execute the following:
 
 ```
@@ -120,7 +119,7 @@ matrix2png/1.2.1(default) tophat/1.4.1(default)
 module-info
 ```
 
-##### Using Modules
+#### Using Modules
 To load a module, run:
 
 ```
@@ -133,7 +132,7 @@ To load the default version of the tophat module, run:
 module load tophat
 ```
 
-##### Show Loaded Modules
+#### Show Loaded Modules
 
 To show what modules you have loaded at any time, you can run:
 
@@ -149,7 +148,7 @@ Currently Loaded Modulefiles:
   2) tmux/2.2                      4) openmpi/2.0.1-slurm-16.05.4   6) perl/5.20.2                   8) iigb_utilities/1
 ```
 
-##### Unloading Software
+#### Unloading Software
 
 Sometimes you want to no longer have a piece of software in path. To do this you unload the module by running:
 
@@ -157,25 +156,25 @@ Sometimes you want to no longer have a piece of software in path. To do this you
 module unload <software name>
 ```
 
-##### Additional Features
+#### Additional Features
 There are additional features and operations that can be done with the module command. Please run the following to get more information:
 
 ```
 module help
 ```
 
-### Quotas
+## Quotas
 
-#### CPU
+### CPU
 Currently, the maximum number of CPU cores a user can use simultaneously on biocluster is 256 CPU cores when the load on the cluster is <30% and 128 CPU cores when the load is above 30%. If a user submits jobs for more than 256/128 CPU cores then the additional requests will be queued until resources within the user's CPU quota become available. Upon request a user's upper CPU quota can be extended temporarily, but only if sufficient CPU resources are available. To avoid monopolisation of the cluster by a small number of users, the high load CPU quota of 128 cores is dynamically readjusted by an algorithm that considers the number of CPU hours accumulated by each user over a period of 2 weeks along with the current overall CPU usage on the cluster. If the CPU hour average over the 2 week window exceeds an allowable amount then the default CPU quota will be reduced for such a heavy user to 64 CPU cores, and if it exceeds the allowable amount by two-fold it will be reduced to 32 CPU cores. Once the average usage of a heavy user drops again below those limits, the upper CPU limit will be raised accordingly. Note: when the overall CPU load on the cluster is below 70% then the dynamically readjusted CPU quotas are not applied. At those low load times every user has the same CPU quota: 256 CPU cores at <30% load and 128 CPU cores at 30-70% load.
 
-#### Data Storage
+### Data Storage
 A standard user account has a storage quota of 20GB. Much more storage space, in the range of many TBs, can be made available in a user account's bigdata directory. The amount of storage space available in bigdata depends on a user group's annual subscription. The pricing for extending the storage space in the bigdata directory is available [here](/home).
 
-#### Memory
+### Memory
 From the Biocluster head node users can submit jobs to the batch queue or the highmem queue. The nodes associated with the batch queue are mainly for CPU intensive tasks, while the nodes of the highmem queue are dedicated to memory intensive tasks. The batch nodes allow a 1GB RAM minimum limit on jobs and and the highmem nodes allow 16GB-512GB RAM jobs.
 
-### What's Next?
+## What's Next?
 You should now know the following:
 
 1. Basic orginization of Biocluster
@@ -196,10 +195,10 @@ Login to Owl like so:
 ssh -X owl.ucr.edu
 ```
 
-### Managing Jobs
+## Managing Jobs
 Submitting and managing jobs is at the heart of using the cluster.  A 'job' refers to the script, pipeline or experiment that you run on the nodes in the cluster.
 
-#### Partitions
+### Partitions
 In the past we used queues under the old Torque system, we now refer to these logically grouped nodes as partitions. There are several different partitions available for cluster users to send jobs to:
 
 * batch
@@ -235,14 +234,14 @@ sbatch -p intel SBATCH_SCRIPT.sh
 sbatch -p mygroup SBATCH_SCRIPT.sh
 ```
 
-#### Slurm
+### Slurm
 Slurm is now our default queuing system across all head nodes. [SSH directly into the cluster](#getting-started) and your connection will be automatically load balanced to a head node:
 
 ```
 ssh -XY biocluster.ucr.edu
 ```
 
-##### Submitting Jobs
+#### Submitting Jobs
 There are 2 basic ways to submit jobs; non-interactive, interactive. Slurm will automatically start within the directory where you submitted the job from, so keep that in mind when you use relative file paths.
 Non-interactive submission of a SBATCH script:
 
@@ -301,7 +300,7 @@ srun --x11 --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --pty bash -l
 
 The above example enables X11 forwarding and requests, 1GB of memory, 1 cores, for 10 hours within an interactive session.
 
-##### Monitoring Jobs
+#### Monitoring Jobs
 To check on your jobs states, run the following:
 
 ```
@@ -314,7 +313,7 @@ To list all the details of a specific job, run the following:
 scontrol show job <JOBID>
 ```
 
-##### Advanced Jobs
+#### Advanced Jobs
 There is a third way of submitting jobs by using steps.
 Single Step submission:
 
@@ -335,7 +334,7 @@ exit
 
 Under a multi step job the salloc command will request resources and then your parent shell will be running on the head node. This means that all commands will be executed on the head node unless preceeded by the srun command. You will also need to exit this shell in order to terminate your job.
 
-##### GPU Jobs
+#### GPU Jobs
 A single GPU job will no longer reserve an entire node. For each node there are 4 GPUs. This means that you need to request how many GPUs that you would like to use.
 Non-Interactive:
 
@@ -356,9 +355,9 @@ Once your job starts your code must reference the environment variable "CUDA_VIS
 For example, when reserving 4 GPUs for a NAMD2 job:
 
 ```
-    echo $CUDA_VISIBLE_DEVICES
-    0,1,2,3
-    namd2 +idlepoll +devices $CUDA_VISIBLE_DEVICES MD1.namd
+echo $CUDA_VISIBLE_DEVICES
+0,1,2,3
+namd2 +idlepoll +devices $CUDA_VISIBLE_DEVICES MD1.namd
 ```
 
 Each user is limited to a maximum of 4 GPUs on the gpu partition. Please be respectful of others and keep in mind that the GPU nodes are a limited shared resource.
@@ -367,10 +366,10 @@ Since the CUDA libraries will only run with GPU hardware then development and co
 Here are a few more examples of jobs that utilize more complex features (ie. array, dependency, MPI etc):
 [Slurm Examples](http://biocluster.ucr.edu/~jhayes/slurm/examples/)
 
-### Data Storage
+## Data Storage
 HPCC cluster users are able to check on their home and bigdata storage usage from the [Dashboard Portal](https://dashboard.bioinfo.ucr.edu).
 
-#### Home
+### Home
 Home directories are where you start each session on biocluster and where your jobs start when running on the cluster.  This is usually where you place the scripts and various things you are working on.  This space is very limited.  Please remember that the home storage space quota per user account is 20 GB.
 
 Path                 | /rhome/<username>
@@ -379,7 +378,7 @@ User  Availability   | All Users
 Node  Availability   | All Nodes
 Quota Responsibility | User
 
-#### Bigdata
+### Bigdata
 Bigdata is an area where large amounts of storage can be made available to users. A lab purchases bigdata space separately from access to the cluster. This space is then made available to the lab via a shared directory and individual directories for each user.
 
 __Lab Shared Space__
@@ -400,7 +399,7 @@ User Availability    | Labs that have purchased space.
 Node Availability    | All Nodes
 Quota Responsibility | Lab
 
-#### Non-Persistent Space
+### Non-Persistent Space
 Frequently, there is a need to do things like, output a significant amount of intermediate data during a job, access a dataset from a faster medium than bigdata or the home directories or write out lock files. These types of things are well suited to the use of non-persistent spaces. Below are the filesystems available on biocluster.
 
 __RAM Space__
@@ -430,7 +429,7 @@ User Availability    | All Users
 Node Availability    | All Nodes
 Quota Responsibility | N/A
 
-### Usage and Quotas
+## Usage and Quotas
 To quickly check your usage and quota limits:
 
 ```
@@ -454,7 +453,7 @@ This may take some time to complete, please be patient.
 
 For more information on your home directory, please see the Orientation section in the  Linux Basics manual.
 
-#### Sharing data with other users
+### Sharing data with other users
 It is useful to share data and results with other users on the cluster, and we encourage collaboration  The easiest way to share a file is to place it in a location that both users can access. Then the second user can simply copy it to a location of their choice. However, this requires that the file permissions permit the second user to read the file.
 Basic file permissions on Linux and other Unix like systems are composed of three groups: owner, group, and other. Each one of these represents the permissions for different groups of people: the user who owns the file, all the group members of the group owner, and everyone else, respectively  Each group has 3 permissions: read, write, and execute, represented as r,w, and x. For example the following file is owned by the user 'jhayes' (with read, write, and execute), owned by the group 'operations' (with read and execute), and everyone else cannot access it.
 
@@ -480,3 +479,4 @@ jhayes@pigeon:~$ umask u=rwx,g=rx,o=
 ```
 
 It is also important to note that these settings only affect your current session. If you log out and log back in, these settings will be reset. To make your changes permanent you need to add them to your '.bashrc' file, which is a hidden file in your home directory (if you do not have a '.bashrc' file, you will need to create an empty file called '.bashrc' in your home directory). Adding umask to your .bashrc file is as simple as adding your umask command (such as 'umask u=rwx,g=rx,o=r') to the end of the file. Then simply log out and back in for the changes to take affect. You can double check that the settings have taken affect by running 'umask -S'.
+
