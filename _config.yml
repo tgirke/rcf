@@ -34,10 +34,10 @@ feedback_subject_line: HPCC @ UCR
 feedback_email: support@biocluster.ucr.edu
 # used as a contact email for the Feedback link in the top navigation bar
 
-feedback_disable: true
+feedback_disable: false
 # if you uncomment the previous line, the Feedback link gets removed
 
-# feedback_text: "Need help?"
+#feedback_text: "Need help?"
 # if you uncomment the previous line, it changes the Feedback text
 
 # feedback_link: "http://helpy.io/"

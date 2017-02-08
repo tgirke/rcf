@@ -1,18 +1,20 @@
 ## Topnav single links
 ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
-#topnav:
-#- title: Topnav
-#  items:
-#    - title: 
-#      url: /about
-#    - title: Hardware
-#      url: /hardware
-#    - title: Software
-#      url: /software
-#    - title: Manuals
-#      url: /manuals
-#    - title: Events
-#      url: /events
+topnav:
+- title: Topnav dropdowns
+  folders:
+    - title: External
+      folderitems:
+        - title: IIGB
+          external_url: http://genomics.ucr.edu
+        - title: Genomics Core
+          external_url: http://genomics.ucr.edu/facility/genomics.html
+        - title: Microscopy Core
+          external_url: http://genomics.ucr.edu/facility/microscopy.html
+        - title: Bioinformatics Core
+          external_url: http://genomics.ucr.edu/facility/bioinformatics.html
+        - title: Proteomics Core
+          external_url: http://genomics.ucr.edu/facility/proteomics.html
 
 #Topnav dropdowns
 #topnav_dropdowns:
