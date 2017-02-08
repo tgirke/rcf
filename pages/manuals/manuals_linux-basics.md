@@ -927,7 +927,8 @@ You can edit your default DISPLAY setting for your account by adding it to file 
 
 ## Exercises
 
-## Exercise 1
+### Exercise 1
+
 1. Download proteome of Halobacterium spec. with wget and look at it:
 
    ```
