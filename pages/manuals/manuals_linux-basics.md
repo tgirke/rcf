@@ -678,22 +678,24 @@ screen -r <first-few-letters-of-name> # Type just the first few letters of the n
 ### Destroying Screen Sessions
 
 1. Terminate all programs that are running in the screen session. The standard way to do that is:
-```
-Ctrl-c
-```
+    ```
+    Ctrl-c
+    ```
 2. Exit out of your shell.
-```
-exit
-```
+    ```
+    exit
+    ```
 3. Repeat steps 1 and 2 until you see the message:
-```
-[screen is terminating]
-```
+    ```
+    [screen is terminating]
+    ```
 
 There may be programs running in different windows of the same screen session. That's why you may need to terminate programs and exit shells multiple time.
 
 ### Tabs and a Reasonably Large History Buffer
+
 For a better experience with screen, run
+
 ```
 cp ~/.screenrc ~/.screenrc.backup 2> /dev/null
 echo 'startup_message off
