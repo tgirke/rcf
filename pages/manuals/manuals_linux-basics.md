@@ -640,9 +640,10 @@ egrep                                # see chapter 4
 
 ## Screen
 
-A Visual Introduction to Screen
-1. http://blogamundo.net/code/screen/
-+  http://fosswire.com/post/2008/08/video-tutorial-getting-started-with-gnu-screen/
+Screen references
+
+1. [Screen Turorial](http://fosswire.com/post/2008/08/video-tutorial-getting-started-with-gnu-screen/)
++  [Screen Cheat Sheet](http://aperiodic.net/screen/quick_reference)
 
 ### Starting a New Screen Session
 
