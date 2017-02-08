@@ -1,27 +1,53 @@
 ## Topnav single links
 ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
-#topnav:
-#- title: Topnav dropdowns
-#  items:
 
+# UCR Facilities
+#    - title: IIGB
+#      external_url: http://genomics.ucr.edu
+#      output: web
+#    - title: Genomics Core
+#      external_url: http://genomics.ucr.edu/facility/genomics.html
+#      output: web
+#    - title: Microscopy Core
+#      external_url: http://genomics.ucr.edu/facility/microscopy.html
+#      output: web
+#    - title: Bioinformatics Core
+#      external_url: http://genomics.ucr.edu/facility/bioinformatics.html
+#      output: web
+#    - title: Proteomics Core
+#      external_url: http://genomics.ucr.edu/facility/proteomics.html
+#      output: web
+
+## Topnav single links
+## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
+topnav:
+- title: Topnav
+  items:
+    - title: News
+      url: /news
 
 #Topnav dropdowns
 topnav_dropdowns:
-  - title: UCR Facilities
-    items:
-    - title: IIGB
-      external_url: http://genomics.ucr.edu
-      output: web
-    - title: Genomics Core
-      external_url: http://genomics.ucr.edu/facility/genomics.html
-      output: web
-    - title: Microscopy Core
-      external_url: http://genomics.ucr.edu/facility/microscopy.html
-      output: web
-    - title: Bioinformatics Core
-      external_url: http://genomics.ucr.edu/facility/bioinformatics.html
-      output: web
-    - title: Proteomics Core
-      external_url: http://genomics.ucr.edu/facility/proteomics.html
-      output: web
+- title: Topnav dropdowns
+  folders:
+    - title: Jekyll Resources
+      folderitems:
+        - title: Github Repo
+          external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
+        - title: Jekyll Talk
+          external_url: https://talk.jekyllrb.com
+        - title: Jekyll documentation
+          external_url: http://jekyllrb.com/docs/home/
+        - title: Jekyll on Stack Overflow
+          external_url: http://stackoverflow.com/questions/tagged/jekyll
+        - title: Jekyll on my blog
+          external_url: http://idratherbewriting.com/category-jekyll/
+    - title: Products
+      folderitems:
+        - title: Jekyll Documentation Theme
+          url: /mydoc_introduction.html
+        - title: Product 1
+          url: /p1_landing_page.html
+        - title: Product 2
+          url: /p2_landing_page.html
 
