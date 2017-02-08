@@ -112,7 +112,7 @@ The scope of this manual is a brief introduction on how to get started using pow
 
 Viewing and changing the present working directory:
 
-```
+```bash
 pwd               # Get full path of the present working directory (same as "echo $HOME")
 
 ls                # Content of pwd
@@ -130,7 +130,7 @@ cd -              # Go back to you were previously (before the last directory ch
 
 The tilde symbol (~) gets interpreted as the path to your home directory:
 
-```
+```bash
 echo ~            # View the full (complete) path of your home
 find ~            # List all your files (including everything in sub-directories)
 ls ~              # List the top level files of your home directory
@@ -139,7 +139,7 @@ du -sch ~/*       # Calculate the file sizes in your home
 
 Viewing file info, user, and host:
 
-```
+```bash
 stat <file-name>  # Last modification time stamps, permissions, and size of a file
 
 whoami            # Shows your user name (same as "echo $USER")
@@ -148,7 +148,7 @@ hostname          # Shows on which machine you are (same as "echo $HOSTNAME")
 
 ### Files and directories
 
-```
+```bash
 mkdir <dir_name>   # Creates specified directory
 rmdir <dir_name>   # Removes empty directory
 rm <file_name>     # Removes file_name
@@ -203,7 +203,7 @@ The methods differ depending where you are.
   * <something-incomplete> TAB   - completes program_path/file_name
 * Taking control over the cursor (the pointer on the command line):
 
-> ```
+> ```bash
 Ctrl+a    # cursor to beginning of command line
 Ctrl+e    # cursor to end of command line
 Ctrl-w    # Cut last word 
@@ -217,7 +217,7 @@ Ctrl+y    # paste content that was cut earlier (by Ctrl-w or Ctrl-k)
 
 ## Unix Help
 
-```
+```bash
 man <something> # general help (press the 'q' key to exit) 
 man wc          # manual on program 'word count' wc
 wc --help       # short help on wc
@@ -233,7 +233,7 @@ Universally available Linux commands, with detailed examples and explanations: h
 
 ### Finding files, directories and applications
 
-```
+```bash
 find -name "*pattern*"            # searches for *pattern* in and below current directory
 find /usr/local -name "*blast*"   # finds file names *blast* in specfied directory
 find /usr/local -iname "*blast*"  # same as above, but case insensitive
@@ -241,7 +241,7 @@ find /usr/local -iname "*blast*"  # same as above, but case insensitive
 
 * additional useful arguments: -user <user name>, -group <group name>, -ctime <number of days ago changed> 
 
-```
+```bash
 find ~ -type f -mtime -2                # finds all files you have modified in the last two days
 locate <pattern>                        # finds files and dirs that are written into update file
 which <application_name>                # location of application
@@ -251,7 +251,7 @@ yum list installed | grep <mypattern>   # find Debian packages and refine search
 
 ### Finding things in files
 
-```
+```bash
 grep pattern file           # provides lines in 'file' where pattern 'appears',
                             # if pattern is shell function use single-quotes: '>'
 
@@ -273,7 +273,7 @@ find /home/my_dir -name '*.txt' | xargs grep -c ^.*  # counts line numbers on ma
 
 List directories and files
 
-```
+```bash
 ls -la # shows something like this for each file/dir: drwxrwxrwx
        # d: directory
        # rwx: read write execute
@@ -288,7 +288,7 @@ Assign write and execute permissions to user and group
 
 To remove all permissions from all three user groups
 
-```
+```bash
 chmod ugo-rwx my_file
             # '+' causes the permissions selected to be added
             # '-' causes them to be removed
@@ -299,7 +299,7 @@ chmod +rx public_html/ or $ chmod 755 public_html/ # Example for number system:
 
 Change ownership
 
-```
+```bash
 chown <user> <file or dir>         # changes user ownership
 chgrp <group> <file or dir>        # changes group ownership
 chown <user>:<group> <file or dir> # changes user & group ownership
@@ -307,7 +307,7 @@ chown <user>:<group> <file or dir> # changes user & group ownership
 
 ## Useful Unix Commands
 
-```
+```bash
 df          # disk space
 free -g     # memory info in Megabytes
 uname -a    # shows tech info about machine
@@ -324,7 +324,7 @@ du -s * | sort -nr # shows disk space used by different directories/files sorted
 
 General
 
-```
+```bash
 top               # view top consumers of memory and CPU (press 1 to see per-CPU statistics)
 who               # Shows who is logged into system
 w                 # Shows which users are logged into system and what they are doing
@@ -355,7 +355,7 @@ More on Terminating Processes
 
 ## Text Viewing
 
-```
+```bash
 more <my_file>  # views text, use space bar to browse, hit 'q' to exit
 less <my_file>  # a more versatile text viewer than 'more', 'q' exits, 'G' moves to end of text,
                 # 'g' to beginning, '/' find forward, '?' find backwards
@@ -385,7 +385,7 @@ Once you are in Vim the most important commands are `i` ,  `:`  and `ESC`. The `
 
 **Modifier Keys to Control Vim**
 
-```
+```bash
 i   # INSERT MODE
 ESC # NORMAL (NON-EDITING) MODE
 :   # commands start with ':'
@@ -415,7 +415,7 @@ q:  # history of commands (from NORMAL MODE!), to reexecute one of them, select 
 > `vimtutor # open vim tutorial from shell`
 
 * **Help in Vim**
-```
+```bash
 :help                # opens help within vim, hit :q to get back to your file
 :help <topic>        # opens help on specified topic
 :help_topic| CTRL-]  # when you are in help this command opens help topic specified between |...|,
@@ -426,7 +426,7 @@ q:  # history of commands (from NORMAL MODE!), to reexecute one of them, select 
 
 * **Moving Around in Files**
 
-```
+```bash
 $        # moves cursor to end of line
 A        # same as $, but switches to insert mode
 0 (zero) # moves cursor to beginning of line
@@ -436,20 +436,20 @@ SHIFT-G  # brings you to bottom of file, type line number (isn't displayed) then
 
 * **Line Wrapping and Line Numbers**
 
-```
+```bash
 :set nowrap # no word wrapping, :set wrap # back to wrapping
 :set number # shows line numbers, :set nonumber # back to no-number mode
 ```
 
 * **Working with Many Files & Splitting Windows**
 
-```
+```bash
 vim -o *.txt # opens many files at once and displays them with horizontal
              # split, '-O' does vertical split
 vim *.txt    # opens many files at once; ':n' switches between files
 ```
 
-```
+```bash
 :wall or :qall # write or quit all open files
 :args *.txt    # places all the relevant files in the argument list
 :all           # splits all files in the argument list (buffer) horizontally
@@ -463,7 +463,7 @@ CTRL-w         # switch between windows
 
 * **Spell Checking & Dictionary**
 
-```
+```bash
 :set spell # turns on spell checking
 :set nospell # turns spell checking off
 :! dict <word> # meaning of word
@@ -472,7 +472,7 @@ CTRL-w         # switch between windows
 
 * **Enabling Syntax Highlighting**
 
-```
+```bash
 :set filetype=perl # Turns on syntax coloring for a chosen programming language.
 :set syntax on # Turns syntax highlighting on
 :set syntax off # Turns syntax highlighting off
@@ -480,7 +480,7 @@ CTRL-w         # switch between windows
 
 * **Undo and Redo**
 
-```
+```bash
 u      # undo last command
 U      # undo all changes on current line
 CTRL-R # redo one change which was undone
@@ -488,7 +488,7 @@ CTRL-R # redo one change which was undone
 
 * **Deleting Things**
 
-```
+```bash
 x   # deletes what is under cursor
 dw  # deletes from curser to end of word including the space
 de  # deletes from curser to end of word NOT including the space
@@ -501,14 +501,14 @@ dd  # deletes entire line
 
 * **Copy & Paste**
 
-```
+```bash
 yy # copies line, for copying several lines do 2yy, 3yy and so on
 p # pastes clipboard behind cursor
 ```
 
 * **Search in Files**
 
-```
+```bash
 /my_pattern # searches for my_pattern downwards, type n for next match
 ?my_pattern # seraches for my_pattern upwards, type n for next match
 :set ic # switches to ignore case search (case insensitive)
@@ -519,7 +519,7 @@ p # pastes clipboard behind cursor
 
 Great intro: [A Tao of Regular Expressions](http://www.scootersoftware.com/RegEx.html)
 
-```
+```bash
 :s/old_pat/new_pat/  # replaces first occurrence in a line
 :s/old_pat/new_pat/g  # replaces all occurrence in a line
 :s/old_pat/new_pat/gc  # add 'c' to ask for confirmation
@@ -575,7 +575,7 @@ The default settings in Vim are controlled by the `.vimrc` file in your home dir
 ## The Unix Shell
 When you log into UNIX/LINUX system, then is starts a program called the Shell. It provides you with a working environment and interface to the operating system. Usually there are several different shell programs installed. The shell program bash is one of the most common ones.
 
-```
+```bash
 finger <user_name> # shows which shell you are using
 chsh -l # gives list of shell programs available on your system (does not work on all UNIX variants)
 <shell_name> # switches to different shell
@@ -590,7 +590,7 @@ By default, UNIX commands read from standard input (STDIN) and send their output
 
 You can redirect them by using the following commands:
 
-```
+```bash
 <beginning-of-filename>*         # * is wildcard to specify many files
 ls > file                        # prints ls output into specified file
 command < my_file                # uses file after '<' as STDIN
@@ -605,7 +605,7 @@ grep my_pattern my_non_existing_file 2 > my_stderr # prints STDERR to file
 
 ### Useful shell commands
 
-```
+```bash
 cat <file1> <file2> > <cat.out>      # concatenate files in output file 'cat.out'
 paste <file1> <file2> > <paste.out>  # merges lines of files and separates them by tabs (useful for tables)
 cmp <file1> <file2>                  # tells you whether two files are identical
@@ -647,14 +647,14 @@ Screen references
 
 ### Starting a New Screen Session
 
-```
+```bash
 screen                 # Start a new session
 screen -S <some-name>  # Start a new session and gives it a name
 ```
 
 Commands to Control Screen
 
-```
+```bash
 Ctrl-a d #  Detach from the screen session
 Ctrl-a c # Create a new window inside the screen session
 Ctrl-a Space # Switch to the next window
@@ -668,7 +668,7 @@ Ctrl-a [ # Enters the scrolling mode. Use Page Up and Page Down keys to scroll t
 
 From any computer, you can attach to a screen session after SSH-ing into a server.
 
-```
+```bash
 screen -r              # Attaches to an existing session, if there is only one
 screen -r              # Lists available sessions and their names, if there are more then one session running
 screen -r <some-name>  # Attaches to a specific session
@@ -688,7 +688,7 @@ There may be programs running in different windows of the same screen session. T
 
 For a better experience with screen, run
 
-```
+```bash
 cp ~/.screenrc ~/.screenrc.backup 2> /dev/null
 echo 'startup_message off
 defscrollback 10240
@@ -707,26 +707,26 @@ Web page for [script download](http://linuxcommand.org/script_library.php).
 
 Renames many files *.old to *.new. To test things first, replace 'do mv' with 'do echo mv':
 
-```
+```bash
 for i in *.input; do mv $i ${i/\.old/\.new}; done
 for i in *\ *; do mv "$i" "${i// /_}"; done # Replaces spaces in files by underscores
 ```
 
 Run an application in loops on many input files:
 
-```
+```bash
 for i in *.input; do ./application $i; done
 ```
 
 Run fastacmd from BLAST program in loops on many *.input files and create corresponding *.out files:
 
-```
+```bash
 for i in *.input; do fastacmd -d /data/../database_name -i $i > $i.out; done
 ```
 
 Run SAM's target99 on many input files:
 
-```
+```bash
 for i in *.pep; do target99 -db /usr/../database_name -seed $i -out $i; done
 Search in many files for a pattern and print occurrences together with file names.
 for j in 0 1 2 3 4 5 6 7 8 9; do grep -iH <my_pattern> *$j.seq; done
@@ -734,20 +734,20 @@ for j in 0 1 2 3 4 5 6 7 8 9; do grep -iH <my_pattern> *$j.seq; done
 
 Example of how to run an interactive application (tmpred) that asks for file name input/output:
 
-```
+```bash
 for i in *.pep; do echo -e "$i\n\n17\n33\n\n\n" | ./tmpred $i > $i.out; done
 ```
 
 Run BLAST2 for all *.fasa1/*.fasta2 file pairs in the order specified by file names and write results into one file:
 
-```
+```bash
 for i in *.fasta1; do blast2 -p blastp -i $i -j ${i/_*fasta1/_*fasta2} >> my_out_file; done
 ```
     This example uses two variables in a for loop. The content of the second variable gets specified in each loop by a replace function.
 
 Runs BLAST2 in all-against-all mode and writes results into one file ('-F F' turns low-complexity filter off):
 
-```
+```bash
 for i in *.fasta; do for j in *.fasta; do blast2 -p blastp -F F -i $i -j $j >> my_out_file; done; done;
 ```
 
@@ -755,33 +755,33 @@ for i in *.fasta; do for j in *.fasta; do blast2 -p blastp -F F -i $i -j $j >> m
 
 1. Create file which contains an interpreter as the first line:
 
-   ```
+   ```bash
    #!/bin/bash
    ```
 
 1. Place shell commands in file below the interpreter line using a text editor.
 1. Make file executable:
 
-   ```
+   ```bash
    chmod +x my_shell_script
    ```
 
 1. Run shell script like this:
 
-   ```
+   ```bash
    ./my_shell_script
    ```
 
 1. Place it into your /rhome/<username>/bin directory
 
-   ```
+   ```bash
    mkdir -p ~/bin
    mv my_shell_script ~/bin/
    ```
 
 1. Add the bin path to your shell permanently:
 
-   ```
+   ```bash
    echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
    source ~/.bashrc
    ```
@@ -798,7 +798,7 @@ perl -p -i -w -e 's/pattern1/pattern2/g' my_input_file
             # -i.bak: creates backup file *.bak, only -i doesn't
             # -w: turns on warnings
             # -e: executable code follows
-```
+```bash
 
 *Parse lines based on patterns:*
 
@@ -815,7 +815,7 @@ perl -ne 'print if (/my_pattern1/ ? ($c=1) : (--$c > 0)); print if (/my_pattern2
 
 Use wget to download a file from the web:
 
-```
+```bash
 wget ftp://ftp.ncbi.nih.... # file download from www; add option '-r' to download entire directories
 ```
 
@@ -823,14 +823,14 @@ wget ftp://ftp.ncbi.nih.... # file download from www; add option '-r' to downloa
 
 Use scp to copy files between machines (ie. laptop to server):
 
-```
+```bash
 scp source target # Use form 'userid@machine_name' if your local and remote user ids are different.
                   # If they are the same you can use only 'machine_name'.
 ```
 
 Here are more scp examples:
 
-```
+```bash
 scp user@remote_host:file.name . # Copies file from server to local machine (type from local
                                  # machine prompt). The '.' copies to pwd, you can specify                                              # here any directory, use wildcards to copy many files.
 
@@ -845,7 +845,7 @@ scp -r user@remote_host:directory/ ~/dir
 
 From the linux command line run ncftp and use it to get files:
 
-```
+```bash
 ncftp
 ncftp> open ftp.ncbi.nih.gov
 ncftp> cd /blast/executables
@@ -857,7 +857,7 @@ ncftp> bye
 
 ### Creating Archives
 
-```
+```bash
 tar -cvf my_file.tar mydir/    # Builds tar archive of files or directories. For directories, execute command in parent directory. Don't use absolute path.    
 tar -czvf my_file.tgz mydir/   # Builds tar archive with compression of files or directories. For
                                # directories, execute command in parent directory. Don't use absolute path.
@@ -867,14 +867,14 @@ tar -jcvf mydir.tar.bz2 mydir/ # Creates *.tar.bz2 archive
 
 ### Viewing Archives
 
-```
+```bash
 tar -tvf my_file.tar
 tar -tzvf my_file.tgz
 ```
 
 ### Extracting Archives
 
-```
+```bash
 tar -xvf my_file.tar
 tar -xzvf my_file.tgz
 gunzip my_file.tar.gz # or unzip my_file.zip, uncompress my_file.Z,
@@ -886,14 +886,14 @@ tar -jxvf mydir.tar.bz2 # Extracts *.tar.bz2 archive
 
 Try also:
 
-```
+```bash
 tar zxf blast.linux.tar.Z
 tar xvzf file.tgz
 ```
 
 Important options:
 
-```
+```bash
 f: use archive file
 p: preserve permissions
 v: list files processed
@@ -911,7 +911,7 @@ z: filter the archive through gzip
 
 ## Environment Variables
 
-```
+```bash
 xhost user@host                # adds X permissions for user on server.
 echo $DISPLAY                  # shows current display settings
 export DISPLAY=<local_IP>:0    # change environment variable
@@ -921,7 +921,7 @@ env                            # prints all environment variables
 
 List of directories that the shell will search when you type a command:
 
-```
+```bash
 echo $PATH
 ```
 You can edit your default DISPLAY setting for your account by adding it to file .bash_profile
@@ -941,25 +941,25 @@ less AE004437.faa  # press q to quit
 
    a. How many predicted proteins are there?
     
-   ```
+   ```bash
    grep '^>' AE004437.faa --count
    ```
 
    a. How many proteins contain the pattern "WxHxxH" or "WxHxxHH"?
 
-   ```
+   ```bash
    egrep 'W.H..H{1,2}' AE004437.faa --count
    ```
 
    c. Use the find function (/) in 'less' to fish out the protein IDs containing the pattern or more elegantly do it with awk:
 
-   ```
+   ```bash
    awk --posix -v RS='>' '/W.H..(H){1,2}/ { print ">" $0;}' AE004437.faa | less # press q to quit
    ```
 
 3. Create a BLASTable database with formatdb:
 
-   ```
+   ```bash
    ls # before
    formatdb -i AE004437.faa -p T -o T
    ls # after
@@ -972,7 +972,7 @@ less AE004437.faa  # press q to quit
 
    b. Retrieve the corresponding sequences for these IDs with the fastacmd command from the blastable database:
 
-   ```
+   ```bash
    wget http://biocluster.ucr.edu/~tgirke/Documents/UNIX/my_IDs
    fastacmd -d AE004437.faa -i my_IDs > myseq.fasta
    less myseq.fasta # press q to quit
@@ -983,7 +983,7 @@ less AE004437.faa  # press q to quit
    a. Generate several lists of sequence IDs from various pattern match results (i.e. retrieve a.my_ids, b.my_ids, and  c.my_ids from step 2c).
    b. Retrieve the sequences in one step using the fastacmd in a for-loop:
    
-   ```
+   ```bash
    for i in *.my_ids; do fastacmd -d AE004437.faa -i $i > $i.fasta; done
    ```
 
@@ -1016,13 +1016,13 @@ Is your blastp.out file equivalent to this one?
 
    a. Using biocore parser
 
-   ```
+   ```bash
    blastParse -i blastp.out -o blast.xls -c 5
    ```
 
    b. Using BioPerl parser
 
-   ```
+   ```bash
    bioblastParse.pl blastp.out > blastparse.txt     
    ```
 
@@ -1030,7 +1030,7 @@ Is your blastp.out file equivalent to this one?
 
 Split sample fasta batch file with csplit (use sequence file myseq.fasta from Exercise 1). 
 
-```
+```bash
 csplit -z myseq.fasta '/>/' '{*}'
 ```
 
@@ -1042,13 +1042,13 @@ BLAST two related sequences, retrieve the result in tabular format and use `comm
 
 Run HMMPFAM search with proteins from Exercise 1 against Pfam database (will take ~3 minutes)
 
-```
+```bash
 hmmscan -E 0.1 --acc /srv/projects/db/pfam/2011-12-09-Pfam26.0/Pfam-A.hmm myseq.fasta > output.pfam
 ```
 
 Easier to parse/process tabular output
 
-```
+```bash
 hmmscan -E 0.1 --acc --tblout output.pfam /srv/projects/db/pfam/2011-12-09-Pfam26.0/Pfam-A.hmm myseq.fasta # also try --domtblout
 ```
 
@@ -1058,7 +1058,7 @@ Which query got the most hits? How many hits were found that query?
 
 Create multiple alignment with ClustalW (e.g. use sequences with 'W.H..HH' pattern)
 
-```
+```bash
 clustalw myseq.fasta
 mv myseq.aln myalign.aln
 ```
@@ -1067,7 +1067,7 @@ mv myseq.aln myalign.aln
 
 Reformat alignment into PHYILIP format using 'seqret' from EMBOSS
 
-```
+```bash
 seqret clustal::myalign.aln phylip::myalign.phylip
 ```
 
@@ -1075,7 +1075,7 @@ seqret clustal::myalign.aln phylip::myalign.phylip
 
 Create neighbor-joining tree with PHYLIP
 
-```
+```bash
 cp myalign.phylip infile
 protdist     # creates distance matrix (you may need to press 'R' and then 'Y')
 cp outfile infile
@@ -1085,7 +1085,7 @@ cp outtree intree
 
 retree # displays tree and can use midpoint method for defining root of tree, my typical command sequence is: 'N' (until you see PHYLIP) 'Y' 'M' 'W' 'R' 'R' 'X'
 
-```
+```bash
 cp outtree tree.dnd
 ```
 
