@@ -755,40 +755,41 @@ for i in *.fasta; do for j in *.fasta; do blast2 -p blastp -F F -i $i -j $j >> m
 
 1. Create file which contains an interpreter as the first line:
 
-    ```
-    #!/bin/bash
-    ```
+   ```
+   #!/bin/bash
+   ```
 
-+ Place shell commands in file below the interpreter line using a text editor.
-+ Make file executable:
+1. Place shell commands in file below the interpreter line using a text editor.
+1. Make file executable:
 
-    ```
-    chmod +x my_shell_script
-    ```
+   ```
+   chmod +x my_shell_script
+   ```
 
-+ Run shell script like this:
+1. Run shell script like this:
 
-    ```
-    ./my_shell_script
-    ```
+   ```
+   ./my_shell_script
+   ```
 
-+ Place it into your /rhome/<username>/bin directory
+1. Place it into your /rhome/<username>/bin directory
 
-    ```
-    mkdir -p ~/bin
-    mv my_shell_script ~/bin/
-    ```
+   ```
+   mkdir -p ~/bin
+   mv my_shell_script ~/bin/
+   ```
 
-+ Add the bin path to your shell permanently:
+1. Add the bin path to your shell permanently:
 
-    ```
-    echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
-    source ~/.bashrc
-    ```
+   ```
+   echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
+   source ~/.bashrc
+   ```
 
 ## Simple One-Liner Perl Scripts
 
 *Small collection of useful one-liners:*
+
 ```
 perl -p -i -w -e 's/pattern1/pattern2/g' my_input_file
             # Replaces a pattern in a file by a another pattern using regular expressions.
