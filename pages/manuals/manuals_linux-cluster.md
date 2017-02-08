@@ -163,15 +163,15 @@ There are additional features and operations that can be done with the module co
 module help
 ```
 
-## Quotas
+### Quotas
 
-### CPU
+#### CPU
 Currently, the maximum number of CPU cores a user can use simultaneously on biocluster is 256 CPU cores when the load on the cluster is <30% and 128 CPU cores when the load is above 30%. If a user submits jobs for more than 256/128 CPU cores then the additional requests will be queued until resources within the user's CPU quota become available. Upon request a user's upper CPU quota can be extended temporarily, but only if sufficient CPU resources are available. To avoid monopolisation of the cluster by a small number of users, the high load CPU quota of 128 cores is dynamically readjusted by an algorithm that considers the number of CPU hours accumulated by each user over a period of 2 weeks along with the current overall CPU usage on the cluster. If the CPU hour average over the 2 week window exceeds an allowable amount then the default CPU quota will be reduced for such a heavy user to 64 CPU cores, and if it exceeds the allowable amount by two-fold it will be reduced to 32 CPU cores. Once the average usage of a heavy user drops again below those limits, the upper CPU limit will be raised accordingly. Note: when the overall CPU load on the cluster is below 70% then the dynamically readjusted CPU quotas are not applied. At those low load times every user has the same CPU quota: 256 CPU cores at <30% load and 128 CPU cores at 30-70% load.
 
-### Data Storage
+#### Data Storage
 A standard user account has a storage quota of 20GB. Much more storage space, in the range of many TBs, can be made available in a user account's bigdata directory. The amount of storage space available in bigdata depends on a user group's annual subscription. The pricing for extending the storage space in the bigdata directory is available [here](/home).
 
-### Memory
+#### Memory
 From the Biocluster head node users can submit jobs to the batch queue or the highmem queue. The nodes associated with the batch queue are mainly for CPU intensive tasks, while the nodes of the highmem queue are dedicated to memory intensive tasks. The batch nodes allow a 1GB RAM minimum limit on jobs and and the highmem nodes allow 16GB-512GB RAM jobs.
 
 ## What's Next?
