@@ -7,7 +7,6 @@ permalink: index.html
 ## Welcome
 
 Our facility's mission is to provide...
-<img style="box-shadow:5px 5px grey" src="/images/darpa_big_data-250x175.jpg" title="Server Bits" alt="Server Bits" />
 
 ## Services
 
