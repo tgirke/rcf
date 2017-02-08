@@ -221,7 +221,6 @@ Ctrl+y    # paste content that was cut earlier (by Ctrl-w or Ctrl-k)
 man <something> # general help (press the 'q' key to exit) 
 man wc          # manual on program 'word count' wc
 wc --help       # short help on wc
-
 soap -h         # for less standard programs 
 ```
 
@@ -930,14 +929,16 @@ You can edit your default DISPLAY setting for your account by adding it to file 
 
 ## Exercise 1
 1. Download proteome of Halobacterium spec. with wget and look at it:
-module load ncbi-blast/2.2.26 # Loads legacy blastall
-wget ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/archaea/Halobacterium_salinarum/representative/GCA_000069025.1_ASM6902v1/GCA_000069025.1_ASM6902v1_protein.faa.gz
-gunzip GCA_000069025.1_ASM6902v1_protein.faa.gz
-mv GCA_000069025.1_ASM6902v1_protein.faa AE004437.faa
 
-less AE004437.faa  # press q to quit
+   ```
+   module load ncbi-blast/2.2.26 # Loads legacy blastall
+   wget ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/archaea/Halobacterium_salinarum/representative/GCA_000069025.1_ASM6902v1/GCA_000069025.1_ASM6902v1_protein.faa.gz
+   gunzip GCA_000069025.1_ASM6902v1_protein.faa.gz
+   mv GCA_000069025.1_ASM6902v1_protein.faa AE004437.faa
+   less AE004437.faa  # press q to quit
+   ```
 
-2. Simple Analysis:
+1. Simple Analysis:
 
    a. How many predicted proteins are there?
     
@@ -945,7 +946,7 @@ less AE004437.faa  # press q to quit
    grep '^>' AE004437.faa --count
    ```
 
-   a. How many proteins contain the pattern "WxHxxH" or "WxHxxHH"?
+   b. How many proteins contain the pattern "WxHxxH" or "WxHxxHH"?
 
    ```bash
    egrep 'W.H..H{1,2}' AE004437.faa --count
@@ -957,7 +958,7 @@ less AE004437.faa  # press q to quit
    awk --posix -v RS='>' '/W.H..(H){1,2}/ { print ">" $0;}' AE004437.faa | less # press q to quit
    ```
 
-3. Create a BLASTable database with formatdb:
+1. Create a BLASTable database with formatdb:
 
    ```bash
    ls # before
@@ -966,7 +967,7 @@ less AE004437.faa  # press q to quit
    '-p F' for nucleotide and '-p T' for protein database; '-o T' parse SeqId and create indexes 
    ```
 
-4. Generate myseq.fasta
+1. Generate myseq.fasta
 
    a. Generate list of sequence IDs for the above pattern match result (i.e. retrieve my_IDs from step 2c). Alternatively, download the pre-generated file with wget.
 
@@ -978,41 +979,47 @@ less AE004437.faa  # press q to quit
    less myseq.fasta # press q to quit
    ```
 
-5. (Optional) Looking at several different patterns:
+1. (Optional) Looking at several different patterns:
 
    a. Generate several lists of sequence IDs from various pattern match results (i.e. retrieve a.my_ids, b.my_ids, and  c.my_ids from step 2c).
+
    b. Retrieve the sequences in one step using the fastacmd in a for-loop:
    
    ```bash
    for i in *.my_ids; do fastacmd -d AE004437.faa -i $i > $i.fasta; done
    ```
 
-6. Run blastall with a few proteins in myseq.fasta against your newly created Halobacterium proteome database.
-Create first a complete blast output file  including alignments. In a second step use the 'm -8' option to obtain a tabular output (i.e. tab separated values).
+1. Run blastall with a few proteins in myseq.fasta against your newly created Halobacterium proteome database.
 
-    blastall -p blastp -i myseq.fasta -d AE004437.faa -o blastp.out -e 1e-6 -v 10 -b 10
-    blastall -p blastp -i myseq.fasta -d AE004437.faa -m 8 -e 1e-6 > blastp.tab
+Create first a complete blast output file  including alignments. In a second step use the 'm -8' option to obtain a tabular output (i.e. tab separated values):
 
-    less blastp.out # press q to quit
-    less -S blastp.tab # -S disables line wrapping, press q to quit
+   ```bash
+   blastall -p blastp -i myseq.fasta -d AE004437.faa -o blastp.out -e 1e-6 -v 10 -b 10
+   blastall -p blastp -i myseq.fasta -d AE004437.faa -m 8 -e 1e-6 > blastp.tab
+   less blastp.out # press q to quit
+   less -S blastp.tab # -S disables line wrapping, press q to quit
+   ```
 
-The filed descriptions of the Blast tabular output (from the "-m 8" option) are available here.
-1  Query (The query sequence id)
-2  Subject (The matching subject sequence id)
-3  % id
-4  alignment length
-5  mismatches
-6  gap openings
-7  q.start
-8  q.end
-9  s.start
-10 s.end
-11 e-value
-12 bit score
+The filed descriptions of the Blast tabular output (from the "-m 8" option) are available here:
+
+   ```
+   1  Query (The query sequence id)
+   2  Subject (The matching subject sequence id)
+   3  % id
+   4  alignment length
+   5  mismatches
+   6  gap openings
+   7  q.start
+   8  q.end
+   9  s.start
+   10 s.end
+   11 e-value
+   12 bit score
+```
 
 Is your blastp.out file equivalent to this one?
 
-7. Parse blastall output into Excel spread sheet
+1. Parse blastall output into Excel spread sheet
 
    a. Using biocore parser
 
