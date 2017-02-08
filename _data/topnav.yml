@@ -1,26 +1,29 @@
 ## Topnav single links
 ## if you want to list an external url, use external_url instead of url. the theme will apply a different link base.
-topnav:
-- title: Topnav dropdowns
-  folders:
-    - title: External
-      folderitems:
-        - title: IIGB
-          external_url: http://genomics.ucr.edu
-        - title: Genomics Core
-          external_url: http://genomics.ucr.edu/facility/genomics.html
-        - title: Microscopy Core
-          external_url: http://genomics.ucr.edu/facility/microscopy.html
-        - title: Bioinformatics Core
-          external_url: http://genomics.ucr.edu/facility/bioinformatics.html
-        - title: Proteomics Core
-          external_url: http://genomics.ucr.edu/facility/proteomics.html
+#topnav:
+#- title: Topnav dropdowns
+#  items:
+
 
 #Topnav dropdowns
-#topnav_dropdowns:
-#- title: Topnav dropdowns
-#  folders:
-#    - title: Jekyll Resources
-#      folderitems:
-#        - title: Github Repo
-#          external_url: https://github.com/tomjohnson1492/documentation-theme-jekyll
+topnav_dropdowns:
+- title: Topnav dropdowns
+  subcategories:
+    - title: UCR Facilities
+      items:
+        - title: IIGB
+          external_url: http://genomics.ucr.edu
+          output: web
+        - title: Genomics Core
+          external_url: http://genomics.ucr.edu/facility/genomics.html
+          output: web
+        - title: Microscopy Core
+          external_url: http://genomics.ucr.edu/facility/microscopy.html
+          output: web
+        - title: Bioinformatics Core
+          external_url: http://genomics.ucr.edu/facility/bioinformatics.html
+          output: web
+        - title: Proteomics Core
+          external_url: http://genomics.ucr.edu/facility/proteomics.html
+          output: web
+
