@@ -994,8 +994,6 @@ blastParse -i blastp.out -o blast.xls -c 5
     b) Using BioPerl parser
     bioblastParse.pl blastp.out > blastparse.txt     
 
-Table of Contents
-
 Exercise 2
 
     Split sample fasta batch file with csplit (use sequence file myseq.fasta from Exercise 1). 
