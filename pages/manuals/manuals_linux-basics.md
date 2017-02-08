@@ -678,17 +678,22 @@ screen -r <first-few-letters-of-name> # Type just the first few letters of the n
 ### Destroying Screen Sessions
 
 1. Terminate all programs that are running in the screen session. The standard way to do that is:
-    ```
+
+```
     Ctrl-c
-    ```
+```
+
 2. Exit out of your shell.
-    ```
+
+```
     exit
-    ```
+```
+
 3. Repeat steps 1 and 2 until you see the message:
-    ```
+
+```
     [screen is terminating]
-    ```
+```
 
 There may be programs running in different windows of the same screen session. That's why you may need to terminate programs and exit shells multiple time.
 
