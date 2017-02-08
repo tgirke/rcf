@@ -575,21 +575,21 @@ The default settings in Vim are controlled by the `.vimrc` file in your home dir
 ## The Unix Shell
 When you log into UNIX/LINUX system, then is starts a program called the Shell. It provides you with a working environment and interface to the operating system. Usually there are several different shell programs installed. The shell program bash is one of the most common ones.
 
+```
 finger <user_name> # shows which shell you are using
 chsh -l # gives list of shell programs available on your system (does not work on all UNIX variants)
 <shell_name> # switches to different shell
+```
 
+### STDIN, STDOUT, STDERR, Redirections, and Wildcards
 
-Table of Contents
-STDIN, STDOUT, STDERR, Redirections, and Wildcards
-
-See LINUX HOWTOs
+See [LINUX HOWTOs](http://www.tldp.org/HOWTO/Bash-Prog-Intro-HOWTO-3.html)
 
 
 By default, UNIX commands read from standard input (STDIN) and send their output to standard out (STDOUT).
 
 You can redirect them by using the following commands:
-
+```
 <beginning-of-filename>*         # * is wildcard to specify many files
 ls > file                        # prints ls output into specified file
 command < my_file                # uses file after '<' as STDIN
@@ -600,9 +600,11 @@ command > /dev/null              # turns off progress info of applications by re
                                  # their output to /dev/null
 grep my_pattern my_file | wc     # Pipes (|) output of 'grep' into 'wc'
 grep my_pattern my_non_existing_file 2 > my_stderr # prints STDERR to file
-Table of Contents
-Useful shell commands
+```
 
+### Useful shell commands
+
+```
 cat <file1> <file2> > <cat.out>      # concatenate files in output file 'cat.out'
 paste <file1> <file2> > <paste.out>  # merges lines of files and separates them by tabs (useful for tables)
 cmp <file1> <file2>                  # tells you whether two files are identical
@@ -623,7 +625,7 @@ join -1 1 -2 1 <table1> <table2>     # joins two tables based on specified colum
                                      # (-1 file1, 1: col1; -2: file2, col2). It assumes
                                      # that join fields are sorted. If that is not the case,
                                      # use the next command:
-sort table1 > table1a; sort table2 > table2a; join -a 1 -t "`echo -e '\t'`" table1a table2a > table3                               # '-a <table>' prints all lines of specified table!
+sort table1 > table1a; sort table2 > table2a; join -a 1 -t "$(echo -e '\t')" table1a table2a > table3                               # '-a <table>' prints all lines of specified table!
                                      # Default prints only all lines the two tables have in
                                      # common. '-t "`echo -e '\t'`" ->' forces join to
                                      # use tabs as field separator in its output. Default is
@@ -633,120 +635,146 @@ cat my_table | cut -d , -f1-3        # cut command prints only specified section
                                      # default), -f specifies column numbers.
 grep                                 # see chapter 4
 egrep                                # see chapter 4
-Table of Contents
+```
 
-Screen
+## Screen
 
-    A Visual Introduction to Screen
+A Visual Introduction to Screen
+1. http://blogamundo.net/code/screen/
++  http://fosswire.com/post/2008/08/video-tutorial-getting-started-with-gnu-screen/
 
-        http://blogamundo.net/code/screen/
-        http://fosswire.com/post/2008/08/video-tutorial-getting-started-with-gnu-screen/
-
-Starting a New Screen Session
+### Starting a New Screen Session
+```
 screen                 # Start a new session
 screen -S <some-name>  # Start a new session and gives it a name
+```
 
 Commands to Control Screen
+```
+Ctrl-a d #  Detach from the screen session
+Ctrl-a c # Create a new window inside the screen session
+Ctrl-a Space # Switch to the next window
+Ctrl-a a # Switch to the window that you were previously on
+Ctrl-a " # List all open windows. Double-quotes " are typed with the Shift key
+Ctrl-d or type exit # Exit out of the current window. Exiting form the last window will end the screen session
+Ctrl-a [ # Enters the scrolling mode. Use Page Up and Page Down keys to scroll through the window. Hit the Enter key twice to return to normal mode. 
+```
 
-    Ctrl-a d #  Detach from the screen session
-    Ctrl-a c # Create a new window inside the screen session
-    Ctrl-a Space # Switch to the next window
-    Ctrl-a a # Switch to the window that you were previously on
-    Ctrl-a " # List all open windows. Double-quotes " are typed with the Shift key
-    Ctrl-d or type exit # Exit out of the current window. Exiting form the last window will end the screen session
-    Ctrl-a [ # Enters the scrolling mode. Use Page Up and Page Down keys to scroll through the window. Hit the Enter key twice to return to normal mode. 
-
-Attaching to Screen Sessions
+### Attaching to Screen Sessions
 From any computer, you can attach to a screen session after SSH-ing into a server.
-
+```
 screen -r              # Attaches to an existing session, if there is only one
 screen -r              # Lists available sessions and their names, if there are more then one session running
 screen -r <some-name>  # Attaches to a specific session
 screen -r <first-few-letters-of-name> # Type just the first few letters of the name
                        # and you will be attached to the session you need
-Table of Contents
-Destroying Screen Sessions
+```
+
+### Destroying Screen Sessions
 1. Terminate all programs that are running in the screen session. The standard way to do that is:
+```
 Ctrl-c
-
+```
 2. Exit out of your shell.
+```
 exit
-
+```
 3. Repeat steps 1 and 2 until you see the message:
+```
 [screen is terminating]
+```
+
 There may be programs running in different windows of the same screen session. That's why you may need to terminate programs and exit shells multiple time.
-Tabs and a Reasonably Large History Buffer
+
+### Tabs and a Reasonably Large History Buffer
 For a better experience with screen, run
+```
 cp ~/.screenrc ~/.screenrc.backup 2> /dev/null
 echo 'startup_message off
 defscrollback 10240
 caption always "%{=b dy}{ %{= dm}%H %{=b dy}}%={ %?%{= dc}%-Lw%?%{+b dy}(%{-b r}%n:%t%{+b dy})%?(%u)%?%{-dc}%?%{= dc}%+Lw%? %{=b dy}}"
 ' > ~/.screenrc
-Table of Contents
+```
 
-More on Terminating Processes
+### More on Terminating Processes
 
-Terminating a Running Process
-
-
-Simple One-Liner Shell Scripts
-
-    Web page for script download.
+[Terminating a Running Process](https://www.digitalocean.com/community/tutorials/how-to-use-ps-kill-and-nice-to-manage-processes-in-linux)
 
 
-Renames many files *.old to *.new. To test things first, replace 'do mv' with 'do echo mv'.
+## Simple One-Liner Shell Scripts
+
+Web page for [script download](http://linuxcommand.org/script_library.php).
+
+
+Renames many files *.old to *.new. To test things first, replace 'do mv' with 'do echo mv':
+```
 for i in *.input; do mv $i ${i/\.old/\.new}; done
 for i in *\ *; do mv "$i" "${i// /_}"; done # Replaces spaces in files by underscores
+```
 
-Run an application in loops on many input files.
-
+Run an application in loops on many input files:
+```
 for i in *.input; do ./application $i; done
+```
 
-Run fastacmd from BLAST program in loops on many *.input files and create corresponding *.out files.
-
+Run fastacmd from BLAST program in loops on many *.input files and create corresponding *.out files:
+```
 for i in *.input; do fastacmd -d /data/../database_name -i $i > $i.out; done
+```
 
-Run SAM's target99 on many input files.
-
+Run SAM's target99 on many input files:
+```
 for i in *.pep; do target99 -db /usr/../database_name -seed $i -out $i; done
-
 Search in many files for a pattern and print occurrences together with file names.
-
 for j in 0 1 2 3 4 5 6 7 8 9; do grep -iH <my_pattern> *$j.seq; done
+```
 
-Example of how to run an interactive application (tmpred) that asks for file name input/output.
-
+Example of how to run an interactive application (tmpred) that asks for file name input/output:
+```
 for i in *.pep; do echo -e "$i\n\n17\n33\n\n\n" | ./tmpred $i > $i.out; done
+```
 
-
-Run BLAST2 for all *.fasa1/*.fasta2 file pairs in the order specified by file names and write results into one file.
-
+Run BLAST2 for all *.fasa1/*.fasta2 file pairs in the order specified by file names and write results into one file:
+```
 for i in *.fasta1; do blast2 -p blastp -i $i -j ${i/_*fasta1/_*fasta2} >> my_out_file; done
-This example uses two variables in a for loop. The content of the second variable gets specified in each loop by a replace function.
+```
+    This example uses two variables in a for loop. The content of the second variable gets specified in each loop by a replace function.
 
-Runs BLAST2 in all-against-all mode and writes results into one file ('-F F' turns low-complexity filter off).
-
+Runs BLAST2 in all-against-all mode and writes results into one file ('-F F' turns low-complexity filter off):
+```
 for i in *.fasta; do for j in *.fasta; do blast2 -p blastp -F F -i $i -j $j >> my_out_file; done; done;
+```
 
-Table of Contents
+### How to write a real shell script
 
-How to write a real shell script
-
-    create file which contains in first line:
-
+1. Create file which contains an interpreter as the first line:
+```
     #!/bin/bash
+```
++ Place shell commands in file below the interpreter line using a text editor.
++ Make file executable:
+```
+    chmod +x my_shell_script
+```
++ Run shell script like this:
+```
+    ./my_shell_script
+```
++ Place it into your /rhome/<username>/bin directory
+```
+    mkdir -p ~/bin
+    mv my_shell_script ~/bin/
+```
++ Add the bin path to your shell permanently:
+```
+    echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
+    source ~/.bashrc
+```
 
-    place shell commands in file
+## Simple One-Liner Perl Scripts
 
-    run <chmod +x my_shell_script> to make it executable
-
-    run shell script like this: ./my_shell_script
-    when you place it into /usr/local/bin you only type its name from any user account 
-
-Table of Contents
-Simple One-Liner Perl Scripts
-Small collection of useful one-liners:
-
+*Small collection of useful one-liners:*
+```
 perl -p -i -w -e 's/pattern1/pattern2/g' my_input_file
             # Replaces a pattern in a file by a another pattern using regular expressions.
             # $1 or \1: back-references to pattern placed in parentheses
@@ -754,27 +782,35 @@ perl -p -i -w -e 's/pattern1/pattern2/g' my_input_file
             # -i.bak: creates backup file *.bak, only -i doesn't
             # -w: turns on warnings
             # -e: executable code follows
+```
 
-Parse lines based on patterns:
-
+*Parse lines based on patterns:*
+```
 perl -ne 'print if (/my_pattern1/ ? ($c=1) : (--$c > 0)); print if (/my_pattern2/ ? ($d = 1) : (--$d > 0))' my_infile > my_outfile
             # Parses lines that contain pattern1 and pattern2.
             # The following lines after the pattern can be specified in '$c=1' and '$d=1'.
             # For logical OR use this syntax: '/(pattern1|pattern2)/'.
-Table of Contents
+```
 
-Remote Copy: wget, scp, ncftp
-wget: File Download from the Web
+## Remote Copy: wget, scp, ncftp
+
+### Wget
+
+Use wget to download a file from the web:
+```
 wget ftp://ftp.ncbi.nih.... # file download from www; add option '-r' to download entire directories
+```
 
-scp: Secure Copy Between Machines
-General Syntax
+### SCP
 
+Use scp to copy files between machines (ie. laptop to server):
+```
 scp source target # Use form 'userid@machine_name' if your local and remote user ids are different.
                   # If they are the same you can use only 'machine_name'.
+```
 
-Examples
-
+Here are more scp examples:
+```
 scp user@remote_host:file.name . # Copies file from server to local machine (type from local
                                  # machine prompt). The '.' copies to pwd, you can specify                                              # here any directory, use wildcards to copy many files.
 
@@ -783,30 +819,41 @@ scp file.name user@remote_host:~/dir/newfile.name
                               
 scp -r user@remote_host:directory/ ~/dir
                                  # Copies entire directory from server to local machine.
-Table of Contents
+```
 
-Nice FTP
+### Nice FTP
 
+From the linux command line run ncftp and use it to get files:
+```
 ncftp
 ncftp> open ftp.ncbi.nih.gov
 ncftp> cd /blast/executables
 ncftp> get blast.linux.tar.Z (skip extension: @)
 ncftp> bye
-Table of Contents
+```
 
-Archiving and Compressing
-Creating Archives
+## Archiving and Compressing
+
+### Creating Archives
+
+```
 tar -cvf my_file.tar mydir/    # Builds tar archive of files or directories. For directories, execute command in parent directory. Don't use absolute path.    
 tar -czvf my_file.tgz mydir/   # Builds tar archive with compression of files or directories. For
                                # directories, execute command in parent directory. Don't use absolute path.
 zip -r mydir.zip mydir/        # Command to archive a directory (here mydir) with zip.
 tar -jcvf mydir.tar.bz2 mydir/ # Creates *.tar.bz2 archive
+```
 
-Viewing Archives
+### Viewing Archives
+
+```
 tar -tvf my_file.tar
 tar -tzvf my_file.tgz
+```
 
-Extracting Archives
+### Extracting Archives
+
+```
 tar -xvf my_file.tar
 tar -xzvf my_file.tgz
 gunzip my_file.tar.gz # or unzip my_file.zip, uncompress my_file.Z,
@@ -814,103 +861,48 @@ gunzip my_file.tar.gz # or unzip my_file.zip, uncompress my_file.Z,
 find -name '*.zip' | xargs -n 1 unzip # this command usually works for unzipping
                       # many files that were compressed under Windows
 tar -jxvf mydir.tar.bz2 # Extracts *.tar.bz2 archive
+```
 
 Try also:
+```
 tar zxf blast.linux.tar.Z
 tar xvzf file.tgz
+```
 
 Important options:
+```
+f: use archive file
+p: preserve permissions
+v: list files processed
+x: exclude files listed in FILE
+z: filter the archive through gzip 
+```
 
-     f: use archive file
-    p: preserve permissions
-    v: list files processed
-    x: exclude files listed in FILE
-    z: filter the archive through gzip 
+## Simple Installs
 
-Table of Contents
-Simple Installs
+### Systems-wide installations
 
-Systems-wide installations
-Installations for systems-wide usage are the responsibility of system administrator To find out if an application is installed, type:
+### Applications in user accounts
 
-which   my_application
-whereis my_application_name # searches for executables in set of directories,
-                            # doesn't depend on your path
+### Installation of RPMs
 
-    Most applications are installed in /usr/local/bin or /usr/bin
-    You need root permissions to write to these directories
-    Perl scripts go into /usr/local/bin, Perl modules (*.pm) into /usr/local/share/perl/5.8.8/ 
+## Environment Variables
 
-To copy executables in one batch, use command:
-
-cp `find -perm -111 -type f` /usr/local/bin
-
-Applications in user accounts
-Create a new directory, download application into this directory, unpack it (see chapter 13) and follow package-specific installation instructions. Usually you can then already run this application when you specify its location e.g.: /home/user/my_app/blastall. If you want you can add this directory to your PATH by typing from this directory:
-
-PATH=.:$PATH; export PATH # this allows you to run application by providing only its name; when you do echo $PATH you will see .: added to PATH.
-Table of Contents
-
-Installation of RPMs
-RPMs are installable software packages used in the following Linux distributions: RedHat, CentOS, Fedora, SuSe, and others.
-
-rpm -i application_name.rpm
-
-To check which version of RPM package is installed, type:
-
-rpm --query <package_name>
-
-Help and upgrade files for RPMs can be found at http://rpmfind.net/.
-
-Installation of Debian Packages
-Deb's are installable software packages used in the following Linux distributions: Debain, Ubuntu, and others.
-
-Check whether your application is available at: http://packages.debian.org/stable/, then you type (no need to download):
-
-apt-cache search phylip   # searches for application "phylip" from command line
-apt-cache show phylip     # provides description of the package (see also: aptitude show)
-
-aptitude install phylip   # example for phylip install, manuals can be found in
-                          # /usr/doc/phylip/, use zless or lynx to read documentation
-                          # (don't unzip).
-
-aptitude update           # do once a month do update Debian packages
-aptitude upgrade -u       # to upgrade after update from above
-dpkg -i                   # install data package from local package file (e.g. after
-                          # download)
-
-aptitude                  # Debian package managing interface (Ctrl-t opens menus)
-aptitude search vim       # search for packages on system and in Debian depositories
-aptitude show vim         # show detailed information about the package
-
-Recommendation: Use "aptitude" everywhere instead of "apt-get". Arguments are the same in aptitude. By using it instead of "apt-get" you will have a log of all installations in /var/log/aptitude.
-
-Recommendation: Use the aptitude GUI by running "aptitude" without arguments. You will need to learn some key strokes (keyboard combinations).
-
-Table of Contents
-
-Devices
-
-Mount/unmount: usb, floppy, cdrom, etc.
-mount /media/usb
-umount /media/usb
-mount /media/cdrom
-eject /media/cdrom
-mount /media/floppy
-
-Environment Variables
+```
 xhost user@host                # adds X permissions for user on server.
 echo $DISPLAY                  # shows current display settings
 export DISPLAY=<local_IP>:0    # change environment variable
 unsetenv DISPLAY               # removes display variable
 env                            # prints all environment variables
+```
 
 List of directories that the shell will search when you type a command:
-
+```
 echo $PATH
+```
 You can edit your default DISPLAY setting for your account by adding it to file .bash_profile
-Table of Contents
-Exercises
+
+## Exercises
 
 Exercise 1
 1. Download proteome of Halobacterium spec. with wget and look at it:
