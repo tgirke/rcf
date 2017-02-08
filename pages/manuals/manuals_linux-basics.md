@@ -790,7 +790,7 @@ for i in *.fasta; do for j in *.fasta; do blast2 -p blastp -F F -i $i -j $j >> m
 
 *Small collection of useful one-liners:*
 
-```
+```perl
 perl -p -i -w -e 's/pattern1/pattern2/g' my_input_file
             # Replaces a pattern in a file by a another pattern using regular expressions.
             # $1 or \1: back-references to pattern placed in parentheses
@@ -802,7 +802,7 @@ perl -p -i -w -e 's/pattern1/pattern2/g' my_input_file
 
 *Parse lines based on patterns:*
 
-```
+```perl
 perl -ne 'print if (/my_pattern1/ ? ($c=1) : (--$c > 0)); print if (/my_pattern2/ ? ($d = 1) : (--$d > 0))' my_infile > my_outfile
             # Parses lines that contain pattern1 and pattern2.
             # The following lines after the pattern can be specified in '$c=1' and '$d=1'.
