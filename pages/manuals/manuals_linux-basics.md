@@ -643,7 +643,7 @@ egrep                                # see chapter 4
 Screen references
 
 1. [Screen Turorial](http://fosswire.com/post/2008/08/video-tutorial-getting-started-with-gnu-screen/)
-+  [Screen Cheat Sheet](http://aperiodic.net/screen/quick_reference)
+2. [Screen Cheat Sheet](http://aperiodic.net/screen/quick_reference)
 
 ### Starting a New Screen Session
 
@@ -754,24 +754,33 @@ for i in *.fasta; do for j in *.fasta; do blast2 -p blastp -F F -i $i -j $j >> m
 ### How to write a real shell script
 
 1. Create file which contains an interpreter as the first line:
+
     ```
     #!/bin/bash
     ```
+
 + Place shell commands in file below the interpreter line using a text editor.
 + Make file executable:
+
     ```
     chmod +x my_shell_script
     ```
+
 + Run shell script like this:
+
     ```
     ./my_shell_script
     ```
+
 + Place it into your /rhome/<username>/bin directory
+
     ```
     mkdir -p ~/bin
     mv my_shell_script ~/bin/
     ```
+
 + Add the bin path to your shell permanently:
+
     ```
     echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
     source ~/.bashrc
