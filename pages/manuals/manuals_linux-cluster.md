@@ -68,7 +68,7 @@ Since all machines are mounting a centralized file system, users will always see
 ### Login from Mac, Linux, Cygwin
 Open the terminal and type
 
-```
+```bash
 ssh -X username@biocluster.ucr.edu
 ```
 
@@ -100,13 +100,13 @@ More advanced users may want to load modules within their bashrc, bash_profile, 
 #### Available Modules
 To list all available software modules, execute the following:
 
-```
+```bash
 module avail
 ```
 
 This should output something like:
 
-```
+```bash
 ------------------------- /usr/local/Modules/versions --------------------------
 3.2.9
 --------------------- /usr/local/Modules/3.2.9/modulefiles ---------------------
@@ -122,13 +122,13 @@ module-info
 #### Using Modules
 To load a module, run:
 
-```
+```bash
 module load <software name>[/<version>]
 ```
 
 To load the default version of the tophat module, run:
 
-```
+```bash
 module load tophat
 ```
 
@@ -136,13 +136,13 @@ module load tophat
 
 To show what modules you have loaded at any time, you can run:
 
-```
+```bash
 module list
 ```
 
 Depending on what modules you have loaded, it will produce something like this:
 
-```
+```bash
 Currently Loaded Modulefiles:
   1) vim/7.4.1952                  3) slurm/16.05.4                 5) R/3.3.0                       7) less-highlight/1.0            9) python/3.6.0
   2) tmux/2.2                      4) openmpi/2.0.1-slurm-16.05.4   6) perl/5.20.2                   8) iigb_utilities/1
@@ -152,14 +152,14 @@ Currently Loaded Modulefiles:
 
 Sometimes you want to no longer have a piece of software in path. To do this you unload the module by running:
 
-```
+```bash
 module unload <software name>
 ```
 
 #### Additional Features
 There are additional features and operations that can be done with the module command. Please run the following to get more information:
 
-```
+```bash
 module help
 ```
 
@@ -191,7 +191,7 @@ The head nodes are a shared resource and should be accessible by all users. Nega
 However you may run memory intensive jobs on Owl.
 Login to Owl like so:
 
-```
+```bash
 ssh -X owl.ucr.edu
 ```
 
@@ -226,7 +226,7 @@ In the past we used queues under the old Torque system, we now refer to these lo
     * This partition is unique to the group, if your lab has purchased nodes then you will have a priority partition with the same name as your group (ie. girkelab).
 In order to submit a job to different partitions add the optional '-p' parameter with the name of the partition you want to use:
 
-```
+```bash
 sbatch -p batch SBATCH_SCRIPT.sh
 sbatch -p highmem SBATCH_SCRIPT.sh
 sbatch -p gpu SBATCH_SCRIPT.sh
@@ -237,7 +237,7 @@ sbatch -p mygroup SBATCH_SCRIPT.sh
 ### Slurm
 Slurm is now our default queuing system across all head nodes. [SSH directly into the cluster](#getting-started) and your connection will be automatically load balanced to a head node:
 
-```
+```bash
 ssh -XY biocluster.ucr.edu
 ```
 
@@ -245,13 +245,13 @@ ssh -XY biocluster.ucr.edu
 There are 2 basic ways to submit jobs; non-interactive, interactive. Slurm will automatically start within the directory where you submitted the job from, so keep that in mind when you use relative file paths.
 Non-interactive submission of a SBATCH script:
 
-```
+```bash
 sbatch SBATCH_SCRIPT.sh
 ```
 
 Here is an example of an SBATCH script:
 
-```
+```bash
 #!/bin/bash -l
 
 #SBATCH --nodes=1
@@ -286,7 +286,7 @@ The above job will request 1 node, 10 task (1 cpu core per task), 10GB of memory
 
 Interactive submission:
 
-```
+```bash
 srun --pty bash -l
 ```
 
@@ -294,7 +294,7 @@ If you do not specify a partition then the intel partition is used by default.
 
 Here is a more complete example:
 
-```
+```bash
 srun --x11 --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --pty bash -l
 ```
 
@@ -303,13 +303,13 @@ The above example enables X11 forwarding and requests, 1GB of memory, 1 cores, f
 #### Monitoring Jobs
 To check on your jobs states, run the following:
 
-```
+```bash
 squeue -u username
 ```
 
 To list all the details of a specific job, run the following:
 
-```
+```bash
 scontrol show job <JOBID>
 ```
 
@@ -317,14 +317,14 @@ scontrol show job <JOBID>
 There is a third way of submitting jobs by using steps.
 Single Step submission:
 
-```
+```bash
 srun <command>
 ```
 
 Under a single step job your command will hang until appropriate resources are found and when the step command is finished the results will be sent back on STDOUT. This may take some time depending on the job load of the cluster.
 Multi Step submission:
 
-```
+```bash
 salloc -N 4 bash -l
 srun <command>
 ...
@@ -338,13 +338,13 @@ Under a multi step job the salloc command will request resources and then your p
 A single GPU job will no longer reserve an entire node. For each node there are 4 GPUs. This means that you need to request how many GPUs that you would like to use.
 Non-Interactive:
 
-```
+```bash
 srun -p gpu --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 ```
 
 Interactive
 
-```
+```bash
 srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
 ```
 
@@ -354,7 +354,7 @@ Once your job starts your code must reference the environment variable "CUDA_VIS
 
 For example, when reserving 4 GPUs for a NAMD2 job:
 
-```
+```bash
 echo $CUDA_VISIBLE_DEVICES
 0,1,2,3
 namd2 +idlepoll +devices $CUDA_VISIBLE_DEVICES MD1.namd
@@ -432,20 +432,20 @@ Quota Responsibility | N/A
 ## Usage and Quotas
 To quickly check your usage and quota limits:
 
-```
+```bash
 check_quota home
 check_quota bigdata
 ```
 
 To get the usage of your current directory, run the following command:
 
-```
+```bash
 du -sh .
 ```
 
 To calculate the sizes of each separate sub directory, run:
 
-```
+```bash
 du -shc *
 ```
 
@@ -457,26 +457,333 @@ For more information on your home directory, please see the Orientation section 
 It is useful to share data and results with other users on the cluster, and we encourage collaboration  The easiest way to share a file is to place it in a location that both users can access. Then the second user can simply copy it to a location of their choice. However, this requires that the file permissions permit the second user to read the file.
 Basic file permissions on Linux and other Unix like systems are composed of three groups: owner, group, and other. Each one of these represents the permissions for different groups of people: the user who owns the file, all the group members of the group owner, and everyone else, respectively  Each group has 3 permissions: read, write, and execute, represented as r,w, and x. For example the following file is owned by the user 'jhayes' (with read, write, and execute), owned by the group 'operations' (with read and execute), and everyone else cannot access it.
 
-```
+```bash
 jhayes@pigeon:~$ ls -l myFile
 -rwxr-x---   1 jhayes bioinfo 1.6K Nov 19 12:32 myFile
 ```
 
 If you wanted to share this file with someone outside the 'operations' group, read permissions must be added to the file for 'other'.
-Set Default Permissions
+
+### Set Default Permissions
 
 In Linux, it is possible to set the default file permission for new files. This is useful if you are collaborating on a project, or frequently share files and  you do not want to be constantly adjusting permissions  The command responsible for this is called 'umask'. You should first check what your default permissions currently are by running 'umask -S'.
 
-```
+```bash
 jhayes@pigeon:~$ umask -S
 u=rwx,g=rx,o=rx
 ```
 
 To set your default permissions, simply run umask with the correct options. Please note, that this does not change permissions on any existing files, only new files created after you update the default permissions. For instance, if you wanted to set your default permissions to you having full control, your group being able to read and execute your files, and no one else to have access, you would run:
 
-```
+```bash
 jhayes@pigeon:~$ umask u=rwx,g=rx,o=
 ```
 
-It is also important to note that these settings only affect your current session. If you log out and log back in, these settings will be reset. To make your changes permanent you need to add them to your '.bashrc' file, which is a hidden file in your home directory (if you do not have a '.bashrc' file, you will need to create an empty file called '.bashrc' in your home directory). Adding umask to your .bashrc file is as simple as adding your umask command (such as 'umask u=rwx,g=rx,o=r') to the end of the file. Then simply log out and back in for the changes to take affect. You can double check that the settings have taken affect by running 'umask -S'.
+It is also important to note that these settings only affect your current session.
+If you log out and log back in, these settings will be reset.
+To make your changes permanent you need to add them to your `.bashrc` file, which is a hidden file in your home directory (if you do not have a `.bashrc` file, you will need to create an empty file called `.bashrc` in your home directory).
+Adding umask to your `.bashrc` file is as simple as adding your umask command (such as `umask u=rwx,g=rx,o=r`) to the end of the file.
+Then simply log out and back in for the changes to take affect. You can double check that the settings have taken affect by running `umask -S`.
+
+### Futher Reading
+
+* [UNIX File Permissions Tutorial](http://manuals.bioinformatics.ucr.edu/home/linux-basics#TOC-Permissions-and-Ownership)
+* [What is Umask and How To Setup Default umask Under Linux?](http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html)
+
+### Copying bigdata
+
+Rsync can:
+
+* Copy (transfer) directories between different locations
+* Perform transfers over the network via SSH
+* Compare large data sets (`-n, --dry-run` option)
+* Resume interrupted transfers
+
+Rsync Notes:
+* Rsync can be used on Windows, but you must install [Cygwin](https://cygwin.com). Most Mac and Linux systems already have rsync install by default.
+* Always put the / after both folder names, e.g: `FOLDER_A/` Failing to do so will result in the nesting folders every time you try to resume. If you don't put / you will get a second folder_B inside folder_B `FOLDER_A/FOLDER_A/`
+* Rsync only copies by default.
+* Once the rsync command is done, run it again. The second run will be shorter and can be used as a double check. If there was no output from the second run then nothing changed.
+* To learn more try `man rsync`
+
+If you are transfering to, or from, your laptop/workstation it is required that you run the rsync command locally from your laptop/workstation.
+
+To transfer to the cluster:
+
+```bash
+rsync -av --progress FOLDER_A/ biocluster.ucr.edu:FOLDER_A/
+```
+
+To transfer from the cluster:
+
+```bash
+rsync -av --progress biocluster.ucr.edu:FOLDER_A/ FOLDER_A/
+```
+
+Rsync will use SSH and will ask you for your cluster password, the same way SSH or SCP does.
+
+If your rsync transer was interrupted, rsync can continue where it left off. Simply run the same command again to resume.
+
+
+### Copying large folders on the cluster between Directories
+
+If you want to syncronize the contents from one directory to another, then use the following:
+
+```bash
+rsync -av --progress PATH_A/FOLDER_A/ PATH_B/FOLDER_A/
+```
+
+Rsync does not move but only copies. Thus you would need to delete the original once you confirm that everything has been transfered.
+
+
+### Copying large folders between the cluster and other servers
+
+If you want to copy data from the cluster to your own server, or another remote system, use the following:
+
+```bash
+rsync -ai FOLDER_A/ sever2.xyz.edu:FOLDER_A/
+```
+
+The sever2.xyz.edu machine must be a server that accepts Rsync connections via SSH.
+
+# Automatic Backups
+
+The cluster does create backups however it is still advantageous for users to periodically make copies of their critical data to a separate storage device.
+The cluster is a production system for research computations with a very expensive high-performance storage infrastructure. It is not a data archiving system.
+
+Home backups are created daily and kept for one month.
+Bigdata backups are created weekly and kept for one month.
+
+Home and bigdata backups are located under the following respective directories:
+
+```bash
+/rhome/.snapshots/
+/bigdata/.snapshots/
+```
+
+The individual snapshot directories have names with numerical values in epoch time format.
+The higher the value the more recent the snapshot.
+
+To view the exact time of when each snapshot was taken execute the following commands:
+
+```bash
+mmlssnapshot home
+mmlssnapshot bigdata
+```
+
+# Databases
+
+## Loading Databases
+
+[NCBI](http://www.ncbi.nlm.nih.gov/), [PFAM](http://en.wikipedia.org/wiki/Pfam#External_links), and [Uniprot](http://www.uniprot.org/), do not need to be downloaded by users. They are installed as modules on Biocluster.
+
+```
+module load db-ncbi
+module load db-pfam
+module load db-uniprot
+```
+
+Specific database release numbers can be identified by the version label on the module:
+```
+module avail db-ncbi
+
+----------------- /usr/local/Modules/3.2.9/modulefiles -----------------
+db-ncbi/20140623(default)
+```
+
+## Using Databases
+
+In order to use the loaded database users can simply provide the corresponding environment variable (NCBI_DB, UNIPROT_DB, PFAM_DB, etc...) for the proper path in their executables.
+
+This is the old deprecated BLAST and it may not work in the near future, however if you require it:
+
+```
+blastall -p blastp -i proteins.fasta -d $NCBI_DB/nr -o blastp.out
+```
+
+You can can also use this method if you require the old version of BLAST (old BLAST with legacy support):
+
+```
+BLASTBIN=`which legacy_blast.pl | xargs dirname`
+legacy_blast.pl blastall -p blastp -i proteins.fasta -d $NCBI_DB/nr -o blast.out --path $BLASTBIN
+```
+
+This is the preferred/recommended method (BLAST+):
+
+```
+blastp -query proteins.fasta -db $NCBI_DB/nr -out proteins_blastp.txt
+```
+
+Usually, we store the most recent release and 2-3 previous releases of each database. This way time consuming projects can use the same database version throughout their lifetime without always updating to the latest releases.
+
+# Parallelization Software
+
+## MPI Introduction
+
+MPI stands for the Message Passing Interface. MPI is a standardized API typically used for parallel and/or distributed computing.
+Biocluster has a custom compiled version of OpenMPI that allows users to run MPI jobs across multiple nodes.
+These types of jobs have the ability to take advantage of hundreds of CPU cores symultaniously, thus improving compute time.
+
+Many implementations of MPI exists, however we only support the following:
+* [Open MPI](http://www.open-mpi.org/)
+* [MPICH](http://www.mpich.org/)
+
+If you need to compile an MPI application then please email support@biocluster.ucr.edu for assistance.
+
+## NAMD Example
+
+To run a NAMD2 process as an OpenMPI job on Biocluster:
+
+1. Log-in to the cluster
+1. Create SBATCH script
+
+   ```bash
+   #!/bin/bash -l
+
+   #SBATCH -J c3d_cr2_md
+   #SBATCH -p batch
+   #SBATCH -n 32
+   #SBATCH --mem=16gb
+   #SBATCH --time=01:00:00
+
+   # Load needed modules
+   # You could also load frequently used modules from within your ~/.bashrc
+   module load slurm # Should already be loaded
+   module load openmpi # Should already be loaded
+   module load namd
+
+   # Run job utilizing all requested processors
+   # Please visit the namd site for usage details: http://www.ks.uiuc.edu/Research/namd/
+   mpirun --mca btl ^tcp namd2 run.conf &> run_bio.log
+   ```
+
+1. Submit SBATCH script to Slurm queuing system
+
+   ```bash
+   sbatch run_bio.sh
+   ```
+
+# Monitoring Resources and Limits
+The easiest way to find out what your group (or associated Slurm account) is with the following:
+
+```bash
+id -gn
+```
+
+The Above command will list your primary group.
+
+It is possible to iterate over all the jobs in squeue and add up all the CPU cores to see how many are available for your group.
+This will give you the total number of cores used by your group in the batch partition:
+
+```bash
+echo $(squeue -A $GROUP -p batch -o '%C' -t Running | grep -P '^[0-9]' | tr '\n' '+' | sed 's/+$//g') | bc
+```
+
+However this does not tell you when your job will start, since it depends on the duration of each job.
+The best way to do this is with the "--start" flag on the squeue command:
+
+```bash
+squeue --start -u $USER
+```
+
+Also, if you want to see your limits you can do that with the following:
+
+```bash
+sacctmgr show account $GROUP format=Account,User,Partition,GrpCPUs,GrpMem,GrpNodes --ass | grep $USER
+```
+
+And for your overall CPU limit for the group:
+```bash
+sacctmgr show account $GROUP format=Account,User,Partition,GrpCPUs,GrpMem,GrpNodes --ass | head -3
+```
+
+# Communicating with others
+
+The cluster is a shared resource, and communicating with other users can help to schedule large computations.
+
+__Looking-Up Specific Users__
+
+A convenient overview of all users and their lab affiliations can be retrieved with the following command:
+
+```bash
+user_details.sh
+```
+
+You can search for specific users by running:
+
+```bash
+MATCH1='tgirke' # Searches by real name, and username, and email address and PI name
+MATCH2='jhayes'
+user_details.sh | grep -P "$MATCH1|$MATCH2"
+```
+
+__Listing Users with Active Jobs on the Cluster__
+To get a list of usernames:
+
+```bash
+qstat | awk '{print $3}' | sort | uniq | grep "^[^-N]"
+```
+
+To get the list of real names:
+
+```bash
+grep <(user_details.sh | awk '{print $2,$3,$4}') -f <(qstat | awk '{print $3}' | sort | uniq | grep "^[^-N]") | awk '{print $1,$2}'
+```
+
+To get the list of emails:
+
+```bash
+grep <(user_details.sh | awk '{print $4,$5}') -f <(qstat | awk '{print $3}' | sort | uniq | grep "^[^-N]") | awk '{print $2}'
+```
+
+# Sharing Files on the Web
+
+Simply create a symbolic link or move the files into your html directory when you want to share them.
+For exmaple, log into Biocluster and run the following:
+
+```bash
+# Make new web project directory
+mkdir www-project
+
+# Create a default test file
+echo '<h1>Hello!</h1>' > ./www-project/index.html
+
+# Create shortcut/link for new web project in html directory 
+ln -s `pwd`/www-project ~/.html/
+```
+
+Now, test it out by pointing your web-browser to http://biocluster.ucr.edu/~username/www-project/
+Be sure to replace `username` with your actual user name.
+
+# Password Protect Web Pages
+
+Files in web directories can be password protected.
+First create a password file and then create a new user:
+
+```bash
+touch ~/.html/.htpasswd
+htpasswd ~/.html/.htpasswd newwebuser
+```
+
+This will prompt you to enter a password for the new user 'newwebuser'.
+Create a new directory, or go to an existing directory, that you want to password protect:
+
+```bash
+mkdir ~/.html/locked_dir
+cd ~/.html/locked_dir
+```
+
+For the above commands you can choose any directory name you want.
+
+Then place the following content within a file called `.htaccess`:
+
+```apache
+    AuthName 'Please login'
+    AuthType Basic
+    AuthUserFile /rhome/username/.html/.htpasswd
+    require user newwebuser
+```
+
+Now, test it out by pointing your web-browser to http://biocluster.ucr.edu/~username/locked_dir
+Be sure to replace `username` with your actual user name for the above code and URL.
 
