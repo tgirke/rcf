@@ -7,7 +7,7 @@ permalink: manuals_linux-cluster.html
 ## Introduction
 This manual provides an introduction to the usage of the HPCC cluster.
 All servers and compute resources of the HPCC cluster are available to researchers from all departments and colleges at UC Riverside for a minimal recharge fee [(see rates)](/#rates).
-To request an account, please contact Thomas Girke [tgirke@ucr.edu](mailto:tgirke.ucr.edu).
+To request an account, please contact Thomas Girke [tgirke@ucr.edu](mailto:tgirke@ucr.edu).
 The latest hardware/facility description for grant applications is available at [Facility Description](/#facility-description).
 
 ## Overview
