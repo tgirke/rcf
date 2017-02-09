@@ -546,7 +546,7 @@ rsync -ai FOLDER_A/ sever2.xyz.edu:FOLDER_A/
 
 The sever2.xyz.edu machine must be a server that accepts Rsync connections via SSH.
 
-# Automatic Backups
+## Automatic Backups
 
 The cluster does create backups however it is still advantageous for users to periodically make copies of their critical data to a separate storage device.
 The cluster is a production system for research computations with a very expensive high-performance storage infrastructure. It is not a data archiving system.
@@ -571,9 +571,9 @@ mmlssnapshot home
 mmlssnapshot bigdata
 ```
 
-# Databases
+## Databases
 
-## Loading Databases
+### Loading Databases
 
 [NCBI](http://www.ncbi.nlm.nih.gov/), [PFAM](http://en.wikipedia.org/wiki/Pfam#External_links), and [Uniprot](http://www.uniprot.org/), do not need to be downloaded by users. They are installed as modules on Biocluster.
 
@@ -591,7 +591,7 @@ module avail db-ncbi
 db-ncbi/20140623(default)
 ```
 
-## Using Databases
+### Using Databases
 
 In order to use the loaded database users can simply provide the corresponding environment variable (NCBI_DB, UNIPROT_DB, PFAM_DB, etc...) for the proper path in their executables.
 
@@ -616,9 +616,9 @@ blastp -query proteins.fasta -db $NCBI_DB/nr -out proteins_blastp.txt
 
 Usually, we store the most recent release and 2-3 previous releases of each database. This way time consuming projects can use the same database version throughout their lifetime without always updating to the latest releases.
 
-# Parallelization Software
+## Parallelization Software
 
-## MPI Introduction
+### MPI Introduction
 
 MPI stands for the Message Passing Interface. MPI is a standardized API typically used for parallel and/or distributed computing.
 Biocluster has a custom compiled version of OpenMPI that allows users to run MPI jobs across multiple nodes.
@@ -630,7 +630,7 @@ Many implementations of MPI exists, however we only support the following:
 
 If you need to compile an MPI application then please email support@biocluster.ucr.edu for assistance.
 
-## NAMD Example
+### NAMD Example
 
 To run a NAMD2 process as an OpenMPI job on Biocluster:
 
@@ -663,7 +663,7 @@ To run a NAMD2 process as an OpenMPI job on Biocluster:
    sbatch run_bio.sh
    ```
 
-# Monitoring Resources and Limits
+## Monitoring Resources and Limits
 The easiest way to find out what your group (or associated Slurm account) is with the following:
 
 ```bash
@@ -697,7 +697,7 @@ And for your overall CPU limit for the group:
 sacctmgr show account $GROUP format=Account,User,Partition,GrpCPUs,GrpMem,GrpNodes --ass | head -3
 ```
 
-# Communicating with others
+## Communicating with others
 
 The cluster is a shared resource, and communicating with other users can help to schedule large computations.
 
@@ -736,7 +736,7 @@ To get the list of emails:
 grep <(user_details.sh | awk '{print $4,$5}') -f <(qstat | awk '{print $3}' | sort | uniq | grep "^[^-N]") | awk '{print $2}'
 ```
 
-# Sharing Files on the Web
+## Sharing Files on the Web
 
 Simply create a symbolic link or move the files into your html directory when you want to share them.
 For exmaple, log into Biocluster and run the following:
@@ -755,7 +755,7 @@ ln -s `pwd`/www-project ~/.html/
 Now, test it out by pointing your web-browser to http://biocluster.ucr.edu/~username/www-project/
 Be sure to replace `username` with your actual user name.
 
-# Password Protect Web Pages
+## Password Protect Web Pages
 
 Files in web directories can be password protected.
 First create a password file and then create a new user:
@@ -778,10 +778,10 @@ For the above commands you can choose any directory name you want.
 Then place the following content within a file called `.htaccess`:
 
 ```apache
-    AuthName 'Please login'
-    AuthType Basic
-    AuthUserFile /rhome/username/.html/.htpasswd
-    require user newwebuser
+AuthName 'Please login'
+AuthType Basic
+AuthUserFile /rhome/username/.html/.htpasswd
+require user newwebuser
 ```
 
 Now, test it out by pointing your web-browser to http://biocluster.ucr.edu/~username/locked_dir
