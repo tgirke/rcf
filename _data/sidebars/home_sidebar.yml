@@ -64,12 +64,36 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Linux Basics
-      url: /manuals_linux-basics.html
-      output: web 
-      type: frontmatter
-    - title: Linux Cluster
-      url: /manuals_linux-cluster.html
+    
+    - title: Dummy
       output: web
-      type: frontmatter
+      url: /hurrdurr.html
 
+      subfolders:
+      - title: Linux Basics
+        output: web
+        subfolderitems:
+
+        - title: Introduction
+          url: /manuals_linux-basics_intro.html
+          output: web
+
+        - title: Command Line Basics
+          url: /manuals_linux-basics_cmdline-basics.html
+          output: web
+
+        - title: Permissions and Ownership
+          url: /manuals_linux-basics_permissions.html
+          output: web
+
+        - title: Everything Else
+          url: /manuals_linux-basics.html
+          output: web
+
+      - title: Linux Cluster
+        output: web
+        subfolderitems:
+
+        - title : Linux Cluster
+          url: /manuals_linux-cluster.html
+          output: web
