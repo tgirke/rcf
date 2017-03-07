@@ -35,11 +35,11 @@ entries:
       output: web
       type: frontmatter
     - title: Head Nodes
-      url: /about#head-nodes
+      url: /hardware#head-nodes
       output: web
       type: frontmatter
     - title: Worker Nodes
-      url: /about#worker-nodes
+      url: /hardware#worker-nodes
       output: web
       type: frontmatter
 
