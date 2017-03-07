@@ -1,0 +1,99 @@
+<h2 id="introduction">Introduction</h2>
+<p>This manual provides an introduction to the usage of the HPCC cluster.
+All servers and compute resources of the HPCC cluster are available to researchers from all departments and colleges at UC Riverside for a minimal recharge fee <a href="/#rates">(see rates)</a>.
+To request an account, please contact Thomas Girke <a href="&#109;&#097;&#105;&#108;&#116;&#111;:&#116;&#103;&#105;&#114;&#107;&#101;&#064;&#117;&#099;&#114;&#046;&#101;&#100;&#117;">&#116;&#103;&#105;&#114;&#107;&#101;&#064;&#117;&#099;&#114;&#046;&#101;&#100;&#117;</a>.
+The latest hardware/facility description for grant applications is available at <a href="/#facility-description">Facility Description</a>.</p>
+
+<h2 id="overview">Overview</h2>
+
+<h3 id="storage">Storage</h3>
+<ul>
+  <li>Four enterprise class HPC storage systems</li>
+  <li>Approximately 2 PB (2048 TB) of network storage</li>
+  <li>GPFS (NFS and SAMBA via GPFS)</li>
+  <li>Automatic snapshots and archival backups</li>
+</ul>
+
+<h3 id="network">Network</h3>
+<ul>
+  <li>Ethernet
+    <ul>
+      <li>1 Gb/s switch x 5</li>
+      <li>1 Gb/s switch 10 Gig uplink</li>
+      <li>10 Gb/s switch for Campus wide Science DMZ</li>
+      <li>redundant, load balanced, robust mesh topology</li>
+    </ul>
+  </li>
+  <li>Interconnect
+    <ul>
+      <li>56 Gb/s InfiniBand (FDR)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="head-nodes">Head Nodes</h3>
+<p>All users should access the cluster via ssh through biocluster.ucr.edu, this address will automatically balance traffic to one of the available head nodes.</p>
+
+<ul>
+  <li>Penguin
+    <ul>
+      <li>Resources: 8 cores, 64 GB memory</li>
+      <li>Primary function: submitting jobs to the queuing system (Torque/Maui)</li>
+      <li>Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs</li>
+    </ul>
+  </li>
+  <li>Pigeon
+    <ul>
+      <li>Resources: 16 cores, 128 GB memory</li>
+      <li>Primary function: submitting jobs to the queuing system (Torque/Maui)</li>
+      <li>Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs</li>
+    </ul>
+  </li>
+  <li>Pelican
+    <ul>
+      <li>Resources: 32 cores, 64 GB memory</li>
+      <li>Primary function: submitting jobs to the queuing system (Torque/Maui)</li>
+      <li>Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs</li>
+    </ul>
+  </li>
+  <li>Owl
+    <ul>
+      <li>Resources: 16 cores, 64 GB memory</li>
+      <li>Primary function: testing; running test sets of jobs</li>
+      <li>Secondary function: submitting jobs to the queuing system (Torque/Maui)</li>
+    </ul>
+  </li>
+  <li>Globus
+    <ul>
+      <li>Resources: 32 cores, 32 GB memory</li>
+      <li>Primary function: submitting jobs to the queuing system (Slurm)</li>
+      <li>Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="worker-nodes">Worker Nodes</h3>
+<ul>
+  <li>Batch
+    <ul>
+      <li>c01-c48: each with 64 AMD cores and 512 GB memory</li>
+    </ul>
+  </li>
+  <li>Highmem
+    <ul>
+      <li>h01-h06: each with 32 Intel cores and 1024 GB memory</li>
+    </ul>
+  </li>
+  <li>GPU
+    <ul>
+      <li>gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores each) and 128 GB memory</li>
+      <li>gpu02-gpu04: each with 32 (HT) cores Intel Haswell CPUs and 4 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores each) and 128 GB memory</li>
+    </ul>
+  </li>
+  <li>Intel
+    <ul>
+      <li>i01-i40: each with 32 Intel Broadwell cores and  512 GB memory</li>
+    </ul>
+  </li>
+</ul>
+

@@ -27,9 +27,9 @@ We also host a broad range of free workshops on proper cluster utilization that 
 
 More detailed information can be found here:
 
-  * [Compute Hardware](/hardware#head-nodes)
-  * [Central Data Storage System](/hardware#storage)
-  * [Software Resources](/software)
+  * [Compute Hardware](hardware#head-nodes)
+  * [Central Data Storage System](hardware#storage)
+  * Software Resources: [System](software_system) and [Modules](software_modules)
 
 ## Rates
 

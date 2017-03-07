@@ -93,6 +93,26 @@ entries:
       - title: Linux Cluster
         output: web
         subfolderitems:
+        
+        - title : Introduction
+          url: /manuals_linux-cluster_intro.html
+          output: web
+        
+        - title : Getting Started
+          url: /manuals_linux-cluster_start.html
+          output: web
+        
+        - title : Managing Jobs
+          url: /manuals_linux-cluster_jobs.html
+          output: web
+        
+        - title : Data Storage
+          url: /manuals_linux-cluster_storage.html
+          output: web
+
+        - title : Sharing Data
+          url: /manuals_linux-cluster_sharing.html
+          output: web
 
         - title : Linux Cluster
           url: /manuals_linux-cluster.html
