@@ -1,12 +1,12 @@
 ---
 layout: page
-title: High Performance Computing Center
+title: High-Performance Computing Center
 permalink: index.html
 ---
 
 ## Welcome
 
-Welcome to the website of the High Performance Computing Center (HPCC). The site provides an overview about the HPC resources and services provided by our center. 
+Welcome to the website of the High -Performance Computing Center (HPCC). The site provides an overview about the HPC resources and services provided by our center. 
 
 ## Services
 
@@ -20,7 +20,7 @@ The following services are offered:
 
 ## Facility Description
 
-Our high performance computing infrastructure is located in the Genomics Cluster Farm.
+Our high-performance computing infrastructure is located in the Genomics Cluster Farm.
 It provides access to enterprise level high-performance computing resources, for data analysis and programming.
 These resources serve the scientists at UC Riverside, and elsewhere, to master big compute and big data needs of their research in a proficient and cost-effective manner.
 We also host a broad range of free workshops on proper cluster utilization that provides a strong training component to successful grants.
@@ -38,8 +38,8 @@ Annual User Registration Fee
 The annual registration fee of $1,000 gives all members of an UCR lab access to our high-performance computing infrastructure.
 The registration provides access to the following resources: 
 
-  * Over 2500 CPU cores, ~2PB disk space, 512GB-1TB of memory/node, etc. More details are available on the compute hardware page.
-  * Over 500 software packages and all common research databases. More details are available on the software page.
+  * Over 4500 CPU cores, ~2PB disk space, 512GB-1TB of memory/node, etc. More details are available on the compute hardware page.
+  * Over 800 software packages and all common research databases. More details are available on the software page.
   * Free attendance of all our workshops
   * Free consultation services (up to 1 hour per month).
 
