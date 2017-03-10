@@ -6,7 +6,7 @@ permalink: index.html
 
 ## Welcome
 
-Our facility's mission is to provide ...
+Welcome to the website of the High Performance Computing Center (HPCC). The site provides an overview about the HPC resources and services provided by our center. 
 
 ## Services
 
@@ -35,7 +35,7 @@ More detailed information can be found here:
 
 Annual User Registration Fee
 
-The annual registration fee of $1,000 gives all members of an UCR lab access to our high-performance compute infrastructure.
+The annual registration fee of $1,000 gives all members of an UCR lab access to our high-performance computing infrastructure.
 The registration provides access to the following resources: 
 
   * Over 2500 CPU cores, ~2PB disk space, 512GB-1TB of memory/node, etc. More details are available on the compute hardware page.
