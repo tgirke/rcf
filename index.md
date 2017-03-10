@@ -6,7 +6,7 @@ permalink: index.html
 
 ## Welcome
 
-Our facility's mission is to provide...
+Our facility's mission is to provide ...
 
 ## Services
 
