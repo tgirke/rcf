@@ -6,7 +6,7 @@ permalink: index.html
 
 ## Welcome
 
-Welcome to the website of the High -Performance Computing Center (HPCC). The site provides an overview about the HPC resources and services provided by our center. 
+Welcome to the website of the High -Performance Computing Center (HPCC). This site provides an overview about the HPC resources and services provided by our center. 
 
 ## Services
 
