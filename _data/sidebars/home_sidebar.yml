@@ -82,8 +82,20 @@ entries:
           url: /manuals_linux-basics_cmdline-basics.html
           output: web
 
+        - title: Finding Things
+          url: /manuals_linux-basics_finding-things.html
+          output: web
+
         - title: Permissions and Ownership
           url: /manuals_linux-basics_permissions.html
+          output: web
+
+        - title: Process Management
+          url: /manuals_linux-basics_processes.html
+          output: web
+
+        - title: Vim
+          url: /manuals_linux-basics_vim.html
           output: web
 
         - title: Everything Else

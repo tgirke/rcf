@@ -121,6 +121,21 @@ Ctrl+y    # Paste ("yank") content that was cut earlier (by Ctrl-w or Ctrl-k)
   * "." (dot)            - refers to the present working directory
   * "~" (tilde) or "~/"  - refers to user's home directory
 
+### Other Useful Unix Commands
+
+```bash
+df          # disk space
+free -g     # memory info in Megabytes
+uname -a    # shows tech info about machine
+bc          # command-line calculator (to exit type 'quit')
+wget ftp://ftp.ncbi.nih.... # file download from web
+/sbin/ifconfig # give IP and other network info
+ln -s <original_filename> <new_filename> # creates symbolic link to file or directory
+du -sh      # displays disk space usage of current directory
+du -sh *    # displays disk space usage of individual files/directories
+du -s * | sort -nr # shows disk space used by different directories/files sorted by size
+```
+
 ## Unix Help
 
 ```bash
