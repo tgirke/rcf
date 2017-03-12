@@ -7,7 +7,13 @@ summary: Welcome to the website of the High-Performance Computing Center (HPCC) 
 
 ## Services
 
-The HPCC provides access to high-performance compute resources, data analysis and programming expertise.
+The High-Performance Computing Center (HPCC) provides research computing infrastructure at UC Riverside. This includes the following services.
+
+  * Access to a shared computing cluster with a centralized massive parallel storage system 
+  * Training on HPC usage
+  * Support for using commercial cloud computing and national HPC facilities
+
+access to high-performance compute resources, data analysis and programming expertise.
 The resources serve scientists at UC Riverside to master the bigdata and informatics needs of their research in a proficient and cost-effective manner. 
 The following services are offered:
 
