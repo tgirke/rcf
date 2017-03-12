@@ -13,18 +13,20 @@ topnav_dropdowns:
   folders:
     - title: UCR Websites
       folderitems:
+        - title: RED-UCR
+          external_url: https://research.ucr.edu/
         - title: Data Science Center
           external_url: http://hpcc.ucr.edu/future_data_science_site
         - title: C&C Co-location Service
           external_url: http://iresearch.ucr.edu/cluster.html
         - title: Big Data FIELDS Program
           external_url: http://bigdata.ucr.edu/fields
-        - title: IIGB
+        - title: Institute of Integrative Genome Biology
           external_url: http://genomics.ucr.edu
         - title: NGS Analysis Service
           external_url: http://illumina.bioinfo.ucr.edu/ht/documentation/analysis
         - title: Bioinformatics Core
           external_url: http://facility.bioinformatics.ucr.edu/people
-        - title: GitHub repos of this site
+        - title: GitHub repo of this site
           external_url: https://github.com/ucr-hpcc/ucr-hpcc.github.io
 
