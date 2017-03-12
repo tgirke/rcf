@@ -35,10 +35,6 @@ The High-Performance Computing Center (HPCC) provides technical expertise and ac
    
    * Support for using commercial cloud computing resources and national HPC facilities
 
-# Snapshot of cluster usage
-
-<div><img alt="qstatMonitor_Report" border="0" src="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
-
 
 <!---
 
