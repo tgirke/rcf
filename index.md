@@ -29,7 +29,7 @@ The High-Performance Computing Center (HPCC) provides research computing infrast
 
 * New service to be deployed in late 2017
     
-    * Support for using commercial cloud computing and national HPC facilities
+    * Support for using commercial cloud computing resources and national HPC facilities
 
 access to high-performance compute resources, data analysis and programming expertise.
 The resources serve scientists at UC Riverside to master the bigdata and informatics needs of their research in a proficient and cost-effective manner. 
