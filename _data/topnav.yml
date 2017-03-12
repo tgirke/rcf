@@ -6,7 +6,7 @@
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: GitHub
+    - title: GitHub Repo
       folderitems:
         - title: GitHub
           external_url: https://github.com/ucr-hpcc/ucr-hpcc.github.io
