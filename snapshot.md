@@ -4,7 +4,8 @@ title: Activity snapshot of cluster
 permalink: snapshot.html
 ---
 
-The following activity report is refreshed every 10 minutes. It summarizes the user activity on the computing resources of the HPCC including:
+The following activity report is refreshed every 10 minutes. It summarizes the user activity on the computing resources of the HPCC including AMD, Intel, Highmem and GPU queues with
+respect to the following resources:
 
 * Number of queued and running processes per user
 * CPU usage per user
