@@ -6,8 +6,12 @@
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
-    - title: UCR Facilities
+    - title: UCR Websites
       folderitems:
+        - title: C&C Colocation Service
+          exterenal_url: http://iresearch.ucr.edu/cluster.html
+        - title: Big Data FIELDS Program
+          external_url: http://bigdata.ucr.edu/fields
         - title: IIGB
           external_url: http://genomics.ucr.edu
         - title: Genomics Core
@@ -15,7 +19,7 @@ topnav_dropdowns:
         - title: Microscopy Core
           external_url: http://genomics.ucr.edu/facility/microscopy.html
         - title: Bioinformatics Core
-          external_url: http://genomics.ucr.edu/facility/bioinformatics.html
+          external_url: http://facility.bioinformatics.ucr.edu/people
         - title: Proteomics Core
           external_url: http://genomics.ucr.edu/facility/proteomics.html
 
