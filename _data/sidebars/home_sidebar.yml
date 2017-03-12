@@ -13,6 +13,10 @@ entries:
       url: /index.html
       output: web
       type: frontmatter
+    - title: Home
+      url: /snapshot.html
+      output: web
+      type: frontmatter
     - title: Slides
       url: /slides_march2017.html
       output: web
