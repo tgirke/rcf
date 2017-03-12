@@ -17,7 +17,7 @@ The High-Performance Computing Center (HPCC) provides access and technical exper
     
         * Affordable annual subscription fee for CPU access (no extra charge on CPU usage)
         * Rental options for data storage
-        * Ownership options for computer nodes and disk storage
+        * Ownership options for both computer nodes and data storage
 
 * Software
     
