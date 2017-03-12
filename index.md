@@ -12,7 +12,7 @@ The High-Performance Computing Center (HPCC) provides research computing infrast
   * Access to shared high-performance computing hardware including 
         * Cluster with thousands of CPU cores of different architectures and fast interconnect
         * Parallel big data storage system with many petabytes of high-availability storage
-  * Training on HPC usage
+  * Training on HPC usage and big data processing
   * New service to be deployed in late 2017: support for using commercial cloud computing and national HPC facilities
 
 access to high-performance compute resources, data analysis and programming expertise.
