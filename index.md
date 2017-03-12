@@ -2,11 +2,8 @@
 layout: page
 title: High-Performance Computing Center
 permalink: index.html
+summary: Welcome to the website of the High-Performance Computing Center (HPCC) at UC Riverside. This site provides an overview about the HPC resources and services provided by our center. 
 ---
-
-## Welcome
-
-Welcome to the website of the High-Performance Computing Center (HPCC) at UC Riverside. This site provides an overview about the HPC resources and services provided by our center. 
 
 ## Services
 
