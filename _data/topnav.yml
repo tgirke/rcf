@@ -3,7 +3,7 @@
 
 topnav
 - title: Topnav
-  subcategories
+  subcategories:
     - title: Support
       email: support@biocluster.ucr.edu
     - title: GitHub
