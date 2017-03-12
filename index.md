@@ -34,6 +34,10 @@ The High-Performance Computing Center (HPCC) provides technical expertise and ac
 * To be deployed in in late 2017
 * Support for using commercial cloud computing resources and national HPC facilities
 
+# Snapshot of cluster usage
+
+<div><img alt="qstatMonitor_Report" border="0" src="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
+
 access to high-performance compute resources, data analysis and programming expertise.
 The resources serve scientists at UC Riverside to master the bigdata and informatics needs of their research in a proficient and cost-effective manner. 
 The following services are offered:
@@ -42,7 +46,6 @@ The following services are offered:
   * Instruction of hands-on tutorials and workshops on cluster usage. Extensive manuals for these tutorials are available on our manual page.
   * Establishment of research collaborations with experimental scientists from different departments.
 
-<div><img alt="qstatMonitor_Report" border="0" src="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
 
 ## Facility Description
 
