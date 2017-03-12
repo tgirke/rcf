@@ -11,27 +11,27 @@ The High-Performance Computing Center (HPCC) provides access and technical exper
 
 ### HPC hardware
     
-    * Cluster with thousands of CPU cores of different architectures and fast interconnect
-    * Parallel big data storage system with many petabytes of high-availability storage
-    * Supported access models
-    
-        * Affordable annual subscription fee for CPU access (no extra charge on CPU usage)
-        * Rental options for data storage
-        * Ownership options for both computer nodes and data storage
+* Cluster with thousands of CPU cores of different architectures and fast interconnect
+* Parallel big data storage system with many petabytes of high-availability storage
+* Supported access models
+
+    * Affordable annual subscription fee for CPU access (no extra charge on CPU usage)
+    * Rental options for data storage
+    * Ownership options for both computer nodes and data storage
 
 ### Software
     
-    * Access to >1000 software tools and packages 
-    * Custom software installs
+* Access to >1000 software tools and packages 
+* Custom software installs
 
 ### Training
 
-    * HPC usage
-    * Small, medium and big data processing
+* HPC usage
+* Small, medium and big data processing
 
 ### New service to be deployed in late 2017
     
-    * Support for using commercial cloud computing resources and national HPC facilities
+* Support for using commercial cloud computing resources and national HPC facilities
 
 access to high-performance compute resources, data analysis and programming expertise.
 The resources serve scientists at UC Riverside to master the bigdata and informatics needs of their research in a proficient and cost-effective manner. 
