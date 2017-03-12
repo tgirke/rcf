@@ -7,7 +7,7 @@ summary: welcome to the website of the High-Performance Computing Center (HPCC) 
 
 # Mission and Services
 
-The High-Performance Computing Center (HPCC) provides access and technical expertise for research computing at UC Riverside. This includes access to the following shared HPC resources and services:
+The High-Performance Computing Center (HPCC) provides technical expertise and access to a centralized research computing infrastructure that is accessible to all researchers at UC Riverside. This includes access to the following shared HPC resources and services:
 
 ## HPC hardware
     
