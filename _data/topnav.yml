@@ -6,6 +6,10 @@
 topnav_dropdowns:
 - title: Topnav dropdowns
   folders:
+    - title: GitHub
+      folderitems:
+        - title: GitHub
+          external_url: https://github.com/ucr-hpcc/ucr-hpcc.github.io
     - title: UCR Websites
       folderitems:
         - title: C&C Co-location Service
@@ -14,12 +18,8 @@ topnav_dropdowns:
           external_url: http://bigdata.ucr.edu/fields
         - title: IIGB
           external_url: http://genomics.ucr.edu
-        - title: Genomics Core
-          external_url: http://genomics.ucr.edu/facility/genomics.html
-        - title: Microscopy Core
-          external_url: http://genomics.ucr.edu/facility/microscopy.html
+        - title: NGS Analysis Service
+          external_url: http://illumina.bioinfo.ucr.edu/ht/documentation/analysis
         - title: Bioinformatics Core
           external_url: http://facility.bioinformatics.ucr.edu/people
-        - title: Proteomics Core
-          external_url: http://genomics.ucr.edu/facility/proteomics.html
 
