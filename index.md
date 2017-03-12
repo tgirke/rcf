@@ -31,6 +31,7 @@ The High-Performance Computing Center (HPCC) provides technical expertise and ac
 
 ## New service to be deployed in late 2017
     
+* To be deployed in in late 2017
 * Support for using commercial cloud computing resources and national HPC facilities
 
 access to high-performance compute resources, data analysis and programming expertise.
