@@ -9,7 +9,7 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Home
+    - title: Introduction
       url: /index.html
       output: web
       type: frontmatter
