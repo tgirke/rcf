@@ -9,10 +9,6 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Home
-      url: /index.html
-      output: web
-      type: frontmatter
     - title: Mission
       url: /about#mission
       output: web
