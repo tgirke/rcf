@@ -8,8 +8,8 @@ topnav_dropdowns:
   folders:
     - title: UCR Websites
       folderitems:
-        - title: C and C Co-location Service
-          exterenal_url: http://iresearch.ucr.edu/cluster.html
+        - title: C&C Co-location Service
+          external_url: http://iresearch.ucr.edu/cluster.html
         - title: Big Data FIELDS Program
           external_url: http://bigdata.ucr.edu/fields
         - title: IIGB
