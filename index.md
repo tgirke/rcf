@@ -6,7 +6,7 @@ permalink: index.html
 
 ## Welcome
 
-Welcome to the website of the High -Performance Computing Center (HPCC). This site provides an overview about the HPC resources and services provided by our center. 
+Welcome to the website of the High-Performance Computing Center (HPCC) at UC Riverside. This site provides an overview about the HPC resources and services provided by our center. 
 
 ## Services
 
@@ -47,7 +47,7 @@ The registration provides access to the following resources:
 
 ## Contacts
 
-*   Thomas Girke, Director of Research Compute Facility
+*   Thomas Girke, Director of HPC Center
 *   Jordan Hayes, Systems Administrator
 *   Austin Leong, Systems Administrator, Assistant
 
