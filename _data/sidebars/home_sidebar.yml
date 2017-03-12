@@ -13,7 +13,7 @@ entries:
       url: /index.html
       output: web
       type: frontmatter
-    - title: Home
+    - title: Activity report
       url: /snapshot.html
       output: web
       type: frontmatter
