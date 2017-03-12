@@ -27,7 +27,7 @@ The High-Performance Computing Center (HPCC) provides research computing infrast
 * Training
 
     * HPC usage
-    * Big data processing
+    * Small, medium and big data processing
 
 * New service to be deployed in late 2017
     
