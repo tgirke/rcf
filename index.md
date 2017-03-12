@@ -16,9 +16,9 @@ The High-Performance Computing Center (HPCC) provides research computing infrast
 
 * Supported access models
     
-    * Affordable annual subscription fee (no extra charge on CPU usage)
-    * Rental model for data storage
-    * Ownership models for computer nodes and disk storage
+    * Affordable annual subscription fee for CPU access (no extra charge on CPU usage)
+    * Rental options for data storage
+    * Ownership options for computer nodes and disk storage
 
 * Training on HPC usage and big data processing
 * New service to be deployed in late 2017: support for using commercial cloud computing and national HPC facilities
