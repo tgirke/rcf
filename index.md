@@ -18,6 +18,8 @@ The following services are offered:
   * Instruction of hands-on tutorials and workshops on cluster usage. Extensive manuals for these tutorials are available on our manual page.
   * Establishment of research collaborations with experimental scientists from different departments.
 
+<div><img alt="qstatMonitor_Report" border="0" src="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
+
 ## Facility Description
 
 Our high-performance computing infrastructure is located in the Genomics Cluster Farm.
