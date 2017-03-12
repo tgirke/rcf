@@ -39,6 +39,9 @@ The High-Performance Computing Center (HPCC) provides technical expertise and ac
 
 <div><img alt="qstatMonitor_Report" border="0" src="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
 
+
+<!---
+
 access to high-performance compute resources, data analysis and programming expertise.
 The resources serve scientists at UC Riverside to master the bigdata and informatics needs of their research in a proficient and cost-effective manner. 
 The following services are offered:
@@ -85,3 +88,5 @@ The registration provides access to the following resources:
 3401 Watkins Drive  
 University of California  
 Riverside, CA 92521  
+
+-->
