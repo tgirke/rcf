@@ -21,7 +21,7 @@ The High-Performance Computing Center (HPCC) provides technical expertise and ac
 
 ## Software
     
-* Access to >1000 software tools and packages 
+* Access to >1000 software tools, packages and community databases
 * Custom software installs
 
 ## Training
