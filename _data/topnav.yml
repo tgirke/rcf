@@ -4,8 +4,6 @@
 topnav
 - title: Topnav
   subcategories:
-    - title: Support
-      email: support@biocluster.ucr.edu
     - title: GitHub
       external_url: https://github.com/ucr-hpcc/ucr-hpcc.github.io
 
