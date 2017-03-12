@@ -15,7 +15,7 @@ The High-Performance Computing Center (HPCC) provides technical expertise and ac
 * Parallel big data storage system with many petabytes of high-availability storage
 * Supported access models
 
-    * Affordable annual subscription fee for CPU access (no extra charge on CPU usage)
+    * Annual subscription fee for user accounts and CPU access (no extra charge on CPU usage)
     * Rental options for data storage
     * Ownership options for both computer nodes and data storage
 
