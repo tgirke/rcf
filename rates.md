@@ -39,7 +39,17 @@ The registration provides access to the following resources:
     * Lab purchases computer nodes according to the specifications of the facility. 
     * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
 
-# Start-up packages for new PIs
+# Startup packages for new PIs
+
+* $30K (N=1 HPC node) or $45K (N = 2 HPC nodes) or $60K (N=3 HPC nodes) and so on. 
+* N HPC node(s): owned by lab for 3 or 5 yrs and administered under priority queue model. After this time the node becomes part of the shared HPCC cluster resources. 
+
+    * each node with 32* Intel CPU cores (64* logical cores), 512GB RAM and Infiniband interconnect. *the core numbers might nearly double when newer and less expensive Intel chip sets will be released this year.
+    * or alternative node architecture (e.g. GPU) available upon request
+
+* HPCC subscription fee of $1000 covered for 5 yrs
+* Big data storage of 10TB ($1000/yr) covered for 5 yrs; other buy-in options exist to support much larger data storage needs
+* Custom solutions are supported upon approval by HPCC
 
 
 
