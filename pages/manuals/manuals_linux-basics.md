@@ -4,14 +4,6 @@ title: Linux Basics
 permalink: manuals_linux-basics.html
 ---
 
-
-
-
-
-More on Terminating Processes
-
-~~Terminating a Running Process~~ (Broken link. Also, we have a wiki!?)
-
 ## Text Viewing
 
 ```bash
