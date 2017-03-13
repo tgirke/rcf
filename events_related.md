@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Related HPC & big data events
+title: Related HPC & big data tutorials
 ---
 
 ## HPC, R, data analsysis programming events
