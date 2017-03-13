@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Monthly HPC and big data processing tutorials
+title: HPC and big data processing tutorials
 ---
 
 ## Linux

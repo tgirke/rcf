@@ -1,19 +1,15 @@
 ---
 layout: page
-title: Monthly HPC and big data processing tutorials
+title: Annual workshop on HPC and big data processing
 ---
 
-## Linux
+## HPC 
 
 To be added soon.
-
-## HPC
-
 
 ## Big data processing
 
 To be added soon.
-
 
 ## Cloud computing
 
