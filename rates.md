@@ -27,7 +27,7 @@ The registration provides access to the following resources:
 * Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools PIs have the option to rent or own storage space.
 * $1000 per 10TB of usable and backed up storage space. Storage pool is shared among all user accounts of a registered lab.
  
-# Ownership models
+## Ownership models
 
 * Disk storage
         
@@ -55,7 +55,7 @@ Standard startup packages in the amount of $30K (N=1 HPC node), $45K (N = 2 HPC 
 
 ## Department cluster membership with owned computing nodes
 
-Addresses needs of departments where PI-based membership is not practical, _e.g._ provide cluster access to large number of numbers of undergraduate students in classes.
+This option addresses needs of departments where PI-based membership is not practical, _e.g._ provide cluster access to large number of numbers of undergraduate students in classes. Under this model a department can purchase computer nodes that will be administered similarly as described obove under the _Ownership Model_. Due to the large number of users administered under departments the CPU quota per user will be reduced compared to the PI-based model.
 
 
 
