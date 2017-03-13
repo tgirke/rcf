@@ -17,7 +17,8 @@ permalink: contact.html
     * Stefano Lonardi (CS)
     * Jason E Stajich (IIGB)
     * Wenxiu Ma (Statistics)
-    * more to be added from CS, geology, physics, chemistry
+    * Keith Richards-Dinger (Department of Earth Sciences)
+    * more to be added from CS, physics, chemistry
 
 * 2 UCR expternal HPC staff members
     * Bill Strossman (C&C)
