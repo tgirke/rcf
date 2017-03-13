@@ -30,8 +30,15 @@ The registration provides access to the following resources:
 * Disk storage
         
     * Lab purchases storage hardware (hard drives) according to the specifications of the facility. Owned hard drives will be added to the facilities parallel GPFS storage system. The annual support fee for owned disk storage is $250 per 10TB of usable and backed-up storage space. 
+    * Owned storage can be attractive for labs with storage needs above 40 TBs.
 
 * Compute nodes
         
     * Lab purchases computer nodes according to the specifications of the facility. 
+    * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
+
+# Start-up packages for new PIs
+
+
+
 
