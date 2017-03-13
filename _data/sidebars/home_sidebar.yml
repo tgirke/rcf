@@ -55,10 +55,6 @@ entries:
       url: /software_system
       output: web
       type: frontmatter
-    - title: Services
-      url: /software_services
-      output: web
-      type: frontmatter
 
   - title: Manuals
     output: web
