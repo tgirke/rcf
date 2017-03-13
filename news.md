@@ -31,7 +31,8 @@ We apologize to users for the downtimes of the cluster these upgrades required. 
 * Expansion of batch queues: 14 nodes
 
 ### Apr 2015 
-    
+
+* Deployment of new FDR IB network @ 56Gbs
 * Deployment of 28 AMD nodes (2,048 AMD cores), funded by NSF-MRI-2014
 * Deployment of high-memory Intel nodes (each with 1TB RAM)
 * Deployment of GPU nodes (NVIDIA K80)
