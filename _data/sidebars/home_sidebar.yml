@@ -35,11 +35,11 @@ entries:
     type: frontmatter
     folderitems:
     - title: Overview
-      url: /hardware_overview
+      url: /hardware_overview.html
       output: web
       type: frontmatter
     - title: Details
-      url: /hardware
+      url: /hardware.html
       output: web
       type: frontmatter
 
