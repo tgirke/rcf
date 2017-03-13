@@ -20,9 +20,9 @@ The registration provides access to the following resources:
   * Over 1000 software packages and community databases. Details are available on the software page.
   * Free attendance of workshops offered by HPCC staff
   * Free consultation services (up to 1 hour per month)
-  * Note: there is no extra charge for CPU usage but each user and lab have CPU quotas of 256 and 512 CPU cores, respectively. Computing jobs exceeding these quotas can be submitted but will stay in queued state until resources within quota become available. Data storage per user account is limited to 20 GB. Much more storage is available via big data storage options.
+  * Note: there is no extra charge for CPU usage but each user and lab have CPU quotas of 256 and 512 CPU cores, respectively. Computing jobs exceeding these quotas can be submitted but will stay in queued state until resources within quota become available. 
 
-## Data storage
+## Big data storage
 
 * Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools PIs have the option to rent or own storage space.
 * $1000 per 10TB of usable and backed up storage space. Storage pool is shared among all user accounts of a registered lab.
