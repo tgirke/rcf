@@ -16,10 +16,10 @@ summary: The following summarizes HPCC's rate structure for UCR users. Rates for
 The annual registration fee of $1,000 gives all members of an UCR lab access to our high-performance computing infrastructure.
 The registration provides access to the following resources: 
 
-  * Over 4.500 CPU cores, ~2PB disk space, 512GB-1TB of memory/node, etc. More details are available on the hardware page.
+  * Over 4.500 CPU cores (Intel and AMD), ~60,000 cuda cores (Nvidia K80 GPU), ~2PB parallel GPFS-based disk space, 512GB-1TB of memory/node, etc. More details are available on the hardware page.
   * Over 1000 software packages and community databases. Details are available on the software page.
-  * Free attendance of our workshops
-  * Free consultation services (up to 1 hour per month).
+  * Free attendance of workshops offered by HPCC staff
+  * Free consultation services (up to 1 hour per month)
 
 # Big Data Storage
 
