@@ -36,7 +36,8 @@ The registration provides access to the following resources:
 
 * Compute nodes
         
-    * Lab purchases computer nodes according to the specifications of the facility. 
+    * Lab purchases computer nodes according to the specifications of the facility.
+    * Nodes are administered under a priority queueing system that gives users from owner lab priority and also increases that labs CPU quota (see above) by the number of owned CPU cores.
     * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
 
 # Startup packages for new PIs
