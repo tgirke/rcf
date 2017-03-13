@@ -5,7 +5,7 @@ permalink: rates.html
 ---
 
 
-# How to gain access?
+# User account requests
 
 * Email user account request to [support@biocluster.ucr.edu](support@biocluster.ucr.edu) including email and name of both user and PI.
 * An FAU for the annual registration fee (see below) is required if a PI's lab is not registered yet.
