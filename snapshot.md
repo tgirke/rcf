@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Activity snapshot of cluster
+title: Activity snapshot of HPCC's hardware universe
 permalink: snapshot.html
 ---
 
