@@ -16,7 +16,7 @@ topnav_dropdowns:
         - title: RED-UCR
           external_url: https://research.ucr.edu/
         - title: Data Science Center
-          external_url: http://hpcc.ucr.edu/future_data_science_site
+          external_url: http://datascience.ucr.edu/
         - title: C&C Co-location Service
           external_url: http://iresearch.ucr.edu/cluster.html
         - title: Big Data FIELDS Program
