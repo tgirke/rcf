@@ -11,7 +11,7 @@ The High-Performance Computing Center (HPCC) provides technical expertise and tr
 
 ## HPC hardware
     
-* Cluster with thousands of CPU cores of different architectures and fast interconnect
+* Multipurpose cluster optimized for parallel, non-parallel and big data computing 
 * Parallel big data storage system with many petabytes of high-availability storage
 * Supported access models
 
