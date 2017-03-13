@@ -21,8 +21,10 @@ permalink: contact.html
     * more to be added from CS, geology, climate research, physics, chemistry
 
 * HPC staff members from UCR
-    * Bill Strossman (C&C)
     * Victor Hill (CS)
+<!---
+    * Bill Strossman (C&C)
+-->
 
 * 2 external members: one academia, one industry 
     * To be added.
