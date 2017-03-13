@@ -13,18 +13,19 @@ permalink: contact.html
 
 ## Advisory Board (executive committee)
 
-* 6 UCR faculty members with hands-on experience in HPC
+* UCR faculty members with hands-on experience in HPC
     * Stefano Lonardi (CS)
     * Jason E Stajich (IIGB)
     * Wenxiu Ma (Statistics)
     * Keith Richards-Dinger (Earth Sciences)
     * more to be added from CS, geology, climate research, physics, chemistry
 
-* 2 UCR expternal HPC staff members
+* HPC staff members from UCR
     * Bill Strossman (C&C)
     * Victor Hill (CS)
 
 * 2 external members: one academia, one industry 
+    * To be added.
 
 ## Location
 
