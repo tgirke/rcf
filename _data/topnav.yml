@@ -19,8 +19,8 @@ topnav_dropdowns:
           external_url: http://datascience.ucr.edu/
         - title: C&C Co-location Service
           external_url: http://iresearch.ucr.edu/cluster.html
-        - title: Big Data FIELDS Program
-          external_url: http://bigdata.ucr.edu/fields
+        - title: FIELDS Program
+          external_url: http://bigdata.ucr.edu/
         - title: Institute of Integrative Genome Biology
           external_url: http://genomics.ucr.edu
         - title: NGS Analysis Service
