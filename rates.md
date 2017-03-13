@@ -42,9 +42,9 @@ The registration provides access to the following resources:
 
 ## Startup packages for new PIs
 
-Standard startup packages in the amount of $30K (N=1 HPC node), $45K (N = 2 HPC nodes), $60K (N=3 HPC nodes) and so on are available. Cost can be covered by initial complement of new PIs. 
+Standard startup packages in the amount of $30K (*N=1), $45K (*N=2), $60K (*N=3) and so on are available. Cost can be covered by initial complement of new PIs. 
 
-* N HPC node(s): owned by lab for 5 yrs and administered under priority queueing model. After this time the node becomes part of the shared HPCC cluster resources. 
+* *N HPC node(s): owned by lab for 5 yrs and administered under priority queueing model. After this time the node becomes part of the shared HPCC cluster resources. 
 
     * Each node with 32* Intel CPU cores (64* logical cores), 512GB RAM and Infiniband interconnect. *the core numbers might nearly double when newer and less expensive Intel chip sets will be released this year.
     * Alternative node architecture (_e.g._ GPU) are available upon request
