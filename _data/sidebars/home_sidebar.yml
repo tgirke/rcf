@@ -25,7 +25,7 @@ entries:
       url: /contact.html
       output: web
       type: frontmatter
-    - title: Slides
+    - title: Overview slides
       url: /slides.html
       output: web
       type: frontmatter
