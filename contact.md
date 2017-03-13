@@ -23,7 +23,7 @@ permalink: contact.html
 * HPC staff members from UCR
     * Victor Hill (CS)
 <!---
-    * Bill Strossman (C&C)
+* Bill Strossman (C&C)
 -->
 
 * 2 external members: one academia, one industry 
