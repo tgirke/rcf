@@ -55,7 +55,7 @@ Standard startup packages in the amount of $30K (N=1), $45K (N=2), $60K (N=3) an
     * Each node with 32* Intel CPU cores (64* logical cores), 512GB RAM and Infiniband interconnect. *the core numbers might nearly double when newer and less expensive Intel chip sets will be released this year.
     * Alternative node architecture (_e.g._ GPU) are available upon request
 
-* HPCC subscription fee of $1000 covered for 5 yrs
+* HPCC subscription fee of $1000/yr covered for 5 yrs
 * Big data storage of 10TB ($1000/yr) covered for 5 yrs; other buy-in options exist to support much larger data storage needs
 
 Custom startup packages may be supported upon approval by HPCC.
