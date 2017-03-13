@@ -13,16 +13,21 @@ entries:
       url: /index.html
       output: web
       type: frontmatter
-    - title: News
-      url: /news.html
-      output: web
-      type: frontmatter
     - title: Activity report
       url: /snapshot.html
       output: web
       type: frontmatter
     - title: Slides
       url: /slides.html
+      output: web
+      type: frontmatter
+    
+  - title: News
+    output: web
+    type: frontmatter
+    folderitems:
+    - title: News and announcements
+      url: /news.html
       output: web
       type: frontmatter
     
