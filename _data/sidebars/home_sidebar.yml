@@ -26,7 +26,7 @@ entries:
       output: web
       type: frontmatter
     - title: Slides
-      url: /slides_march2017.html
+      url: /slides.html
       output: web
       type: frontmatter
 
