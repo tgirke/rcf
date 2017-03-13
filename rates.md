@@ -20,7 +20,7 @@ The registration provides access to the following resources:
   * Over 1000 software packages and community databases. Details are available on the software page.
   * Free attendance of workshops offered by HPCC staff
   * Free consultation services (up to 1 hour per month)
-  * Note: there is no extra charge for CPU usage but the each user has a quota of 256 CPU cores and each lab a total of 512 CPU cores. Computing jobs exceeding these quotas can be submitted but will be queued. Data storage per user account is limited to 20 GB. Much more storage is available via big data storage options.
+  * Note: there is no extra charge for CPU usage but each user has a quota of 256 CPU cores and each lab a total of 512 CPU cores. Computing jobs exceeding these quotas can be submitted but will be queued. Data storage per user account is limited to 20 GB. Much more storage is available via big data storage options.
 
 ## Data storage
 
