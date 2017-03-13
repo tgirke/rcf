@@ -20,7 +20,7 @@ permalink: contact.html
     * Keith Richards-Dinger (Earth Sciences)
     * more to be added from CS, geology, climate research, physics, chemistry
 
-* HPC staff members from UCR
+* HPC expert staff members from UCR
     * Victor Hill (CS)
 
 * 2 external members: one academia, one industry 
