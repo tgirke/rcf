@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Contacts and location
+title: Staff, advisory board and location
 permalink: contact.html
 ---
 
