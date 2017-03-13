@@ -21,16 +21,21 @@ entries:
       url: /snapshot.html
       output: web
       type: frontmatter
-    - title: Access & rates 
-      url: /rates.html
-      output: web
-      type: frontmatter
     - title: Contacts 
       url: /contact.html
       output: web
       type: frontmatter
     - title: Slides
       url: /slides.html
+      output: web
+      type: frontmatter
+    
+  - title: Access & rates
+    output: web
+    type: frontmatter
+    folderitems:
+    - title: Access & rates 
+      url: /rates.html
       output: web
       type: frontmatter
   
