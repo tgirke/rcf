@@ -6,7 +6,7 @@ permalink: contact.html
 
 ## Facility Contacts
 
-* [Thomas Girke](), Director of HPC Center
+* [Thomas Girke](http://girke.bioinformatics.ucr.edu), Director of HPC Center
 * [Jordan Hayes](mailto:jordan.hayes@ucr.edu), HPC Systems Administrator
 * [Austin Leong](mailto:aleon008@ucr.edu), HPC Systems Administrator, Assistant
 * New HPC Syst Admin to be hired, postion posting see [here](https://goo.gl/tngqC1)
