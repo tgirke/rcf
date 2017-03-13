@@ -42,7 +42,7 @@ The registration provides access to the following resources:
     * Nodes are administered under a priority queueing system that gives users from owner lab priority and also increases that labs CPU quota (see above) by the number of owned CPU cores.
     * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
 
-* Software install
+## Software install
 
 * Registered users can email software install requests to ticket system @ [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu). Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex install may take longer.
 
