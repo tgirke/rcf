@@ -25,7 +25,9 @@ The registration provides access to the following resources:
 ## Big data storage
 
 * Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools PIs have the option to rent or own storage space.
-* $1000 per 10TB of usable and backed up storage space. Storage pool is shared among all user accounts of a registered lab.
+* Storage rental option
+    
+    * $1000 per 10TB of usable and backed up storage space. Storage pool is shared among all user accounts of a registered lab.
  
 ## Ownership models
 
