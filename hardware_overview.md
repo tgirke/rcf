@@ -12,7 +12,7 @@ title: Hardware Overview
 * IB network @ 56Gbs
 * Queueing system Slurm
 
-## Big data storage cluster
+## Parallel data storage system
 
 * 2PB GPFS storage (scales to >50PB)
 * Home directories on dedicated system
