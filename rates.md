@@ -42,6 +42,10 @@ The registration provides access to the following resources:
     * Nodes are administered under a priority queueing system that gives users from owner lab priority and also increases that labs CPU quota (see above) by the number of owned CPU cores.
     * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
 
+* Software install
+
+* Registered users can email software install requests to ticket system @ [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu). Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex install may take longer.
+
 ## Startup packages for new PIs
 
 Standard startup packages in the amount of $30K (N=1), $45K (N=2), $60K (N=3) and so on are available. Note: N refers to the number of HPC nodes below. Cost can be covered by initial complement of new PIs. 
