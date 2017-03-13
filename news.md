@@ -17,7 +17,7 @@ With funding provided by Michael Pazzani's office (RED) we were able to purchase
 
 ### Sept 2016
 
-* Expansion of GPFS storage system:
+* Expansion of GPFS storage system: 2 enclosures for 120 8TB drives
 * Expansion of high-memory queue: 4 nodes
 
 ### Mar 2016
@@ -35,8 +35,8 @@ With funding provided by Michael Pazzani's office (RED) we were able to purchase
 
 Award of equipment grants from NSF and NIH
 
-* NIH-S10-2014: $652,816
-* NSF-MRI-2014: $783,537
+* NIH-S10-2014 (1S10OD016290-01A1): $652,816
+* NSF-MRI-2014 (MRI-1429826): $783,537
 
 
 
