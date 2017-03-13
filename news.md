@@ -5,7 +5,7 @@ title: News
 
 ## News 
 
-* Also see UCR HPC Twitter site [here](https://twitter.com/UCR_HPCC)
+Also see UCR HPC Twitter site [here](https://twitter.com/UCR_HPCC)
 
 ### Feb 2017
 
