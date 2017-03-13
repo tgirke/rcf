@@ -33,6 +33,19 @@ entries:
       url: /slides.html
       output: web
       type: frontmatter
+  
+  - title: Events
+    output: web
+    type: frontmatter
+    folderitems:
+    - title: Small
+      url: /events_small.html
+      output: web
+      type: frontmatter
+    - title: Large
+      url: /events_large.html
+      output: web
+      type: frontmatter
 
   - title: Hardware
     output: web
