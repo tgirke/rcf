@@ -11,7 +11,7 @@ summary: The following summarizes HPCC's rate structure for UCR users. Rates for
 * Email user account request to [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu). Please include email address and full name of both user and PI.
 * An FAU for the annual registration fee (see below) is required if a PI's lab is not registered yet.
 
-# Annual Registration Fee
+# Lab-based Registration Fee
 
 The annual registration fee of $1,000 gives all members of an UCR lab access to our high-performance computing infrastructure.
 The registration provides access to the following resources: 
@@ -20,9 +20,11 @@ The registration provides access to the following resources:
   * Over 1000 software packages and community databases. Details are available on the software page.
   * Free attendance of workshops offered by HPCC staff
   * Free consultation services (up to 1 hour per month)
+  * Note: there is no extra charge for CPU usage but the each user has a quota of 256 CPU cores and each lab a total of 512 CPU cores. Computing jobs exceeding these quotas will be 
 
 # Big Data Storage
 
+* Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools PIs have the option to rent or own storage space.
 * $1000 per 10TB of usable and backedup storage space. Storage pool is shared among all user accounts of a registered lab.
  
 # Ownership models
