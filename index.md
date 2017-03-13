@@ -28,7 +28,6 @@ The High-Performance Computing Center (HPCC) provides technical expertise and tr
 
 * HPC usage
 * Small, medium and big data processing
-* Cloud computing (later this year)
 
 ## Cloud and national HPC facilities 
     
