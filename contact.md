@@ -14,6 +14,10 @@ permalink: contact.html
 ## Advisory Board (executive committee)
 
 * 6 UCR faculty members with hands-on experience in HPC
+    * Stefano Lonardi (UCR)
+    * Jason E Stajich (UCR)
+    * more to be added ...
+
 * 2 external members: one academia, one industry 
 
 ## Location
