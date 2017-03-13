@@ -3,7 +3,9 @@ layout: page
 title: News
 ---
 
-## News (also see [Twitter Site](https://twitter.com/UCR_HPCC))
+## News 
+
+* Also see UCR HPC Twitter site [here](https://twitter.com/UCR_HPCC)
 
 ### Feb 2017
 
