@@ -23,15 +23,15 @@ The registration provides access to the following resources:
 
 # Big Data Storage
 
-    * $1000 per 10TB of usable and backedup storage space. Storage pool is shared among all user accounts of a lab.
+* $1000 per 10TB of usable and backedup storage space. Storage pool is shared among all user accounts of a lab.
  
 # Ownership models
 
-    * Disk storage
+* Disk storage
         
-        * Lab purchases storage hardware (hard drives) according to the specifications of the facility. Owned hard drives will be added to the facilities parallel GPFS storage system. The annual support fee for owned disk storage is $250 per 10TB of usable and backed-up storage space. 
+    * Lab purchases storage hardware (hard drives) according to the specifications of the facility. Owned hard drives will be added to the facilities parallel GPFS storage system. The annual support fee for owned disk storage is $250 per 10TB of usable and backed-up storage space. 
 
-    * Compute nodes
+* Compute nodes
         
-        * Lab purchases computer nodes according to the specifications of the facility. 
+    * Lab purchases computer nodes according to the specifications of the facility. 
 
