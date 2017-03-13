@@ -46,6 +46,10 @@ entries:
       url: /events_large.html
       output: web
       type: frontmatter
+    - title: Related
+      url: /events_related.html
+      output: web
+      type: frontmatter
 
   - title: Hardware
     output: web
