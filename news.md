@@ -40,7 +40,7 @@ We apologize to users for the downtimes of the cluster these upgrades required. 
 * Deployment of GPU nodes (NVIDIA K80)
 * Deployment of big data GPFS disk storage system, funded by NIH-S10-2014
 
-### May/June 2014
+### May 2014
 
 Award of equipment grants from NSF and NIH
 
