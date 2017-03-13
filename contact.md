@@ -18,6 +18,7 @@ permalink: contact.html
     * Jason E Stajich (IIGB)
     * Wenxiu Ma (Statistics)
     * Keith Richards-Dinger (Earth Sciences)
+    * Laura Sales (Physics)
     * more to be added from CS, geology, climate research, physics, chemistry
 
 * HPC expert staff members from UCR
