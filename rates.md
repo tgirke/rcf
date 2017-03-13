@@ -4,6 +4,12 @@ title: Access and rates
 permalink: rates.html
 ---
 
+# How to gain access
+
+* Email account request to [support@biocluster.ucr.edu](support@biocluster.ucr.edu) including email and name of user and PI. 
+* An FAU for the annual registration fee (see below) is required if a PI's lab is not registered yet.
+
+
 # Annual Registration Fee
 
 The annual registration fee of $1,000 gives all members of an UCR lab access to our high-performance computing infrastructure.

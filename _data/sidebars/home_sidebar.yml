@@ -17,7 +17,7 @@ entries:
       url: /snapshot.html
       output: web
       type: frontmatter
-    - title: Access rates 
+    - title: Access & rates 
       url: /rates.html
       output: web
       type: frontmatter
