@@ -11,7 +11,7 @@ Also see UCR HPC Twitter site [here](https://twitter.com/UCR_HPCC)
 
 With funding provided by Michael Pazzani's office (RED) we were able to purchase and install major hardware upgrades. This included the following hardware resources:
 
-* Added 28 Intel nodes each with a total of 896 CPU cores (or 1,792 logical CPU cores)
+* Added 28 Intel nodes with a total of 896 CPU cores (or 1,792 logical CPU cores) and 512 GB of RAM per node
 * Added 8 NVIDIA K80 GPUs increasing total number of cuda cores in GPU queue to 59,904
 * Redesign if Infiniband network to support new computer nodes and enhance future scalabilty of IB network to over 1000 nodes
 
