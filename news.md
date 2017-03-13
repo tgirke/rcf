@@ -5,7 +5,7 @@ title: News
 
 ## News
 
-* With funding provided by Michael Pazzani (RED) we were able to purchase and install a major hardware upgrades in Feb 2017. This included the following hardware resources:
+* With funding provided by Michael Pazzani's office (RED) we were able to purchase and install a major hardware upgrades in Feb 2017. This included the following hardware resources:
 
     * Added 28 Intel computer nodes each with a total of 896 CPU cores (or 1,792 logical CPU cores)
     * Added 8 NVIDIA K80 GPUs increasing total number of cuda cores in GPU queue to 59,904
