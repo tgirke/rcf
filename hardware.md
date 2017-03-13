@@ -50,4 +50,4 @@ All users should access the cluster via SSH through `biocluster.ucr.edu`. This a
 * GPU
     * gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores) and 128 GB memory
 * Intel
-    * i01-i12: each with 32 Intel Broadwell cores and 512 GB memory
+    * i01-i40: each with 32 Intel Broadwell cores and 512 GB memory

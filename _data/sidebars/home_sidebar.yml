@@ -34,20 +34,8 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Storage
-      url: /hardware#storage
-      output: web
-      type: frontmatter
-    - title: Network
-      url: /hardware#network
-      output: web
-      type: frontmatter
-    - title: Head Nodes
-      url: /hardware#head-nodes
-      output: web
-      type: frontmatter
-    - title: Worker Nodes
-      url: /hardware#worker-nodes
+    - title: Overview
+      url: /hardware
       output: web
       type: frontmatter
 
