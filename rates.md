@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Access and rates
+title: Access and rates of HPCC's hardware and software resources
 permalink: rates.html
 ---
 
