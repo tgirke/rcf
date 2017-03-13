@@ -22,10 +22,10 @@ The registration provides access to the following resources:
   * Free consultation services (up to 1 hour per month)
   * Note: there is no extra charge for CPU usage but the each user has a quota of 256 CPU cores and each lab a total of 512 CPU cores. Computing jobs exceeding these quotas will be 
 
-# Big Data Storage
+# Data storage
 
 * Standard user accounts have a storage quota of 20 GB. To gain access to much larger storage pools PIs have the option to rent or own storage space.
-* $1000 per 10TB of usable and backedup storage space. Storage pool is shared among all user accounts of a registered lab.
+* $1000 per 10TB of usable and backed up storage space. Storage pool is shared among all user accounts of a registered lab.
  
 # Ownership models
 
@@ -41,8 +41,8 @@ The registration provides access to the following resources:
 
 # Startup packages for new PIs
 
-* $30K (N=1 HPC node) or $45K (N = 2 HPC nodes) or $60K (N=3 HPC nodes) and so on. 
-* N HPC node(s): owned by lab for 3 or 5 yrs and administered under priority queue model. After this time the node becomes part of the shared HPCC cluster resources. 
+* $30K (N=1 HPC node) or $45K (N = 2 HPC nodes) or $60K (N=3 HPC nodes) and so on. Cost can be covered by initial complement of new PIs. 
+* N HPC node(s): owned by lab for 5 yrs and administered under priority queueing model. After this time the node becomes part of the shared HPCC cluster resources. 
 
     * each node with 32* Intel CPU cores (64* logical cores), 512GB RAM and Infiniband interconnect. *the core numbers might nearly double when newer and less expensive Intel chip sets will be released this year.
     * or alternative node architecture (e.g. GPU) available upon request
