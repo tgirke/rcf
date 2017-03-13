@@ -6,10 +6,11 @@ title: Hardware
 
 ## Computer cluster
 
-    * >4,500 CPU cores (40% Intel, 60% AMD)
-    * 512-1024GB RAM per node
-    * GPU: 60,000 cuda cores
-    * IB network @ 56Gbs
+* Over 4,500 CPU cores (40% Intel, 60% AMD)
+* 512-1024GB RAM per node
+* GPU: 60,000 cuda cores
+* IB network @ 56Gbs
+* Queueing system Slurm
 
 ## Big data storage cluster
 
