@@ -53,7 +53,8 @@ Standard startup packages in the amount of $30K (N=1), $45K (N=2), $60K (N=3) an
 
 * HPCC subscription fee of $1000 covered for 5 yrs
 * Big data storage of 10TB ($1000/yr) covered for 5 yrs; other buy-in options exist to support much larger data storage needs
-* Custom startup packages are supported upon approval by HPCC
+
+Custom startup packages may be supported upon approval by HPCC.
 
 ## Department cluster membership with owned computing nodes
 
