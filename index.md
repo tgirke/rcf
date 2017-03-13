@@ -12,7 +12,7 @@ The High-Performance Computing Center (HPCC) provides technical expertise and tr
 ## HPC hardware
     
 * Multipurpose cluster optimized for parallel, non-parallel and big data computing 
-* Petabyte storage system directly attached to computing infrastructure
+* Petabyte storage system for high-availability data directly attached to computing infrastructure
 * Supported access models
 
     * Annual subscription fee for user accounts and CPU access (no extra charge for CPU usage)
