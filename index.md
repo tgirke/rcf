@@ -29,7 +29,7 @@ The High-Performance Computing Center (HPCC) provides technical expertise and ac
 * HPC usage
 * Small, medium and big data processing
 
-## Cloud and national HPC 
+## Cloud and national HPC facilities 
     
 * To be deployed in late 2017
    
