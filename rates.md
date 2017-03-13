@@ -8,7 +8,7 @@ summary: The following outline is a summary of HPCC's rate structure for UCR use
 
 # User account requests
 
-* Email user account request to [support@biocluster.ucr.edu](support@biocluster.ucr.edu). Please include email address and full name of both user and PI.
+* Email user account request to [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu). Please include email address and full name of both user and PI.
 * An FAU for the annual registration fee (see below) is required if a PI's lab is not registered yet.
 
 # Annual Registration Fee
