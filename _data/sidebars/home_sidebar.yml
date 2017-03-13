@@ -39,7 +39,7 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Contacts 
+    - title: Staff, advisory board & location 
       url: /contact.html
       output: web
       type: frontmatter
