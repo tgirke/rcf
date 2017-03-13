@@ -20,7 +20,7 @@ We apologize to users for the downtimes of the cluster these upgrades required. 
 
 ### Dec 2017
 
-* Approval of plans to form HPC Center 
+* UCR approval of plans to form HPC Center 
 
 ### Sept 2016
 
