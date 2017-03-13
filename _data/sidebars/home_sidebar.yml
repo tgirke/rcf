@@ -35,6 +35,10 @@ entries:
     type: frontmatter
     folderitems:
     - title: Overview
+      url: /hardware_overview
+      output: web
+      type: frontmatter
+    - title: Details
       url: /hardware
       output: web
       type: frontmatter
