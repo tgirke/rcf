@@ -24,7 +24,7 @@ We apologize to users for the downtimes of the cluster these upgrades required. 
 
 ### Sept 2016
 
-* Expansion of GPFS storage system: 2 enclosures for 120 8TB drives
+* Expansion of GPFS storage system: 2 disk enclosures for 120 8TB drives
 * Expansion of high-memory queue: 4 nodes
 * Install of new Intel batch queue: 12 nodes
 
