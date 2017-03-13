@@ -22,6 +22,7 @@ permalink: contact.html
 
 * HPC expert staff members from UCR
     * Victor Hill (CS)
+    * Bill Strossman (C&C)
 
 * 2 external members: one academia, one industry 
     * To be added.
