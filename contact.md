@@ -19,6 +19,10 @@ permalink: contact.html
     * Wenxiu Ma (Statistics)
     * more to be added from CS, geology, physics, chemistry
 
+* 2 UCR expternal HPC staff members
+    * Bill Strossman (C&C)
+    * Victor Hill (CS)
+
 * 2 external members: one academia, one industry 
 
 ## Location
