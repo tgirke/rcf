@@ -23,7 +23,7 @@ The registration provides access to the following resources:
 
 # Big Data Storage
 
-* $1000 per 10TB of usable and backedup storage space. Storage pool is shared among all user accounts of a lab.
+* $1000 per 10TB of usable and backedup storage space. Storage pool is shared among all user accounts of a registered lab.
  
 # Ownership models
 
