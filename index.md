@@ -22,7 +22,7 @@ The High-Performance Computing Center (HPCC) provides technical expertise and tr
 ## Software
     
 * Access to >1000 software tools, packages and community databases
-* Custom software installs by emailing ticket system @ [support@biocluster.ucr.edu(mailto:support@biocluster.ucr.edu)
+* Custom software installs by emailing ticket system @ [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu)
 
 ## Training
 
