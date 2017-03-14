@@ -11,9 +11,8 @@ respect to the following usage parameters:
 * CPU usage per user, per queue and nodes
 * RAM usage per user
 
-<p style="text-align: center;"> 
-Click image to view larger version.
-</p>
+<p style="text-align: center;"><font color="red">Click image to view larger version!</font></p>
+
 <div>
 <a href="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png">
 <img alt="qstatMonitor_Report" border="0" src="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;width:3000px;">
