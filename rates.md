@@ -62,7 +62,12 @@ Custom startup packages may be supported upon approval by HPCC.
 
 ## Department cluster membership with owned computing nodes
 
-This option addresses the need of some departments where PI-based membership is not practical, _e.g._ provide cluster access to large number of undergraduate students in classes. Under this model a department purchases computer nodes that will be administered similarly as described above under the _Ownership model_. Due to the large number of users administered under a department, the CPU quota per user will be reduced compared to the PI-based model.
+This option addresses the need of department-level HPC access where the standard 
+PI-based membership is not practical, _e.g._ provide cluster access to large number of undergraduate
+students in classes. Under this model a department purchases computer nodes
+that will be administered similarly as described above under the _Ownership
+model_. Due to the large number of expected users from departments, the
+CPU quota per user is lower compared to the PI-based model.
 
 
 
