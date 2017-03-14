@@ -19,7 +19,7 @@ permalink: contact.html
     * Wenxiu Ma (Statistics)
     * Keith Richards-Dinger (Earth Sciences)
     * Laura Sales (Physics)
-    * more to be added from CS, geology, climate research, physics, chemistry
+    * more to be added from CS, material sciences, geology, chemistry
 
 * HPC expert staff members from UCR
     * Victor Hill (CS)
