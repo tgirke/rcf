@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Related HPC & big data tutorials
+title: Related HPC and big data analysis events
 ---
 
-## HPC, R, data analsysis programming events
+## HPC, R/Bioc data analysis programming events
 
-[5 day R/Bioconductor workshops](http://girke.bioinformatics.ucr.edu/tutorials/)
+[R/Bioconductor workshops](http://girke.bioinformatics.ucr.edu/tutorials/) including annual 5-day events
 
 ## Others
 
