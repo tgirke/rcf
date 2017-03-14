@@ -44,7 +44,7 @@ The registration provides access to the following resources:
 
 ## Software install
 
-* Registered users can email software install requests to ticket system @ [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu). Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.
+* Registered users can email software install requests to HPCC's issue tracking system @ [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu). Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.
 
 ## Startup packages for new PIs
 
