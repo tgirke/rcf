@@ -15,7 +15,7 @@ of a shared research computing infrastructure is that is allows us to build a
 much larger HPC infrastructure (thousands of CPUs/GPUs and many PBs of directly
 attached storage) than what smaller clusters of individual research groups
 could afford including a long-term sustainability plan and systems
-administrative resources. 
+administrative expertise. 
 
 ## HPC hardware
     
