@@ -13,4 +13,6 @@ respect to the following usage parameters:
 
 <div><img alt="qstatMonitor_Report" border="0" src="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;width:3000px;"></div>
 
-To view larger version of this image, right click it and open it in separate browser tab.
+<p style="text-align: center;"> 
+To view a larger version of this image, right click it and open it in a separate browser tab.
+</p>
