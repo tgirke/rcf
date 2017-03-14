@@ -25,8 +25,8 @@ permalink: contact.html
     * Victor Hill (CS)
     * Bill Strossman (C&C)
 
-* 2 external members: one academia, one industry 
-    * To be added.
+* External members from academia and industry 
+    * One of each to be added here.
 
 ## Location
 
