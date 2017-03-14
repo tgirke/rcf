@@ -44,7 +44,7 @@ administrative support.
 
 ## Facility description
 
-   * Our latest hardware/facility description for grant applications is available [here](https://goo.gl/43eOwQ).
+   * The latest hardware/facility description (_e.g._ for grant applications) is available [here](https://goo.gl/43eOwQ).
 
 <!---
 
