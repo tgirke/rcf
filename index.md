@@ -42,9 +42,6 @@ administrative support.
    
    * Support for using commercial cloud computing resources and national HPC facilities
 
-## Facility description
-
-   * The latest hardware/facility description (_e.g._ for grant applications) is available [here](https://goo.gl/43eOwQ).
 
 <!---
 
