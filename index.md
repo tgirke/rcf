@@ -10,12 +10,12 @@ summary: welcome to the website of the High-Performance Computing Center (HPCC) 
 The High-Performance Computing Center (HPCC) provides technical expertise and
 training in HPC, as well as access to state-of-the-art research computing
 infrastructure accessible to all UCR researchers at low cost. This includes
-access to the following shared HPC resources and services. The main drivers of
-building a shared research computing infrastructure is that is allows us to
-build a much larger HPC infrastructure (thousands of CPUs/GPUs and many PBs of
-directly attached storage) than what smaller clusters of individual research
-groups could afford including a long-term sustainability plan and systems
-administrative staff. 
+access to the following shared HPC resources and services. The main advantage
+of a shared research computing infrastructure is that is allows us to build a
+much larger HPC infrastructure (thousands of CPUs/GPUs and many PBs of directly
+attached storage) than what smaller clusters of individual research groups
+could afford including a long-term sustainability plan and systems
+administrative resources. 
 
 ## HPC hardware
     
