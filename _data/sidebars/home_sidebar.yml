@@ -39,6 +39,10 @@ entries:
       url: /rates.html
       output: web
       type: frontmatter
+    - title: Facility Description 
+      url: /facility_description.html
+      output: web
+      type: frontmatter
     
   - title: Contacts
     output: web
