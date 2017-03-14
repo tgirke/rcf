@@ -11,5 +11,5 @@ respect to the following usage parameters:
 * CPU usage per user, per queue and nodes
 * RAM usage per user
 
-<div><img alt="qstatMonitor_Report" border="0" height="42" width="42" src="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center"></div>
+<div><img alt="qstatMonitor_Report" border="0" src="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;width:200px;"></div>
 
