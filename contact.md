@@ -17,11 +17,11 @@ permalink: contact.html
     * Stefano Lonardi (CS)
     * Jason E Stajich (IIGB)
     * Wenxiu Ma (Statistics)
-    * Keith Richards-Dinger (Earth Sciences)
     * Laura Sales (Physics)
     * more to be added from CS, material sciences, geology, chemistry
 
 * HPC expert staff members from UCR
+    * Keith Richards-Dinger (Earth Sciences)
     * Victor Hill (CS)
     * Bill Strossman (C&C)
 
