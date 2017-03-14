@@ -13,7 +13,7 @@ summary: The following summarizes HPCC's rate structure for UCR users. Rates for
 
 ## Lab-based Registration Fee
 
-The annual registration fee of $1,000 gives all members of an UCR lab access to our high-performance computing infrastructure.
+The annual registration fee of $1,000 gives all members of a UCR lab access to our high-performance computing infrastructure.
 The registration provides access to the following resources: 
 
   * Over 4.500 CPU cores (40% Intel and 60% AMD), ~60,000 cuda cores (Nvidia K80 GPU), ~2PB parallel GPFS-based disk space, 512GB-1TB of memory/node, etc. More details are available on the hardware page.
