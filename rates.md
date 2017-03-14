@@ -69,5 +69,9 @@ that will be administered similarly as described above under the _Ownership
 model_. Due to the large number of expected users from departments, the
 CPU quota per user is lower compared to the PI-based model.
 
+## Facility description
+
+   * The latest hardware/facility description (_e.g._ for grant applications) is available [here](https://goo.gl/43eOwQ).
+
 
 
