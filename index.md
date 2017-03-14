@@ -8,7 +8,7 @@ summary: welcome to the website of the High-Performance Computing Center (HPCC) 
 ## Mission and Services
 
 The High-Performance Computing Center (HPCC) provides state-of-the-art research
-computing infrastructure accessible to all UCR researchers at low cost. This
+computing infrastructure and training accessible to all UCR researchers at low cost. This
 includes access to the following shared HPC resources and services. A major
 advantage of a shared research computing infrastructure is that is allows to
 build a much larger HPC infrastructure (with thousands of CPUs/GPUs and many
