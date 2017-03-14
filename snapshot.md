@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Activity snapshot of HPCC's clusters
+title: Activity snapshot of cluster queues
 permalink: snapshot.html
 ---
 
