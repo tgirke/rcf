@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Staff, advisory board and location
+title: Location
 permalink: location.html
 ---
 
-## Location
+## Location and mailing address
 
 1207 G/E Genomics Building ([Google Map](https://goo.gl/OVKyxv))  
 3401 Watkins Drive  
