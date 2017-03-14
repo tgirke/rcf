@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Staff, advisory board and location
-permalink: contact.html
+title: Staff and advisory board
+permalink: members.html
 ---
 
 ## Facility Contacts
@@ -28,10 +28,4 @@ permalink: contact.html
 * External members from academia and industry 
     * One of each to be added here.
 
-## Location
-
-1207 G/E Genomics Building ([Google Map](https://goo.gl/OVKyxv))  
-3401 Watkins Drive  
-University of California  
-Riverside, CA 92521  
 

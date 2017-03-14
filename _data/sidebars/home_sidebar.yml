@@ -48,8 +48,12 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Staff, advisory board & location 
-      url: /contact.html
+    - title: Staff and advisory board 
+      url: /members.html
+      output: web
+      type: frontmatter
+    - title: Location 
+      url: /location.html
       output: web
       type: frontmatter
   
