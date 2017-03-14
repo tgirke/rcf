@@ -14,7 +14,7 @@ access to the following shared HPC resources and services. The main advantage
 of a shared research computing infrastructure is that is allows to build a
 much larger HPC infrastructure (with thousands of CPUs/GPUs and many PBs of directly
 attached storage) than what smaller clusters of individual research groups
-could afford including a long-term sustainability plan and professional systems
+could afford, while also providing a long-term sustainability plan and professional systems
 administrative support. 
 
 ## HPC hardware
