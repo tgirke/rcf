@@ -1,11 +1,11 @@
 ---
 layout: page
-title: News
+title: News and announcements
 ---
 
 Note: for the most current information on exceptions on HPCC's cluster please consult its [alerts](http://hpcc.ucr.edu/alerts.html) or [Twitter site](https://twitter.com/UCR_HPCC) pages.
 
-## Announcements 
+## News
 
 ### Feb 2017
 
