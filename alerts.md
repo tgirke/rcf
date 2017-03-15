@@ -6,7 +6,10 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unexpected exceptions 
 
-For the most current information on short-term exceptions of the cluster please consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see Tweet window at the bottom of this and other pages of the HPCC website. Additional information and updates may be posted on this page as well. 
+For the most current information on short-term exceptions of the cluster please
+consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
+window at the bottom of this and other pages of the HPCC website. Additional
+information and updates on exceptions may be posted here. 
 
 ## Scheduled exceptions and downtimes
 
