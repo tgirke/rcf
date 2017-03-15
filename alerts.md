@@ -16,7 +16,7 @@ information and updates on exceptions may be posted here.
 There are no downtimes or exceptions scheduled at this point.
 
 
-## SOP for Shutdowns
+## SOP for scheduled shutdowns
 
 Standard operating procedures for scheduled shutdowns are [here](https://goo.gl/K3YqdH).
 
