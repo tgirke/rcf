@@ -39,8 +39,13 @@ entries:
       url: /rates.html
       output: web
       type: frontmatter
-    - title: Facility Description 
-      url: /facility_description.html
+
+  - title: Documents
+    output: web
+    type: frontmatter
+    folderitems:
+    - title: Facility & Rates
+      url: /docs.html
       output: web
       type: frontmatter
     
