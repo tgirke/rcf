@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Facility description
+title: Documents
 permalink: docs.html
 ---
 
