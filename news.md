@@ -5,11 +5,9 @@ title: News
 
 ## User alerts
 
-Please note most short-term exceptions of the HPC cluster will be posted on [HPCC @ Twitter](https://twitter.com/UCR_HPCC?ref_src=twsrc%5Etfw).
+For short-term exception on the cluster please consult [HPCC's Twitter site](https://twitter.com/UCR_HPCC)
 
-## News 
-
-Also see HPCC's Twitter site [here](https://twitter.com/UCR_HPCC)
+## Announcements 
 
 ### Feb 2017
 
