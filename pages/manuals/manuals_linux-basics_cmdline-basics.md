@@ -33,6 +33,22 @@ cd ../../         # Moves two directories up (and so on)
 cd -              # Go back to you were previously (before the last directory change)
 ```
 
+{% highlight sh %}
+pwd               # "Print working directory"; show your current path
+
+ls                # "List" contents of current directory
+ls -l             # Similar to ls, but provides additional info on files and directories
+ls -a             # List all files, including hidden files (.name) as well
+ls -R             # Lists subdirectories recursively
+ls -t             # Lists files in chronological order
+
+cd <dir_name>     # "Change directory" to specified path
+cd                # Brings you back to your home directory
+cd ..             # Moves one directory up
+cd ../../         # Moves two directories up (and so on)
+cd -              # Go back to you were previously (before the last directory change)
+{% endhighlight %}
+
 The tilde symbol (~) gets interpreted as the path to your home directory when
 by itself or at the beginning of a word:
 
