@@ -33,7 +33,7 @@ cd ../../         # Moves two directories up (and so on)
 cd -              # Go back to you were previously (before the last directory change)
 ```
 
-{% highlight sh %}
+{% highlight bash %}
 pwd               # "Print working directory"; show your current path
 
 ls                # "List" contents of current directory
