@@ -12,7 +12,7 @@ The scope of this manual is a brief introduction on how to get started using pow
 * Install your preferred GNU/Linux distribution on your local machine (not required!!!)
 * Users at UC Riverside can apply for an account on our Linux clusters by sending an account request to Rakesh Kaundal (rkaundal@ucr.edu).
 
-## Logging-In
+## Logging in
 
 ### Mac or Linux
 
