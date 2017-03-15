@@ -25,8 +25,8 @@ topnav_dropdowns:
           external_url: http://genomics.ucr.edu
         - title: NGS Analysis Service
           external_url: http://illumina.bioinfo.ucr.edu/ht/documentation/analysis
-        - title: Bioinformatics Core
-          external_url: http://facility.bioinformatics.ucr.edu/people
+        - title: Bioinformatics Labs
+          external_url: http://labs.bioinformatics.ucr.edu
         - title: GitHub repo of this site
           external_url: https://github.com/ucr-hpcc/ucr-hpcc.github.io
 
