@@ -1,11 +1,18 @@
 ---
 layout: page
-title: Alerts
+title: User alerts and exceptions
+Summary: the most current information on exceptions on HPCC's cluster will be posted here or on its Twitter site (https://twitter.com/UCR_HPCC).
 ---
 
-## User alerts
+## Twitter 
 
-For the most current information on exceptions on HPCC's cluster please consult its [Twitter site](https://twitter.com/UCR_HPCC).
+For the most current information please consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC)
+
+## User alerts 
+
+None reported at this point.
+
+
 
 
 

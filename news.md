@@ -3,7 +3,7 @@ layout: page
 title: News and announcements
 ---
 
-Note: for the most current information on exceptions on HPCC's cluster please consult its [alerts](http://hpcc.ucr.edu/alerts.html) or [Twitter site](https://twitter.com/UCR_HPCC) pages.
+Note: for the most current information on exceptions on HPCC's cluster please consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or [Twitter](https://twitter.com/UCR_HPCC) pages.
 
 ## News
 
