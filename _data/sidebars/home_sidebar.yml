@@ -30,6 +30,10 @@ entries:
       url: /news.html
       output: web
       type: frontmatter
+    - title: Alerts
+      url: /alerts.html
+      output: web
+      type: frontmatter
     
   - title: Access & rates
     output: web
