@@ -2,7 +2,7 @@
 layout: page
 title: Access and rate structure
 permalink: rates.html
-summary: The following summarizes HPCC's rate structure for UCR users. Rates for external users are slightly higher and can be provided upon request. 
+summary: The following summarizes HPCC's rate structure for UCR users. Rates for external users are slightly higher and are available [here](http://hpcc.ucr.edu/docs.html). 
 ---
 
 
