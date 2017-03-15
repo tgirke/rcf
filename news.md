@@ -5,7 +5,7 @@ title: News
 
 ## User alerts
 
-For short-term exception on the cluster please consult [HPCC's Twitter site](https://twitter.com/UCR_HPCC)
+For the most current information on exceptions on HPCC's cluster please consult its [Twitter site](https://twitter.com/UCR_HPCC)
 
 ## Announcements 
 
