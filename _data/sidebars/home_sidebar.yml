@@ -30,7 +30,7 @@ entries:
       url: /news.html
       output: web
       type: frontmatter
-    - title: Alerts
+    - title: User alerts
       url: /alerts.html
       output: web
       type: frontmatter
