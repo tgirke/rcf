@@ -61,11 +61,11 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Small
+    - title: Short
       url: /events_small.html
       output: web
       type: frontmatter
-    - title: Large
+    - title: Long
       url: /events_large.html
       output: web
       type: frontmatter
