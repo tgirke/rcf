@@ -44,7 +44,7 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Facility & Rates
+    - title: Documents
       url: /docs.html
       output: web
       type: frontmatter
