@@ -4,13 +4,13 @@ title: User alerts and exceptions for HPCC cluster
 Summary: the most current information on exceptions on HPCC's cluster will be posted here or on its Twitter site (https://twitter.com/UCR_HPCC).
 ---
 
-## Twitter 
+## Unexpected exceptions 
 
-For the most current information please consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC)
+For the most current information on short-term exceptions please consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Additional information may be posted here. 
 
-## User alerts 
+## Scheduled exceptions and downtimes
 
-None reported at this point.
+There are no downtimes or exceptions scheduled at this point.
 
 
 
