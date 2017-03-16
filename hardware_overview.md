@@ -26,7 +26,7 @@ title: Hardware Overview
 ## Server room
 
 * Genomics Building, Rm 1120A
-* Size 60 sqft
+* Size 600 sqft
 * Raised floor cooling with redundant AC units 
 * Backup power: UPS plus generator
 
