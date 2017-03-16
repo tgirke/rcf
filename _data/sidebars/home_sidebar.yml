@@ -151,7 +151,7 @@ entries:
           url: /manuals_linux-basics.html
           output: web
 
-      - title: Linux Cluster
+      - title: HPC Cluster
         output: web
         subfolderitems:
         
