@@ -6,13 +6,13 @@ permalink: software_installs
 
 ## What software is installed?
 
-There are hundreds of software tools installed on HPCC's systems. Most software is administered under our module system. To find out what software is installed, run the following command.
+There are hundreds of software tools installed on HPCC's systems. Most software is administered under our module system. To find out what software is installed, users want to run from their account the following command.
 
 ```bash
 module avail
 ```
 
-More details on this is available on the HPCC manual pages [here](http://hpcc.ucr.edu/manuals_linux-cluster_intro.html).
+More details on this is available on the HPCC manual pages [here](http://hpcc.ucr.edu/manuals_linux-cluster_start.html).
 
 ## Software install requests
 
