@@ -25,13 +25,13 @@ administrative support.
     * Annual subscription fee for user accounts and CPU access (no extra charge for CPU usage)
     * Rental options for data storage
     * Ownership options for both computer nodes and data storage
-* For details see [here](http://hpcc.ucr.edu/hardware_overview.html)
+* For details see [Hardware](http://hpcc.ucr.edu/hardware_overview.html)
 
 ## Software
     
 * Access to >1000 software tools, packages and community databases
 * Custom software installs by emailing ticket system @ [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu)
-* For details see [here](http://hpcc.ucr.edu/software_installs)
+* For details see [Software](http://hpcc.ucr.edu/software_installs)
 
 ## Training
 
