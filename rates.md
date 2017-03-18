@@ -14,6 +14,10 @@ Note: HPCC's latest Recharging Rates document is [here](http://hpcc.ucr.edu/docs
 * Email user account request to [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu). Please include email address and full name of both user and PI.
 * An FAU for the annual registration fee (see below) is required if a PI's lab is not registered yet.
 
+## Recharging rates
+
+HPCC's recharging rate structure is outlined below. A more formal summary is available [here](http://hpcc.ucr.edu/docs.html). 
+
 ## Lab-based Registration Fee
 
 An annual registration fee of $1,000 gives all members of a UCR lab access to our high-performance computing infrastructure.
