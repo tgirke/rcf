@@ -3,7 +3,7 @@ layout: page
 title: Related HPC and big data analysis events
 ---
 
-## Big genomics data analysis programming events
+## Big data analysis programming in genome biology
 
 * [R/Bioconductor workshops](http://girke.bioinformatics.ucr.edu/tutorials/) including annual 5-day events
 * Graduate courses using HPC
