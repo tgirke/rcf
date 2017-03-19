@@ -20,6 +20,9 @@ There are no downtimes or exceptions scheduled at this point.
 
 Standard operating procedures for scheduled shutdowns are [here](https://goo.gl/K3YqdH).
 
+## Team collaborations with Slack
+
+Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
 
 
 
