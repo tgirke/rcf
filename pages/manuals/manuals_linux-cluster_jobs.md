@@ -38,7 +38,7 @@ In order to submit a job to different partitions add the optional '-p' parameter
 ```bash
 sbatch -p batch SBATCH_SCRIPT.sh
 sbatch -p highmem SBATCH_SCRIPT.sh
-sbatch -p gpu SBATCH_SCRIPT.sh
+sbatch --qos=gpu -p gpu SBATCH_SCRIPT.sh
 sbatch -p intel SBATCH_SCRIPT.sh
 sbatch -p mygroup SBATCH_SCRIPT.sh
 ```
@@ -144,17 +144,17 @@ exit
 Under a multi step job the salloc command will request resources and then your parent shell will be running on the head node. This means that all commands will be executed on the head node unless preceeded by the srun command. You will also need to exit this shell in order to terminate your job.
 
 ### GPU Jobs
-A single GPU job will no longer reserve an entire node. For each node there are 4 GPUs. This means that you need to request how many GPUs that you would like to use.
+A single GPU job will no longer reserve an entire node. For each node there are 4-8 GPUs. This means that you need to request how many GPUs that you would like to use.
 Non-Interactive:
 
 ```bash
-srun -p gpu --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
+srun --qos=gpu -p gpu --gres=gpu:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 ```
 
 Interactive
 
 ```bash
-srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
+srun --qos=gpu -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
 ```
 
 Of course you should adjust the time argument according to your job requirements.
@@ -169,8 +169,8 @@ echo $CUDA_VISIBLE_DEVICES
 namd2 +idlepoll +devices $CUDA_VISIBLE_DEVICES MD1.namd
 ```
 
-Each user is limited to a maximum of 4 GPUs on the gpu partition. Please be respectful of others and keep in mind that the GPU nodes are a limited shared resource.
-Since the CUDA libraries will only run with GPU hardware then development and compiling of code must be done within a job session on a GPU node, examples mentioned above.
+Each group is limited to a maximum of 8 GPUs on the gpu partition. Please be respectful of others and keep in mind that the GPU nodes are a limited shared resource.
+Since the CUDA libraries will only run with GPU hardward, development and compiling of code must be done within a job session on a GPU node.
 
 Here are a few more examples of jobs that utilize more complex features (ie. array, dependency, MPI etc):
 [Slurm Examples](http://biocluster.ucr.edu/~jhayes/slurm/examples/)
