@@ -103,3 +103,54 @@ rsync -ai FOLDER_A/ sever2.xyz.edu:FOLDER_A/
 
 The sever2.xyz.edu machine must be a server that accepts Rsync connections via SSH.
 
+## Sharing Files on the Web
+
+Simply create a symbolic link or move the files into your html directory when you want to share them.
+For exmaple, log into Biocluster and run the following:
+
+```bash
+# Make new web project directory
+mkdir www-project
+
+# Create a default test file
+echo '<h1>Hello!</h1>' > ./www-project/index.html
+
+# Create shortcut/link for new web project in html directory 
+ln -s `pwd`/www-project ~/.html/
+```
+
+Now, test it out by pointing your web-browser to http://biocluster.ucr.edu/~username/www-project/
+Be sure to replace `username` with your actual user name.
+
+## Password Protect Web Pages
+
+Files in web directories can be password protected.
+First create a password file and then create a new user:
+
+```bash
+touch ~/.html/.htpasswd
+htpasswd ~/.html/.htpasswd newwebuser
+```
+
+This will prompt you to enter a password for the new user 'newwebuser'.
+Create a new directory, or go to an existing directory, that you want to password protect:
+
+```bash
+mkdir ~/.html/locked_dir
+cd ~/.html/locked_dir
+```
+
+For the above commands you can choose any directory name you want.
+
+Then place the following content within a file called `.htaccess`:
+
+```apache
+AuthName 'Please login'
+AuthType Basic
+AuthUserFile /rhome/username/.html/.htpasswd
+require user newwebuser
+```
+
+Now, test it out by pointing your web-browser to http://biocluster.ucr.edu/~username/locked_dir
+Be sure to replace `username` with your actual user name for the above code and URL.
+

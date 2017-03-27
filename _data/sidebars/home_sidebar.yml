@@ -171,6 +171,10 @@ entries:
           url: /manuals_linux-cluster_jobs.html
           output: web
         
+        - title : Limits and Resources
+          url: /manuals_linux-cluster_limits.html
+          output: web
+        
         - title : Data Storage
           url: /manuals_linux-cluster_storage.html
           output: web
@@ -179,6 +183,6 @@ entries:
           url: /manuals_linux-cluster_sharing.html
           output: web
 
-        - title : Linux Cluster
-          url: /manuals_linux-cluster.html
+        - title : Communicating
+          url: /manuals_linux-cluster_users.html
           output: web
