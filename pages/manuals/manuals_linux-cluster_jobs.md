@@ -55,6 +55,32 @@ Slurm is now our default queuing system across all head nodes. [SSH directly int
 ssh -XY biocluster.ucr.edu
 ```
 
+## Resources and Limits
+To see your limits you can do the following:
+
+```bash
+sacctmgr show account $GROUP format=Account,User,Partition,GrpCPUs,GrpMem,GrpNodes --ass | grep $USER
+```
+
+In order to view your group limits, execute the following:
+
+```bash
+sacctmgr show account $GROUP format=Account,User,Partition,GrpCPUs,GrpMem,GrpNodes,GrpTRES%30 --ass | head -3
+```
+
+Check total number of cores used by your group in the all partitions:
+
+```bash
+echo $(squeue -A $GROUP -o '%C' -t Running | grep -P '^[0-9]' | tr '\n' '+' | sed 's/+$//g') | bc
+```
+
+However this does not tell you when your job will start, since it depends on the duration of each job.
+The best way to do this is with the "--start" flag on the squeue command:
+
+```bash
+squeue --start -u $USER
+```
+
 ### Submitting Jobs
 There are 2 basic ways to submit jobs; non-interactive, interactive. Slurm will automatically start within the directory where you submitted the job from, so keep that in mind when you use relative file paths.
 Non-interactive submission of a SBATCH script:
