@@ -55,7 +55,7 @@ Slurm is now our default queuing system across all head nodes. [SSH directly int
 ssh -XY biocluster.ucr.edu
 ```
 
-## Resources and Limits
+### Resources and Limits
 To see your limits you can do the following:
 
 ```bash
