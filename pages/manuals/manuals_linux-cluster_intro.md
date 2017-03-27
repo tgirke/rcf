@@ -32,23 +32,23 @@ All users should access the cluster via ssh through biocluster.ucr.edu, this add
 
 * Penguin
     * Resources: 8 cores, 64 GB memory
-    * Primary function: submitting jobs to the queuing system (Torque/Maui)
+    * Primary function: submitting jobs to the queuing system
     * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
 * Pigeon
     * Resources: 16 cores, 128 GB memory
-    * Primary function: submitting jobs to the queuing system (Torque/Maui)
+    * Primary function: submitting jobs to the queuing system
     * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
 * Pelican
     * Resources: 32 cores, 64 GB memory
-    * Primary function: submitting jobs to the queuing system (Torque/Maui)
+    * Primary function: submitting jobs to the queuing system
     * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
 * Owl
     * Resources: 16 cores, 64 GB memory
     * Primary function: testing; running test sets of jobs
-    * Secondary function: submitting jobs to the queuing system (Torque/Maui)
+    * Secondary function: submitting jobs to the queuing system
 * Globus
     * Resources: 32 cores, 32 GB memory
-    * Primary function: submitting jobs to the queuing system (Slurm)
+    * Primary function: submitting jobs to the queuing system
     * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
 
 ### Worker Nodes

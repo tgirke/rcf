@@ -27,10 +27,15 @@ In the past we used queues under the old Torque system, we now refer to these lo
     * Time (walltime): 100 hours  default
 * intel
     * Default partition
-    * Nodes: i01-i12
-    * Cores: Intel, 64 per user
+    * Nodes: i01-02,i17-i40
+    * Cores: Intel, 256 per user
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
+* short
+    * Nodes: i01-i40
+    * Cores: Intel, 256 per user
+    * RAM: 1 GB default
+    * Time (walltime): 2 hours Maximum
 * Group Partition
     * This partition is unique to the group, if your lab has purchased nodes then you will have a priority partition with the same name as your group (ie. girkelab).
 In order to submit a job to different partitions add the optional '-p' parameter with the name of the partition you want to use:
