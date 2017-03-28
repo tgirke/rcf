@@ -28,18 +28,18 @@ __Listing Users with Active Jobs on the Cluster__
 To get a list of usernames:
 
 ```bash
-qstat | awk '{print $3}' | sort | uniq | grep "^[^-N]"
+squeue --format '%u' | sort | uniq
 ```
 
 To get the list of real names:
 
 ```bash
-grep <(user_details.sh | awk '{print $2,$3,$4}') -f <(qstat | awk '{print $3}' | sort | uniq | grep "^[^-N]") | awk '{print $1,$2}'
+grep <(user_details.sh | awk '{print $2,$3,$4}') -f <(squeue --format '%u' --noheader | sort | uniq) | awk '{print $1,$2}'
 ```
 
 To get the list of emails:
 
 ```bash
-grep <(user_details.sh | awk '{print $4,$5}') -f <(qstat | awk '{print $3}' | sort | uniq | grep "^[^-N]") | awk '{print $2}'
+grep <(user_details.sh | awk '{print $4,$5}') -f <(squeue --format '%u' --noheader | sort | uniq) | awk '{print $2}'
 ```
 
