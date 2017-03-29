@@ -57,7 +57,7 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Members 
+    - title: Staff & Committees 
       url: /members.html
       output: web
       type: frontmatter
