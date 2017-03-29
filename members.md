@@ -18,7 +18,8 @@ permalink: members.html
     * Jason E Stajich (IIGB)
     * Wenxiu Ma (Statistics)
     * Laura Sales (Physics)
-    * more to be added from CS, material sciences, geology, chemistry
+    * David Kisailus (Chemical and Environmental Engineering)
+    * more to be added from CS, geology, chemistry
 
 * HPC expert staff members from UCR
     * Keith Richards-Dinger (Earth Sciences)
