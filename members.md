@@ -13,6 +13,8 @@ permalink: members.html
 
 ## Advisory Board (executive committee)
 
+The responsibilities of the Advisory Board are outlined [here](https://goo.gl/X3p1VK).
+
 * UCR faculty members with hands-on experience in HPC
     * Stefano Lonardi (CS)
     * Jason E Stajich (IIGB)
