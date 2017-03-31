@@ -21,5 +21,5 @@ respect to the following usage parameters:
 
 ## Detailed report
 
-Much detailed activity stats cluster nodes are collected by Ganglia. To view them, visit this [page](http://ganglia.bioinfo.ucr.edu/ganglia/). The user name and password for this page are both `g a n g l i a`
+Much detailed activity stats on cluster nodes are collected by Ganglia. To view them, visit this [page](http://ganglia.bioinfo.ucr.edu/ganglia/). The user name and password for this page are both `g a n g l i a`
 
