@@ -22,5 +22,5 @@ respect to the following usage parameters:
 
 ## Ganglia 
 
-Go [here](http://ganglia.bioinfo.ucr.edu/ganglia/)
+Go [here](http://ganglia.bioinfo.ucr.edu/ganglia/). User name and password are both `g a n g l i a`.
 
