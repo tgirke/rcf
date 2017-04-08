@@ -22,7 +22,6 @@ The responsibilities of the Advisory Board are outlined [here](https://goo.gl/X3
     * Leonard Mueller (Chemistry)
     * David Kisailus (Chemical and Environmental Engineering)
     * Jason E Stajich (IIGB)
-    * more to be added from CS, geology, chemistry
 
 * HPC expert staff members from UCR
     * Keith Richards-Dinger (Earth Sciences)
