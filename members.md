@@ -17,10 +17,11 @@ The responsibilities of the Advisory Board are outlined [here](https://goo.gl/X3
 
 * UCR faculty members with hands-on experience in HPC
     * Stefano Lonardi (CS)
-    * Jason E Stajich (IIGB)
     * Wenxiu Ma (Statistics)
     * Laura Sales (Physics)
+    * Leonard Mueller (Chemistry)
     * David Kisailus (Chemical and Environmental Engineering)
+    * Jason E Stajich (IIGB)
     * more to be added from CS, geology, chemistry
 
 * HPC expert staff members from UCR
