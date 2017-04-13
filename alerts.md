@@ -12,6 +12,9 @@ Our UPS unit went down some time last night causing a power failure on all syste
 few hours. Nationwide Power will come in asap to repair the UPS. Note, this failure has not resulted in any overheating problems since the AC units
 are running on a different power cricuit.
 
+Once you are able to log in again, it may not be a good idea start very long running jobs (over several days/weeks) until we know whether the repair 
+of the UPS will require a power shutdown in the next few days. 
+
 Updates will be posted here...
 
 
