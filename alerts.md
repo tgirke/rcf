@@ -6,10 +6,10 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unexpected exceptions 
 
-### 10:02AM, 13-Apr-17: UPS failure
+### 10:02 AM, 13-Apr-17: UPS failure
 
 Our UPS unit went down some time last night causing a power failure on all systems. Jordan is bypassing the UPS to bring things back up in the next
-1-2 hours. Nationwide power will come in asap possible to repair the UPS. This failure has not resulted in any overheating problems since the AC units
+1-2 hours. Nationwide Power will come in asap possible to repair the UPS. This failure has not resulted in any overheating problems since the AC units
 are running on a different power cricuit. 
 
 
