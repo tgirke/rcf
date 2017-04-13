@@ -4,7 +4,7 @@ title: User alerts for HPCC's computing resources
 Summary: the most current information on exceptions on HPCC's cluster will be posted here or on its Twitter site (https://twitter.com/UCR_HPCC).
 ---
 
-## Unexpected exceptions 
+## Unannounced exceptions 
 
 ### 10:02 AM, 13-Apr-17: UPS failure
 
