@@ -12,10 +12,11 @@ Our UPS unit went down some time last night causing a power failure on all syste
 few hours. Nationwide Power will come in asap to repair the UPS. Note, this failure has not resulted in any overheating problems since the AC units
 are running on a different power cricuit.
 
-Once users are able to log into the cluster again, it may not be a good idea to start very long running jobs (over several days/weeks) until we know whether the repair 
-of the UPS will require a power shutdown in the next few days. 
+### 11:22 AM, 13-Apr-17: Cluster back up running
 
-Updates will be posted here...
+Situation is resolved for now and things are working. We are currently discussing the situation with our electricians to avoid future instances.
+
+We will keep you updated...
 
 
 For the most current information on short-term exceptions of the cluster please
