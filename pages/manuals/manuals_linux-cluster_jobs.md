@@ -153,6 +153,28 @@ To list all the details of a specific job, run the following:
 scontrol show job <JOBID>
 ```
 
+### Canceling Jobs
+In cancel/stop your job run the following:
+
+```bash
+scancel <JOBID>
+```
+
+You can also cancel multiple jobs:
+
+```bash
+scancel <JOBID1> <JOBID2> <JOBID3>
+```
+
+If you want to cancel/stop/kill ALL your jobs it is possible with the following:
+
+```bash
+# Be very careful when running this, it will kill all your jobs.
+squeue --user $USER --noheader --format '%i' | xargs scancel
+```
+
+For more information please refer to [Slurm scancel documentation](https://slurm.schedmd.com/scancel.html "Slurm scancel doc").
+
 ### Advanced Jobs
 There is a third way of submitting jobs by using steps.
 Single Step submission:
