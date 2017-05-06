@@ -11,7 +11,8 @@ permalink: docs.html
 
 ## Recharging rates
 
-   * [Recharging rates](https://goo.gl/jJWpon)
+   * [Recharging rates: 2016/2017](https://goo.gl/jJWpon)
+   * [Recharging rates: 2017/2018](https://goo.gl/QjJgzu)
 
 
 
