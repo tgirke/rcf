@@ -16,7 +16,7 @@ respect to the following usage parameters:
 
 <p style="text-align: center;"><font color="red">Click image to enlarge!</font></p>
 
-<div><a href="http://biocluster.ucr.edu/~tgirke/qstatMonitorWeb.png"><img alt="qstatMonitor_Report" border="0" src="http://biocluster.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;"></a></div>
+<div><a href="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png"><img alt="qstatMonitor_Report" border="0" src="http://biocluster.bioinfo.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;"></a></div>
 
 
 ## Detailed report
