@@ -15,7 +15,7 @@ With funding provided by Michael Pazzani's office (RED) we were able to purchase
 * Added 8 NVIDIA K80 GPUs increasing total number of cuda cores in GPU queue to 59,904
 * Redesign of Infiniband network to support new computer nodes and enhance future scalabilty of IB network to over 1000 nodes
 
-### Dec 2017
+### Dec 2016
 
 * UCR approval of plans to form HPC Center 
 
