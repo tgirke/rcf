@@ -18,7 +18,7 @@ In the past we used queues under the old Torque system, we now refer to these lo
 * highmem
     * Nodes: h01-h04
     * Cores: Intel, 32 per user
-    * RAM: 16 GB min and 1024 GB max
+    * RAM: 100 GB min and 1024 GB max
     * Time (walltime): 48 hours (2 days) default
 * gpu
     * Nodes: gpu01-gpu02

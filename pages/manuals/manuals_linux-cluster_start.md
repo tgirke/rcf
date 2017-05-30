@@ -159,7 +159,7 @@ Currently, the maximum number of CPU cores a user can use simultaneously on bioc
 A standard user account has a storage quota of 20GB. Much more storage space, in the range of many TBs, can be made available in a user account's bigdata directory. The amount of storage space available in bigdata depends on a user group's annual subscription. The pricing for extending the storage space in the bigdata directory is available [here](/home).
 
 ### Memory
-From the Biocluster head node users can submit jobs to the batch queue or the highmem queue. The nodes associated with the batch queue are mainly for CPU intensive tasks, while the nodes of the highmem queue are dedicated to memory intensive tasks. The batch nodes allow a 1GB RAM minimum limit on jobs and and the highmem nodes allow 16GB-512GB RAM jobs.
+From the Biocluster head node users can submit jobs to the batch queue or the highmem queue. The nodes associated with the batch queue are mainly for CPU intensive tasks, while the nodes of the highmem queue are dedicated to memory intensive tasks. The batch nodes allow a 1GB RAM minimum limit on jobs and and the highmem nodes allow 100GB-1024GB RAM jobs.
 
 ## What's Next?
 You should now know the following:
