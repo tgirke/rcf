@@ -201,7 +201,7 @@ A single GPU job will no longer reserve an entire node. For each node there are 
 Non-Interactive:
 
 ```bash
-srun --qos=gpu -p gpu --gres=gpu:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
+sbatch --qos=gpu -p gpu --gres=gpu:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 ```
 
 Interactive
