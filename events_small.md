@@ -11,7 +11,7 @@ Jan 20, 2017 | 12:00pm - 2:00pm | Genomics 1208 | Jordan Hayes | **Slurm and Bas
 ## HPC
 
 Date         | Time             | Location      | Instructors  | Title and Description | Material
-July 24, 2017 | 9:00am - 11:00am | Genomics Building Auditorium 1102A | Charles Forsyth | **HPCC Cluster (Biocluster) Intro Workshop**<br/>Basic introdution to the HPCC Cluster and Services. | [Resigtration Link](https://goo.gl/forms/F71zGycJSwgWOggg2)
+July 24, 2017 | 9:00am - 11:00am | Genomics Building Auditorium 1102A | Charles Forsyth | **HPCC Cluster (Biocluster) Intro Workshop**<br/>Basic introdution to the HPCC Cluster and Services. | [Registration Link](https://goo.gl/forms/F71zGycJSwgWOggg2)
 
 ## Big data processing
 
