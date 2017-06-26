@@ -7,6 +7,10 @@ Note: for the most current information on exceptions on HPCC's cluster please co
 
 ## News
 
+### Jun 2017
+
+* Charles Forsyth joins HPCC as new full-time HPC systems administrator. - Welcome Chuck!
+
 ### Feb 2017
 
 With funding provided by Michael Pazzani's office (RED) we were able to purchase and install major hardware upgrades. This included the following hardware resources:

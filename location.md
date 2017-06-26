@@ -6,7 +6,7 @@ permalink: location.html
 
 ## Office location and mailing address
 
-1207 G/E Genomics Building ([Google Map](https://goo.gl/OVKyxv))  
+1208/1207 Genomics Building ([Google Map](https://goo.gl/OVKyxv))  
 3401 Watkins Drive  
 University of California  
 Riverside, CA 92521  
