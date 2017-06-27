@@ -233,13 +233,15 @@ Here are a few more examples of jobs that utilize more complex features (ie. arr
 ### MPI Introduction
 
 MPI stands for the Message Passing Interface. MPI is a standardized API typically used for parallel and/or distributed computing.
-Biocluster has a custom compiled version of OpenMPI that allows users to run MPI jobs across multiple nodes.
+The HPCC cluster has a custom compiled versions of MPI that allows users to run MPI jobs across multiple nodes.
 These types of jobs have the ability to take advantage of hundreds of CPU cores symultaniously, thus improving compute time.
 
 Many implementations of MPI exists, however we only support the following:
 * [Open MPI](http://www.open-mpi.org/)
 * [MPICH](http://www.mpich.org/)
+* [IMPI](https://software.intel.com/en-us/mpi-developer-guide-linux)
 
+For general information on MPI under Slurm look [here](https://slurm.schedmd.com/mpi_guide.html).
 If you need to compile an MPI application then please email support@biocluster.ucr.edu for assistance.
 
 ### NAMD Example
@@ -274,4 +276,16 @@ To run a NAMD2 process as an OpenMPI job on Biocluster:
    ```bash
    sbatch run_bio.sh
    ```
+
+### Maker Example
+
+OpenMPI does not function properly with Maker, you must use MPICH.
+Our version of MPICH does not use the mpirun/mpiexec wrappers, instead use srun:
+
+```bash
+module unload openmpi
+module unload perl
+module load maker
+srun --time=5:00:00 --mem=50gb --ntasks=2 maker # Of course you will need to define appropriate job resources here
+```
 
