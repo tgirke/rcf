@@ -51,7 +51,7 @@
 		{% endif %}
                 <!--comment out this block if you want to hide search-->
                 <li>
-                    <!--start search-->
+                    <!--start search
                     <div id="search-demo-container">
                         <input type="text" id="search-input" placeholder="{{site.data.strings.search_placeholder_text}}">
                         <ul id="results-container"></ul>
@@ -68,7 +68,39 @@
                             fuzzy: true,
                     })
                     </script>
-                    <!--end search-->
+                    end search-->
+                    <style>
+                        form.gsc-search-box{margin:0px;}
+                        td.gsc-search-button{border:0; background-color:#347DBE;}
+                        td.gsc-input{padding-right:0px; padding:0px; border:0px; background-color:#347DBE;}
+                        #gs_id50{max-width: 100%;}
+                        .gsib_b{display: none;}
+                        table.gsc-search-box{max-width: 100%; border:0px; padding:0px; margin:0px;}
+                        .gsc-input {
+                            /*background-color:#347DBE;*/
+                        }
+                        .gsc-control-cse {
+                            padding:0px; border:none;
+                        }
+                        .cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+                            box-sizing: content-box;
+                        }
+                    </style>
+                    <div style="width: 300px;">
+                    <script>
+  (function() {
+    var cx = '004857151150335158352:qtwoji9ri2i';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+                    </div>
+ 
                 </li>
             </ul>
         </div>
