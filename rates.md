@@ -55,7 +55,7 @@ The registration provides access to the following resources:
 
 ## Startup packages for new PIs
 
-Standard startup packages in the amount of $30K (N=1), $45K (N=2), $60K (N=3) and so on are available. Note: N refers to the number of HPC nodes below. The cost for these packages can be covered by the initial complement of new PIs. 
+Standard startup packages in the amount of $20K (N=1), $30K (N=2), $40K (N=3) and so on are available. Note: N refers to the number of HPC nodes below. The cost for these packages can be covered by the initial complement of new PIs. 
 
 * N HPC node(s): owned by lab for 5 yrs and administered under priority queueing model. After this time the node becomes part of the shared HPCC cluster resources. 
 
