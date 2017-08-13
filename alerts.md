@@ -6,7 +6,15 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unannounced exceptions 
 
+### 11:00 AM, 13-Aug-17: AC problem
+
+Since Sat morning one of the AC units is working properly. To avoid overheating, 
+we have shut down most of the idle nodes on Sun at 1:30PM. As soon as the AC unit 
+is repaired we will power the nodes back on.
+
+<!--
 Nothing to report at this point. 
+-->
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
@@ -24,9 +32,7 @@ network services. We ask that you please make sure that you do not have any
 jobs running in the queue, and that you completely logout of the cluster
 (pigeon, owl, penguin, pelican, globus) before the shutdown. 
 
-<!--
 There are no downtimes or exceptions scheduled at this point.
--->
 
 ## SOP for scheduled shutdowns
 
