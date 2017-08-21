@@ -6,15 +6,8 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unannounced exceptions 
 
-### 11:00 AM, 13-Aug-17: Cooling problem
 
-Since Sat morning one of the HVAC units is not working properly. To avoid overheating, 
-we have shut down most of the idle nodes (1:30PM, Sun). As soon as the HVAC unit 
-is repaired we will power these nodes back on.
-
-<!--
 Nothing to report at this point. 
--->
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
@@ -44,6 +37,12 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 
 
 ## Past exceptions 
+
+### 11:00 AM, 13-Aug-17: Cooling problem
+
+Since Sat morning one of the HVAC units is not working properly. To avoid overheating, 
+we have shut down most of the idle nodes (1:30PM, Sun). As soon as the HVAC unit 
+is repaired we will power these nodes back on.
 
 ### 10:02 AM, 13-Apr-17: UPS failure
 
