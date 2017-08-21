@@ -6,7 +6,6 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unannounced exceptions 
 
-
 Nothing to report at this point. 
 
 For the most current information on short-term exceptions of the cluster please
@@ -42,7 +41,9 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 
 Since Sat morning one of the HVAC units is not working properly. To avoid overheating, 
 we have shut down most of the idle nodes (1:30PM, Sun). As soon as the HVAC unit 
-is repaired we will power these nodes back on.
+is repaired we will power these nodes back on. Note, this issue was resolved on 17-Aug-17.
+UCR facility services has repaired the broken HVAC unit and serviced the second one 
+as well.
 
 ### 10:02 AM, 13-Apr-17: UPS failure
 
