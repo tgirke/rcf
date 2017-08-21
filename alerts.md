@@ -42,8 +42,7 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 Since Sat morning one of the HVAC units is not working properly. To avoid overheating, 
 we have shut down most of the idle nodes (1:30PM, Sun). As soon as the HVAC unit 
 is repaired we will power these nodes back on. Note, this issue was resolved on 17-Aug-17.
-UCR facility services has repaired the broken HVAC unit and serviced the second one 
-as well.
+UCR facility services has repaired the broken HVAC unit and serviced the second one. 
 
 ### 10:02 AM, 13-Apr-17: UPS failure
 
