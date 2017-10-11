@@ -22,7 +22,7 @@ The scope of this manual is a brief introduction on how to get started using pow
 2. Open Terminal or [iterm2](https://www.iterm2.com/downloads.html)
 
 ### Logging in
-* Now that you have a terminal open execute the following on the command line:
+* Now that you have a terminal open, execute the following on the command line:
   `ssh -X <your_username>@<host_name>`
 
   `host_name` is the remote server's domain name (e.g. `biocluster.ucr.edu`)  
