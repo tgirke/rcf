@@ -18,7 +18,7 @@ ssh -X username@biocluster.ucr.edu
 Please refer to the login instructions of our [Linux Basics manual](manuals_linux-basics_intro#windows).
 
 ## Change Password
-1. Login via SSH using the Terminal on Mac/Linux or Putty on Windows
+1. Login via SSH using the Terminal on Mac/Linux or MobaXTerm on Windows
 +  Once you have logged in type the following command:
 ```
 passwd
