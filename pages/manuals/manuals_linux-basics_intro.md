@@ -12,12 +12,17 @@ The scope of this manual is a brief introduction on how to get started using pow
 * Install your preferred ssh client on your local machine (we can help you with this).
 * Users at UC Riverside can apply for an account on our Linux clusters by sending an account request to Support (support@biocluster.ucr.edu).
 
-## Logging in
+### Windows
 
-### Mac or Linux
+1. Open MobaXTerm [Download MobaXTerm](https://mobaxterm.mobatek.net/download-home-edition.html)
+2. Click on "Start local terminal" in the center of the window.
 
-* To log-in into the remote Linux shell, open terminal and type:
+### Mac
+1. Download and install [XQuartz](https://www.xquartz.org/), this is optional and only needed if you want X11 Forwarding.
+2. Open Terminal or [iterm2](https://www.iterm2.com/downloads.html)
 
+### Logging in
+* Now that you have a terminal open execute the following on the command line:
   `ssh -X <your_username>@<host_name>`
 
   `host_name` is the remote server's domain name (e.g. `biocluster.ucr.edu`)  
@@ -31,24 +36,8 @@ The scope of this manual is a brief introduction on how to get started using pow
 
   `scp -r <your_username>@<host_name>:<path_to_directory> .`
 
-### Windows
-
-1. Open PuTTY and select ssh. [Download PuTTY](http://www.chiark.greenend.org.uk/%7Esgtatham/putty/download.html) if you do not have it.
-2. Provide the host name (the remote server's domain name) and session name 
-
-   hostname:  biocluster.ucr.edu
-
-3. Enter your identity information
-
-   username: your username  
-   password: your password 
-
-   **Nothing will show-up,**  
-   **simply type the password and press enter.**
-
-4. Setup for graphics emulation. [Download and install Xming](http://www.straightrunning.com/XmingNotes/#head-13) if you do not have it.
-
-5. Use WinSCP or FileZilla for file exchange. [Download and install WinSCP](https://winscp.net/eng/download.php) or [FileZilla](https://filezilla-project.org/) if you do not have it.
+## File Transfers
+If you would rather use a graphical interface, instead of the command line, try FileZilla [FileZilla](https://filezilla-project.org/) for file exchanges.
 
 ## Change Password
 

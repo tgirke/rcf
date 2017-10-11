@@ -15,7 +15,7 @@ ssh -X username@biocluster.ucr.edu
 ```
 
 ## Login from Windows
-Please refer to the login instructions of our [Linux Basics manual](#linux-basics).
+Please refer to the login instructions of our [Linux Basics manual](manuals_linux-basics_intro#windows).
 
 ## Change Password
 1. Log-in via SSH using the Terminal on Mac/Linux or Putty on Windows
