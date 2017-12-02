@@ -1,6 +1,6 @@
 ---
 layout: page
-title: HPC and big data processing tutorials
+title: HPC and Big Data Processing Tutorials
 ---
 
 Date              | Time             | Location                           | Instructors                      | Title and Description | Material
