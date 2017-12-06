@@ -6,7 +6,16 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unannounced exceptions 
 
-Nothing to report at this point. 
+NFS and SMB services have been suspended temporarily.
+This will cause many of our web services to not function properly.
+These include, but not limited to:
+  * https://rstudio.bioinfo.ucr.edu & https://rstudio2.bioinfo.ucr.edu
+  * https://galaxy.bioinfo.ucr.edu
+  * https://dashboard.bioinfo.ucr.edu
+  * https://biocluster.ucr.edu/~username (.html directories)
+  * mysql://bioclusterdb.int.bioinfo.ucr.edu (databases)
+We are working to resolve this issue as quickly as possible.
+Thank you for your patience.
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
