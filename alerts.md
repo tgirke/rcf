@@ -6,7 +6,7 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unannounced exceptions 
 
-All services have been returned to normal operations and we are carefully monitoring stability.
+Nothing to report at this point
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
