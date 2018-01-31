@@ -15,16 +15,10 @@ information and updates on exceptions may be posted here.
 
 ## Scheduled exceptions and downtimes
 
-To sustain future growth, the power load in the HPCC server room needs to be
-optimized. For this we have scheduled an HPCC (Biocluster) shutdown in four
-weeks from now which will start at noon on June 16th and last until noon June 17th. This
-will require a shutdown of ALL services: Slurm (queuing system), hosted
-websites, virtual environments/machines, storage access, backup systems and
-network services. We ask that you please make sure that you do not have any
-jobs running in the queue, and that you completely logout of the cluster
-(pigeon, owl, penguin, pelican, globus) before the shutdown. 
+For routine maintenance and upgrades we have scheduled an HPCC (Biocluster)
+shutdown for 12:00AM, Jan-31-2018 to 12:00AM, Feb-01-2018. 
 
-There are no downtimes or exceptions scheduled at this point.
+There are no other downtimes or exceptions scheduled at this point.
 
 ## SOP for scheduled shutdowns
 
@@ -48,12 +42,25 @@ These include, but not limited to:
   * https://biocluster.ucr.edu/~username (.html directories)
   * mysql://bioclusterdb.int.bioinfo.ucr.edu (databases)
 
+Note, this issue was resolved soon after it occurred. 
+
 ### 11:00 AM, 13-Aug-17: Cooling problem
 
 Since Sat morning one of the HVAC units is not working properly. To avoid overheating, 
 we have shut down most of the idle nodes (1:30PM, Sun). As soon as the HVAC unit 
 is repaired we will power these nodes back on. Note, this issue was resolved on 17-Aug-17.
 UCR facility services has repaired the broken HVAC unit and serviced the second one. 
+
+### 12:00 AM, 16-Jun-17 to 17-Jun-17: maintenance shutdown
+
+To sustain future growth, the power load in the HPCC server room needs to be
+optimized. For this we have scheduled an HPCC (Biocluster) shutdown in four
+weeks from now which will start at noon on June 16th and last until noon June 17th. This
+will require a shutdown of ALL services: Slurm (queuing system), hosted
+websites, virtual environments/machines, storage access, backup systems and
+network services. We ask that you please make sure that you do not have any
+jobs running in the queue, and that you completely logout of the cluster
+(pigeon, owl, penguin, pelican, globus) before the shutdown. 
 
 ### 10:02 AM, 13-Apr-17: UPS failure
 
