@@ -15,10 +15,8 @@ information and updates on exceptions may be posted here.
 
 ## Scheduled exceptions and downtimes
 
-For routine maintenance and upgrades we have scheduled an HPCC (Biocluster)
-shutdown for 12:00AM, Jan-31-2018 to 12:00AM, Feb-01-2018. (complete) 
 
-There are no other downtimes or exceptions scheduled at this point.
+There are no downtimes or exceptions scheduled at this point.
 
 ## SOP for scheduled shutdowns
 
@@ -30,6 +28,11 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 
 
 ## Past exceptions 
+
+### 12:00 AM, 31-Jan-18: routine maintenance shutdown
+
+For routine maintenance and upgrades we have scheduled an HPCC (Biocluster)
+shutdown for 12:00AM, Jan-31-2018 to 12:00AM, Feb-01-2018. (complete) 
 
 ### 12:00 AM, 05-Dec-17: NFS & SMB issues
 
