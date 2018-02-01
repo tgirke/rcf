@@ -16,7 +16,7 @@ information and updates on exceptions may be posted here.
 ## Scheduled exceptions and downtimes
 
 For routine maintenance and upgrades we have scheduled an HPCC (Biocluster)
-shutdown for 12:00AM, Jan-31-2018 to 12:00AM, Feb-01-2018. 
+shutdown for 12:00AM, Jan-31-2018 to 12:00AM, Feb-01-2018. (complete) 
 
 There are no other downtimes or exceptions scheduled at this point.
 
