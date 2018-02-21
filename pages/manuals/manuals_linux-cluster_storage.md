@@ -10,7 +10,7 @@ HPCC cluster users are able to check on their home and bigdata storage usage fro
 ## Home
 Home directories are where you start each session on biocluster and where your jobs start when running on the cluster.  This is usually where you place the scripts and various things you are working on.  This space is very limited.  Please remember that the home storage space quota per user account is 20 GB.
 
-Path                 | /rhome/<username>
+Path                 | /rhome/`username`
 -------------------- | ----------------
 User  Availability   | All Users
 Node  Availability   | All Nodes
@@ -22,7 +22,7 @@ Bigdata is an area where large amounts of storage can be made available to users
 __Lab Shared Space__
 This directory can be accessed by the lab as a whole.
 
-Path                 | /bigdata/<labname>/shared
+Path                 | /bigdata/`labname`/shared
 -------------------- | --------------------------
 User Availability    | Labs that have purchased space.
 Node Availability    | All Nodes
@@ -31,7 +31,7 @@ Quota Responsibility | Lab
 __Individual User Space__
 This directory can be accessed by specific lab members.
 
-Path                 | /bigdata/<labname>/<username>
+Path                 | /bigdata/`labname`/`username`
 -------------------- | -----------------------------
 User Availability    | Labs that have purchased space.
 Node Availability    | All Nodes
