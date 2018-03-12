@@ -103,7 +103,7 @@ ebs_settings = hpcc
 
 [ebs hpcc]
 volume_size = 100
-ebs_snapshot_id = snap-065792c207c5a93e0
+ebs_snapshot_id = snap-0d9fd9ecf09544753
 volume_type = gp2
 
 ```
@@ -132,7 +132,7 @@ ebs_settings = hpcc
 
 [ebs hpcc]
 volume_size = 100
-ebs_snapshot_id = snap-065792c207c5a93e0
+ebs_snapshot_id = snap-0d9fd9ecf09544753
 volume_type = gp2
 
 [vpc public]
