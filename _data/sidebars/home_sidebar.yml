@@ -182,3 +182,31 @@ entries:
         - title : Communicating
           url: /manuals_linux-cluster_users.html
           output: web
+
+      - title: HPCC Cloud/External
+        output: web
+        subfolderitems:
+        
+        - title : HPCC AWS Cluster Introduction
+          url: /manuals_hpcc-aws-cluster_intro.html
+          output: web
+        
+        - title : Creating Account
+          url: /manuals_hpcc-aws-cluster_create-acct.html
+          output: web
+
+        - title : Egress Waiver 
+          url: /manuals_hpcc-aws-cluster_egress.html
+          output: web
+
+        - title : Setup 
+          url: /manuals_hpcc-aws-cluster_setup.html
+          output: web
+
+        - title : Cluster Control and Operation 
+          url: /manuals_hpcc-aws-cluster_operation.html
+          output: web
+
+        - title : Cost Control and Billing 
+          url: /manuals_hpcc-aws-cluster_billing.html
+          output: web
