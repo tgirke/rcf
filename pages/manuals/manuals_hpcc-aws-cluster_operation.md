@@ -56,9 +56,8 @@ cfncluster delete <NameForYourCluster>
 
 ## Connecting to your cluster
 
-Note
-/path/to/your/key-file.pem = where you saved your AWS account key file
-<MasterPublicIP> = Master Public IP address from the cluster status
+Note - /path/to/your/key-file.pem = where you saved your AWS account key file
+MasterPublicIP = Master Public IP address from the cluster status
 
 ```bash
 ssh -i /path/to/your/key-file.pem ec2-user@<MasterPublicIP>
