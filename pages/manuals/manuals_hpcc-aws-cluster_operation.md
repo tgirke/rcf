@@ -39,6 +39,9 @@ Output:"GangliaPublicURL"="http://52.52.227.148/ganglia/"
 Output:"GangliaPrivateURL"="http://172.31.24.51/ganglia/"
 ```
 
+Note the "MasterPublicIP" Address from the output.
+Use this IP Address when connecting to the cluster via "ssh" or uploading and downloading via "scp".
+
 ## Show running Clusters
 
 ```bash
@@ -53,7 +56,9 @@ cfncluster delete <NameForYourCluster>
 
 ## Connecting to your cluster
 
-Note - /path/to/your/key-file.pem = where you saved your AWS account key file
+Note
+/path/to/your/key-file.pem = where you saved your AWS account key file
+<MasterPublicIP> = Master Public IP address from the cluster status
 
 ```bash
 ssh -i /path/to/your/key-file.pem ec2-user@<MasterPublicIP>
