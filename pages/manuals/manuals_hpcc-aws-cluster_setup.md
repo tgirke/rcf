@@ -60,7 +60,7 @@ or
 vim /rhome/<username>/.cfncluster/config
 ```
 
-```bash
+```ini
 [aws]
 aws_region_name = us-west-1
 aws_access_key_id = XXXXXXXXXXXXXXXXXXXX
@@ -89,7 +89,7 @@ Be sure to replace <YOUR KEY NAME> with the name of the key file you were given 
 Example: keyfile.pem = keyfile
 
 
-```bash
+```ini
 [cluster default]
 vpc_settings = public
 key_name = <YOUR KEY NAME>
@@ -114,7 +114,7 @@ volume_type = gp2
 
 Final result
 
-```bash
+```ini
 [aws]
 aws_region_name = us-west-1
 aws_access_key_id = XXXXXXXXXXXXXXXXXXXX
