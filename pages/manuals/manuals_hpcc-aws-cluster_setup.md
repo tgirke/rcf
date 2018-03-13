@@ -83,7 +83,11 @@ cluster_template = default
 ### Remove your "cluster default" section and add some code to your config file.
 
 Copy and paste the following into your config file.
-Be sure to replace <YOUR KEY NAME> with the name of the key file us were given.
+
+Be sure to replace <YOUR KEY NAME> with the name of the key file you were given with out file extention.
+
+Example: keyfile.pem = keyfile
+
 
 ```bash
 [cluster default]
@@ -170,3 +174,4 @@ Now that your config file is setup correctly. You can begin to create and intera
 ## Setup Walk Through
 
 <script src="https://asciinema.org/a/Uh9030qKVHhSRICO42KsmzZz6.js" id="asciicast-Uh9030qKVHhSRICO42KsmzZz6" async data-autoplay="false" data-size="small" data-speed="3"></script>
+

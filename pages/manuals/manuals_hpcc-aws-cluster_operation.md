@@ -23,6 +23,22 @@ module load cfncluster
 cfncluster create <NameForYourCluster>
 ```
 
+## Show status of a Cluster
+
+```bash
+cfncluster status <NameForYourCluster>
+```
+
+Output:
+
+```bash
+Status: cfncluster-new-cluster - CREATE_COMPLETE                                
+Output:"MasterPublicIP"="52.52.227.148"
+Output:"MasterPrivateIP"="172.31.24.51"
+Output:"GangliaPublicURL"="http://52.52.227.148/ganglia/"
+Output:"GangliaPrivateURL"="http://172.31.24.51/ganglia/"
+```
+
 ## Show running Clusters
 
 ```bash
@@ -131,4 +147,4 @@ cfncluster delete new-cluster
 
 ## Start sample cluster walk through (sped up)
 
-<script src="https://asciinema.org/a/uH2CH6RhWc7JHOBSl4yqra5n8.js" id="asciicast-uH2CH6RhWc7JHOBSl4yqra5n8" async data-speed="20" data-size="medium"></script>
+<script src="https://asciinema.org/a/V868uHqjjBdGtn2Ajlbw0Jd7D.js" id="asciicast-V868uHqjjBdGtn2Ajlbw0Jd7D" async data-autoplay="false" data-size="medium" data-speed="5"></script>
