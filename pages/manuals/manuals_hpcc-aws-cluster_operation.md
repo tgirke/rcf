@@ -10,23 +10,16 @@ permalink: manuals_hpcc-aws-cluster_operation.html
 ssh username@biocluster.ucr.edu
 ```
 
-## Load cfnCluster
-
-```bash
-module unload python/2.7.5
-module load cfncluster
-```
-
 ## Create a Cluster
 
 ```bash
-cfncluster create <NameForYourCluster>
+hpcc_cloud create <NameForYourCluster>
 ```
 
 ## Show status of a Cluster
 
 ```bash
-cfncluster status <NameForYourCluster>
+hpcc_cloud status <NameForYourCluster>
 ```
 
 Output:
@@ -45,13 +38,13 @@ Use this IP Address when connecting to the cluster via "ssh" or uploading and do
 ## Show running Clusters
 
 ```bash
-cfncluster list
+hcpp_cloud list
 ```
 
 ## Delete cluster
 
 ```bash
-cfncluster delete <NameForYourCluster>
+hpcc_cloud delete <NameForYourCluster>
 ```
 
 ## Connecting to your cluster
@@ -61,7 +54,7 @@ Note - /path/to/your/key-file.pem = where you saved your AWS account key file
 MasterPublicIP = Master Public IP address from the cluster status
 
 ```bash
-ssh -i /path/to/your/key-file.pem ec2-user@<MasterPublicIP>
+ssh -i /path/to/your/key-file.pem centos@<MasterPublicIP>
 ```
 
 ## Uploading data to your cluster
@@ -69,7 +62,7 @@ ssh -i /path/to/your/key-file.pem ec2-user@<MasterPublicIP>
 This will transfer the local files to your home directory on the cluster.
 
 ```bash
-scp -i /path/to/your/key-file.pem <local-files-to-copy> ec2-user@<MasterPublicIP>:.
+scp -i /path/to/your/key-file.pem <local-files-to-copy> centos@<MasterPublicIP>:.
 ```
 
 ## Downloading data/results
@@ -77,7 +70,7 @@ scp -i /path/to/your/key-file.pem <local-files-to-copy> ec2-user@<MasterPublicIP
 This would be called from the HPCC cluster and it will download the specified remote files to your current directory.
 
 ```bash
-scp -i /path/to/your/key-file.pem ec2-user@<MasterPublicIP>:./<files-to-download> .
+scp -i /path/to/your/key-file.pem centos@<MasterPublicIP>:./<files-to-download> .
 ```
 
 ## Running a job on your cluster
@@ -87,7 +80,7 @@ This will show all the steps needed to create a cluster and run a simple batch j
 ### 1. Start a new cluster
 
 ```bash
-cfncluster create new-cluster
+hpcc_cloud create new-cluster
 ```
 
 ### 2. Get the IP address of the new cluster
@@ -99,7 +92,7 @@ Use this IP Address when connecting to the cluster via "ssh" or uploading and do
 Output:
 
 ```bash
-cfncluster create new-cluster
+hpcc_cloud create new-cluster
 Beginning cluster creation for cluster: new-cluster
 Creating stack named: cfncluster-new-cluster
 Status: cfncluster-new-cluster - CREATE_COMPLETE                                
@@ -115,13 +108,13 @@ Find the "MasterPublicIP"
 This will transfer the local files to your home directory on the cluster.
 
 ```bash
-scp -i /path/to/your/key-file.pem <local-files-to-copy> ec2-user@<MasterPublicIP>:.
+scp -i /path/to/your/key-file.pem <local-files-to-copy> centos@<MasterPublicIP>:.
 ```
 
 ### 4. SSH to your new cluster
 
 ```bash
-ssh -i /path/to/your/key-file.pem ec2-user@<MasterPublicIP>
+ssh -i /path/to/your/key-file.pem centos@<MasterPublicIP>
 ```
 
 ### 5. Submit your job to the cluster
@@ -141,13 +134,13 @@ squeue
 This command would be called from the HPCC cluster and it will download the specified remote files to your current directory.
 
 ```bash
-scp -i /path/to/your/key-file.pem ec2-user@<MasterPublicIP>:./<results-to-download> .
+scp -i /path/to/your/key-file.pem centos@<MasterPublicIP>:./<results-to-download> .
 ```
 
 ### 8. Delete cluster
 
 ```bash
-cfncluster delete new-cluster 
+hpcc_cloud delete new-cluster 
 ```
 
 ## Start sample cluster walk through (sped up)
