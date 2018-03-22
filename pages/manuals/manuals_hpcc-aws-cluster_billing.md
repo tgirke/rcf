@@ -23,9 +23,9 @@ There are also some saving to be realized by choosing the best type of compute n
 It is easy to change the compute type and HPCC can help you to make the best decision for your work.
 You can also simply use HPCCs default configuration.
 
-As a practical example: (~$0.77 cents per hour to run in default configuration)
+As a practical example: (~$0.43 cents per hour to run in default configuration)
 
-* Using the most common cluster configuration - One headnode and two 8 core compute nodes.
+* Using the most common cluster configuration - One headnode and one 8 core compute node with 16G Ram.
 * Without using spot pricing.
 * Assuming 25GB of input and/or output data.
 
