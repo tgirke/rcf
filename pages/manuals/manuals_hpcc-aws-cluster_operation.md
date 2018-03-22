@@ -145,4 +145,4 @@ hpcc_cloud delete new-cluster
 
 ## Start sample cluster walk through (sped up)
 
-<script src="https://asciinema.org/a/OQsmfBsSPNckfKyNwecBGvzA5.js" id="asciicast-OQsmfBsSPNckfKyNwecBGvzA5" async data-autoplay="false" data-size="medium" data-speed="5"></script>
+<script src="https://asciinema.org/a/OQsmfBsSPNckfKyNwecBGvzA5.js" id="asciicast-OQsmfBsSPNckfKyNwecBGvzA5" async data-autoplay="false" data-size="small" data-speed="5"></script>
