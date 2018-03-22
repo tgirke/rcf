@@ -49,4 +49,4 @@ Now that your config file is setup correctly. You can begin to create and intera
 
 ## Setup Walk Through
 
-#<script src="https://asciinema.org/a/RtQN15IaLyNr4t3Tj27fMxKB0.js" id="asciicast-RtQN15IaLyNr4t3Tj27fMxKB0" async data-autoplay="false" data-size="small" data-speed="3"></script>
+<script src="https://asciinema.org/a/ZeBM6yqO8cD0dhw7LwauXj943.js" id="asciicast-ZeBM6yqO8cD0dhw7LwauXj943" async data-autoplay="false" data-size="small" data-speed="3"></script>
