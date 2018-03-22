@@ -31,10 +31,10 @@ hpcc_cloud configure
   * YOUR-aws_secret_access_key (found in your credentials file)
 * AWS Region ID
   * us-west-1
-* Key Name
-  * Choose your Key Name from the list
 * VPC Name
   * Just hit enter to choose the default public
+* Key Name
+  * Choose your Key Name from the list
 * VPC ID
   * Choose any of the avaiable options
 * Master Subnet ID
