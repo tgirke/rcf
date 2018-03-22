@@ -41,9 +41,9 @@ administrative support.
 
 ## Cloud and national HPC facilities 
     
-* To be deployed in late 2017
+* HPCC AWS Cloud
    
-   * Support for using commercial cloud computing resources and national HPC facilities
+   * [HPCC Cloud Introduction](http://hpcc.ucr.edu/manuals_hpcc-aws-cluster_intro.html)
 
 
 <!---
