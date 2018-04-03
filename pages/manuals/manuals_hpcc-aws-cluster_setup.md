@@ -36,9 +36,9 @@ hpcc_cloud configure
 * Key Name
   * Choose your Key Name from the list
 * VPC ID
-  * Choose any of the avaiable options
+  * Choose any of the available options
 * Master Subnet ID
-  * Choose any of the avaiable options
+  * Choose any of the available options
 * IAM User Name 
   * Choose your IAM User Name from the list
 
