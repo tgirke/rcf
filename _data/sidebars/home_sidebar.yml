@@ -112,6 +112,10 @@ entries:
       url: /software_system
       output: web
       type: frontmatter
+    - title: Commercial Software
+      url: /software_commercial
+      output: web
+      type: frontmatter
 
   - title: Manuals
     output: web
