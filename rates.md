@@ -45,8 +45,8 @@ The registration provides access to the following resources:
 
 * Compute nodes
         
-    * Lab purchases computer nodes according to the specifications of the facility. An example of a popular high-density architecture is [this one](http://www.thinkmate.com/system/hdx-xt24-5260v4-sas3) with 4 nodes each with two 16 core Intel chips (total physical core count 128), each node with 512GB of RAM, 1.2TB SSD and FDR-IB interconnect, discounted price ~$36,000. 
-    * Nodes are administered under a priority queueing system that gives users from owner lab priority and also increases that labs overall CPU quota (see above) by the number of owned CPU cores.
+    * Lab purchases computer nodes according to the specifications of the facility. An example of a popular high-density architecture is [this one](http://www.thinkmate.com/system/hdx-xt24-5260v4-sas3) with 4 nodes each with two 16 core Intel chips (total physical core count 128), each node with 512GB of RAM, 1.2TB SSD and FDR-IB interconnect, discounted price ~$36,000-50,000. 
+    * Nodes are administered under a priority queueing system that gives users from an owner lab priority and also increases that lab's overall CPU quota (see above) by the number of owned CPU cores.
     * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
 
 ## Software install
@@ -59,7 +59,7 @@ Standard startup packages in the amount of $20K (N=1), $30K (N=2), $40K (N=3) an
 
 * N HPC node(s): owned by lab for 5 yrs and administered under priority queueing model. After this time the node becomes part of the shared HPCC cluster resources. 
 
-    * Each node with 32* Intel CPU cores (64* logical cores), 512GB RAM and Infiniband interconnect. *the core numbers might nearly double when newer and less expensive Intel chip sets will be released this year.
+    * Each node with 32* Intel CPU cores (64* logical cores), 512GB RAM and Infiniband interconnect. *The core numbers might nearly double when newer and less expensive Intel chip sets will be released this year. However, the per node cost may be subject to rapid changes (e.g the cost of RAM has increased by several fold in last year).
     * Alternative node architecture (_e.g._ GPU) are available upon request
 
 * HPCC subscription fee of $1000/yr covered for 5 yrs
