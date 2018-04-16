@@ -246,6 +246,22 @@ Since the CUDA libraries will only run with GPU hardward, development and compil
 Here are a few more examples of jobs that utilize more complex features (ie. array, dependency, MPI etc):
 [Slurm Examples](http://biocluster.ucr.edu/~jhayes/slurm/examples/)
 
+### Licenses
+The cluster currently supports [Commercial Software](software_commercial). Since most of the licenses are campus wide there is no need to track individual jobs. One exception is the Intel Parallel Suite, which contains the Intel compilers.
+
+The `--licenses` flag is used to request a license for Intel compilers, for example:
+
+```bash
+srun --license=intel:1 -p short --mem=10g --cpus-per-task=10 --time=2:00:00 --pty bash -l
+module load intel
+icc -help
+```
+
+The above interactive submission will request 1 Intel license, 10GB of RAM, 10 CPU cores for 2 hours on the short partition.
+The short parititon can only be used for a maximum of 2 hours, however for compilation this could be sufficient.
+It is recommended that you separate your compilation job from your computation/analysis job.
+This way you will only have the license checked out for the duration of compilation, and not the during the execution of the analysis.
+
 ## Parallelization Software
 
 ### MPI Introduction
