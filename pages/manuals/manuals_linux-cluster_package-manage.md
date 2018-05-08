@@ -78,6 +78,31 @@ It is possible for you to copy an existing environment into a new environment:
 conda create --name AnotherNameForNewEnv --clone NameForNewEnv
 ```
 
+### Jupyter
+We also have a service for interactive Python development, [Jupyter-Hub](https://jupyter.bioinfo.ucr.edu).
+In order to enable your environemnt within Jupyter you will need to do the following:
+
+```bash
+# Create a virtual environment, if you don't already have one
+conda create -n ipykernel_py2 python=2 ipykernel
+
+# Load the new environment
+source activate ipykernel_py2
+
+# Install kernel
+python -m ipykernel install --user --name myenv --display-name "JupyterPy2"
+```
+
+Now when you visit [Jupyter-Hub](https://jupyter.bioinfo.ucr.edu) you should see the option "JupyterPy2" when you click the "New" dropdown menu in the upper left corner of the home page.
+
+Multiple versions of Python and R are supported.
+For instructions on how to configure your R environment please visit [IRkernel](https://github.com/IRkernel/IRkernel).
+Since we should already have IRkernel install in the latest version of R, you would only need to do the following within R:
+
+```R
+IRkernel::installspec(name = 'ir44', displayname = 'R 3.5.0')
+```
+
 ### More Info
 For more information regarding conda please visit [Conda Docs](https://conda.io/docs/user-guide/).
 
