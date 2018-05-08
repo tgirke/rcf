@@ -103,6 +103,50 @@ Since we should already have IRkernel install in the latest version of R, you wo
 IRkernel::installspec(name = 'ir44', displayname = 'R 3.5.0')
 ```
 
+### R
+This section is a introduction on how to manage R packages
+
+#### Current R Version
+Currently the default version of R is 3.5.0 and loaded automaticly for you.
+This can be seen by running:
+
+```bash
+module list
+```
+
+#### Older R Versions
+You can load older versions of R with the following:
+
+```bash
+module unload R
+module load R/3.4.2
+```
+
+#### Installing R Packages
+The default version of R has many of the most popluar R packages avaiable all ready installed.
+It is also possable for you to install additional R packages in your local environments. 
+
+##### Bioconductor Packages
+
+```R
+source("https://bioconductor.org/biocLite.R")
+biocLite("package-to-install")
+Update all/some/none? [a/s/n]: n
+```
+
+##### GitHub Packages
+
+```R
+library(devtools)
+install_github("duncantl/RGoogleDocs") # replace name with the GitHub account/repo
+```
+
+##### Local Packages
+
+```R
+install.packages("http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz",repos=NULL,type="source") # replace URL with your URL or local path to your .tar.gz file
+```
+
 ### More Info
 For more information regarding conda please visit [Conda Docs](https://conda.io/docs/user-guide/).
 
