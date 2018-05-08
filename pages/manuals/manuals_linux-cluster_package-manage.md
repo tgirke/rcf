@@ -104,7 +104,7 @@ IRkernel::installspec(name = 'ir44', displayname = 'R 3.5.0')
 ```
 
 ### R
-This section is a introduction on how to manage R packages
+This section is a automatically on how to manage R packages
 
 #### Current R Version
 Currently the default version of R is 3.5.0 and loaded automaticly for you.
@@ -123,8 +123,8 @@ module load R/3.4.2
 ```
 
 #### Installing R Packages
-The default version of R has many of the most popluar R packages avaiable all ready installed.
-It is also possable for you to install additional R packages in your local environments. 
+The default version of R has many of the most popular R packages available all ready installed.
+It is also possible for you to install additional R packages in your local environments. 
 
 ##### Bioconductor Packages
 
