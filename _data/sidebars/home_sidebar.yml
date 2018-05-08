@@ -175,6 +175,10 @@ entries:
           url: /manuals_linux-cluster_jobs.html
           output: web
         
+        - title : Package Management
+          url: /manuals_linux-cluster_package-manage.html
+          output: web
+        
         - title : Data Storage
           url: /manuals_linux-cluster_storage.html
           output: web
@@ -186,6 +190,7 @@ entries:
         - title : Communicating
           url: /manuals_linux-cluster_users.html
           output: web
+        
 
       - title: HPCC Cloud/External
         output: web
