@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Acknowledgement of Facility
-permalink: Acknowledgement.html
+permalink: acknowledgement.html
 ---
 
 
