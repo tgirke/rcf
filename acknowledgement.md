@@ -5,7 +5,7 @@ permalink: acknowledgement.html
 ---
 
 
-## Acknowledge Facility 
+## Acknowledgement in Publications 
 
 We appreciate that you have chosen our facility to support your research and
 would like to remind you to add the following statement to acknowledge the
