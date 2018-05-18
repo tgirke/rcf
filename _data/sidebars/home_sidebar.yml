@@ -219,3 +219,12 @@ entries:
         - title : Cost Control and Billing 
           url: /manuals_hpcc-aws-cluster_billing.html
           output: web
+
+  - title: Acknowledgement
+    output: web
+    type: frontmatter
+    folderitems:
+    - title: Acknowledgement
+      url: /acknowledgement.html
+      output: web
+      type: frontmatter
