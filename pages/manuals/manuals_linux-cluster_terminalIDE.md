@@ -1,20 +1,13 @@
 ---
 layout: page
-title: Terminal IDEs - Coding/Working Environments 
+title: Terminal-based Working Environments 
 permalink: manuals_linux-cluster_terminalIDE.html
 ---
 
-## Terminal IDEs
-This page introduces several terminal-based working environment useful for a variety of computer languages.
+# Terminal IDEs
+This page introduces several terminal-based working environment useful for a variety of computer languages that are available on HPCC.
 
-
-### Useful resources for learning vim/nvim
-
-* [Interactive Vim Tutorial](http://www.openvim.com)
-* [Official Vim Documentation](http://vimdoc.sourceforge.net/)
-* [HPCC Linux Manual](http://hpcc.ucr.edu/manuals_linux-basics_vim.html)
-
-## Nvim-R-Tmux essentials 
+## For R: Nvim-R-Tmux 
 
 Terminal-based Working Environment for R: [Nvim-R-Tmux](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899). 
 
@@ -119,7 +112,7 @@ __Session-level comands__
 * `$ tmux kill-session -t <id>`: kills a specific tmux session
 * `Ctrl-a : kill-session`: kills a session from tmux command mode that can be initiated with `Ctrl-a :`
 
-## Nvim IDEs for other languages
+## For Bash, Python and other languages
 
 For other languages, such as Bash, Python and Ruby, one can use the
 [vimcmdline](https://github.com/jalvesaq/vimcmdline) plugin for nvim (or vim). To
