@@ -17,8 +17,8 @@ environment for R where users can send code from a script to the R console or co
 Both tmux and the `nvim-r` plugin need to be installed on a system. On HPCC Cluster both are configured
 in each user account. If this is not the case then follow the quick configuration instructions given in the following subsection.
 
-<center><img title="Nvim-R-Tmux" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" ></center>
-<center>Nvim-R-Tmux IDE for R</center>
+<center><img title="Nvim-R" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" ></center>
+<center>Nvim-R IDE for R</center>
 
 
 ### Quick configuration in user accounts of UCR's HPCC
