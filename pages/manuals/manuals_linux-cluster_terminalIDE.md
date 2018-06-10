@@ -114,15 +114,27 @@ __Session-level comands__
 
 ## For Bash, Python and other languages
 
+### Overview
+
+For languages other than R one can use the
+[vimcmdline](https://github.com/jalvesaq/vimcmdline) plugin for nvim (or vim).
+Supported languages include Bash, Python, Golang, Haskell, JavaScript, Julia,
+Jupyter, Lisp, Macaulay2, Matlab, Prolog, Ruby, and Sage. The nvim terminal
+also colorizes the output, as in the screenshot below, where different colors
+are used for general output, positive and negative numbers, and the prompt
+line.
+
 <center><img title="vimcmdline" src="https://cloud.githubusercontent.com/assets/891655/7090493/5fba2426-df71-11e4-8eb8-f17668d9361a.png" ></center>
 <center>vimcmdline</center>
 
-For other languages, such as Bash, Python and Ruby, one can use the
-[vimcmdline](https://github.com/jalvesaq/vimcmdline) plugin for nvim (or vim). To
-install it, one needs to copy from the `vimcmdline` resository the directories
+### Install
+
+To install it, one needs to copy from the `vimcmdline` resository the directories
 `ftplugin`, `plugin` and `syntax` and their files to `~/.config/nvim/`. For
 user accounts of UCR’s HPCC, the above install script `install_nvimRtmux` includes the 
 install of `vimcmdline` (since 09-Jun-18).
+
+### Usage
 
 The usage of `vimcmdline` is very similar to `nvim-R`. To start a connected terminal session, one
 opens with nvim a code file with the extension of a given language (_e.g._ `*.sh` for Bash or `*.py` for Python), 
