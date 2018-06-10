@@ -7,7 +7,7 @@ permalink: manuals_linux-cluster_terminalIDE.html
 # Terminal IDEs
 This page introduces several terminal-based working environment useful for a variety of computer languages that are available on HPCC.
 
-## For R: Nvim-R-Tmux 
+## For R: nvim-R 
 
 ### Basics
 
@@ -112,7 +112,7 @@ __Session-level comands__
 
 ## For Bash, Python and other languages
 
-### Overview
+### Basics
 
 For languages other than R one can use the
 [vimcmdline](https://github.com/jalvesaq/vimcmdline) plugin for nvim (or vim).
