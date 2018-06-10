@@ -9,12 +9,6 @@ This page introduces several terminal-based working environment useful for a var
 
 ## For R: Nvim-R-Tmux 
 
-Terminal-based Working Environment for R: [Nvim-R-Tmux](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899). 
-
-<center><img title="Nvim-R-Tmux" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" ></center>
-<center>Nvim-R-Tmux IDE for R</center>
-
-
 ### Basics
 
 Tmux is a terminal multiplexer that allows to split terminal windows and to detach/reattach to
@@ -22,6 +16,10 @@ existing terminal sessions. Combinded with the `nvim-r` plugin it provides a pow
 environment for R where users can send code from a script to the R console or command-line.
 Both tmux and the `nvim-r` plugin need to be installed on a system. On HPCC Cluster both are configured
 in each user account. If this is not the case then follow the quick configuration instructions given in the following subsection.
+
+<center><img title="Nvim-R-Tmux" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" ></center>
+<center>Nvim-R-Tmux IDE for R</center>
+
 
 ### Quick configuration in user accounts of UCR's HPCC
 
