@@ -21,7 +21,7 @@ in each user account. If this is not the case then follow the quick configuratio
 <center>Nvim-R IDE for R</center>
 
 
-### Quick configuration in user accounts of UCR's HPCC
+### Quick configuration in user accounts
 
 Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the [detailed
 instructions](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) to install Nvim-R-Tmux from scratch on your own system.
