@@ -114,6 +114,9 @@ __Session-level comands__
 
 ## For Bash, Python and other languages
 
+<center><img title="vimcmdline" src="https://cloud.githubusercontent.com/assets/891655/7090493/5fba2426-df71-11e4-8eb8-f17668d9361a.png" ></center>
+<center>vimcmdline</center>
+
 For other languages, such as Bash, Python and Ruby, one can use the
 [vimcmdline](https://github.com/jalvesaq/vimcmdline) plugin for nvim (or vim). To
 install it, one needs to copy from the `vimcmdline` resository the directories
