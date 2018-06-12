@@ -191,6 +191,10 @@ entries:
           url: /manuals_linux-cluster_users.html
           output: web
         
+        - title : Terminal IDEs
+          url: /manuals_linux-cluster_terminalIDE.html
+          output: web
+        
 
       - title: HPCC Cloud/External
         output: web
