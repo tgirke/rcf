@@ -109,14 +109,22 @@ Simply create a symbolic link or move the files into your html directory when yo
 For exmaple, log into Biocluster and run the following:
 
 ```bash
-# Make new web project directory
+# Make sure you have an html directory
+mkdir ~/.html
+
+#Make sure permissions are set correctly
+chmod a+x ~/
+chmod a+rx ~/.html
+
+# Make a new web project directory
 mkdir www-project
+chmod a+rx www-project
 
 # Create a default test file
-echo '<h1>Hello!</h1>' > ./www-project/index.html
+echo '<h1>Hello!</h1>' > ~/www-project/index.html
 
 # Create shortcut/link for new web project in html directory 
-ln -s `pwd`/www-project ~/.html/
+ln -s ~/www-project ~/.html/
 ```
 
 Now, test it out by pointing your web-browser to http://biocluster.ucr.edu/~username/www-project/
