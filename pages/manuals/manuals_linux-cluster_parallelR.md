@@ -5,15 +5,20 @@ permalink: manuals_linux-cluster_parallelR.html
 ---
 
 # Overview
-R provides a variety of packages for parallel computations.
+R provides a variety of packages for parallel computations. One of the most
+comprehensive parallel computing environments for R is [`batchtools`](https://mllg.github.io/batchtools/articles/batchtools.html) 
+(formerly `BatchJobs`). It supports both multi-core and multi-node computations with and
+without schedulers. By making use of cluster template files, most schedulers
+and queueing systems are also supported (e.g. Torque, Sun Grid Engine, Slurm). 
 
-## batchtools package 
+## Parallelization with batchtools 
 
-The batchtools HTML manual can be found [here](https://mllg.github.io/batchtools/articles/batchtools.html)
+The following introduces the usage of `batchtools` for a computer cluster using SLURM as scheduler (workload manager).
 
-## Set up working directory for scheduler
+## Set up working directory for SLURM
 ```r
-wget ...
+system("wget ")
+system("wget ")
 ```
 
 ## Load package and define some custom function
