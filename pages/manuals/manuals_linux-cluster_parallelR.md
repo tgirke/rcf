@@ -17,8 +17,8 @@ The following introduces the usage of `batchtools` for a computer cluster using 
 
 ## Set up working directory for SLURM
 ```r
-system("wget ")
-system("wget ")
+system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/.batchtools.conf.R")
+system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/slurm.tmpl")
 ```
 
 ## Load package and define some custom function
