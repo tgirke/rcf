@@ -5,7 +5,8 @@ permalink: manuals_linux-cluster_terminalIDE.html
 ---
 
 # Terminal IDEs
-This page introduces several terminal-based working environment useful for a variety of computer languages that are available on HPCC.
+This page introduces several terminal-based working environments available on UCR's
+HPCC/Biocluster that are useful for a variety of computer languages.
 
 
 ## Vim/Nvim Basics
