@@ -11,6 +11,11 @@ comprehensive parallel computing environments for R is [`batchtools`](https://ml
 without schedulers. By making use of cluster template files, most schedulers
 and queueing systems are also supported (e.g. Torque, Sun Grid Engine, Slurm). 
 
+## R code of this section
+
+To simplify the evaluation of the R code on this page the corresponding text version 
+is available for download from [here](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/batchtools_test.R).
+
 ## Parallelization with batchtools 
 
 The following introduces the usage of `batchtools` for a computer cluster using SLURM as scheduler (workload manager).
