@@ -7,13 +7,17 @@
 ## Set up working directory for SLURM
 dir.create("mytestdir")
 setwd("mytestdir")
-system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/.batchtools.conf.R")
-system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/slurm.tmpl")
+download.file("https://goo.gl/tLMddb", "slurm.tmpl")
+download.file("https://goo.gl/5HrYkE", ".batchtools.conf.R")
 
 ## Load package and define some custom function
+
 library(batchtools)
 myFct <- function(x) {
-	cbind(iris[x, 1:4,], node=system("hostname", intern=TRUE))
+	result <- cbind(iris[x, 1:4,], 
+			Node=system("hostname", intern=TRUE), 
+			Rversion=paste(R.Version()[6:7], collapse="."))
+	return(result)
 }
 
 ## Submit jobs from R to cluster
@@ -26,7 +30,7 @@ waitForJobs() # Wait until jobs are completed
 ## Summarize job status 
 getStatus() # Summarize job status
 showLog(Njobs[1])
-# killJobs(Njobs)
+# killJobs(Njobs) # Possible from within or outside of R
 
 ## Access/assemble results
 readRDS("myregdir/results/1.rds") # reads from rds file first result chunk
