@@ -9,6 +9,51 @@ This page introduces several terminal-based working environment useful for a var
 
 ## For R: nvim-R 
 
+## Vim/Nvim Basics
+
+To work efficiently on remote systems like a computer cluster, it is essential
+to learn how to work in a pure command-line interface. GUI environments like
+RStudio and similar coding environments are not suitable for this. In addition,
+there is a lot of value of knowing how to work in an environment that is not
+restricted to a specific programming language. Therefore, for working on remote 
+systems like HPCC Cluster, this site focuses on Nvim and Tmux. Both are useful 
+for many programming languages. Combinded with the `nvim-r` plugin they also 
+provide a powerful command-line working environment for R. Users of Emacs may 
+want to consider using [ESS](https://ess.r-project.org/) instead. The following 
+provides a brief introduction to the Nvim-R-Tmux environment. 
+
+### Vim overview
+
+The following opens a file (here `myfile`) with nvim (or vim)
+
+```sh
+nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
+```
+
+Once you are in Nvim, there are three main modes: normal, insert and command mode. The most important commands for switching between the three modes are:
+
+* `i`: The `i` key brings you from the normal mode to the insert mode. The latter is used for typing. 
+* `Esc`: The `Esc` key brings you from the insert mode back to the normal mode.
+* `:`: The `:` key starts the command mode at the bottom of the screen.
+
+Use the arrow keys to move your cursor in the text. Using `Fn Up/Down key` allows to page through
+the text quicker. In the following command overview, all commands starting with `:` need to be typed in the command mode. 
+All other commands are typed in the normal mode after pushing the `Esc` key. 
+
+Important modifier keys to control vim/nvim
+
+* `:w`: save changes to file. If you are in editing mode you have to hit `Esc` first.
+* `:q`: quit file that has not been changed
+* `:wq`: save and quit file
+* `:!q`: quit file without saving any changes
+
+### Useful resources for learning vim/nvim
+
+* [Interactive Vim Tutorial](http://www.openvim.com)
+* [Official Vim Documentation](http://vimdoc.sourceforge.net/)
+* [HPCC Linux Manual](http://hpcc.ucr.edu/manuals_linux-basics_vim.html)
+
+
 ### Basics
 
 Tmux is a terminal multiplexer that allows to split terminal windows and to detach/reattach to
