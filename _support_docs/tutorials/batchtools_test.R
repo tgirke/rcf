@@ -11,7 +11,6 @@ system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/maste
 system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/slurm.tmpl")
 
 ## Load package and define some custom function
-
 library(batchtools)
 myFct <- function(x) {
 	cbind(iris[x, 1:4,], node=system("hostname", intern=TRUE))
