@@ -13,8 +13,8 @@ and queueing systems are also supported (e.g. Torque, Sun Grid Engine, Slurm).
 
 ## R code of this section
 
-To simplify the evaluation of the R code on this page the corresponding text version 
-is available for download from [here](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/batchtools_test.R).
+To simplify the evaluation of the R code of this page, the corresponding text version 
+is available for download from [here](https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/batchtools_test.R).
 
 ## Parallelization with batchtools 
 
