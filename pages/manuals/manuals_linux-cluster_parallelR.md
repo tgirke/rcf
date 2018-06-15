@@ -16,7 +16,16 @@ and queueing systems are also supported (e.g. Torque, Sun Grid Engine, Slurm).
 The following introduces the usage of `batchtools` for a computer cluster using SLURM as scheduler (workload manager).
 
 ## Set up working directory for SLURM
+First login to your cluster account, open R and execute the following lines. This will
+create a test directory (here `mytestdir`), redirect R into this directory and then download
+the required files: 
+
++ [`slurm.tmpl`](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/slurm.tmpl)
++ [`.batchtools.conf.R`](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/.batchtools.conf.R)
+
 ```r
+dir.create("mytestdir")
+setwd("mytestdir")
 system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/.batchtools.conf.R")
 system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/slurm.tmpl")
 ```
