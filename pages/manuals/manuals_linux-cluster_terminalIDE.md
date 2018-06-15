@@ -7,7 +7,6 @@ permalink: manuals_linux-cluster_terminalIDE.html
 # Terminal IDEs
 This page introduces several terminal-based working environment useful for a variety of computer languages that are available on HPCC.
 
-## For R: nvim-R 
 
 ## Vim/Nvim Basics
 
@@ -53,6 +52,7 @@ Important modifier keys to control vim/nvim
 * [Official Vim Documentation](http://vimdoc.sourceforge.net/)
 * [HPCC Linux Manual](http://hpcc.ucr.edu/manuals_linux-basics_vim.html)
 
+## For R: nvim-R 
 
 ### Basics
 
