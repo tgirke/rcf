@@ -37,8 +37,8 @@ download.file("https://goo.gl/5HrYkE", ".batchtools.conf.R")
 
 ## Load package and define some custom function
 
-This is the test function (here toy example) that will be run on the cluster. It
-subsets the `iris` data frame by rows, and appends the host name and R version of each
+This is the test function (here toy example) that will be run on the cluster for demonstration
+purposes. It subsets the `iris` data frame by rows, and appends the host name and R version of each
 node where the function was executed. The R version to be used on each node can be
 specified in the `slurm.tmpl` file (under `module load`).
 
