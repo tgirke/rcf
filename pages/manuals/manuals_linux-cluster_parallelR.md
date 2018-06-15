@@ -31,8 +31,8 @@ the required files:
 ```r
 dir.create("mytestdir")
 setwd("mytestdir")
-system("wget https://goo.gl/5HrYkE")
-system("wget https://goo.gl/tLMddb")
+download.file("https://goo.gl/tLMddb", "slurm.tmpl")
+download.file("https://goo.gl/5HrYkE", ".batchtools.conf.R")
 ```
 
 ## Load package and define some custom function
