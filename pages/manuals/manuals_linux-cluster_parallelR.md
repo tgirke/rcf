@@ -31,6 +31,9 @@ system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/maste
 ```
 
 ## Load package and define some custom function
+
+This is the user function (here toy example) that will be run on the cluster. 
+
 ```r
 library(batchtools)
 myFct <- function(x) {
@@ -38,16 +41,22 @@ myFct <- function(x) {
 }
 ```
 
-## Create registry, split jobs, define resource requests and submit jobs to SLURM
+## Submit jobs from R to cluster
+
+The following creates a `batchtools` registry, defines the number of jobs and resource requests, and then submits the jobs to the cluster
+via SLURM.
+
 ```r
 reg <- makeRegistry(file.dir="myregdir", conf.file=".batchtools.conf.R")
-Njobs <- 1:4 # Define number of jobs
+Njobs <- 1:4 # Define number of jobs (here 4)
 ids <- batchMap(fun=myFct, x=Njobs) 
 done <- submitJobs(ids, reg=reg, resources=list(partition="short", walltime=60, ntasks=1, ncpus=1, memory=1024))
 waitForJobs() # Wait until jobs are completed
 ```
 
 ## Summarize job status 
+After the jobs are completed one instect their status as follows.
+
 ```r
 getStatus() # Summarize job status
 showLog(Njobs[1])
@@ -55,6 +64,11 @@ showLog(Njobs[1])
 ```
 
 ## Access/assemble results
+
+The results are stored as `.rds` files in the registry directory (here `myregdir`). One
+can access them manually via `readRDS` or use various convenience utilities provided
+by the `batchtools` package.
+
 ```r
 readRDS("myregdir/results/1.rds") # reads from rds file first result chunk
 loadResult(1) 
@@ -64,15 +78,23 @@ do.call("rbind", lapply(Njobs, loadResult))
 ```
 
 ## Remove registry directory from file system
+
+By default existing registries will not be overwritten. If required one can exlicitly
+clean and delete them with the following functions. 
+
 ```r
 clearRegistry() # Clear registry in R session
 removeRegistry(wait=0, reg=reg) # Delete registry directory
 # unlink("myregdir", recursive=TRUE) # Same as previous line
 ```
 
-## Load registry into R to continue where you left off
+## Load registry into R 
+
+Loading a registry can be useful when accessing the results at a later state or 
+after moving them to a local system. 
+
 ```r
-from_file <- loadRegistry("test", conf.file=".batchtools.conf.R")
+from_file <- loadRegistry("myregdir", conf.file=".batchtools.conf.R")
 reduceResults(rbind)
 ```
 
