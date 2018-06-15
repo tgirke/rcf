@@ -31,8 +31,8 @@ the required files:
 ```r
 dir.create("mytestdir")
 setwd("mytestdir")
-system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/.batchtools.conf.R")
-system("wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/slurm.tmpl")
+system("wget https://goo.gl/5HrYkE")
+system("wget https://goo.gl/tLMddb")
 ```
 
 ## Load package and define some custom function
@@ -42,7 +42,9 @@ This is the user function (here toy example) that will be run on the cluster.
 ```r
 library(batchtools)
 myFct <- function(x) {
-	cbind(iris[x, 1:4,], node=system("hostname", intern=TRUE))
+	result <- cbind(iris[x, 1:4,],
+	Node=system("hostname", intern=TRUE),
+	Rversion=paste(R.Version()[6:7], collapse="."))
 }
 ```
 
@@ -65,7 +67,7 @@ After the jobs are completed one instect their status as follows.
 ```r
 getStatus() # Summarize job status
 showLog(Njobs[1])
-# killJobs(Njobs)
+# killJobs(Njobs) # # Possible from within R or outside with scancel
 ```
 
 ## Access/assemble results
