@@ -29,6 +29,10 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 
 ## Past exceptions 
 
+### 5:00 PM, 02-Jul-18
+
+We had some issues with our storage systems this evening that may have caused temporary disruptions of your work. These issues should be resolved. We are continuing to monitor the situation to ensure everything is operational.
+
 ### 12:00 AM, 31-Jan-18: routine maintenance shutdown
 
 For routine maintenance and upgrades we have scheduled an HPCC (Biocluster)
