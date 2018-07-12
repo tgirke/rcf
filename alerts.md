@@ -5,10 +5,7 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 ---
 
 ## Unannounced exceptions
-
-### 6:00 PM, 02-Jul-18: Storage Issues
-
-Storage issues on the afternoon of July 2, 2018 caused disruptions in some cluster services. The issues should be resolved, but we're continuing to monitor the situation for any other developments.
+The current state of the cluster is GREEN.
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
@@ -17,20 +14,44 @@ information and updates on exceptions may be posted here.
 
 ## Scheduled exceptions and downtimes
 
-
 There are no downtimes or exceptions scheduled at this point.
 
-## SOP for scheduled shutdowns
+## Standard Operating Procedures
 
-Standard operating procedures for scheduled shutdowns are [here](https://goo.gl/K3YqdH).
+### SOP for unscheduled outages
+
+When unforeseen issues arise they are categorized by severity:
+
+0. Green - Normal operation, no current issues
+1. Yellow - Minor issue[s], likely not observed by users (ie. jobs are not affected)
+2. Orange - Medium issue[s], likely observed by users but not fatal (ie. jobs may perform slower than usual)
+3. Red - Critical issue[s], major service or entire cluster is not functioning as expected (ie. jobs have terminated prematurely)
+
+Email notifications are only sent to users if there is a Red critical issue.
+
+### SOP for scheduled shutdowns
+
+The following outlines the timeline for advance email notifications on scheduled shutdowns of the HPCC cluster and other exceptions:
+
+1. Four weeks advance notice
+2. Followed by weekly reminders
+3. Final reminder the day before the outage
 
 ## Team collaborations with Slack
 
 Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
 
-
 ## Past exceptions 
 
+### 2:30 PM, 11-Jul-18: Storage Issues
+
+For the past several weeks we have been observing slower storage access.
+In some cases the /bigdata storage was inaccessible for several minutes and caused some jobs to terminate prematurely.
+We have identified the issue and have teken steps to ensure that this problem does not reoccur.
+
+### 6:00 PM, 02-Jul-18: Storage Issues
+
+Storage issues on the afternoon of July 2, 2018 caused disruptions in some cluster services. The issues should be resolved, but we're continuing to monitor the situation for any other developments.
 
 ### 12:00 AM, 31-Jan-18: routine maintenance shutdown
 
