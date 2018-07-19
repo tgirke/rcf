@@ -78,6 +78,20 @@ It is possible for you to copy an existing environment into a new environment:
 conda create --name AnotherNameForNewEnv --clone NameForNewEnv
 ```
 
+#### Listing Environments
+Run the following to get a list of currently installed conda evironments:
+
+```bash
+conda env list
+```
+
+#### Removing
+If you wish to remove a conda environment run the following:
+
+```bash
+conda env remove --name myenv
+```
+
 ### Jupyter
 We also have a service for interactive Python development, [Jupyter-Hub](https://jupyter.bioinfo.ucr.edu).
 In order to enable your environemnt within Jupyter you will need to do the following:
