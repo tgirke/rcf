@@ -54,8 +54,7 @@ The registration provides access to the following resources:
 * Registered users can email software install requests to HPCC's issue tracking system @ [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu). Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.
 
 ## Startup packages for new PIs
-Startup packages for variable numbers and architectures of HPC nodes and storage amounts are
-available. This includes the following components:
+Startup packages are available for variable numbers and architectures of HPC nodes and storage amounts. This includes the following components:
 
 <!---
 Standard startup packages in the amount of $20K (N=1), $30K (N=2), $40K (N=3)
