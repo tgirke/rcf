@@ -54,7 +54,7 @@ The registration provides access to the following resources:
 * Registered users can email software install requests to HPCC's issue tracking system @ [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu). Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.
 
 ## Startup packages for new PIs
-Standard startup packages for variable and architectures of HPC nodes are
+Startup packages for variable numbers and architectures of HPC nodes and storage amounts are
 available. 
 
 <!---
@@ -67,11 +67,11 @@ cost for these packages can be covered by the initial complement of new PIs.
     * Each node with 32* Intel CPU cores (64* logical cores), 512GB RAM and Infiniband interconnect. *The core numbers might nearly double when newer and less expensive Intel chip sets will be released this year. However, the per node cost may be subject to rapid changes (e.g the cost of RAM has increased by several fold in last year).
     * Alternative node architecture (_e.g._ GPU) are available upon request
 -->
-* N HPC nodes with variable CPU/GPU architectures, RAM and SSD specifications. Prices will depend on current market value, configuration and discounts provided by vendors. 
+* N HPC nodes with variable CPU/GPU architectures, RAM and SSD specifications. Pricing is comptetitive, but will greatly depend on the current market value of HPC components, custom configurations and discounts provided by vendors. 
+* Big data storage of 10TB ($1000/yr) covered for 5 yrs; or disk storage buy-in option to support much larger data storage needs
 * HPCC subscription fee of $1000/yr covered for 5 yrs
-* Big data storage of 10TB ($1000/yr) covered for 5 yrs; other buy-in options exist to support much larger data storage needs
 
-Custom startup packages may be supported upon approval by HPCC.
+To configure a startup HPC package, please contact the facility staff.
 
 ## Department cluster membership with owned computing nodes
 
