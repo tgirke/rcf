@@ -66,7 +66,7 @@ cost for these packages can be covered by the initial complement of new PIs.
     * Each node with 32* Intel CPU cores (64* logical cores), 512GB RAM and Infiniband interconnect. *The core numbers might nearly double when newer and less expensive Intel chip sets will be released this year. However, the per node cost may be subject to rapid changes (e.g the cost of RAM has increased by several fold in last year).
     * Alternative node architecture (_e.g._ GPU) are available upon request
 -->
-* Owned HPC nodes with variable CPU/GPU architectures, RAM and SSD specifications. Pricing is comptetitive, but will greatly depend on the current market value of HPC components, custom configurations and discounts provided by vendors. 
+* Owned HPC nodes with various CPU/GPU architectures, RAM and SSD specifications. Pricing is comptetitive, but will greatly depend on the current market value of HPC components, custom configurations and discounts provided by vendors. 
 * Rented big data storage @ $1000 for 10TB per yr covered for 5 yrs; or owned disk storage when storage needs are above 20TB 
 * HPCC subscription fee of $1000/yr covered for 5 yrs
 
