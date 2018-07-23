@@ -10,7 +10,7 @@ The scope of this manual is a brief introduction on how to get started using pow
 ## How to Get Access?
 
 * Install your preferred ssh client on your local machine (we can help you with this).
-* Users at UC Riverside can apply for an account on our Linux clusters by sending an account request to Support (support@biocluster.ucr.edu).
+* Users at UC Riverside can apply for an account on our Linux clusters by sending an account request to Support (support@hpcc.ucr.edu).
 
 ### Windows
 

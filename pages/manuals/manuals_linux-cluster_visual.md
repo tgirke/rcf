@@ -17,7 +17,7 @@ The High-Performance Computing Center at UCR has a GPU workstation specifically 
 The GPU workstation is uniquely configured to be an extension of the HPCC cluster. Thus, all software available to the cluster is also available on the GPU workstation through [Environment Modules](manuals_linux-cluster_start.html#modules).
 
 ### Access
-The GPU workstation is currently located in the Genomics building room 1208. Please check ahead of time to make sure the machine is available [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu).
+The GPU workstation is currently located in the Genomics building room 1208. Please check ahead of time to make sure the machine is available [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 Once you have access to the GPU workstation, login with your cluster credentials. If your username does not appear in the list, you may need to click `Not listed?` at the bottom of the screen so that you are able to type in your username.
 
 #### Usage

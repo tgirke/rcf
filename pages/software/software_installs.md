@@ -19,4 +19,4 @@ More details on this is available on the HPCC manual pages [here](http://hpcc.uc
 
 ## Software install requests
 
-Registered users can email software install requests to HPCC's issue tracking system @ [support@biocluster.ucr.edu](mailto:support@biocluster.ucr.edu). Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.
+Registered users can email software install requests to HPCC's issue tracking system @ [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.
