@@ -31,7 +31,7 @@ exclude:
 
 feedback_subject_line: HPCC @ UCR
 
-feedback_email: support@biocluster.ucr.edu
+feedback_email: support@hpcc.ucr.edu
 # used as a contact email for the Feedback link in the top navigation bar
 
 feedback_disable: false

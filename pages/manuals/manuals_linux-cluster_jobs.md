@@ -276,7 +276,7 @@ Many implementations of MPI exists, however we only support the following:
 * [IMPI](https://software.intel.com/en-us/mpi-developer-guide-linux)
 
 For general information on MPI under Slurm look [here](https://slurm.schedmd.com/mpi_guide.html).
-If you need to compile an MPI application then please email support@biocluster.ucr.edu for assistance.
+If you need to compile an MPI application then please email support@hpcc.ucr.edu for assistance.
 
 ### NAMD Example
 
