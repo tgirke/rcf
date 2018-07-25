@@ -251,7 +251,7 @@ perl -p -i -w -e 's/pattern1/pattern2/g' my_input_file
             # -i.bak: creates backup file *.bak, only -i doesn't
             # -w: turns on warnings
             # -e: executable code follows
-```bash
+```
 
 *Parse lines based on patterns:*
 
