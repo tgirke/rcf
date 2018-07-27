@@ -42,19 +42,19 @@ Annotated output for `ls -la`:
 ||  |  --- Other permission triplet
 ||  |  |
 ||  |  |       [user] [group]
-drwx-----x  61 aleong bioinfo   4096 Feb 24 16:39 ./
-drwxr-xr-x 688 root   root    262144 Feb 24 11:05 ../
-drwx------   2 aleong bioinfo   4096 Feb  2 22:45 .ssh/
-drwxr-xr-x   5 aleong bioinfo   4096 Dec 12 15:57 Downloads/
-drwxr-xr-x   2 aleong bioinfo   4096 Jan  9 16:29 bin/
--rw-------   1 aleong bioinfo   7960 Feb 23 18:37 .bash_history
--rw-r--r--   1 aleong bioinfo    306 Nov  3 15:08 .bashrc
--rw-r--r--   1 aleong bioinfo    677 Apr  8  2013 .profile
--rw-r--r--   1 aleong bioinfo    128 Nov 30 12:38 .tmux.conf
--rw-r--r--   1 aleong bioinfo  12126 Nov  2 13:14 .vimrc
-lrwxrwxrwx   1 aleong bioinfo     23 Sep 12 10:49 bigdata -> /bigdata/bioinfo/aleong/
--rw-r--r--   1 aleong bioinfo   5657 Sep 19 11:31 bookmarks.html
-lrwxrwxrwx   1 aleong bioinfo     23 Sep 12 10:49 shared -> /bigdata/bioinfo/shared/
+drwx-----x  61 aleong operations   4096 Feb 24 16:39 ./
+drwxr-xr-x 688 root   root       262144 Feb 24 11:05 ../
+drwx------   2 aleong operations   4096 Feb  2 22:45 .ssh/
+drwxr-xr-x   5 aleong operations   4096 Dec 12 15:57 Downloads/
+drwxr-xr-x   2 aleong operations   4096 Jan  9 16:29 bin/
+-rw-------   1 aleong operations   7960 Feb 23 18:37 .bash_history
+-rw-r--r--   1 aleong operations    306 Nov  3 15:08 .bashrc
+-rw-r--r--   1 aleong operations    677 Apr  8  2013 .profile
+-rw-r--r--   1 aleong operations    128 Nov 30 12:38 .tmux.conf
+-rw-r--r--   1 aleong operations  12126 Nov  2 13:14 .vimrc
+lrwxrwxrwx   1 aleong operations     23 Sep 12 10:49 bigdata -> /bigdata/operations/aleong/
+-rw-r--r--   1 aleong operations   5657 Sep 19 11:31 bookmarks.html
+lrwxrwxrwx   1 aleong operations     23 Sep 12 10:49 shared -> /bigdata/operations/shared/
 ```
 
 Assign write and execute permissions to user and group

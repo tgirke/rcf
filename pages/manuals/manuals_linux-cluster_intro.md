@@ -28,7 +28,7 @@ The latest hardware/facility description for grant applications is available [he
     * 56 Gb/s InfiniBand (FDR)
 
 ### Head Nodes
-All users should access the cluster via ssh through biocluster.ucr.edu, this address will automatically balance traffic to one of the available head nodes.
+All users should access the cluster via ssh through cluster.hpcc.ucr.edu, this address will automatically balance traffic to one of the available head nodes.
 
 * Penguin
     * Resources: 8 cores, 64 GB memory

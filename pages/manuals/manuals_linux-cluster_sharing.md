@@ -10,10 +10,10 @@ Basic file permissions on Linux and other Unix like systems are composed of thre
 
 ```bash
 jhayes@pigeon:~$ ls -l myFile
--rwxr-x---   1 jhayes bioinfo 1.6K Nov 19 12:32 myFile
+-rwxr-x---   1 jhayes operations 1.6K Nov 19 12:32 myFile
 ```
 
-If you wanted to share this file with someone outside the 'bioinfo' group, read permissions must be added to the file for 'other':
+If you wanted to share this file with someone outside the 'operations' group, read permissions must be added to the file for 'other':
 
 ```bash
 jhayes@pigeon:~$ chmod o+r myFile
@@ -42,10 +42,7 @@ To make your changes permanent you need to add them to your `.bashrc` file, whic
 Adding umask to your `.bashrc` file is as simple as adding your umask command (such as `umask u=rwx,g=rx,o=r`) to the end of the file.
 Then simply log out and back in for the changes to take affect. You can double check that the settings have taken affect by running `umask -S`.
 
-## Futher Reading
-
-* [UNIX File Permissions Tutorial](http://manuals.bioinformatics.ucr.edu/home/linux-basics#TOC-Permissions-and-Ownership)
-* [What is Umask and How To Setup Default umask Under Linux?](http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html)
+To learn more about umask please visit [What is Umask and How To Setup Default umask Under Linux?](http://www.cyberciti.biz/tips/understanding-linux-unix-umask-value-usage.html).
 
 ## Copying bigdata
 
@@ -68,13 +65,13 @@ If you are transfering to, or from, your laptop/workstation it is required that 
 To transfer to the cluster:
 
 ```bash
-rsync -av --progress FOLDER_A/ biocluster.ucr.edu:FOLDER_A/
+rsync -av --progress FOLDER_A/ cluster.hpcc.ucr.edu:FOLDER_A/
 ```
 
 To transfer from the cluster:
 
 ```bash
-rsync -av --progress biocluster.ucr.edu:FOLDER_A/ FOLDER_A/
+rsync -av --progress cluster.hpcc.ucr.edu:FOLDER_A/ FOLDER_A/
 ```
 
 Rsync will use SSH and will ask you for your cluster password, the same way SSH or SCP does.
@@ -106,7 +103,7 @@ The sever2.xyz.edu machine must be a server that accepts Rsync connections via S
 ## Sharing Files on the Web
 
 Simply create a symbolic link or move the files into your html directory when you want to share them.
-For exmaple, log into Biocluster and run the following:
+For exmaple, log into the HPC cluster and run the following:
 
 ```bash
 # Make sure you have an html directory
@@ -127,7 +124,7 @@ echo '<h1>Hello!</h1>' > ~/www-project/index.html
 ln -s ~/www-project ~/.html/
 ```
 
-Now, test it out by pointing your web-browser to http://biocluster.ucr.edu/~username/www-project/
+Now, test it out by pointing your web-browser to https://cluster.hpcc.ucr.edu/~username/www-project/
 Be sure to replace `username` with your actual user name.
 
 ## Password Protect Web Pages
@@ -159,6 +156,6 @@ AuthUserFile /rhome/username/.html/.htpasswd
 require user newwebuser
 ```
 
-Now, test it out by pointing your web-browser to http://biocluster.ucr.edu/~username/locked_dir
+Now, test it out by pointing your web-browser to http://cluster.hpcc.ucr.edu/~username/locked_dir
 Be sure to replace `username` with your actual user name for the above code and URL.
 

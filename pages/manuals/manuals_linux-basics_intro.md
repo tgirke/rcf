@@ -25,7 +25,7 @@ The scope of this manual is a brief introduction on how to get started using pow
 * Now that you have a terminal open, execute the following on the command line:
   `ssh -X <your_username>@<host_name>`
 
-  `host_name` is the remote server's domain name (e.g. `biocluster.ucr.edu`)  
+  `host_name` is the remote server's domain name (e.g. `cluster.hpcc.ucr.edu`)  
   You will be asked to enter your password. Simply type it and press enter.
 
 * To copy files To the server run the following on your workstation or laptop:
