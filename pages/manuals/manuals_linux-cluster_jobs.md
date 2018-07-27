@@ -52,26 +52,20 @@ sbatch -p mygroup SBATCH_SCRIPT.sh
 Slurm is now our default queuing system across all head nodes. [SSH directly into the cluster](#getting-started) and your connection will be automatically load balanced to a head node:
 
 ```bash
-ssh -XY biocluster.ucr.edu
+ssh -XY cluster.hpcc.ucr.edu
 ```
 
 ### Resources and Limits
 To see your limits you can do the following:
 
 ```bash
-sacctmgr show account $GROUP format=Account,User,Partition,GrpCPUs,GrpMem,GrpNodes --ass | grep $USER
-```
-
-In order to view your group limits, execute the following:
-
-```bash
-sacctmgr show account $GROUP format=Account,User,Partition,GrpCPUs,GrpMem,GrpNodes,GrpTRES%30 --ass | head -3
+slurm_limits
 ```
 
 Check total number of cores used by your group in the all partitions:
 
 ```bash
-echo $(squeue -A $GROUP -o '%C' -t Running | grep -P '^[0-9]' | tr '\n' '+' | sed 's/+$//g') | bc
+group_cpus
 ```
 
 However this does not tell you when your job will start, since it depends on the duration of each job.
@@ -244,7 +238,7 @@ Each group is limited to a maximum of 8 GPUs on the gpu partition. Please be res
 Since the CUDA libraries will only run with GPU hardward, development and compiling of code must be done within a job session on a GPU node.
 
 Here are a few more examples of jobs that utilize more complex features (ie. array, dependency, MPI etc):
-[Slurm Examples](http://biocluster.ucr.edu/~jhayes/slurm/examples/)
+[Slurm Examples](https://cluster.hpcc.ucr.edu/~jhayes/slurm/examples/)
 
 ### Licenses
 The cluster currently supports [Commercial Software](software_commercial). Since most of the licenses are campus wide there is no need to track individual jobs. One exception is the Intel Parallel Suite, which contains the Intel compilers.
@@ -280,7 +274,7 @@ If you need to compile an MPI application then please email support@hpcc.ucr.edu
 
 ### NAMD Example
 
-To run a NAMD2 process as an OpenMPI job on Biocluster:
+To run a NAMD2 process as an OpenMPI job on the cluster:
 
 1. Log-in to the cluster
 1. Create SBATCH script
@@ -302,13 +296,13 @@ To run a NAMD2 process as an OpenMPI job on Biocluster:
 
    # Run job utilizing all requested processors
    # Please visit the namd site for usage details: http://www.ks.uiuc.edu/Research/namd/
-   mpirun --mca btl ^tcp namd2 run.conf &> run_bio.log
+   mpirun --mca btl ^tcp namd2 run.conf &> run_namd.log
    ```
 
 1. Submit SBATCH script to Slurm queuing system
 
    ```bash
-   sbatch run_bio.sh
+   sbatch run_namd.sh
    ```
 
 ### Maker Example

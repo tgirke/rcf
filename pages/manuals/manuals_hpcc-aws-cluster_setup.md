@@ -10,7 +10,7 @@ This will show how to use your HPCC account to configure cfnCluster; allowing yo
 ## 1. Login to the HPCC Cluster
 
 ```bash
-ssh -X username@biocluster.ucr.edu
+ssh -X username@cluster.hpcc.ucr.edu
 ```
 
 ### From Windows

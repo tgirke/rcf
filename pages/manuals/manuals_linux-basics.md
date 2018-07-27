@@ -429,7 +429,7 @@ You can edit your default DISPLAY setting for your account by adding it to file 
    b. Retrieve the corresponding sequences for these IDs with the fastacmd command from the blastable database:
 
    ```bash
-   wget http://biocluster.ucr.edu/~tgirke/Documents/UNIX/my_IDs
+   wget https://cluster.hpcc.ucr.edu/~tgirke/Documents/UNIX/my_IDs
    fastacmd -d AE004437.faa -i my_IDs > myseq.fasta
    less myseq.fasta # press q to quit
    ```

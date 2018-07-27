@@ -7,7 +7,7 @@ permalink: manuals_hpcc-aws-cluster_operation.html
 ## Login to HPCC
 
 ```bash
-ssh username@biocluster.ucr.edu
+ssh username@cluster.hpcc.ucr.edu
 ```
 
 ## Create a Cluster

@@ -93,7 +93,7 @@ conda env remove --name myenv
 ```
 
 ### Jupyter
-We also have a service for interactive Python development, [Jupyter-Hub](https://jupyter.bioinfo.ucr.edu).
+We also have a service for interactive Python development, [Jupyter-Hub](https://jupyter.hpcc.ucr.edu).
 In order to enable your environemnt within Jupyter you will need to do the following:
 
 ```bash
@@ -107,7 +107,7 @@ source activate ipykernel_py2
 python -m ipykernel install --user --name myenv --display-name "JupyterPy2"
 ```
 
-Now when you visit [Jupyter-Hub](https://jupyter.bioinfo.ucr.edu) you should see the option "JupyterPy2" when you click the "New" dropdown menu in the upper left corner of the home page.
+Now when you visit [Jupyter-Hub](https://jupyter.hpcc.ucr.edu) you should see the option "JupyterPy2" when you click the "New" dropdown menu in the upper left corner of the home page.
 
 Multiple versions of Python and R are supported.
 For instructions on how to configure your R environment please visit [IRkernel](https://github.com/IRkernel/IRkernel).

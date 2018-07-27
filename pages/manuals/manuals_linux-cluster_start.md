@@ -11,7 +11,7 @@ Since all machines are mounting a centralized file system, users will always see
 Open the terminal and type
 
 ```bash
-ssh -X username@biocluster.ucr.edu
+ssh -X username@cluster.hpcc.ucr.edu
 ```
 
 ## Login from Windows
@@ -35,7 +35,7 @@ The password minimum requirements are:
     * Punctuation character
 
 ## Modules
-All software used on Biocluster is managed through a simple module system.
+All software used on the HPC cluster is managed through a simple module system.
 You must explicitly load and unload each package as needed.
 More advanced users may want to load modules within their bashrc, bash_profile, or profile files.
 

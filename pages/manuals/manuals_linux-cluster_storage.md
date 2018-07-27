@@ -5,10 +5,10 @@ permalink: manuals_linux-cluster_storage.html
 ---
 
 ## Dashboard
-HPCC cluster users are able to check on their home and bigdata storage usage from the [Dashboard Portal](https://dashboard.bioinfo.ucr.edu).
+HPCC cluster users are able to check on their home and bigdata storage usage from the [Dashboard Portal](https://dashboard.hpcc.ucr.edu).
 
 ## Home
-Home directories are where you start each session on biocluster and where your jobs start when running on the cluster.  This is usually where you place the scripts and various things you are working on.  This space is very limited.  Please remember that the home storage space quota per user account is 20 GB.
+Home directories are where you start each session on the HPC cluster and where your jobs start when running on the cluster.  This is usually where you place the scripts and various things you are working on.  This space is very limited.  Please remember that the home storage space quota per user account is 20 GB.
 
 Path                 | /rhome/`username`
 -------------------- | ----------------
@@ -38,7 +38,7 @@ Node Availability    | All Nodes
 Quota Responsibility | Lab
 
 ## Non-Persistent Space
-Frequently, there is a need to do things like, output a significant amount of intermediate data during a job, access a dataset from a faster medium than bigdata or the home directories or write out lock files. These types of things are well suited to the use of non-persistent spaces. Below are the filesystems available on biocluster.
+Frequently, there is a need to do things like, output a significant amount of intermediate data during a job, access a dataset from a faster medium than bigdata or the home directories or write out lock files. These types of things are well suited to the use of non-persistent spaces. Below are the filesystems available on the HPC cluster.
 
 __RAM Space__
 This type of space takes away from physical memory but allows extremely fast access to the files located on it. When submitting a job you will need to factor in the space your job is using in RAM as well. For example, if you have a dataset that is 1G in size and use this space, it will take at least 1G of RAM.
