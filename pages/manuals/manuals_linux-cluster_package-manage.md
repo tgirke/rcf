@@ -30,7 +30,20 @@ source activate hppc-base #This may take a few seconds
 
 ### Virtual Environments
 It is best to create your own environment in which you have full control over package installs.
-To create your virtual environment we recommend that you use conda, like so:
+Installing many packages can consume a large (ie. >20GB) amount of disk space, thus it is recommended to store conda environments under your bigdata space.
+If you have bigdata, define the CONDA_ENVS_PATH variable (otherwise conda environments will be created under your home directory).
+
+Added the following to your `.bashrc` file:
+```bash
+export CONDA_ENVS_PATH=~/bigdata/.conda # Modify to any path you want
+```
+
+Then be sure to load the chanages from your ~/.bashrc into your current session:
+```bash
+source ~/.bashrc
+```
+
+Then create your Python 2 conda environment, like so:
 
 ```bash
 conda create -n NameForNewEnv python=2.7.14 # Many Python versions are available
