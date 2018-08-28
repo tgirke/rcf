@@ -138,13 +138,26 @@ The above example enables X11 forwarding and requests, 1GB of memory, 1 cores, f
 To check on your jobs states, run the following:
 
 ```bash
-squeue -u username
+squeue -u $USER
 ```
 
 To list all the details of a specific job, run the following:
 
 ```bash
 scontrol show job <JOBID>
+```
+
+To view past jobs and their details, run the following:
+
+```bash
+sacct -u $USER -l
+```
+
+You can also adjust the start `-S` time and/or the ending `-E` time frame you wish to view, using the YYYY-MM-DD format.
+For example, the following command uses start and end times:
+
+```bash
+sacct -u $USER -S 2018-01-01 -E 2018-08-30 -l | less -S # Type 'q' to quit
 ```
 
 ### Canceling Jobs
