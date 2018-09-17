@@ -19,12 +19,8 @@ title: Hardware Details
     * 56 Gb/s InfiniBand (FDR)
 
 ## Head Nodes
-All users should access the cluster via SSH through `biocluster.ucr.edu`. This address will automatically balance traffic to one of the available head nodes.
+All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This address will automatically balance traffic to one of the available head nodes.
 
-* Penguin
-    * Resources: 8 cores, 64 GB memory
-    * Primary function: submitting jobs to the queuing system
-    * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
 * Pigeon
     * Resources: 16 cores, 128 GB memory
     * Primary function: submitting jobs to the queuing system
@@ -50,4 +46,4 @@ All users should access the cluster via SSH through `biocluster.ucr.edu`. This a
 * GPU
     * gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores) and 128 GB memory
 * Intel
-    * i01-i40: each with 32 Intel Broadwell cores and 512 GB memory
+    * i01-i48: each with 32 Intel Broadwell cores and 512 GB memory
