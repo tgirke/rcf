@@ -6,7 +6,7 @@ title: Hardware Overview
 
 ## Computer cluster
 
-* Over 4,500 CPU cores (40% Intel, 60% AMD)
+* Over 6,500 CPU cores (50% Intel, 50% AMD)
 * 512-1024GB RAM per node
 * GPU: 60,000 cuda cores
 * IB network @ 56Gbs
