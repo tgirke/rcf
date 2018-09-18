@@ -56,3 +56,7 @@ You can use the `sqmore` command to see a list of all jobs sorted by priority.
 
 ## Backfill
 Some small jobs may start before yours, only if they can complete before yours starts and thus not negatively affecting your start time.
+
+## Priority Partition
+Some groups on our system have purchased additional hardware. These nodes will not be affected by the fairshare score.
+This is because jobs submitted to the group's partition will be evaluated first before any other jobs that have been submitted to those nodes from a different partition.
