@@ -1,11 +1,17 @@
-# Start Times
+---
+layout: page
+title: Linux Cluster - Queue Policies
+permalink: manuals_linux-cluster_queue.html
+---
+
+## Start Times
 Start times are a great way to track your jobs:
 ```bash
 squeue -u $USER --start
 ```
 Start times are rough estimates based on the current state of the queue.
 
-# Fair-Share
+## Fair-Share
 Users that have not submitted any jobs in a long time usually have a higher priority over others that have ran jobs recently.
 Thus the estimated start times can be extended to allow everyone their fair share of the system.
 This prevents a few large groups from dominating the queuing system for long periods of time.
@@ -31,14 +37,14 @@ The FairShare score is a number between 0 and 1. The best score being 1, and the
 The fairshare score approches zero the more resource you consume.
 Your individual consumption of resources (usage) does affect your entire group's fiarshare score.
 
-# Priority
+## Priority
 The fairshare score is used to calculate your jobs priority, as well as the jobs queue wait time.
 You can use the sprio command to check the priority of your jobs:
 ```
 sprio -u $USER
 ```
 
-# Backfill
+## Backfill
 Even if your group has a lower fairshare score, your job may still has a very high priority (the highest in the list of queued jobs).
 This is likely due to the jobs queue wait time, and it should start as soon as possible.
 Some small jobs may start before yours, only if they can complete before yours starts and thus not negatively affecting your start time.
