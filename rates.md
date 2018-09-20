@@ -53,10 +53,10 @@ The registration provides access to the following resources:
 
 * Registered users can email software install requests to HPCC's issue tracking system @ [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.
 
+<!---
 ## Startup packages for new PIs
 Startup packages are available for variable numbers and architectures of HPC nodes and storage amounts. This includes the following components:
 
-<!---
 Standard startup packages in the amount of $20K (N=1), $30K (N=2), $40K (N=3)
 and so on are available. Note: N refers to the number of HPC nodes below. The
 cost for these packages can be covered by the initial complement of new PIs. 
@@ -65,12 +65,12 @@ cost for these packages can be covered by the initial complement of new PIs.
 
     * Each node with 32* Intel CPU cores (64* logical cores), 512GB RAM and Infiniband interconnect. *The core numbers might nearly double when newer and less expensive Intel chip sets will be released this year. However, the per node cost may be subject to rapid changes (e.g the cost of RAM has increased by several fold in last year).
     * Alternative node architecture (_e.g._ GPU) are available upon request
--->
 * Owned HPC nodes with various CPU/GPU architectures, RAM and SSD specifications. Pricing is comptetitive, but will greatly depend on the current market value of HPC components, custom configurations and discounts provided by vendors. 
 * Rented big data storage @ $1000 for 10TB per yr covered for 5 yrs; or owned disk storage when storage needs are above 20TB 
 * HPCC subscription fee of $1000/yr covered for 5 yrs
 
 To configure a startup HPC package, please contact the facility staff directly.
+-->
 
 ## Department cluster membership with owned computing nodes
 
