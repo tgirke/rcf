@@ -70,7 +70,7 @@ entries:
     output: web
     type: frontmatter
     folderitems:
-    - title: Training/Seminars
+    - title: Training Events
       url: /events_small.html
       output: web
       type: frontmatter
