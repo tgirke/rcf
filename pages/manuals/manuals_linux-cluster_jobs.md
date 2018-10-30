@@ -269,23 +269,63 @@ The short parititon can only be used for a maximum of 2 hours, however for compi
 It is recommended that you separate your compilation job from your computation/analysis job.
 This way you will only have the license checked out for the duration of compilation, and not the during the execution of the analysis.
 
-## Parallelization Software
+## Parallelization
+There are 3 major ways to parallelize work on the cluster:
 
-### MPI Introduction
+   1. Batch
+   2. Thread
+   3. MPI
+
+### Parallel Methods
+For __batch__ jobs, all that is required is that you have a way to split up the data and submit multiple jobs running with the different chunks.
+Some data sets, for example a FASTA file is very easy to split up (ie. fasta-splitter). This can also be more easily achieved by submitting an array job. For more details please refer to [Advanced Jobs](#advanced-jobs).
+
+For __threaded__ jobs, your software must have an option referring to "number of threads" or "number of processors". Once the thread/processor option is identified in the software, (ie. blastn flag `-num_threads 4`) you can use that as long as you also request the same number of CPU cores (ie. slurm flag `--cpus-per-task=4`).
+
+For __MPI__ jobs, your software must be MPI enabled. This generally means that it was compiled with MPI libraries. Please refer to the user manual of the software you wish to use as well as our documentation regarding [MPI](#mpi). It is important that the number of cores used is equal to the number requested.
+
+In Slurm you will need 2 different flags to request cores, which may seem similar, however they have different purposes:
+
+   * The `--cpus-per-task=N` will provide N number of virtual cores with locality as a factor.
+     Closer virtual cores can be faster, assuming there is a need for rapid communication between threads.
+     Generally, this is good for threading, however not so good for independent subprocesses nor for MPI.
+   * The `--ntasks=N` flag will provide N number of physical cores on a single or even multiple nodes.
+     These cores can be further away, since the need for physical CPUs and dedicated memory is more important.
+     Generally this is good for independent subprocesses, and MPI, however not so good for threading.
+
+Here is a table to better explain when to use these Slurm options:
+
+|                   | Single Threaded                   | Multi Threaded (OpenMP) | MPI only | MPI + Multi Threaded (hybrid) |
+| Slurm Flag        |                                   |                         |          |                               |
+| ----------------- |:---------------------------------:|:-----------------------:|:--------:|:-----------------------------:|
+| `--cpus-per-task` |                                   |                      X  |          |                             X |
+| `--ntasks`        |                                   |                         |        X |                             X |
+
+As you can see:
+
+   1. A single threaded job would use neither Slurm option, since Slurm already assumes at least a single core.
+   2. A multi threaded OpenMP job would use `--cpus-per-task`.
+   3. A MPI job would use `--ntasks`.
+   4. A Hybrid job would use both.
+
+For more details on how these Slurm options work please review [Slurm Multi-core/Multi-thread Support](Note: https://slurm.schedmd.com/mc_support.html).
+
+#### MPI
 
 MPI stands for the Message Passing Interface. MPI is a standardized API typically used for parallel and/or distributed computing.
 The HPCC cluster has a custom compiled versions of MPI that allows users to run MPI jobs across multiple nodes.
 These types of jobs have the ability to take advantage of hundreds of CPU cores symultaniously, thus improving compute time.
 
 Many implementations of MPI exists, however we only support the following:
-* [Open MPI](http://www.open-mpi.org/)
-* [MPICH](http://www.mpich.org/)
-* [IMPI](https://software.intel.com/en-us/mpi-developer-guide-linux)
+
+   * [Open MPI](http://www.open-mpi.org/)
+   * [MPICH](http://www.mpich.org/)
+   * [IMPI](https://software.intel.com/en-us/mpi-developer-guide-linux)
 
 For general information on MPI under Slurm look [here](https://slurm.schedmd.com/mpi_guide.html).
 If you need to compile an MPI application then please email support@hpcc.ucr.edu for assistance.
 
-### NAMD Example
+__NAMD Example__
 
 To run a NAMD2 process as an OpenMPI job on the cluster:
 
@@ -297,7 +337,7 @@ To run a NAMD2 process as an OpenMPI job on the cluster:
 
    #SBATCH -J c3d_cr2_md
    #SBATCH -p batch
-   #SBATCH -n 32
+   #SBATCH --ntasks=32
    #SBATCH --mem=16gb
    #SBATCH --time=01:00:00
 
@@ -318,7 +358,7 @@ To run a NAMD2 process as an OpenMPI job on the cluster:
    sbatch run_namd.sh
    ```
 
-### Maker Example
+__Maker Example__
 
 OpenMPI does not function properly with Maker, you must use MPICH.
 Our version of MPICH does not use the mpirun/mpiexec wrappers, instead use srun:
