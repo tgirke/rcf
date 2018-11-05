@@ -14,7 +14,16 @@ information and updates on exceptions may be posted here.
 
 ## Scheduled exceptions and downtimes
 
-There are no downtimes or exceptions scheduled at this point.
+We have scheduled an HPCC Cluster Maintenance Shutdown for Monday, November 26th. This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, virtual environments/machines, storage systems, backup systems, and network services. We ask that you completely logout of the cluster (pigeon, pelican, globus) before the shutdown.
+
+### Purpose:
+To apply critical patches to central storage and ancillary systems.
+
+### Shutdown Time: 
+Monday, November 26th, 2018 @ 8:00am-5:00pm
+
+### Notes
+A Slurm maintenance reservation will be put in place for the shutdown period. This means that any job that may overlap with the shutdown will be held in a pending queued state during the shutdown and will begin after shutdown is complete. Reducing the estimated runtime with the "--time" flag when submitting with sbatch/srun may allow your job to run if there is enough time before the shutdown period.
 
 ## Standard Operating Procedures
 
