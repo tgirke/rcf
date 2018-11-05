@@ -8,7 +8,7 @@ title: Hardware Overview
 
 * Over 6,500 CPU cores (50% Intel, 50% AMD)
 * 512-1024GB RAM per node
-* GPU: 60,000 cuda cores
+* GPU: 67,000 cuda cores
 * IB network @ 56Gbs
 * Queueing system Slurm
 
