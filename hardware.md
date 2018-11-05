@@ -11,9 +11,9 @@ title: Hardware Details
 
 ## Network
 * Ethernet
-    * 1 Gb/s switch x 5
-    * 1 Gb/s switch 10 Gig uplink
-    * 10 Gb/s switch for campus-wide science DMZ
+    * 5 x 1 Gb/s switch
+    * 5 x 1 Gb/s switch 10 Gig uplink
+    * 1 x 10 Gb/s switch for campus-wide science DMZ
     * Redundant, load balanced, robust mesh topology
 * Interconnect
     * 56 Gb/s InfiniBand (FDR)
@@ -29,10 +29,10 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
     * Resources: 32 cores, 64 GB memory
     * Primary function: submitting jobs to the queuing system
     * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
-* Owl
-    * Resources: 16 cores, 64 GB memory
-    * Primary function: testing; running test sets of jobs
-    * Secondary function: submitting jobs to the queuing system
+* Penguin
+    * Resources: 8 cores, 64 GB memory
+    * Primary function: submitting jobs to the queuing system
+    * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
 * Globus
     * Resources: 32 cores, 32 GB memory
     * Primary function: submitting jobs to the queuing system
@@ -45,5 +45,7 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
     * h01-h06: each with 32 Intel cores and 1024 GB memory
 * GPU
     * gpu01-gpu02: each with 32 (HT) cores Intel Haswell CPUs and 2 x NVIDIA Tesla K80 GPUs (~10000 CUDA cores) and 128 GB memory
+    * gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Tesla K80 GPUs (~20000 CUDA cores) and 512 GB memory
+    * gpu05: with 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Tesla P100 GPUs (~5200 CUDA cores) and 256 GB memory
 * Intel
     * i01-i48: each with 32 Intel Broadwell cores and 512 GB memory
