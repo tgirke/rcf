@@ -253,6 +253,56 @@ Since the CUDA libraries will only run with GPU hardward, development and compil
 Here are a few more examples of jobs that utilize more complex features (ie. array, dependency, MPI etc):
 [Slurm Examples](https://cluster.hpcc.ucr.edu/~jhayes/slurm/examples/)
 
+### Web Browser Access
+#### Ports
+Some jobs require web browser access in order to utilize the software effectively.
+These kinds of jobs typically use (bind) ports in order to provide a graphical user interface (GUI) through a web browser.
+Users are able to run jobs that use (bind) ports on a compute node.
+Any port can be used on any compute node, as long as the port number is above 1000 and it is not already in use (bound).
+
+#### Tunneling
+Once a job is running on a compute node and bound to a port, you may access this compute node via a web browser.
+This is accomplished by using 2 chained SSH tunnels to route traffic through our firewall.
+This acts much like 2 runners in a relay race, handing the baton to the next runer, to get past a security checkpoint.
+
+First we log into the pigeon headnode with a tunneled port (can be 8080, or anything above 1000):
+
+```bash
+ssh -L 8080:localhost:8081 labde005@pigeon.hpcc.ucr.edu
+```
+
+Port 8080 (first) is the local port you will be using on your laptop.
+Port 8081 (second) is the remote port on pigeon that act as a bridge to the compute node.
+
+After you have logged in with the above command, execute the following:
+
+```bash
+ssh  -L 8081:NodeName:8082 -N NodeName
+```
+
+Port 8081 (first) must be the same as the port you used in the previous command, since we are creating a bridge for traffic to come from that port.
+Port 8082 (second) is whatever port your job is using.
+Again, the NodeName and ports will be different depending on where your job runs and what port your job uses.
+
+At this point you may need to provide a password to make the SSH tunnel.
+Once this has succeeded, the command will hang (this is normal).
+Leave this session connected, if you close it your tunnel will be closed.
+
+Then open a browser on your local computer (PC/laptop) and point it to:
+
+```
+http://localhost:8080
+```
+
+If your job uses TSL/SSL, so you may need to try https if the above does not work:
+
+```
+https://localhost:8080
+```
+
+### VPN
+We are currently exploring this to support easier connectivity to the cluster and it's resources.
+
 ### Licenses
 The cluster currently supports [Commercial Software](software_commercial). Since most of the licenses are campus wide there is no need to track individual jobs. One exception is the Intel Parallel Suite, which contains the Intel compilers.
 
