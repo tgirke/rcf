@@ -265,10 +265,10 @@ Once a job is running on a compute node and bound to a port, you may access this
 This is accomplished by using 2 chained SSH tunnels to route traffic through our firewall.
 This acts much like 2 runners in a relay race, handing the baton to the next runer, to get past a security checkpoint.
 
-First we log into the pigeon headnode with a tunneled port (can be 8080, or anything above 1000):
+First we log into a headnode with a tunneled port (can be 8080, or anything above 1000):
 
 ```bash
-ssh -L 8080:localhost:8081 labde005@pigeon.hpcc.ucr.edu
+ssh -L 8080:localhost:8081 username@cluster.hpcc.ucr.edu
 ```
 
 Port 8080 (first) is the local port you will be using on your laptop.
@@ -280,6 +280,7 @@ After you have logged in with the above command, execute the following:
 ssh  -L 8081:NodeName:8082 -N NodeName
 ```
 
+NodeName is the compute node where where job is running, which can be found by using the `squeue -u $USER` command.
 Port 8081 (first) must be the same as the port you used in the previous command, since we are creating a bridge for traffic to come from that port.
 Port 8082 (second) is whatever port your job is using.
 Again, the NodeName and ports will be different depending on where your job runs and what port your job uses.
