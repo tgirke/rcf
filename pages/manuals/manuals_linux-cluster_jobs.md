@@ -272,7 +272,7 @@ ssh -L 8080:localhost:8081 username@cluster.hpcc.ucr.edu
 ```
 
 Port 8080 (first) is the local port you will be using on your laptop.
-Port 8081 (second) is the remote port on pigeon that act as a bridge to the compute node.
+Port 8081 (second) is the remote port on the headnode that acts as a bridge to the compute node.
 
 After you have logged in with the above command, execute the following:
 
