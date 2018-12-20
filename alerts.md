@@ -6,7 +6,7 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unannounced exceptions
 
-### 20 Dec 2018
+### Outage: 20 Dec 2018
 
 * All systems are currently down due to a failure of the AC units. Electricians and AC
   technicians are currently on site to fix the problem. We will keep you
