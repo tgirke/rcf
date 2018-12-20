@@ -9,11 +9,6 @@ consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or
 
 ## News
 
-### 20 Dec 2018
-
-* All systems are currently down due to a failure of the AC units. Electricians and AC
-  technicians are currently on site to fix the problem. We will keep you
-  posted on the status.
 
 ### Jun 2017
 
