@@ -7,6 +7,10 @@ Note: for the most current information on exceptions on HPCC's cluster please co
 
 ## News
 
+### 20 Dec 2018
+
+* All system are down due to a failure of the AC units. Electriciant and AC technicians are currently on site to fixt the problem. We will keep you posted on the status.
+
 ### Jun 2017
 
 * Charles Forsyth joins HPCC as new full-time HPC systems administrator. - Welcome Chuck!
