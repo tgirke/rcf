@@ -5,7 +5,16 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 ---
 
 ## Unannounced exceptions
+
+### 20 Dec 2018
+
+* All systems are currently down due to a failure of the AC units. Electricians and AC
+  technicians are currently on site to fix the problem. We will keep you
+  posted on the status.
+
+<!–– 
 The current state of the cluster is GREEN.
+-->
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
