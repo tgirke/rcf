@@ -3,13 +3,17 @@ layout: page
 title: News and announcements
 ---
 
-Note: for the most current information on exceptions on HPCC's cluster please consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or [Twitter](https://twitter.com/UCR_HPCC) pages.
+Note: for the most current information on exceptions on HPCC's cluster please
+consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or
+[Twitter](https://twitter.com/UCR_HPCC) pages.
 
 ## News
 
 ### 20 Dec 2018
 
-* All system are down due to a failure of the AC units. Electriciant and AC technicians are currently on site to fixt the problem. We will keep you posted on the status.
+* All system are down due to a failure of the AC units. Electricians and AC
+  technicians are currently on site to fix the problem. We will keep you
+  posted on the status.
 
 ### Jun 2017
 
