@@ -16,6 +16,9 @@ problem.
 #### Update: 3:30 PM 
 The AC units have been restored and the systems admins are trying to restart the systems. 
 
+#### Update: 4:00 PM 
+ssh is working again and the queue can be checked. 
+
 We will keep you posted on the status.
 
 
