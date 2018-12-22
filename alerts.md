@@ -6,21 +6,7 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unannounced exceptions
 
-### Outage 20-Dec-2018
-
-#### Start: 1:00 PM
-All systems are currently down due to a failure of the AC units in our server
-room. Electricians and AC technicians are currently on site to fix the
-problem. 
-
-#### Update: 3:30 PM 
-The AC units have been restored and the systems admins are trying to restart the systems. 
-
-#### Update: 4:00 PM 
-ssh is working again and the queue can be checked. 
-
-We will keep you posted on the status.
-
+Currenlty, none to report.
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
@@ -67,11 +53,16 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 
 ## Past exceptions 
 
+### 1:00 PM, 20-Dec-18: Outage due to AC failure
+
+All systems were down for 3 hours due to a failure of the AC units in our server
+room. Electricians and AC technicians have repaired the units.
+
 ### 2:30 PM, 11-Jul-18: Storage Issues
 
 For the past several weeks we have been observing slower storage access.
 In some cases the /bigdata storage was inaccessible for several minutes and caused some jobs to terminate prematurely.
-We have identified the issue and have teken steps to ensure that this problem does not reoccur.
+We have identified the issue and have taken steps to ensure that this problem does not reoccur.
 
 ### 6:00 PM, 02-Jul-18: Storage Issues
 
