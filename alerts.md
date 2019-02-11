@@ -15,16 +15,19 @@ information and updates on exceptions may be posted here.
 
 ## Scheduled exceptions and downtimes
 
-We have scheduled an HPCC Cluster Maintenance Shutdown for Monday, November 26th. This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, virtual environments/machines, storage systems, backup systems, and network services. We ask that you completely logout of the cluster (pigeon, pelican, globus) before the shutdown.
+We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 1st. This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, virtual environments/machines, storage systems, backup systems, and network services. We ask that you please make sure that you do not have any jobs running in the queue, and that you completely logout of the cluster (pigeon, pelican, globus) before the shutdown.
 
 ### Purpose:
-To apply critical patches to central storage and ancillary systems.
 
-### Shutdown Time: 
-Monday, November 26th, 2018 @ 8:00am-5:00pm
+To replace critical storage hardware components, as well as to optimize parts of our internal network.
+
+### Shutdown Time:
+
+Friday, March 1st, 2019 @ 12:00am-11:59pm
 
 ### Notes
-A Slurm maintenance reservation will be put in place for the shutdown period. This means that any job that may overlap with the shutdown will be held in a pending queued state during the shutdown and will begin after shutdown is complete. Reducing the estimated runtime with the "--time" flag when submitting with sbatch/srun may allow your job to run if there is enough time before the shutdown period.
+
+A Slurm maintenance reservation will be put in place for the shutdown period. This means that any job that may overlap with the shutdown period will be held in a pending state, until after the shutdown has completed, at which point jobs will resume a usual. Reducing the estimated runtime with the "--time" flag when submitting with sbatch/srun may allow your job to run before the shutdown period.
 
 ## Standard Operating Procedures
 
