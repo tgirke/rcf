@@ -221,7 +221,9 @@ srun -p highmem --mem=100g --time=24:00:00 --pty bash -l
 Of course you should adjust the time argument according to your job requirements.
 
 ### GPU Jobs
-A single GPU job will no longer reserve an entire node. For each node there are 4-8 GPUs. This means that you need to request how many GPUs that you would like to use.
+GPU nodes have multiple GPUs, and very in type (K80 or P100). This means you need to request how many GPUs and of what type that you would like to use.
+
+To request a gpu of any type, only indicate how many GPUs you would like to use.
 
 Non-Interactive:
 
@@ -233,6 +235,22 @@ Interactive
 
 ```bash
 srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
+```
+
+Since the HPCC Cluster has two types of GPUs installed (K80s and P100s), GPUs can be requested explicitly by type.
+
+Non-Interactive:
+
+```bash
+sbatch -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
+sbatch -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
+```
+
+Interactive
+
+```bash
+srun -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 --pty bash -l
+srun -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 --pty bash -l
 ```
 
 Of course you should adjust the time argument according to your job requirements.
@@ -249,22 +267,6 @@ namd2 +idlepoll +devices $CUDA_VISIBLE_DEVICES MD1.namd
 
 Each group is limited to a maximum of 8 GPUs on the gpu partition. Please be respectful of others and keep in mind that the GPU nodes are a limited shared resource.
 Since the CUDA libraries will only run with GPU hardward, development and compiling of code must be done within a job session on a GPU node.
-
-The HPCC Cluster has two types of GPUs installed K80s and P100s. These GPUs can be requested specifically if desired with the following syntax: 
-
-Non-Interactive:
-
-```bash
-sbatch -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
-sbatch -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
-```
-
-Interactive
-
-```bash
-srun -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 --pty bash -l
-srun -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 --pty bash -l
-```
 
 Here are a few more examples of jobs that utilize more complex features (ie. array, dependency, MPI etc):
 [Slurm Examples](https://cluster.hpcc.ucr.edu/~jhayes/slurm/examples/)
