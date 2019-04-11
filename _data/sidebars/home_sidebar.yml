@@ -187,6 +187,10 @@ entries:
           url: /manuals_linux-cluster_sharing.html
           output: web
 
+        - title : Data Security
+          url: /manuals_linux-cluster_security.html
+          output: web
+
         - title : Communicating
           url: /manuals_linux-cluster_users.html
           output: web
