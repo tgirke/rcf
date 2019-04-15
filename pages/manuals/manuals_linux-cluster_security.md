@@ -146,3 +146,12 @@ rmdir /var/tmp/$USER
 
 For another example on how to use gocrypfs on an HPC cluster: [Luxembourg HPC gocryptfs Example](https://hpc.uni.lu/blog/2018/sensitive-data-encryption-using-gocryptfs/)
 
+## Deletion
+To ensure the complete removal of data, it is best to `shred` files instead of removing them with `rm`. The `shred` program will overwrite the contents of a file with randomized data such that recovery of this file will be very difficult, if not impossible.
+
+Instead of using the common `rm` command to delete something, please use the `shred` command, like so:
+```
+shred -u something
+```
+The above command will overwrite the file, and then remove (unlink) it.
+
