@@ -37,6 +37,9 @@ title: Related HPC and big data analysis events
 
 ## Others
 
+* 10th consecutive workshop on analyzing sequencing data, ANGUS 2019! [July 1 - July 12, 2019](https://urldefense.proofpoint.com/v2/url?u=http-3A__ivory.idyll.org_dibsi_ANGUS.html&d=DwMFaQ&c=7ypwAowFJ8v-mw8AB-SdSueVQgSDL4HiiSaLK01W8HA&r=BRiKNvDIpcjDzQtuD9o7xA&m=apazdjJLUAfEZcBrwKdSnA8TUiYgiNlo4amo9o--Sm4&s=SrRrQxw086wzYgiHKEEWuC0xwy86BKkGDyEk65rvrBU&e=)
+    * This intensive two week summer course introduces attendees with a strong biology background to the practice of analyzing big shotgun sequencing data sets (Illumina, PacBio, and Nanopore). We introduce students to computational thinking and large-scale data analysis on UNIX platforms, and cover genome and transcriptome analysis. We also cover computational topics including R scripting, software installation with bioconda, cloud computing, and building efficient and automated workflows. We use hands-on tutorials, live coding, group notes, and in-class exercises to support an effective learning experience.
+
 Please send us URLs of events we should list here.
 
 
