@@ -315,7 +315,7 @@ https://localhost:8888
 #### Examples
 
 A perfect example of this method is used for Jupyter Lab/Notebook.
-For more details please refer to the following [Jupyter Example](https://github.com/ucr-hpcc/hpcc_slurm_examples).
+For more details please refer to the following [Jupyter Example](https://github.com/ucr-hpcc/hpcc_slurm_examples/tree/master/jupyter).
 
 ### Licenses
 The cluster currently supports [Commercial Software](software_commercial). Since most of the licenses are campus wide there is no need to track individual jobs. One exception is the Intel Parallel Suite, which contains the Intel compilers.
