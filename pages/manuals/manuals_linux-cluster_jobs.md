@@ -269,38 +269,31 @@ Each group is limited to a maximum of 8 GPUs on the gpu partition. Please be res
 Since the CUDA libraries will only run with GPU hardward, development and compiling of code must be done within a job session on a GPU node.
 
 Here are a few more examples of jobs that utilize more complex features (ie. array, dependency, MPI etc):
-[Slurm Examples](https://cluster.hpcc.ucr.edu/~jhayes/slurm/examples/)
+[Slurm Examples](https://github.com/ucr-hpcc/hpcc_slurm_examples)
 
 ### Web Browser Access
+
 #### Ports
 Some jobs require web browser access in order to utilize the software effectively.
 These kinds of jobs typically use (bind) ports in order to provide a graphical user interface (GUI) through a web browser.
 Users are able to run jobs that use (bind) ports on a compute node.
-Any port can be used on any compute node, as long as the port number is above 1000 and it is not already in use (bound).
+Any port can be used on any compute node, as long as the port number is greater than 1000 and it is not already in use (bound).
+
 
 #### Tunneling
 Once a job is running on a compute node and bound to a port, you may access this compute node via a web browser.
 This is accomplished by using 2 chained SSH tunnels to route traffic through our firewall.
 This acts much like 2 runners in a relay race, handing the baton to the next runer, to get past a security checkpoint.
 
-First we log into a headnode with a tunneled port (can be 8080, or anything above 1000):
+We will create a tunnel that goes though a headnode and connect to a compute node on a particular port:
 
 ```bash
-ssh -L 8080:localhost:8081 username@cluster.hpcc.ucr.edu
+ssh -NL 8888:NodeName:8888 username@cluster.hpcc.ucr.edu
 ```
 
-Port 8080 (first) is the local port you will be using on your laptop.
-Port 8081 (second) is the remote port on the headnode that acts as a bridge to the compute node.
-
-After you have logged in with the above command, execute the following:
-
-```bash
-ssh  -L 8081:NodeName:8082 -N NodeName
-```
-
+Port 8888 (first) is the local port you will be using on your laptop.
 NodeName is the compute node where where job is running, which can be found by using the `squeue -u $USER` command.
-Port 8081 (first) must be the same as the port you used in the previous command, since we are creating a bridge for traffic to come from that port.
-Port 8082 (second) is whatever port your job is using.
+Port 8888 (second) is the remote port on the compute node.
 Again, the NodeName and ports will be different depending on where your job runs and what port your job uses.
 
 At this point you may need to provide a password to make the SSH tunnel.
@@ -310,17 +303,14 @@ Leave this session connected, if you close it your tunnel will be closed.
 Then open a browser on your local computer (PC/laptop) and point it to:
 
 ```
-http://localhost:8080
+http://localhost:8888
 ```
 
 If your job uses TSL/SSL, so you may need to try https if the above does not work:
 
 ```
-https://localhost:8080
+https://localhost:8888
 ```
-
-### VPN
-We are currently exploring this to support easier connectivity to the cluster and it's resources.
 
 ### Licenses
 The cluster currently supports [Commercial Software](software_commercial). Since most of the licenses are campus wide there is no need to track individual jobs. One exception is the Intel Parallel Suite, which contains the Intel compilers.
