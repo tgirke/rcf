@@ -25,22 +25,22 @@ module load python/2.7.5
 To load the pre-installed Python packages, do the following:
 
 ```bash
-source activate hppc-base #This may take a few seconds
+conda activate hppc-base #This may take a few seconds
 ```
 
 ### Virtual Environments
 It is best to create your own environment in which you have full control over package installs.
 Installing many packages can consume a large (ie. >20GB) amount of disk space, thus it is recommended to store conda environments under your bigdata space.
-If you have bigdata, define the CONDA_ENVS_PATH variable (otherwise conda environments will be created under your home directory).
+If you have bigdata, create the `.condarc` file (otherwise conda environments will be created under your home directory).
 
-Added the following to your `.bashrc` file:
+ Create the file `.condarc` in your home, with the following content:
 ```bash
-export CONDA_ENVS_PATH=~/bigdata/.conda # Modify to any path you want
-```
-
-Then be sure to load the chanages from your ~/.bashrc into your current session:
-```bash
-source ~/.bashrc
+channels:
+  - defaults
+pkgs_dirs:
+  - ~/bigdata/.conda/pkgs
+envs_dirs:
+  - ~/bigdata/.conda/envs
 ```
 
 Then create your Python 2 conda environment, like so:
@@ -61,14 +61,14 @@ conda create -n NameForNewEnv python=3.6.4 # Many Python versions are available
 Once your virtual environment has been created, you need to activate it before you can use it, like so:
 
 ```bash
-source activate NameForNewEnv
+conda activate NameForNewEnv
 ```
 
 #### Deactivating
 In order to exit from your virtual environment, do the following:
 
 ```bash
-source deactivate
+conda deactivate
 ```
 
 #### Installing packages
@@ -114,7 +114,7 @@ In order to enable your environemnt within Jupyter you will need to do the follo
 conda create -n ipykernel_py2 python=2 ipykernel
 
 # Load the new environment
-source activate ipykernel_py2
+conda activate ipykernel_py2
 
 # Install kernel
 python -m ipykernel install --user --name myenv --display-name "JupyterPy2"
