@@ -6,12 +6,9 @@ title: Related HPC and big data analysis events
 ## UCR Library
 * Software Carpentry Workshop - (Python, git, and bash) [3-25-19, 3-26-19](https://library.ucr.edu/about/events/software-carpentry-workshop-2)
 
-## Graduate Quantitative Methods Center - [GradQuant](https://gradquant.ucr.edu/workshops-w19/) 
+## Graduate Quantitative Methods Center - [GradQuant](https://gradquant.ucr.edu/workshops-spring-2019/) 
 
 * Drop-in Hours [Tuesday - Thursday](https://gradquant.ucr.edu/gq-calendar/)
-* MATLAB Basics [3-5-19](https://www.google.com/calendar/event?eid=NTNqN3BpNWVlbzhmcDZhcDdqZjBwY2hzMGQgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
-* Data Visualization in R [3-11-19](https://www.google.com/calendar/event?eid=MDRkMHQ4c29zamYya2VoZjNvNXYxcm9uajYgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
-* Text Clustering with Python [3-14-19](https://www.google.com/calendar/event?eid=M211ZGhqdmczaTdpZ3JiOGprcDhkNHA2NDggNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
 * Experimental Design [4-4-19](https://www.google.com/calendar/event?eid=NDRmaHZ2dGg3bWtpZzc4ZDdrYmQya2hrcW0gNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
 * Hypothesis Testing and Statistical Power [4-9-19](https://www.google.com/calendar/event?eid=MXVxN2ZlOGdtMmoydWpuY2dtM2llajJyNnMgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
 * Data Management in Python [4-11-19](https://www.google.com/calendar/event?eid=MHVsOWdwcWN2azAyZmQ2bHZucGJicGNjZzcgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
@@ -25,7 +22,7 @@ title: Related HPC and big data analysis events
 * Machine Learning in R [5-8-19](https://www.google.com/calendar/event?eid=MWNvOXVwY3J1b201dXMxN2gyMTA1YzZvZWMgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
 * A Primer on Neural Networks with Python [5-13-19](https://www.google.com/calendar/event?eid=MHU0czlwdGFvYTA4NTliaXY4dmk0bjI2aWIgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
 * Writing Articles in LaTeX [5-28-19](https://www.google.com/calendar/event?eid=MDRiNTk3bGhwa2ZuaXBmdjFyMDJ1Z3FzaDUgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
-* Machine Learning in MATLAB [4-3-19](https://www.google.com/calendar/event?eid=MnNoZmJzY2xoaXMyYjhlaTE3aTFxNGZoaHYgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
+* Machine Learning in MATLAB [6-03-19](https://www.google.com/calendar/event?eid=MnNoZmJzY2xoaXMyYjhlaTE3aTFxNGZoaHYgNmRpN243YjdkZDF1ZHVqZWkxb2FtajVtZWNAZw&ctz=America/Los_Angeles)
 
 
 ## Big data analysis programming in genome biology
