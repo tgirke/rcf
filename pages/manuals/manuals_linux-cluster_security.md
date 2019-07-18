@@ -54,7 +54,7 @@ mmputacl -i ~/acls.txt /path/to/file
 rm ~/acls.txt
 ```
 
-For more information regarding GPFS ACLs refer to the following: [GPFS ACLs](https://www.ibm.com/support/knowledgecenter/STXKQY_4.1.1/com.ibm.spectrum.scale.v4r11.adm.doc/bl1adm_nfsv4syn.htm)
+For more information regarding GPFS ACLs refer to the following: [GPFS ACLs](https://www.ibm.com/support/knowledgecenter/en/STXKQY_4.2.3/com.ibm.spectrum.scale.v4r23.doc/bl1adm_nfsv4syn.htm)
 
 ### XFS ACLs
 The XFS filesystem is used for the CentOS operating system and typical unix locations (/,/var,/tmp,etc), as well as /secure.
