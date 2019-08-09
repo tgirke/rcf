@@ -25,7 +25,7 @@ module load python/2.7.5
 To load the pre-installed Python packages, do the following:
 
 ```bash
-conda activate hppc-base #This may take a few seconds
+conda activate hpcc-base #This may take a few seconds
 ```
 
 ### Virtual Environments
