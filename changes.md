@@ -11,10 +11,10 @@ Please note, the following user-facing changes have been implemented on Aug 23, 
 ### Domain Names
 The domain names `biocluster.ucr.edu` and `bioinfo.ucr.edu` have finally been discontinued. As a result, users need to use the new `hpcc.ucr.edu` 
 name for the following services:
-+ `biocluster.ucr.edu` to `cluster.hpcc.ucr.edu`
-+ `rstudio.bioinfo.ucr.edu` to `rstudio.hpcc.ucr.edu`
-+ `jupyter.bioinfo.ucr.edu` to `jupyter.hpcc.ucr.edu`
-+ `support@biocluster.ucr.edu` to `support@hpcc.ucr.edu`
++ `cluster.hpcc.ucr.edu` instead of `biocluster.ucr.edu` 
++ `rstudio.hpcc.ucr.edu` instead of `rstudio.bioinfo.ucr.edu` 
++ `jupyter.hpcc.ucr.edu` instead of `jupyter.bioinfo.ucr.edu`
++ `support@hpcc.ucr.edu` instead of `support@biocluster.ucr.edu`
 
 In addition, URLs containing `biocluster.ucr.edu` need to be updated to `cluster.hpcc.ucr.edu`.
 
