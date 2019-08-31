@@ -23,7 +23,7 @@ After the upgrade on Aug 23, 2019, all HPCC users have been emailed a temporary
 password with instructions how to change it. This email was sent to the address
 we have on file for each user. In case you missed the corresponding email
 notification and you are not able to log into the cluster, then please email us
-at [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) to recieve a new password.
+at [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) to receive a new password.
 
 ### Updated OpenMPI
 If you have compiled or use software that was compiled with OpenMPI, then it will need to be recompiled.
