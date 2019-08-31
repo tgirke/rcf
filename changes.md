@@ -9,7 +9,7 @@ Please note, the following user-facing changes have been implemented on Aug 23, 
 ## Latest Changes
 
 ### Domain Names
-The domain names `biocluster.ucr.edu` and `bioinfo.ucr.edu` have finally been discontinued. As a result, user need to use the new `hpcc.ucr.edu` 
+The domain names `biocluster.ucr.edu` and `bioinfo.ucr.edu` have finally been discontinued. As a result, users need to use the new `hpcc.ucr.edu` 
 name for the following services:
 + `biocluster.ucr.edu` to `cluster.hpcc.ucr.edu`
 + `rstudio.bioinfo.ucr.edu` to `rstudio.hpcc.ucr.edu`
@@ -23,9 +23,9 @@ After the upgrade on Aug 23, 2019, all HPCC users have been emailed a temporary
 password with instructions how to change it. This email was sent to the address
 we have on file for each user. In case you missed the corresponding email
 notification and you are not able to log into the cluster, then please email us
-at support@hpcc.ucr.edu to recieve a new password.
+at [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu) to recieve a new password.
 
 ### Updated OpenMPI
 If you have compiled or use software that was compiled with OpenMPI, then it will need to be recompiled.
-If you are running into any issues, the please email us at support@hpcc.ucr.edu.
+If you are running into any issues, the please email us at [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu).
 
