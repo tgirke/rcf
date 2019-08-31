@@ -4,9 +4,7 @@ title: Important Updates for HPCC Users
 Summary: information on changes to the HPCC.
 ---
 
-Please note, the following user-facing changes have been implemented on Aug 23, 2019. 
-
-## Latest Changes
+## Important User-facing Changes Implemented on 23-Aug-2019 
 
 ### Domain Names
 The old domain names `biocluster.ucr.edu` and `bioinfo.ucr.edu` have finally been discontinued. As a result, users need to use the new `hpcc.ucr.edu` 
