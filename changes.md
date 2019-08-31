@@ -16,12 +16,14 @@ name for the following services:
 + `jupyter.bioinfo.ucr.edu` to `jupyter.hpcc.ucr.edu`
 + `support@biocluster.ucr.edu` to `support@hpcc.ucr.edu`
 
-Note, URLs containing `biocluster.ucr.edu` need to be updated with `cluster.hpcc.ucr.edu`.
+In addition, URLs containing `biocluster.ucr.edu` need to be updated to `cluster.hpcc.ucr.edu`.
 
 ### Password Reset
-After the upgrade on Aug 23, 2019, all HPCC users have received a temporary password that was sent to their email address we have on file.
-In case you missed the corresponding email notification and you are not able to log into the cluster, then please email us at support@hpcc.ucr.edu 
-to recieve a new password.
+After the upgrade on Aug 23, 2019, all HPCC users have been emailed a temporary
+password with instructions how to change it. This email was sent to the address
+we have on file for each user. In case you missed the corresponding email
+notification and you are not able to log into the cluster, then please email us
+at support@hpcc.ucr.edu to recieve a new password.
 
 ### Updated OpenMPI
 If you have compiled or use software that was compiled with OpenMPI, then it will need to be recompiled.
