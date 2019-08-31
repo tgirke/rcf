@@ -5,10 +5,6 @@ Summary: information on changes to the HPCC.
 ---
 
 ## Latest Changes
-1. Domain names
-2. Password reset
-3. Updated Slurm
-4. Updated OpenMPI
 
 ### Domain Names
 These changes include the following:
