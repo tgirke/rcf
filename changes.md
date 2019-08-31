@@ -9,10 +9,10 @@ Summary: information on changes to the HPCC.
 ### Domain Names
 The old domain names `biocluster.ucr.edu` and `bioinfo.ucr.edu` have finally been discontinued. As a result, users need to use the new `hpcc.ucr.edu` 
 name for the following services:
-+ `cluster.hpcc.ucr.edu` instead of `biocluster.ucr.edu` 
-+ `rstudio.hpcc.ucr.edu` instead of `rstudio.bioinfo.ucr.edu` 
-+ `jupyter.hpcc.ucr.edu` instead of `jupyter.bioinfo.ucr.edu`
-+ `support@hpcc.ucr.edu` instead of `support@biocluster.ucr.edu`
++ _ssh/scp/http_: `cluster.hpcc.ucr.edu` instead of `biocluster.ucr.edu` 
++ _RStudio Server_: `rstudio.hpcc.ucr.edu` instead of `rstudio.bioinfo.ucr.edu` 
++ _Jupyter_: `jupyter.hpcc.ucr.edu` instead of `jupyter.bioinfo.ucr.edu`
++ _Email Support_: `support@hpcc.ucr.edu` instead of `support@biocluster.ucr.edu`
 
 In addition, URLs containing `biocluster.ucr.edu` need to be updated to `cluster.hpcc.ucr.edu`.
 
