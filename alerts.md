@@ -15,7 +15,13 @@ information and updates on exceptions may be posted here.
 
 ## Scheduled exceptions and downtimes
 
-We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 1st. This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, virtual environments/machines, storage systems, backup systems, and network services. We ask that you please make sure that you do not have any jobs running in the queue, and that you completely logout of the cluster (pigeon, pelican, globus) before the shutdown.
+We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, Aug 23, 2019.
+This will require a shutdown of ALL services: Slurm (queuing system), hosted
+websites, virtual environments/machines, storage systems, backup systems, and
+network services. We ask that you please make sure that you do not have any
+jobs running in the queue, and that you completely logout of the cluster
+(pigeon, pelican, globus) before the shutdown. Status: completed.
+For user changes related to this maintenance please see [here](https://hpcc.ucr.edu/changes).
 
 ### Purpose:
 
@@ -55,6 +61,14 @@ The following outlines the timeline for advance email notifications on scheduled
 Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
 
 ## Past exceptions 
+
+### 01-Mar-2019: Routine Maintenance Shutdown
+We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 1st.
+This will require a shutdown of ALL services: Slurm (queuing system), hosted
+websites, virtual environments/machines, storage systems, backup systems, and
+network services. We ask that you please make sure that you do not have any
+jobs running in the queue, and that you completely logout of the cluster
+(pigeon, pelican, globus) before the shutdown. Status: successfully completed.
 
 ### 1:00 PM, 20-Dec-18: Outage due to AC failure
 
