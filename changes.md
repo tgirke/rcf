@@ -9,7 +9,7 @@ Please note, the following user-facing changes have been implemented on Aug 23, 
 ## Latest Changes
 
 ### Domain Names
-The domain names `biocluster.ucr.edu` and `bioinfo.ucr.edu` have finally been discontinued. As a result, users need to use the new `hpcc.ucr.edu` 
+The old domain names `biocluster.ucr.edu` and `bioinfo.ucr.edu` have finally been discontinued. As a result, users need to use the new `hpcc.ucr.edu` 
 name for the following services:
 + `cluster.hpcc.ucr.edu` instead of `biocluster.ucr.edu` 
 + `rstudio.hpcc.ucr.edu` instead of `rstudio.bioinfo.ucr.edu` 
