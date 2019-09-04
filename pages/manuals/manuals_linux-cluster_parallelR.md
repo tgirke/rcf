@@ -44,6 +44,7 @@ specified in the `slurm.tmpl` file (under `module load`).
 
 ```r
 library(batchtools)
+system("bash -l -c 'module list'") # Loads slurm among other modules
 myFct <- function(x) {
 	result <- cbind(iris[x, 1:4,],
 	Node=system("hostname", intern=TRUE),

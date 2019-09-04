@@ -13,6 +13,7 @@ download.file("https://goo.gl/5HrYkE", ".batchtools.conf.R")
 ## Load package and define some custom function
 
 library(batchtools)
+system("bash -l -c 'module list'") # Loads slurm among other module
 myFct <- function(x) {
 	result <- cbind(iris[x, 1:4,], 
 			Node=system("hostname", intern=TRUE), 
