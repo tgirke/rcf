@@ -43,8 +43,10 @@ node where the function was executed. The R version to be used on each node can 
 specified in the `slurm.tmpl` file (under `module load`).
 
 ```r
+library('RenvModule')
+module('load','slurm') # Loads slurm among other modules
+
 library(batchtools)
-system("bash -l -c 'module list'") # Loads slurm among other modules
 myFct <- function(x) {
 	result <- cbind(iris[x, 1:4,],
 	Node=system("hostname", intern=TRUE),
