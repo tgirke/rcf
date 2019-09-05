@@ -9,6 +9,17 @@ consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or
 
 ## News
 
+### Sep 2019
+
+* Major updates applied. - Check here for important [changes](https://hpcc.ucr.edu/changes).
+
+### Aug 2019
+
+* Charles Forsyth left the position of HPC systems administrator and has moved on to new opportunities. - Good luck Chuck!
+
+### Apr 2018
+
+* Abraham Park joins HPCC as HPC systems administrator assistant. - Welcome Abe!
 
 ### Jun 2017
 
