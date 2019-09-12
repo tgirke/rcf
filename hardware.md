@@ -13,7 +13,7 @@ title: Hardware Details
 * Ethernet
     * 5 x 1 Gb/s switch
     * 5 x 1 Gb/s switch 10 Gig uplink
-    * 1 x 10 Gb/s switch for campus-wide science DMZ
+    * 1 x 10 Gb/s switch for campus high performance research network
     * Redundant, load balanced, robust mesh topology
 * Interconnect
     * 56 Gb/s InfiniBand (FDR)
@@ -33,7 +33,7 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
     * Resources: 8 cores, 64 GB memory
     * Primary function: submitting jobs to the queuing system
     * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
-* Globus
+* Parrot
     * Resources: 32 cores, 32 GB memory
     * Primary function: submitting jobs to the queuing system
     * Secondary function: development; code editing and running small (under 50 % CPU and under 30 % RAM) sample jobs
@@ -48,4 +48,4 @@ All users should access the cluster via SSH through `cluster.hpcc.ucr.edu`. This
     * gpu03-gpu04: each with 48 (HT) cores Intel Broadwell CPUs and 4 x NVIDIA Tesla K80 GPUs (~20000 CUDA cores) and 512 GB memory
     * gpu05: with 64 (HT) cores Intel Broadwell CPUs and 2 x NVIDIA Tesla P100 GPUs (~5200 CUDA cores) and 256 GB memory
 * Intel
-    * i01-i48: each with 32 Intel Broadwell cores and 512 GB memory
+    * i01-i54: each with 32 Intel Broadwell cores and 256-512 GB memory
