@@ -317,6 +317,66 @@ https://localhost:8888
 A perfect example of this method is used for Jupyter Lab/Notebook.
 For more details please refer to the following [Jupyter Example](https://github.com/ucr-hpcc/hpcc_slurm_examples/tree/master/jupyter).
 
+### Desktop Environments
+
+#### VNC Server (cluster)
+
+Log into the cluster and launch a job:
+
+```bash
+ssh cluster.hpcc.ucr.edu
+srun --cpus-per-task=2 --mem=2gb --partition=short --pty bash -l
+```
+
+Appropriate job resources should be requested based on the processes you will be running from within the VNC session.
+
+The first time you run the vncserver it will need to be configured:
+
+```bash
+vncserver
+```
+
+You should set a password for yourself, and the read-only password is optional.
+
+Configure X Startup with the following command:
+
+```bash
+echo '/usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /usr/bin/gnome-session --session=gnome-classic' > /rhome/$USER/.vnc/xstartup
+```
+
+After your vncserver is configured, run it again to get it started:
+
+```bash
+vncserver
+
+New 'i54:1' desktop is i54:1
+
+Creating default startup script /rhome/username/.vnc/xstartup
+Starting applications specified in /rhome/username/.vnc/xstartup
+Log file is /rhome/username/.vnc/i54:1.log
+```
+
+The VNC port used should be 5900+N, N being the display number mentioned above in the format NodeName:DisplayNumber (ie. `i54:1`).
+The default is `5901`, unless it is already in use, in that case vncserver will increment the DisplayNumber until an unused one is found.
+
+#### VNC Client (Desktop/Laptop)
+
+Create a tunnel on your local machine (desktop/laptop) using the NodeName and VNC Port from above:
+
+```bash
+ssh -N -L 5901:i54:5901 cluster.hpcc.ucr.edu
+```
+
+You may need to provide a password, then this command will hang, this is normal.
+
+Launch vncviewer on local port
+
+```bash
+vncviewer localhost::5901
+```
+
+For more information regarding tunnels and VNC in MS Windows, please refer [More VNC Info](https://docs.ycrc.yale.edu/clusters-at-yale/access/vnc/).
+
 ### Licenses
 The cluster currently supports [Commercial Software](software_commercial). Since most of the licenses are campus wide there is no need to track individual jobs. One exception is the Intel Parallel Suite, which contains the Intel compilers.
 
