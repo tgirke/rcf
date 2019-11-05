@@ -6,7 +6,7 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unannounced exceptions
 
-Currenlty, none to report.
+Campus wide network is currently disrupted
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
@@ -25,11 +25,11 @@ For user changes related to this maintenance please see [here](https://hpcc.ucr.
 
 ### Purpose:
 
-To replace critical storage hardware components, as well as to optimize parts of our internal network.
+Routine filesystem maintenance and diagnostics
 
 ### Shutdown Time:
 
-Friday, March 1st, 2019 @ 12:00am-11:59pm
+Thursday, November 21st, 2019 @ 12:00am-11:59pm
 
 ### Notes
 
