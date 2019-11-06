@@ -10,29 +10,29 @@ Submitting and managing jobs is at the heart of using the cluster.  A 'job' refe
 ## Partitions
 In the past we used queues under the old Torque system, we now refer to these logically grouped nodes as partitions. There are several different partitions available for cluster users to send jobs to:
 
-* batch
-    * Nodes: c01-c48
-    * Cores: AMD, 256 per user
-    * RAM: 1 GB default
-    * Time (walltime): 168 hours (7 days) default
-* highmem
-    * Nodes: h01-h04
-    * Cores: Intel, 32 per user
-    * RAM: 100 GB min and 1000 GB max
-    * Time (walltime): 48 hours (2 days) default
-* gpu
-    * Nodes: gpu01-gpu04
-    * GPUs: 8 per group
-    * RAM: 1 GB default
-    * Time (walltime): 48 hours (2 days) default
 * intel
     * Default partition
     * Nodes: i01-02,i17-i40
     * Cores: Intel, 256 per user
     * RAM: 1 GB default
     * Time (walltime): 168 hours (7 days) default
+* batch
+    * Nodes: c01-c48
+    * Cores: AMD, 256 per user
+    * RAM: 1 GB default
+    * Time (walltime): 168 hours (7 days) default
+* highmem
+    * Nodes: h01-h06
+    * Cores: Intel, 32 per user
+    * RAM: 100 GB min and 1000 GB max
+    * Time (walltime): 48 hours (2 days) default
+* gpu
+    * Nodes: gpu01-gpu05
+    * GPUs: 8 per group
+    * RAM: 1 GB default
+    * Time (walltime): 48 hours (2 days) default
 * short
-    * Nodes: i01-i40
+    * Nodes: i01-i54
     * Cores: Intel, 256 per user
     * RAM: 1 GB default
     * Time (walltime): 2 hours Maximum
