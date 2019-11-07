@@ -50,7 +50,7 @@ You can use the `sprio` command to check the priority of your jobs:
 sprio -u $USER
 ```
 
-Even if your group has a lower fairshare score, your job may still has a very high priority.
+Even if your group has a lower fairshare score, your job may still have a very high priority.
 This would be likely due to the job's queue wait time, and it should start as soon as possible regardless of fairshare score.
 You can use the `sqmore` command to see a list of all jobs sorted by priority.
 
