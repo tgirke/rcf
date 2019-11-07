@@ -89,25 +89,20 @@ Here is an example of an SBATCH script:
 #!/bin/bash -l
 
 #SBATCH --nodes=1
-#SBATCH --ntasks=10
-#SBATCH --cpus-per-task=1
-#SBATCH --mem-per-cpu=1G
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=10
+#SBATCH --mem=10G
 #SBATCH --time=1-00:15:00     # 1 day and 15 minutes
-#SBATCH --output=my.stdout
 #SBATCH --mail-user=useremail@address.com
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="just_a_test"
 #SBATCH -p intel # This is the default partition, you can use any of the following; intel, batch, highmem, gpu
-
 
 # Print current date
 date
 
 # Load samtools
 module load samtools
-
-# Change directory to where you submitted the job from, so that relative paths resolve properly
-cd $SLURM_SUBMIT_DIR
 
 # Concatenate BAMs
 samtools cat -h header.sam -o out.bam in1.bam in2.bam
@@ -116,7 +111,8 @@ samtools cat -h header.sam -o out.bam in1.bam in2.bam
 hostname
 ```
 
-The above job will request 1 node, 10 task (1 cpu core per task), 10GB of memory (1GB per task), for 1 day and 15 minutes. All STDOUT will be redirected to a file called "my.stdout" as well as an email sent to the user when the status of the job changes.
+The above job will request 1 node, 10 cores (parallel threads), 10GB of memory, for 1 day and 15 minutes. An email will be sent to the user when the status of the job changes (Start, Failed, Completed).
+For more information regarding parallel/multi core jobs refer to [Parallelization](#parallelization).
 
 Interactive submission:
 
