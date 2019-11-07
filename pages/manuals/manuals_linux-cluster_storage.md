@@ -40,15 +40,6 @@ Quota Responsibility | Lab
 ## Non-Persistent Space
 Frequently, there is a need to do things like, output a significant amount of intermediate data during a job, access a dataset from a faster medium than bigdata or the home directories or write out lock files. These types of things are well suited to the use of non-persistent spaces. Below are the filesystems available on the HPC cluster.
 
-__RAM Space__
-This type of space takes away from physical memory but allows extremely fast access to the files located on it. When submitting a job you will need to factor in the space your job is using in RAM as well. For example, if you have a dataset that is 1G in size and use this space, it will take at least 1G of RAM.
-
-Path                 | /dev/shm
--------------------- | ---------
-User Availability    | All Users
-Node Availability    | All Nodes
-Quota Responsibility | N/A
-
 __Temporary Space__
 This is a standard space available on all Linux systems. Please be aware that it is limited to the amount of free disk space on the node you are running on.
 
@@ -59,10 +50,19 @@ Node Availability    | All Nodes
 Quota Responsibility | N/A
 
 __SSD Backed Space__
-This space is much faster than the standard temporary space, but slower than using RAM based storage.
+This space is much faster than the persistwnt space (/rhome,/bigdata), but slower than using RAM based storage.
 
 Path                 | /scratch
 -------------------- | --------
+User Availability    | All Users
+Node Availability    | All Nodes
+Quota Responsibility | N/A
+
+__RAM Space__
+This type of space takes away from physical memory but allows extremely fast access to the files located on it. When submitting a job you will need to factor in the space your job is using in RAM as well. For example, if you have a dataset that is 1G in size and use this space, it will take at least 1G of RAM.
+
+Path                 | /dev/shm
+-------------------- | ---------
 User Availability    | All Users
 Node Availability    | All Nodes
 Quota Responsibility | N/A
