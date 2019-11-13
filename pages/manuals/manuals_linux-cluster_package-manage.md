@@ -58,6 +58,7 @@ pkgs_dirs:
   - ~/bigdata/.conda/pkgs
 envs_dirs:
   - ~/bigdata/.conda/envs
+auto_activate_base: false
 ```
 
 Then create your Python 2 conda environment, like so:
