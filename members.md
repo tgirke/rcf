@@ -7,7 +7,6 @@ permalink: members.html
 ## Facility Contacts
 
 * [Jordan Hayes](mailto:jordan.hayes@ucr.edu), HPC Systems Administrator
-* [Charles Forsyth](mailto:charles.forsyth@ucr.edu), HPC Systems Administrator
 * [Abraham Park](mailto:apark064@ucr.edu), HPC Systems Administrator, Assistant
 * [Thomas Girke](http://girke.bioinformatics.ucr.edu), Director of HPC Center
 

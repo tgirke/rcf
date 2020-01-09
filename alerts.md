@@ -6,7 +6,7 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 
 ## Unannounced exceptions
 
-Campus wide network is currently disrupted
+We had some issues with our storage systems this evening that may have caused disruptions in your work. These issues should be resolved. We're continuing to monitor the situation to ensure everything is operational, and we apologize for any inconveniences this may have caused. Please let us know at support@hpcc.ucr.edu if you require any assistance regarding job status and recovery.
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
