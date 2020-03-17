@@ -4,6 +4,17 @@ title: User alerts for HPCC's computing resources
 Summary: the most current information on exceptions on HPCC's cluster will be posted here or on its Twitter site (https://twitter.com/UCR_HPCC).
 ---
 
+## Operational During COVID-19 Crisis
+
+Since the research computing infrastructure of the HPCC is designed to be
+accessed remotely, we are currently not expecting any downtimes for users 
+due to the campus access restrictions caused by the COVID-19 pandemic. A few
+exceptions are the following: 
+
+  + Our offices in 1208/1207 Genomics Building are closed
+  + The HPCC staff will continue to work but exclusively via remote access from home. 
+  + If users need to get in contact with us then please email your questions to support@hpcc.ucr.edu. For immediate help, user can also post questions on https://ucr-hpcc.slack.com. We also support help via screen sharing using Zoom upon request. For latest news and updates, please also visit us on https://twitter.com/UCR_HPCC. Updates on the current situation will also be posted on the [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) of the HPCC website.
+
 ## Unannounced exceptions
 
 We had some issues with our storage systems this evening that may have caused disruptions in your work. These issues should be resolved. We're continuing to monitor the situation to ensure everything is operational, and we apologize for any inconveniences this may have caused. Please let us know at support@hpcc.ucr.edu if you require any assistance regarding job status and recovery.
