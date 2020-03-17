@@ -9,12 +9,14 @@ Summary: the most current information on exceptions on HPCC's cluster will be po
 Since the research computing infrastructure of the HPCC is designed to be
 accessed remotely, we are currently not expecting any major downtimes or
 restrictions for users due to the campus access restrictions caused by the
-COVID-19 pandemic. A few exceptions are the following: 
+COVID-19 pandemic. However, even this may change if the restrictions on our
+campus will be substantially extended. A few exceptions that are currently in
+effect for the HPCC facility are the following: 
 
   + Our offices in 1208/1207 Genomics Building are closed. The HPCC staff will continue to work as usual but exclusively via remote access from home. 
   + All in person contacts such as office visits or in-person training are not possible during the current COVID-19 crisis. Alternatively, we will be offering remote training sessions via video conferencing using Zoom. 
 
-If users need to get in contact with us then please email your questions to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). For immediate help, user can also post questions on [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). Updates will also be posted on this website's [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) pages.
+If users need to get in contact with us then please email your questions to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). For immediate help, users can also post questions on [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). Updates will also be posted on this website's [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) pages.
 
 ## Unannounced exceptions
 
