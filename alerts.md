@@ -12,8 +12,8 @@ due to the campus access restrictions caused by the COVID-19 pandemic. A few
 exceptions are the following: 
 
   + Our offices in 1208/1207 Genomics Building are closed. The HPCC staff will continue to work as usual but exclusively via remote access from home. 
-  + All in person contacts such as office visits or in-person training are not possible during the COVID-19 crisis. Alternatively, we will be offering remote training sessions via video conferencing using Zoom. 
-  + If users need to get in contact with us then please email your questions to sing [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu]. For immediate help, user can also post questions on [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). Updates on the current HPCC status related to the COVID-19 situation will also be posted on this website's [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) pages.
+  + All in person contacts such as office visits or in-person training are not possible during the current COVID-19 crisis. Alternatively, we will be offering remote training sessions via video conferencing using Zoom. 
+  + If users need to get in contact with us then please email your questions to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). For immediate help, user can also post questions on [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). Updates will also be posted on this website's [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) pages.
 
 ## Unannounced exceptions
 
