@@ -16,6 +16,20 @@ storage) than what smaller clusters of individual research groups could afford,
 while also providing a long-term sustainability plan and professional systems
 administrative support. 
 
+## <span style="color:red"> HPCC Operation During COVID-19 Crisis </span>
+
+Since the research computing infrastructure of the HPCC is designed to be
+accessed remotely, we are currently not expecting any major downtimes or
+restrictions for users due to the campus access restrictions caused by the
+COVID-19 pandemic. However, even this may change depending on the extent of the
+restrictions our university may have to implement. A few exceptions that are
+currently in effect for the HPCC facility are the following: 
+
+  + Our offices in 1208/1207 Genomics Building are closed. The HPCC staff will continue to work as usual but exclusively via remote access from home. 
+  + All in person contacts such as office visits or in-person training events are not possible during the current COVID-19 crisis. Alternatively, we will be offering remote training sessions via video conferencing using Zoom. 
+
+If users need to get in contact with us then please email your questions to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). For immediate help, users can also post questions on [https://ucr-hpcc.slack.com](https://ucr-hpcc.slack.com). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). With some delay, updates will also be posted on this website's [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) pages.
+
 ## HPC hardware
     
 * Multipurpose cluster optimized for parallel, non-parallel and big data computing 
