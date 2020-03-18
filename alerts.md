@@ -4,7 +4,7 @@ title: User alerts for HPCC's computing resources
 Summary: the most current information on exceptions on HPCC's cluster will be posted here or on its Twitter site (https://twitter.com/UCR_HPCC).
 ---
 
-## HPCC Operation During COVID-19 Crisis
+## <span style="color:red"> HPCC Operation During COVID-19 Crisis </span>
 
 Since the research computing infrastructure of the HPCC is designed to be
 accessed remotely, we are currently not expecting any major downtimes or
