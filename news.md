@@ -15,6 +15,7 @@ consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or
 
 ### Sep 2019
 
+* Travis Nasser joins HPCC as HPC systems administrator assistant. - Welcome Travis!
 * Major updates applied. - Check here for important [changes](https://hpcc.ucr.edu/changes).
 
 ### Aug 2019
