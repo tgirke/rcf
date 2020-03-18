@@ -16,11 +16,16 @@ currently in effect for the HPCC facility are the following:
   + Our offices in 1208/1207 Genomics Building are closed. The HPCC staff will continue to work as usual but exclusively via remote access from home. 
   + All in person contacts such as office visits or in-person training events are not possible during the current COVID-19 crisis. Alternatively, we will be offering remote training sessions via video conferencing using Zoom. 
 
-If users need to get in contact with us then please email your questions to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). For immediate help, users can also post questions on [ucr-hpcc.slack.com](https://ucr-hpcc.slack.com). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). With some delay, updates will also be posted on this website's [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) pages.
+If users need to get in contact with us then please email your questions to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). For immediate help, users can also post questions on Slack ([ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). With some delay, updates will also be posted on this website's [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) pages.
 
 ## Unannounced exceptions
 
-We had some issues with our storage systems this evening that may have caused disruptions in your work. These issues should be resolved. We're continuing to monitor the situation to ensure everything is operational, and we apologize for any inconveniences this may have caused. Please let us know at support@hpcc.ucr.edu if you require any assistance regarding job status and recovery.
+We had some issues with our storage systems this evening that may have caused
+disruptions in your work. These issues should be resolved. We're continuing to
+monitor the situation to ensure everything is operational, and we apologize for
+any inconveniences this may have caused. Please let us know at
+support@hpcc.ucr.edu if you require any assistance regarding job status and
+recovery.
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
