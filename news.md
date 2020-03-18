@@ -9,6 +9,10 @@ consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or
 
 ## News
 
+### Mar/Apr 2020
+
+* For updates on HPCC's operation during the COVID-19 crisis please visit the [Alerts](http://hpcc.ucr.edu/alerts.html#hpcc-operation-during-covid-19-crisis).
+
 ### Sep 2019
 
 * Major updates applied. - Check here for important [changes](https://hpcc.ucr.edu/changes).
