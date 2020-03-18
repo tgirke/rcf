@@ -8,6 +8,7 @@ permalink: members.html
 
 * [Jordan Hayes](mailto:jordan.hayes@ucr.edu), HPC Systems Administrator
 * [Abraham Park](mailto:apark064@ucr.edu), HPC Systems Administrator, Assistant
+* [Travis Nasser](mailto:tnass001@ucr.edu), HPC Systems Administrator, Assistant
 * [Thomas Girke](http://girke.bioinformatics.ucr.edu), Director of HPC Center
 
 <!--
