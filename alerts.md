@@ -19,7 +19,7 @@ currently in effect for the HPCC facility are the following:
 If users need to get in contact with us then please email your questions to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). For immediate help, users can also post questions on Slack ([ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). With some delay, updates will also be posted on this website's [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) pages.
 
 ## Unannounced exceptions
-None current observed.
+None currently observed.
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
