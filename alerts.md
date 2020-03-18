@@ -19,13 +19,7 @@ currently in effect for the HPCC facility are the following:
 If users need to get in contact with us then please email your questions to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). For immediate help, users can also post questions on Slack ([ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). With some delay, updates will also be posted on this website's [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) pages.
 
 ## Unannounced exceptions
-
-We had some issues with our storage systems this evening that may have caused
-disruptions in your work. These issues should be resolved. We're continuing to
-monitor the situation to ensure everything is operational, and we apologize for
-any inconveniences this may have caused. Please let us know at
-support@hpcc.ucr.edu if you require any assistance regarding job status and
-recovery.
+None current observed.
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
@@ -33,26 +27,7 @@ window at the bottom of this and other pages of the HPCC website. Additional
 information and updates on exceptions may be posted here. 
 
 ## Scheduled exceptions and downtimes
-
-We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, Aug 23, 2019.
-This will require a shutdown of ALL services: Slurm (queuing system), hosted
-websites, virtual environments/machines, storage systems, backup systems, and
-network services. We ask that you please make sure that you do not have any
-jobs running in the queue, and that you completely logout of the cluster
-(pigeon, pelican, globus) before the shutdown. Status: completed.
-For user changes related to this maintenance please see [here](https://hpcc.ucr.edu/changes).
-
-### Purpose:
-
-Routine filesystem maintenance and diagnostics
-
-### Shutdown Time:
-
-Thursday, November 21st, 2019 @ 12:00am-11:59pm
-
-### Notes
-
-A Slurm maintenance reservation will be put in place for the shutdown period. This means that any job that may overlap with the shutdown period will be held in a pending state, until after the shutdown has completed, at which point jobs will resume a usual. Reducing the estimated runtime with the "--time" flag when submitting with sbatch/srun may allow your job to run before the shutdown period.
+None currently scheduled.
 
 ## Standard Operating Procedures
 
@@ -79,7 +54,36 @@ The following outlines the timeline for advance email notifications on scheduled
 
 Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
 
-## Past exceptions 
+## Past exceptions
+
+### 13-Mar-2020: Routine maintenance shutdown
+We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 13th.
+This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, 
+virtual environments/machines, storage systems, backup systems, and network services.
+We ask that you please make sure that you do not have any jobs running in the queue, 
+and that you completely logout of the cluster (pigeon, pelican, parrot) before the shutdown.
+
+### 08-Jan-2020: Storage outage
+We had some issues with our storage systems this evening that may have caused
+disruptions in your work. These issues should be resolved. We're continuing to
+monitor the situation to ensure everything is operational, and we apologize for
+any inconveniences this may have caused. Please let us know at
+support@hpcc.ucr.edu if you require any assistance regarding job status and
+recovery.
+
+### 21-Nov-2019: Routine filesystem maintenance and diagnostics
+We have scheduled an HPCC Cluster Maintenance Shutdown for this Thursday, November 21st.
+This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, virtual environments/machines, storage systems, backup systems, and network services.
+We ask that you please make sure that you do not have any jobs running in the queue, and that you completely logout of the cluster (pigeon, pelican, parrot) before the shutdown.
+
+### 23-Aug-2019: Routine maintenance shutdown
+We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, Aug 23, 2019.
+This will require a shutdown of ALL services: Slurm (queuing system), hosted
+websites, virtual environments/machines, storage systems, backup systems, and
+network services. We ask that you please make sure that you do not have any
+jobs running in the queue, and that you completely logout of the cluster
+(pigeon, pelican, globus) before the shutdown. Status: completed.
+For user changes related to this maintenance please see [here](https://hpcc.ucr.edu/changes).
 
 ### 01-Mar-2019: Routine Maintenance Shutdown
 We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 1st.
