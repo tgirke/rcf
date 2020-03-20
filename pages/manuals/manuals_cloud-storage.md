@@ -44,4 +44,21 @@ grive -a --id [client id] --secret [client secret]
 ```
 
 # AWS S3
-To-Do
+First you will need to configure an AWS account and setup your credentials with cfncluster config.
+You will also need to create an S3 bucket.
+
+Then you should be able to use the cfncluster module, which contains `aws` sync tool, like so:
+
+```
+# Unload all version of Python
+module unload python miniconda2 miniconda3 anaconda2 anaconda3
+
+# Load software
+module load cfncluster
+
+# S3 Bucket Name
+S3Name=MyS3BucketName
+
+# Transfer to S3 bucket
+aws s3 sync my_folder s3://${S3NAME}/my_folder
+```
