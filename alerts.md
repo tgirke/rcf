@@ -4,6 +4,10 @@ title: User alerts for HPCC's computing resources
 Summary: the most current information on exceptions on HPCC's cluster will be posted here or on its Twitter site (https://twitter.com/UCR_HPCC).
 ---
 
+## <span style="color:red"> Sun, 22-Mar-2020: HPCC server room not accessible due to network outage on campus </span>
+
+Please note, due to a network outage on our campus, many HPCC services are not accessible right now. Updates about the current situations can be found [here](https://techalerts.ucr.edu/).
+
 ## <span style="color:red"> HPCC Operation During COVID-19 Crisis </span>
 
 Since the research computing infrastructure of the HPCC is designed to be
