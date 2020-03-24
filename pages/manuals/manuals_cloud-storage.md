@@ -21,6 +21,7 @@ git clone https://github.com/vitalif/grive2.git
 cd grive2
 mkdir build
 cd build
+module load cmake
 cmake ../
 make -j4
 ```
