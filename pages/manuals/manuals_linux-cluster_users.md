@@ -19,8 +19,8 @@ user_details.sh
 You can search for specific users by running:
 
 ```bash
-MATCH1='tgirke' # Searches by real name, and username, and email address and PI name
-MATCH2='jhayes'
+MATCH1='username1' # Searches by real name, and username, and email address and PI name
+MATCH2='username2'
 user_details.sh | grep -P "$MATCH1|$MATCH2"
 ```
 
