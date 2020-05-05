@@ -32,6 +32,3 @@ The manual menu on the left will walk you through the process while the simple s
 4. Set up your HPCC account to access and use your HPCC AWS Cluster.
 5. Create your cluster and begin computing 
 
-## Presentation on HPCC AWS Cluster
-
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRSC8sz2w5nLCE1pUJgLU37HDnA9Hgxgy_LHI2zqugFoNNn9BtD6nqiVfEVYKYXoiHRK8h37MrsOpN7/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
