@@ -22,7 +22,7 @@ Review the following to understand the applicable terms and conditions, and allo
   * 80%+ of data egress must be via an approved National Research and Education Network (NREN).  This includes CENIC and Internet2, so normal UC usage meets this requirement.
 * Determine whether the data you are working with should be hosted in the cloud.
 * HIPAA Business Associate Agreement (BAA)
-  * In order to cover your locations AWS accounts under the terms of the UC AWS Enterprise Agreement (EA) and HIPAA Business Associate Agreement (BAA), follow the instructions <a herf="http://www.ucop.edu/cloud-services-contracts/_files/UC-BAA-final-draft_v2.0-final.pdf" target="_blank"> found on the UCOP Website </a> (PDF).
+  * In order to cover your locations AWS accounts under the terms of the UC AWS Enterprise Agreement (EA) and HIPAA Business Associate Agreement (BAA), follow the instructions [found on the UCOP Website](http://www.ucop.edu/cloud-services-contracts/_files/UC-BAA-final-draft_v2.0-final.pdf") (PDF).
 
 ## Connect AWS Account to UC Agreement and PO
 
