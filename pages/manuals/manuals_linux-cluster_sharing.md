@@ -6,17 +6,17 @@ permalink: manuals_linux-cluster_sharing.html
 
 ## Permissions
 It is useful to share data and results with other users on the cluster, and we encourage collaboration  The easiest way to share a file is to place it in a location that both users can access. Then the second user can simply copy it to a location of their choice. However, this requires that the file permissions permit the second user to read the file.
-Basic file permissions on Linux and other Unix like systems are composed of three groups: owner, group, and other. Each one of these represents the permissions for different groups of people: the user who owns the file, all the group members of the group owner, and everyone else, respectively  Each group has 3 permissions: read, write, and execute, represented as r,w, and x. For example the following file is owned by the user 'jhayes' (with read, write, and execute), owned by the group 'operations' (with read and execute), and everyone else cannot access it.
+Basic file permissions on Linux and other Unix like systems are composed of three groups: owner, group, and other. Each one of these represents the permissions for different groups of people: the user who owns the file, all the group members of the group owner, and everyone else, respectively  Each group has 3 permissions: read, write, and execute, represented as r,w, and x. For example the following file is owned by the user `username` (with read, write, and execute), owned by the group `groupname` (with read and execute), and everyone else cannot access it.
 
 ```bash
-jhayes@pigeon:~$ ls -l myFile
--rwxr-x---   1 jhayes operations 1.6K Nov 19 12:32 myFile
+username@pigeon:~$ ls -l myFile
+-rwxr-x---   1 username groupname 1.6K Nov 19 12:32 myFile
 ```
 
-If you wanted to share this file with someone outside the 'operations' group, read permissions must be added to the file for 'other':
+If you wanted to share this file with someone outside the `groupname` group, read permissions must be added to the file for 'other':
 
 ```bash
-jhayes@pigeon:~$ chmod o+r myFile
+username@pigeon:~$ chmod o+r myFile
 ```
 
 To learn more about ownership, permissions, and groups please visit [Linux Basics Permissions](manuals_linux-basics_permissions).
@@ -26,14 +26,14 @@ To learn more about ownership, permissions, and groups please visit [Linux Basic
 In Linux, it is possible to set the default file permission for new files. This is useful if you are collaborating on a project, or frequently share files and  you do not want to be constantly adjusting permissions  The command responsible for this is called 'umask'. You should first check what your default permissions currently are by running 'umask -S'.
 
 ```bash
-jhayes@pigeon:~$ umask -S
+username@pigeon:~$ umask -S
 u=rwx,g=rx,o=rx
 ```
 
 To set your default permissions, simply run umask with the correct options. Please note, that this does not change permissions on any existing files, only new files created after you update the default permissions. For instance, if you wanted to set your default permissions to you having full control, your group being able to read and execute your files, and no one else to have access, you would run:
 
 ```bash
-jhayes@pigeon:~$ umask u=rwx,g=rx,o=
+username@pigeon:~$ umask u=rwx,g=rx,o=
 ```
 
 It is also important to note that these settings only affect your current session.
