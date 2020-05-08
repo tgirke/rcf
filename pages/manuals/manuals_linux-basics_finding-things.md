@@ -4,40 +4,33 @@ title: Linux Basics - Finding Things
 permalink: manuals_linux-basics_finding-things.html
 ---
 
-## Finding files, directories and applications
+## Find Files
 
 ```bash
-find -name "*pattern*"            # Searches for *pattern* in and below current directory
-find /usr/local -name "*blast*"   # Finds file names *blast* in specfied directory
-find /usr/local -iname "*blast*"  # Same as above, but case insensitive
+find ~ -name "*pattern*"          # Searches for *pattern* in and below your home directory
+find ~ -iname "*pattern*"         # Same as above, but case insensitive
+find ~ -type f -mtime -2          # Searches for files you have modified in the last two days
 ```
 
-* Additional useful arguments: -user <user name>, -group <group name>, -ctime <number of days ago changed> 
+Useful `find` arguments:
+
+* `-user <userName>`
+* `-group <groupName>`
+* `-ctime <number of days ago changed>`
+* `-exec <command to run on each file> {} \;`
+
+## Find Text
 
 ```bash
-find ~ -type f -mtime -2                # Finds all files you have modified in the last two days
-locate <pattern>                        # Finds files and dirs that are written into update file
-which <application_name>                # Location of application
-whereis <application_name>              # Searches for executables in set of directories
-yum list installed | grep <mypattern>   # Find CentOS packages and refine search with grep pattern
+grep "pattern" <FILENAME>                              # Provides lines in a file where "pattern" appears
+grep -H "pattern"                                      # -H prints out file name in front of pattern
+find ~ -name "*.txt" -exec grep -H "pattern" {} \;     # Search lines where "pattern" appears in files with names that end with ".txt"
 ```
 
-## Finding things in files
+## Find Applications
 
 ```bash
-grep <pattern> <file>       # Provides lines in 'file' where pattern 'appears'
-                            # If pattern is shell function use single-quotes: '>'
-
-
-grep -H <pattern>           # -H prints out file name in front of pattern
-grep 'pattern' <file> | wc  # pipes lines with pattern into word count wc (see chapter 8)
-                            # wc arguments: -c: show only bytes, -w: show only words,
-                            # -l: show only lines; help on regular expressions:
-                            # $ man 7 regex or man perlre
-
-
-find /home/my_dir -name '*.txt' | xargs grep -c ^.*  # Counts line numbers on many
-                            # files and records each count along with individual file
-                            # name; find and xargs are used to circumvent the Linux
-                            # wildcard limit to apply this function on thousands of files.
+which <APPLICATION_NAME>                # Location of application
+whereis <APPLICATION_NAME>              # Searches for executables in set of directories
+rpm -qa | grep "pattern"                # List all RPM packages and filter based on "pattern"
 ```

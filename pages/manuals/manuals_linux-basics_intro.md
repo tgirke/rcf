@@ -1,16 +1,16 @@
 ---
 layout: page
-title: Linux Basics - Introduction
+title: Linux Basics - Access
 permalink: manuals_linux-basics_intro.html
 ---
 
-## Introduction
-The scope of this manual is a brief introduction on how to get started using powerful Linux command-line utilities.
-
 ## How to Get Access?
 
-* Install your preferred ssh client on your local machine (we can help you with this).
+Many of the commands referenced here may work in any local `bash` shell, however we will focus on running these on the Linux HPC cluster.
+In order to gain access to the cluster, you will need to request an account and also download an SSH client.
+
 * Users at UC Riverside can apply for an account on our Linux clusters by sending an account request to Support (support@hpcc.ucr.edu).
+* Install your preferred ssh client on your local machine (we can help you with this).
 
 ### Windows
 
@@ -18,26 +18,17 @@ The scope of this manual is a brief introduction on how to get started using pow
 2. Click on "Start local terminal" in the center of the window.
 
 ### Mac
+
 1. Download and install [XQuartz](https://www.xquartz.org/), this is optional and only needed if you want X11 Forwarding.
 2. Open Terminal or [iterm2](https://www.iterm2.com/downloads.html)
 
 ### Logging in
+
 * Now that you have a terminal open, execute the following on the command line:
-  `ssh -X <your_username>@<host_name>`
+  `ssh -X myusername@cluster.hpcc.ucr.edu`
 
-  `host_name` is the remote server's domain name (e.g. `cluster.hpcc.ucr.edu`)  
-  You will be asked to enter your password. Simply type it and press enter.
-
-* To copy files To the server run the following on your workstation or laptop:
-
-  `scp -r <path_to_directory> <your_username>@<host_name>:`
-
-* To copy files From the server run the following on your workstation or laptop:
-
-  `scp -r <your_username>@<host_name>:<path_to_directory> .`
-
-## File Transfers
-If you would rather use a graphical interface, instead of the command line, try FileZilla [FileZilla](https://filezilla-project.org/) for file exchanges.
+  `myusername` is your username on the cluster.
+  You will be asked to enter your password. Simply type it (even if you cannot see anything) and press enter.
 
 ## Change Password
 
@@ -54,33 +45,4 @@ If you would rather use a graphical interface, instead of the command line, try 
   * Lowercase character
   * Uppercase character
   * Number
-  * Punctuation charcter
-
-## Why GNU/Linux?
-
-* Software costs $0
-* Advanced Multitasking 
-* Remote tasking ("real networking")
-* Multiuser 
-* Easy access to programming languages, databases, open-source projects 
-* Software freedoms
-  1. Free to use for any purpose
-  2. Free to study and modify the source code
-  3. Free to share
-  4. Free to share modified versions
-* No dependence on vendors
-* Better performance 
-* More up-to-date
-* Many more reasons...
-
-### GNU/Linux Distributions
-
-* [Ubuntu](https://www.ubuntu.com/) - A beginner-friendly Linux OS based on Debian. A good choice for most people.
-* [OpenSuSE](https://www.opensuse.org/) - An alternative to Ubuntu for new users.
-* [Debian](https://www.debian.org/) - A general-purpose Linux OS with a large software package repository and support community.
-* [Red Hat Enterprise Linux (RHEL)](https://www.redhat.com/) - A general-purpose Linux OS supported by Red Hat, Inc. Requires purchase.
-* [CentOS](https://www.centos.org/) - A community-supported version of RHEL that's free to download and use. The UCR HPCC cluster runs on CentOS 7.
-* [Fedora](https://getfedora.org/) - A developer-oriented Linux OS sponsored by Red Hat.
-* [Arch Linux](https://www.archlinux.org/) - A highly-customizable Linux OS for power users.
-
-[Family tree of the GNU/Linux distributions](https://en.wikipedia.org/wiki/File:Linux_Distribution_Timeline.svg)
+  * Punctuation character

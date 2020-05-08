@@ -1,30 +1,8 @@
 ---
 layout: page
-title: Linux Basics
-permalink: manuals_linux-basics.html
+title: Linux Basics - Shell Bootcamp
+permalink: manuals_linux-basics_shell.html
 ---
-
-## Text Viewing
-
-```bash
-more <my_file>  # views text, use space bar to browse, hit 'q' to exit
-less <my_file>  # a more versatile text viewer than 'more', 'q' exits, 'G' moves to end of text,
-                # 'g' to beginning, '/' find forward, '?' find backwards
-cat  <my_file>  # concatenates files and prints content to standard output
-```
-
-## Text Editors
-
-* **Vi** and **Vim**
-  * Non-graphical (terminal-based) editor. Vi is guaranteed to be available on any system. Vim is the improved version of vi.
-* **Emacs**
-  * Non-graphical or window-based editor. You still need to know keystroke commands to use it. Installed on all Linux distributions and on most other Unix systems.
-* **XEmacs**
-  * More sophisticated version of emacs, but usually not installed by default. All common commands are available from menus. Very powerful editor, with built-in syntax checking, Web-browsing, news-reading, manual-page browsing, etc.
-* **Pico**
-  * Simple terminal-based editor available on most versions of Unix. Uses keystroke commands, but they are listed in logical fashion at bottom of screen.
-* **Nano**
-  * A simple terminal-based editor which is default on modern Debian systems.
 
 
 ## The Unix Shell
@@ -116,7 +94,7 @@ Ctrl-a Space # Switch to the next window
 Ctrl-a a # Switch to the window that you were previously on
 Ctrl-a " # List all open windows. Double-quotes " are typed with the Shift key
 Ctrl-d or type exit # Exit out of the current window. Exiting form the last window will end the screen session
-Ctrl-a [ # Enters the scrolling mode. Use Page Up and Page Down keys to scroll through the window. Hit the Enter key twice to return to normal mode. 
+Ctrl-a [ # Enters the scrolling mode. Use Page Up and Page Down keys to scroll through the window. Hit the Enter key twice to return to normal mode.
 ```
 
 ### Attaching to Screen Sessions
@@ -289,7 +267,7 @@ scp user@remote_host:file.name . # Copies file from server to local machine (typ
 
 scp file.name user@remote_host:~/dir/newfile.name
                                                                        # Copies file from local machine to server.
-                              
+
 scp -r user@remote_host:directory/ ~/dir
                                  # Copies entire directory from server to local machine.
 ```
@@ -351,7 +329,7 @@ f: use archive file
 p: preserve permissions
 v: list files processed
 x: exclude files listed in FILE
-z: filter the archive through gzip 
+z: filter the archive through gzip
 ```
 
 ## Simple Installs
@@ -396,7 +374,7 @@ You can edit your default DISPLAY setting for your account by adding it to file 
 1. Simple Analysis:
 
    a. How many predicted proteins are there?
-    
+
    ```bash
    grep '^>' AE004437.faa --count
    ```
@@ -419,7 +397,7 @@ You can edit your default DISPLAY setting for your account by adding it to file 
    ls # before
    formatdb -i AE004437.faa -p T -o T
    ls # after
-   '-p F' for nucleotide and '-p T' for protein database; '-o T' parse SeqId and create indexes 
+   '-p F' for nucleotide and '-p T' for protein database; '-o T' parse SeqId and create indexes
    ```
 
 1. Generate myseq.fasta
@@ -490,7 +468,7 @@ Is your blastp.out file equivalent to this one?
 
 ### Exercise 2
 
-Split sample fasta batch file with csplit (use sequence file myseq.fasta from Exercise 1). 
+Split sample fasta batch file with csplit (use sequence file myseq.fasta from Exercise 1).
 
 ```bash
 csplit -z myseq.fasta '/>/' '{*}'
@@ -552,4 +530,3 @@ cp outtree tree.dnd
 ```
 
 View your tree in TreeBrowse or open it in TreeView
-

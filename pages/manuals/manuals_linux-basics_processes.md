@@ -6,34 +6,64 @@ permalink: manuals_linux-basics_processes.html
 
 ## Process Management
 
+Basic Linux process management commands only apply to processes that are running on the current machine you are logged into.
+This means that you cannot use these commands to manage jobs.
+Jobs on the cluster are managed through `Slurm`, see [Cluster Jobs](manuals_linux-cluster_jobs) for more details.
+However, these commands are still useful for pausing, backgrounding, killing processes on a login node directly.
+This commands could also be useful when running an interactive session on a compute node.
+
+### User Management
+
 ```bash
 top               # view top consumers of memory and CPU (press 1 to see per-CPU statistics)
 who               # Shows who is logged into system
 w                 # Shows which users are logged into system and what they are doing
+```
 
-ps                        # Shows processes running by user
-ps -e                     # Shows all processes on system; try also '-a' and '-x' arguments
-ps aux | grep <user_name> # Shows all processes of one user
-ps ax --tree              # Shows the child-parent hierarchy of all processes
-ps -o %t -p <pid>         # Shows how long a particular process was running.
-                          # (E.g. 6-04:30:50 means 6 days 4 hours ...)
+### Process Management
 
-Ctrl z <enter>       # Suspend (put to sleep) a process
-fg                   # Resume (wake up) a suspended process and brings it into foreground
-bg                   # Resume (wake up) a suspended process but keeps it running
-                     # in the background.
 
-Ctrl c               # Kills the process that is currently running in the foreground
-kill <process-ID>    # Kills a specific process
-kill -9 <process-ID> # NOTICE: "kill -9" is a very violent approach.
-                     # It does not give the process any time to perform cleanup procedures.
-kill -l                      # List all of the signals that can be sent to a proccess
-kill -s SIGSTOP <process-ID> # Suspend (put to sleep) a specific process
-kill -s SIGCONT <process-ID> # Resume (wake up) a specific process
+#### Processes
 
-nice -n <nice_value> <cmd> # Run a program with lower priority. Be nice to other headnode users.
-                           # Higher "nice" values mean lower priority. Range 0-20
-renice -n <priority_value> <process-ID> # Changes the priority of an existing process.
+```
+ps                         # Shows processes running by user
+ps -e                      # Shows all processes on system; try also '-a' and '-x' arguments
+ps ux -u <USERNAME>        # Shows all processes owned by user
+ps axjf                    # Shows the child-parent hierarchy of all processes
+ps -o %t -p <PID>          # Shows how long a particular process was running.
+                           # (E.g. 6-04:30:50 means 6 days 4 hours ...)
+```
+
+Here are two common utilities for displaying processes, sorting, and even killing them:
+
+```
+top            # Basic text based interface for exploring and managing processes
+htop           # Text based interface for exploring and managing processes
+```
+
+> Note `q` to quit and `?` to see help
+
+#### Background Resume Cancel
+
+```
+CTRL+z ENTER         # Suspend a process in the background
+fg                   # Resume a suspended process and brings it into foreground
+bg                   # Resume a suspended process but keeps it running in the background
+
+CTRL+c               # Cancel the process that is currently running in the foreground
+```
+
+#### PID
+
+```
+echo $!              # Get PID of last executed command
+```
+
+#### Killing
+```
+kill -l              # List all of the signals that can be sent to a process
+kill <PID>           # Kill a specific process with process ID using SIGTERM
+kill -9 <PID>        # Violently kill process with process ID using SIGKILL, may corrupt files
 ```
 
 ### More on Terminating Processes
