@@ -428,7 +428,7 @@ As you can see:
    3. A MPI job would use `--ntasks`.
    4. A Hybrid job would use both.
 
-For more details on how these Slurm options work please review [Slurm Multi-core/Multi-thread Support](Note: https://slurm.schedmd.com/mc_support.html).
+For more details on how these Slurm options work please review [Slurm Multi-core/Multi-thread Support](https://slurm.schedmd.com/mc_support.html).
 
 #### MPI
 
@@ -484,9 +484,17 @@ OpenMPI does not function properly with Maker, you must use MPICH.
 Our version of MPICH does not use the mpirun/mpiexec wrappers, instead use srun:
 
 ```bash
-module unload openmpi
-module unload perl
+#!/bin/bash -l
+
+#SBATCH -p intel
+#SBATCH --ntasks=32
+#SBATCH --mem=16gb
+#SBATCH --time=01:00:00
+
+# Load maker
 module load maker
-srun --time=5:00:00 --mem=50gb --ntasks=2 maker # Of course you will need to define appropriate job resources here
+
+srun maker # Provide appropriate maker options here
+
 ```
 
