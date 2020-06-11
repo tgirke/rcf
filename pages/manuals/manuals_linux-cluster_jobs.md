@@ -492,9 +492,9 @@ Our version of MPICH does not use the mpirun/mpiexec wrappers, instead use srun:
 #SBATCH --time=01:00:00
 
 # Load maker
-module load maker
+module load maker/2.31.11
 
-srun maker # Provide appropriate maker options here
+mpirun maker # Provide appropriate maker options here
 
 ```
 
