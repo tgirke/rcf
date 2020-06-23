@@ -368,7 +368,7 @@ You may need to provide a password, then this command will hang, this is normal.
 Launch vncviewer on local port
 
 ```bash
-vncviewer localhost::5901
+vncviewer localhost:5901
 ```
 
 For more information regarding tunnels and VNC in MS Windows, please refer [More VNC Info](https://docs.ycrc.yale.edu/clusters-at-yale/access/vnc/).
