@@ -2,7 +2,7 @@
 ## Test code for batchtools with SLURM cluster ##
 #################################################
 ## Author: Thomas Girke
-## Date: 15-Jun-18
+## Date: 15-Jun-20
 
 ## Set up working directory for SLURM
 dir.create("mytestdir")
@@ -11,8 +11,10 @@ download.file("https://goo.gl/tLMddb", "slurm.tmpl")
 download.file("https://goo.gl/5HrYkE", ".batchtools.conf.R")
 
 ## Load package and define some custom function
+library('RenvModule')
+module('load','slurm') # Loads slurm among other modules
+
 library(batchtools)
-system("bash -l -c 'module list'") # Loads slurm among other module
 myFct <- function(x) {
 	result <- cbind(iris[x, 1:4,], 
 			Node=system("hostname", intern=TRUE), 
