@@ -21,8 +21,9 @@ At this time the HPC cluster is not a IS-4 (P4) compliant cluster. If you have n
 Our cluster is IS-3 compliant, however there are several responsibilities that users will need to adhere to.
 
 ## General Guidelines
-First, please contact us (support@hpcc.ucr.edu) before transferring any data to the cluster.
-After we have reviewed your needs, data classification and appropriate protection level, then it may be possible to proceed to use the HPCC.
+<span style="color:red">First, please contact us (support@hpcc.ucr.edu) before transferring any data to the cluster.
+After we have reviewed your needs, data classification and appropriate protection level, then it may be possible to proceed to use the HPCC.</span>
+
 Here are a few basic rules to keep in mind:
 
 * Always be aware of access control methods (Unix permissions and ACLs), do not allow others to view the data (ie. chmod 400 filename)
