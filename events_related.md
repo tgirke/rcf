@@ -4,6 +4,9 @@ title: Related HPC and big data analysis events
 ---
 
 ## UCR Library
+* Software Carpentry Workshop - Working with Data
+   * The Unix shell [7-24-20](https://www.eventbrite.com/e/the-unix-shell-tickets-110191172764)
+   * Version Control with Git [7-31-20](https://www.eventbrite.com/e/version-control-with-git-tickets-110198913918)
 * Software Carpentry Workshop - (Python, git, and bash) [3-25-19, 3-26-19](https://library.ucr.edu/about/events/software-carpentry-workshop-2)
 
 ## Graduate Quantitative Methods Center - [GradQuant](https://gradquant.ucr.edu/workshops-spring-2019/) 
