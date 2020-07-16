@@ -11,7 +11,7 @@ permalink: docs.html
 
 ## Recharging rates
 
-   * [Recharging rates: 2020/2021](https://bit.ly/2ZBHW5z)
+   * [Recharging rates: 2020/2021](https://docs.google.com/document/d/1zxv2f4UlUDqDTyENlGu7eNjG8Wz8Hl0MQOAxO3fxaQg/edit?usp=sharing)
    * [Recharging rates: 2019/2020](http://bit.ly/2ZWbND7)
    * [Recharging rates: 2018/2019](https://goo.gl/1mVfLM)
    * [Recharging rates: 2017/2018](https://goo.gl/QjJgzu)
