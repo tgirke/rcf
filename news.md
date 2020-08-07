@@ -9,6 +9,9 @@ consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or
 
 ## News
 
+### May/Jun 2020
+* Melody Asghari joins HPCC as HPC systems administrator assistant. - Welcome Melody!
+
 ### Mar/Apr 2020
 
 * For updates on HPCC's operation during the COVID-19 crisis please visit the [Alerts](http://hpcc.ucr.edu/alerts.html#hpcc-operation-during-covid-19-crisis) page of this site.
