@@ -149,14 +149,14 @@ For instructions on how to configure your R environment please visit [IRkernel](
 Since we should already have IRkernel install in the latest version of R, you would only need to do the following within R:
 
 ```R
-IRkernel::installspec(name = 'ir44', displayname = 'R 3.5.0')
+IRkernel::installspec(name = 'ir44', displayname = 'R 4.0.1')
 ```
 
 ### R
 This section is a automatically on how to manage R packages
 
 #### Current R Version
-Currently the default version of R is 3.5.0 and loaded automaticly for you.
+Currently the default version of R is 4.0.1 and is loaded automatically for you.
 This can be seen by running:
 
 ```bash
