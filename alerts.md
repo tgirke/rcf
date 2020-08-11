@@ -65,11 +65,13 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 ## Past exceptions
 
 __22-Mar-2020: Cluster inaccessible due to campus-wide network outage__
+
 Due to a campus-wide network outage at UCR, many HPCC services were not accessible between 8:00 AM and 1:00 PM. 
 Currently, most HPCC services are accessible again. Note, running jobs on the cluster should not have been affected by this disruption.
 Updates about the current situations can be found [here](https://techalerts.ucr.edu/). 
 
 __13-Mar-2020: Routine maintenance shutdown__
+
 We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 13th.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, 
 virtual environments/machines, storage systems, backup systems, and network services.
@@ -77,6 +79,7 @@ We ask that you please make sure that you do not have any jobs running in the qu
 and that you completely logout of the cluster (pigeon, pelican, parrot) before the shutdown.
 
 __08-Jan-2020: Storage outage__
+
 We had some issues with our storage systems this evening that may have caused
 disruptions in your work. These issues should be resolved. We're continuing to
 monitor the situation to ensure everything is operational, and we apologize for
@@ -85,11 +88,13 @@ support@hpcc.ucr.edu if you require any assistance regarding job status and
 recovery.
 
 __21-Nov-2019: Routine filesystem maintenance and diagnostics__
+
 We have scheduled an HPCC Cluster Maintenance Shutdown for this Thursday, November 21st.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, virtual environments/machines, storage systems, backup systems, and network services.
 We ask that you please make sure that you do not have any jobs running in the queue, and that you completely logout of the cluster (pigeon, pelican, parrot) before the shutdown.
 
 __23-Aug-2019: Routine maintenance shutdown__
+
 We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, Aug 23, 2019.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted
 websites, virtual environments/machines, storage systems, backup systems, and
@@ -99,6 +104,7 @@ jobs running in the queue, and that you completely logout of the cluster
 For user changes related to this maintenance please see [here](https://hpcc.ucr.edu/changes).
 
 __01-Mar-2019: Routine Maintenance Shutdown__
+
 We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 1st.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted
 websites, virtual environments/machines, storage systems, backup systems, and
@@ -107,23 +113,26 @@ jobs running in the queue, and that you completely logout of the cluster
 (pigeon, pelican, globus) before the shutdown. Status: successfully completed.
 
 __1:00 PM, 20-Dec-18: Outage due to AC failure__
+
 All systems were down for 3 hours due to a failure of the AC units in our server
 room. Electricians and AC technicians have repaired the units.
 
 __2:30 PM, 11-Jul-18: Storage Issues__
+
 For the past several weeks we have been observing slower storage access.
 In some cases the /bigdata storage was inaccessible for several minutes and caused some jobs to terminate prematurely.
 We have identified the issue and have taken steps to ensure that this problem does not reoccur.
 
 __6:00 PM, 02-Jul-18: Storage Issues__
+
 Storage issues on the afternoon of July 2, 2018 caused disruptions in some cluster services. The issues should be resolved, but we're continuing to monitor the situation for any other developments.
 
-### 12:00 AM, 31-Jan-18: routine maintenance shutdown
+__12:00 AM, 31-Jan-18: routine maintenance shutdown__
 
 For routine maintenance and upgrades we have scheduled an HPCC (Biocluster)
 shutdown for 12:00AM, Jan-31-2018 to 12:00AM, Feb-01-2018. (complete) 
 
-### 12:00 AM, 05-Dec-17: NFS & SMB issues
+__12:00 AM, 05-Dec-17: NFS & SMB issues__
 
 NFS and SMB services have been suspended temporarily.
 This will cause many of our web services to not function properly.
@@ -136,14 +145,14 @@ These include, but not limited to:
 
 Note, this issue was resolved soon after it occurred. 
 
-### 11:00 AM, 13-Aug-17: Cooling problem
+__11:00 AM, 13-Aug-17: Cooling problem__
 
 Since Sat morning one of the HVAC units is not working properly. To avoid overheating, 
 we have shut down most of the idle nodes (1:30PM, Sun). As soon as the HVAC unit 
 is repaired we will power these nodes back on. Note, this issue was resolved on 17-Aug-17.
 UCR facility services has repaired the broken HVAC unit and serviced the second one. 
 
-### 12:00 AM, 16-Jun-17 to 17-Jun-17: maintenance shutdown
+__12:00 AM, 16-Jun-17 to 17-Jun-17: maintenance shutdown__
 
 To sustain future growth, the power load in the HPCC server room needs to be
 optimized. For this we have scheduled an HPCC (Biocluster) shutdown in four
@@ -154,13 +163,13 @@ network services. We ask that you please make sure that you do not have any
 jobs running in the queue, and that you completely logout of the cluster
 (pigeon, owl, penguin, pelican, globus) before the shutdown. 
 
-### 10:02 AM, 13-Apr-17: UPS failure
+__10:02 AM, 13-Apr-17: UPS failure__
 
 Our UPS unit went down some time last night causing a power failure on all systems. Jordan is bypassing the UPS to bring things back up in the next
 few hours. Nationwide Power will come in asap to repair the UPS. Note, this failure has not resulted in any overheating problems since the AC units
 are running on a different power cricuit.
 
-### 11:22 AM, 13-Apr-17: Cluster back up running
+__11:22 AM, 13-Apr-17: Cluster back up running__
 
 Situation is resolved for now and things are working. We are currently discussing the situation with our electricians to avoid future instances.
 
