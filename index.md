@@ -16,6 +16,8 @@ storage) than what smaller clusters of individual research groups could afford,
 while also providing a long-term sustainability plan and professional systems
 administrative support. 
 
+<span class="label label-danger"><a href="https://hpcc.ucr.edu/alerts.html">Cluster Status</a></span>
+
 ## <span style="color:red"> HPCC Operation During COVID-19 Crisis </span>
 
 Since the research computing infrastructure of the HPCC is designed to be
