@@ -20,7 +20,9 @@ If users need to get in contact with us then please email your questions to [sup
 
 ## Unannounced exceptions
 
-<span style="color:red"> 5:20 PM, 10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg. We will keep you posted on any updates.</span>
+<span style="color:red"> 5:20 PM, 10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg. </span>
+
+We will keep you posted on any updates.
 
 <!-- 
 None currently observed.
@@ -61,7 +63,7 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 
 ## Past exceptions
 
-### <span style="color:red">22-Mar-2020: HPCC server room not accessible due to network outage on campus </span>
+### 22-Mar-2020: Cluster inaccessible due to campus-wide network outage
 
 Due to a campus-wide network outage at UCR, many HPCC services were not accessible between 8:00 AM and 1:00 PM. 
 Currently, most HPCC services are accessible again. Note, running jobs on the cluster should not have been affected by this disruption.
