@@ -19,7 +19,12 @@ currently in effect for the HPCC facility are the following:
 If users need to get in contact with us then please email your questions to [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). For immediate help, users can also post questions on Slack ([ucr-hpcc.slack.com](https://ucr-hpcc.slack.com)). For latest news and updates, please also visit us on [Twitter](https://twitter.com/UCR_HPCC). With some delay, updates will also be posted on this website's [News](https://hpcc.ucr.edu/news.html) and [Alerts](https://hpcc.ucr.edu/alerts.html) pages.
 
 ## Unannounced exceptions
+
+<span style="color:red"> 5:20 PM, 10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg. We will keep you posted on any updates.</span>
+
+<!-- 
 None currently observed.
+-->
 
 For the most current information on short-term exceptions of the cluster please
 consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
