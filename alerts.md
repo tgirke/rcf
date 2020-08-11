@@ -55,10 +55,10 @@ The following outlines the timeline for advance email notifications on scheduled
 
 ## Twitter feed
 
-For the most current information on short-term exceptions of the cluster please
-consult the [HPCC Twitter site](https://twitter.com/UCR_HPCC). Also see the Tweets
-window at the bottom of this and other pages of the HPCC website. Additional
-information and updates on exceptions may be posted here. 
+For additional news and information, please consult the [HPCC Twitter
+site](https://twitter.com/UCR_HPCC). Also see the Tweets window at the bottom
+of this and other pages of the HPCC website. Additional information and updates
+on exceptions may be posted here. 
 
 ## Team collaborations with Slack
 
