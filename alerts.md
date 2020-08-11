@@ -65,19 +65,18 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 ## Past exceptions
 
 __22-Mar-2020: Cluster inaccessible due to campus-wide network outage__
-
 Due to a campus-wide network outage at UCR, many HPCC services were not accessible between 8:00 AM and 1:00 PM. 
 Currently, most HPCC services are accessible again. Note, running jobs on the cluster should not have been affected by this disruption.
 Updates about the current situations can be found [here](https://techalerts.ucr.edu/). 
 
-### 13-Mar-2020: Routine maintenance shutdown
+__13-Mar-2020: Routine maintenance shutdown__
 We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 13th.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, 
 virtual environments/machines, storage systems, backup systems, and network services.
 We ask that you please make sure that you do not have any jobs running in the queue, 
 and that you completely logout of the cluster (pigeon, pelican, parrot) before the shutdown.
 
-### 08-Jan-2020: Storage outage
+__08-Jan-2020: Storage outage__
 We had some issues with our storage systems this evening that may have caused
 disruptions in your work. These issues should be resolved. We're continuing to
 monitor the situation to ensure everything is operational, and we apologize for
@@ -85,12 +84,12 @@ any inconveniences this may have caused. Please let us know at
 support@hpcc.ucr.edu if you require any assistance regarding job status and
 recovery.
 
-### 21-Nov-2019: Routine filesystem maintenance and diagnostics
+__21-Nov-2019: Routine filesystem maintenance and diagnostics__
 We have scheduled an HPCC Cluster Maintenance Shutdown for this Thursday, November 21st.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted websites, virtual environments/machines, storage systems, backup systems, and network services.
 We ask that you please make sure that you do not have any jobs running in the queue, and that you completely logout of the cluster (pigeon, pelican, parrot) before the shutdown.
 
-### 23-Aug-2019: Routine maintenance shutdown
+__23-Aug-2019: Routine maintenance shutdown__
 We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, Aug 23, 2019.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted
 websites, virtual environments/machines, storage systems, backup systems, and
@@ -99,7 +98,7 @@ jobs running in the queue, and that you completely logout of the cluster
 (pigeon, pelican, globus) before the shutdown. Status: completed.
 For user changes related to this maintenance please see [here](https://hpcc.ucr.edu/changes).
 
-### 01-Mar-2019: Routine Maintenance Shutdown
+__01-Mar-2019: Routine Maintenance Shutdown__
 We have scheduled an HPCC Cluster Maintenance Shutdown for Friday, March 1st.
 This will require a shutdown of ALL services: Slurm (queuing system), hosted
 websites, virtual environments/machines, storage systems, backup systems, and
@@ -107,19 +106,16 @@ network services. We ask that you please make sure that you do not have any
 jobs running in the queue, and that you completely logout of the cluster
 (pigeon, pelican, globus) before the shutdown. Status: successfully completed.
 
-### 1:00 PM, 20-Dec-18: Outage due to AC failure
-
+__1:00 PM, 20-Dec-18: Outage due to AC failure__
 All systems were down for 3 hours due to a failure of the AC units in our server
 room. Electricians and AC technicians have repaired the units.
 
-### 2:30 PM, 11-Jul-18: Storage Issues
-
+__2:30 PM, 11-Jul-18: Storage Issues__
 For the past several weeks we have been observing slower storage access.
 In some cases the /bigdata storage was inaccessible for several minutes and caused some jobs to terminate prematurely.
 We have identified the issue and have taken steps to ensure that this problem does not reoccur.
 
-### 6:00 PM, 02-Jul-18: Storage Issues
-
+__6:00 PM, 02-Jul-18: Storage Issues__
 Storage issues on the afternoon of July 2, 2018 caused disruptions in some cluster services. The issues should be resolved, but we're continuing to monitor the situation for any other developments.
 
 ### 12:00 AM, 31-Jan-18: routine maintenance shutdown
