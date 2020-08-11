@@ -5,6 +5,10 @@ permalink: index.html
 summary: welcome to the website of the High-Performance Computing Center (HPCC) at UC Riverside. This site gives an overview of the HPC resources and services provided by our center. 
 ---
 
+<span style="float:right">
+<a href="https://hpcc.ucr.edu/alerts.html"><span class="label label-danger">Cluster Status</span></a>
+</span>
+
 ## Mission and Services
 
 The High-Performance Computing Center (HPCC) provides state-of-the-art research
@@ -15,10 +19,6 @@ infrastructure (with thousands of CPUs/GPUs and many PBs of directly attached
 storage) than what smaller clusters of individual research groups could afford,
 while also providing a long-term sustainability plan and professional systems
 administrative support. 
-
-<span style="float:right">
-<a href="https://hpcc.ucr.edu/alerts.html"><span class="label label-danger">Cluster Status</span></a>
-</span>
 
 ## <span style="color:red"> HPCC Operation During COVID-19 Crisis </span>
 
