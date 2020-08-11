@@ -8,6 +8,7 @@ summary: welcome to the website of the High-Performance Computing Center (HPCC) 
 <span style="float:right">
 <a href="https://hpcc.ucr.edu/alerts.html"><span class="label label-danger">Cluster Status</span></a>
 </span>
+<!-- To change color of status button, see here: https://bit.ly/2ClQXa0 -->
 
 ## Mission and Services
 
