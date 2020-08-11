@@ -20,7 +20,11 @@ If users need to get in contact with us then please email your questions to [sup
 
 ## Unannounced exceptions
 
-### <span style="color:red">5:10 PM, 10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg</span> 
+### <span style="color:red">10:10 PM, 10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg</span> 
+
+All HPCC services have been restored (computing cluster, storage systems, web services).
+
+### 5:10 PM, 10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg 
 
 Facilities has restored power and cooling systems in the server room. HPC systems admin Jordan Hayes is currently restarting the cluster and storage systems. We will keep you 
 posted on the status of the situation.
