@@ -20,7 +20,7 @@ If users need to get in contact with us then please email your questions to [sup
 
 ## Unannounced exceptions
 
-### 5:20 PM, 10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg. 
+### <span style="color:red">5:20 PM, 10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg</span> 
 
 We will keep you posted on any updates.
 
