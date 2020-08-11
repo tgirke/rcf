@@ -22,7 +22,8 @@ If users need to get in contact with us then please email your questions to [sup
 
 ### <span style="color:red">5:10 PM, 10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg</span> 
 
-We will keep you posted on any updates.
+Facilities has restored power and cooling systems in the server room. HPC systems admin Jordan Hayes is currently restarting the cluster and storage systems. We will keep you 
+posted on the status of the situation.
 
 <!-- 
 None currently observed.
