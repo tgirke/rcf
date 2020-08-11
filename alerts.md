@@ -64,7 +64,7 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 
 ## Past exceptions
 
-### 22-Mar-2020: Cluster inaccessible due to campus-wide network outage
+__22-Mar-2020: Cluster inaccessible due to campus-wide network outage__
 
 Due to a campus-wide network outage at UCR, many HPCC services were not accessible between 8:00 AM and 1:00 PM. 
 Currently, most HPCC services are accessible again. Note, running jobs on the cluster should not have been affected by this disruption.
