@@ -57,8 +57,7 @@ The following outlines the timeline for advance email notifications on scheduled
 
 For additional news and information, please consult the [HPCC Twitter
 site](https://twitter.com/UCR_HPCC). Also see the Tweets window at the bottom
-of this and other pages of the HPCC website. Additional information and updates
-on exceptions may be posted here. 
+of this and other pages of the HPCC website. 
 
 ## Team collaborations with Slack
 
