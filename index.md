@@ -6,7 +6,7 @@ summary: welcome to the website of the High-Performance Computing Center (HPCC) 
 ---
 
 <span style="float:right">
-<a href="https://hpcc.ucr.edu/alerts.html"><span class="label label-danger">Cluster Status</span></a>
+<a href="https://hpcc.ucr.edu/alerts.html"><span class="label label-success">Cluster Status</span></a>
 </span>
 <!-- To change color of status button, use above label-danger (red) or label-success (green). For more options 
 see here: https://bit.ly/2ClQXa0 -->
