@@ -26,7 +26,7 @@ Review the following to understand the applicable terms and conditions, and allo
 
 ## Connect AWS Account to UC Agreement and PO
 
-Send an email to UCs AWS account representative, Heather Matson <aws-uc-procurement@amazon.com> to:
+Send an email to UCs AWS account representative, Devinder Narula <dsnarula@amazon.com> to:
 
 * Activate your new AWS account (if pertinent)
 * Include your AWS account under the terms of the UC-wide AWS agreement
