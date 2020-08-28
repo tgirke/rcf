@@ -32,8 +32,8 @@ In the past we used queues under the old Torque system, we now refer to these lo
     * RAM: 1 GB default
     * Time (walltime): 48 hours (2 days) default
 * short
-    * Nodes: i01-i54
-    * Cores: Intel, 256 per user
+    * Nodes: Mixed set of nodes from batch, intel, and group patitions
+    * Cores: AMD/Intel, 256 per user
     * RAM: 1 GB default
     * Time (walltime): 2 hours Maximum
 * Group Partition
@@ -445,6 +445,19 @@ Many implementations of MPI exists, however we only support the following:
 For general information on MPI under Slurm look [here](https://slurm.schedmd.com/mpi_guide.html).
 If you need to compile an MPI application then please email support@hpcc.ucr.edu for assistance.
 
+When submitting MPI jobs it is best to ensure that the nodes are identical, since MPI is sensitive to differences in CPU and/or memory speeds.
+The `batch` and `intel` partitions are designed to be homogeneous, however, the `short` partition is a mixed set of nodes.
+When using the `short` partition for MPI append the constraint flag for Slurm.
+
+__Short Example__
+
+Here is an example that shows how to ensure that your job will only run on `intel` nodes from the `short` partition:
+
+```bash
+sbatch -p short --constraint=intel myJobScript.sh
+```
+
+
 __NAMD Example__
 
 To run a NAMD2 process as an OpenMPI job on the cluster:
@@ -497,4 +510,15 @@ module load maker/2.31.11
 mpirun maker # Provide appropriate maker options here
 
 ```
+
+## More examples
+
+The range of differing jobs and how to submit them is endless:
+
+    1. Singularity containers
+    2. Database services
+    3. Graphical user interfaces
+    4. Etc ...
+
+For a growing list of examples please visit [HPCC Slurm Examples](https://github.com/ucr-hpcc/hpcc_slurm_examples).
 
