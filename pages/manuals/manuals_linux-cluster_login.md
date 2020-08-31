@@ -62,7 +62,8 @@ When using SSH key authentication, you will need to create a public and a pritat
 This is analogous to how a key and a lock are used in the real world, one uniquely fits to the other.
 Only when your private key "fits" the public key, can you be granted access.
 
-To create the key pair run the following command on your computer ([Terminal](manuals_linux-basics_intro#mac)/[MobaXterm](manuals_linux-basics_intro#windows)):
+To create the key pair run the following command on your computer [MobaXterm](manuals_linux-basics_intro#windows)):
+(For Mac users open in ([Terminal or iterm2](manuals_linux-basics_intro#mac)/): 
 
 ```
 # Create SSH directory
@@ -124,3 +125,7 @@ Port        22
 
 The `Logon Type` can be either `Interactive` or `Key File`, this depends on if you have setup [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) respectively.
 
+For Mac Users:
+
+We support `Cyberduck` as the recommended GUI application for file transfer. [cyberduck](https://cyberduck.io/download/).
+When using `Cyberduck`, you must click `Open Connection` then select SFTP in the first drop down box. In the server field, enter `secure.hpcc.ucr.edu` and `Port 22` should be entered by default.
