@@ -23,7 +23,7 @@ If users need to get in contact with us then please email your questions to [sup
 None currently observed.
 
 <!-- 
-...
+....
 -->
 
 ## Scheduled exceptions and downtimes
