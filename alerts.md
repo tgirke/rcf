@@ -20,14 +20,10 @@ If users need to get in contact with us then please email your questions to [sup
 
 ## Unannounced exceptions
 
-### 19-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg
-* 11:30 PM - All systems were restored by Jordan Hayes and are opterational again. 
-* 10:30 PM - HPC systems admin Jordan Hayes is trying to restart the network, storage and cluster again.
-* 10:00 PM - Facilities was able to bring up the power and cooling again.
-* 8:30 PM - Facilities is investigating and trying to reactivate power and cooling.
+None currently observed.
 
 <!-- 
-None currently observed.
+....
 -->
 
 ## Scheduled exceptions and downtimes
@@ -65,6 +61,12 @@ of this and other pages of the HPCC website.
 Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-hpcc.slack.com)
 
 ## Past exceptions
+
+__19-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg__
+* 11:30 PM - All systems were restored by Jordan Hayes and are opterational again. 
+* 10:30 PM - HPC systems admin Jordan Hayes is trying to restart the network, storage and cluster again.
+* 10:00 PM - Facilities was able to bring up the power and cooling again.
+* 8:30 PM - Facilities is investigating and trying to reactivate power and cooling.
 
 __10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg__
 At 5:10 PM: Facilities has restored power and cooling systems in the server room. HPC systems admin Jordan Hayes is restarting the cluster and storage systems.
