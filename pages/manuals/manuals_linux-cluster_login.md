@@ -53,7 +53,7 @@ After logging in successfully, you are expected to update your password with the
 For more general information regarding Multi-Factor Authentication and DUO, please visit the following:
 [https://cnc.ucr.edu/mfa/how.html](https://cnc.ucr.edu/mfa/how.html)
 
-####  SSH Keys
+### SSH Keys
 
 SSH keys can only be setup if you already have access to the cluster.
 This is becuase in order to get this working a file needs to be placed in your home directory on the cluster.
@@ -106,7 +106,7 @@ Remember to replace `username` with your real cluster username, which should als
 
 > Note: MS Windows (MobaXterm) can also use the graphical SSH keys manager "MobaKeyGen" (from the "Tools" menu).
 
-##### File Transfers
+## File Transfers
 
 We support `FileZilla` as the recommended graphical file transfer application. If you are comfortable with the command line that is typically easier to use.
 However, there may be times when selecting multiple files from a graphical application is prefered.
@@ -124,6 +124,3 @@ Port        22
 
 The `Logon Type` can be either `Interactive` or `Key File`, this depends on if you have setup [Password+DUO](#passwordduo) or [SSH Keys](#ssh-keys) respectively.
 
-####  MS Windows
-
-####  Mac OS X
