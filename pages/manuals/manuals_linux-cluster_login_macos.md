@@ -1,3 +1,9 @@
+---
+layout: page
+title: Linux Cluster - Login macOS 
+permalink: manuals_linux-cluster_login_macos.html
+---
+
 #  GUI Cluster Connection
 
 ## How to create the SSH Key
