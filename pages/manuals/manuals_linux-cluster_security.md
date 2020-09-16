@@ -152,7 +152,13 @@ To ensure the complete removal of data, it is best to `shred` files instead of r
 
 Instead of using the common `rm` command to delete something, please use the `shred` command, like so:
 ```
-shred -u something
+shred -u somefile
 ```
-The above command will overwrite the file, and then remove (unlink) it.
+The above command will overwrite the file with random data, and then remove (unlink) it.
+
+If we want to be even more secure, we can pass over the file seven times to ensure that reconstruction is nearly impossible, then remove it:
+
+```
+shred -v -n 6 -z -u somefile
+```
 
