@@ -9,7 +9,7 @@ permalink: manuals_linux-cluster_login_winos.html
 ## How to create the SSH Key
 ### No terminal, no problem...
 1. Begin by clicking on the tools drop down on the upper menu bar
-![mobasshkey1](/mobasshkey1.png)
+![mobasshkey1](../../images/mobasshkey1.png)
 
 2. Find and click on the MobaKeyGen (SSH key generator) option
 ![mobasshkey2](/mobasshkey2.png)
