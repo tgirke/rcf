@@ -18,7 +18,7 @@ permalink: manuals_linux-cluster_login_winos.html
 ![mobasshkey3](/images/mobasshkey3.png)
 
 4. Once your key has been created, enter a password in the key passphrase field to password protect your key.
-![mobasshkey4](/images/obasshkey4.png)
+![mobasshkey4](/images/mobasshkey4.png)
 
 5. Click on save public key and name the file "id_rsa.pub". Click on save private key and name the file "id_rsa". Follow the on screen instructions as follows when saving.
 ![mobasshkey5](/images/mobasshkey5.png)
@@ -26,7 +26,7 @@ permalink: manuals_linux-cluster_login_winos.html
 6. Once you have saved both public and private keys, go ahead and close the window. Proceed to find the settings icon in the upper toolbar menu on mobaxterm and click on it.
 ![mobasshkey6](/images/mobasshkey6.png)
 
-7. A new window should appear for MobaXterm configuration. Click on the SSH configuration at the top in settings window. Check the box "Use internal SSH agent "MobAgent" to enable it. Click on the "+" symbol on the right hand side to add your previously generated keys. 
+7. A new window should appear for MobaXterm configuration. Click on the SSH configuration at the top in settings window. Check the box "Use internal SSH agent MobAgent" to enable it. Click on the "+" symbol on the right hand side to add your previously generated keys. 
 ![mobasshkey7](/images/mobasshkey7.png)
 
 8. Locate the previously generated keys (in our case id_rsa.pub and id_rsa) and add them to the agent. Follow the on screen instructions that may appear during this process. 
