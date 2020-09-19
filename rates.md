@@ -47,14 +47,6 @@ The registration provides access to the following resources:
     * Nodes are administered under a priority queueing system that gives users from an owner lab priority and also increases that lab's overall CPU quota (see above) by the number of owned CPU cores.
     * Owned computer nodes are an attractive solution for labs requiring 24/7 access to hundreds of CPU cores with no or only minor waiting times in queue.
 
-## External user accounts
-Accounts for external customers can only be granted if a lab has a strong
-affiliation to UC Riverside, such as a research collaboration with UCR
-researchers. Both the corresponding UCR and external collaborator need to
-maintain an HPCC subscription. External accounts are subject to an annual
-review and approval process. To be approved, the external and internal PIs have
-to complete this [External Usage Justification](https://bit.ly/32O1lC9).
-
 ## Software install
 
 * Registered users can email software install requests to HPCC's issue tracking system @ [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu). Install requests are addressed in the order received. Simple installs are addressed within 1 to a few days. Complex installs may take longer.
@@ -87,9 +79,18 @@ that will be administered similarly as described above under the _Ownership
 model_. Due to the large number of expected users from departments, the
 CPU quota per user is lower compared to the PI-based model.
 
+## External user accounts
+Accounts for external customers can only be granted if a lab has a strong
+affiliation to UC Riverside, such as a research collaboration with UCR
+researchers. Both the corresponding UCR and external collaborator need to
+maintain an HPCC subscription. External accounts are subject to an annual
+review and approval process. To be approved, the external and internal PIs have
+to complete this [External Usage Justification](https://bit.ly/32O1lC9).
+
 ## Facility description
 
    * The latest hardware/facility description (_e.g._ for grant applications) is available [here](https://goo.gl/43eOwQ).
 
 
+:w
 
