@@ -92,5 +92,4 @@ to complete this [External Usage Justification](https://bit.ly/32O1lC9).
    * The latest hardware/facility description (_e.g._ for grant applications) is available [here](https://goo.gl/43eOwQ).
 
 
-:w
 
