@@ -17,5 +17,11 @@ permalink: docs.html
    * [Recharging rates: 2017/2018](https://goo.gl/QjJgzu)
    * [Recharging rates: 2016/2017](https://goo.gl/jJWpon)
 
-
+## External user accounts
+Accounts for external customers can only be granted if a lab has a strong
+affiliation to UC Riverside, such as a research collaboration with UCR
+researchers. Both the corresponding UCR and external collaborator need to
+maintain an HPCC subscription. External accounts are subject to an annual
+review and approval process. To be approved, the external and internal PIs have
+to complete this [External Usage Justification](https://bit.ly/32O1lC9).
 
