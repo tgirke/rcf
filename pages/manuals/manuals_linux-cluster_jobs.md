@@ -318,6 +318,7 @@ For more details please refer to the following [Jupyter Example](https://github.
 #### VNC Server (cluster)
 
 **Start VNC Server**
+
 Log into the cluster:
 
 ```bash
