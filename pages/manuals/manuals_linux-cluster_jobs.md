@@ -317,19 +317,17 @@ For more details please refer to the following [Jupyter Example](https://github.
 
 #### VNC Server (cluster)
 
+##### Start VNC Server
 Log into the cluster and launch a job:
 
 ```bash
-ssh cluster.hpcc.ucr.edu
-srun --cpus-per-task=2 --mem=2gb --partition=short --pty bash -l
+ssh username@cluster.hpcc.ucr.edu
 ```
-
-Appropriate job resources should be requested based on the processes you will be running from within the VNC session.
 
 The first time you run the vncserver it will need to be configured:
 
 ```bash
-vncserver
+vncserver -fg
 ```
 
 You should set a password for yourself, and the read-only password is optional.
@@ -340,7 +338,22 @@ Configure X Startup with the following command:
 echo '/usr/bin/ssh-agent /usr/bin/dbus-launch --exit-with-session /usr/bin/gnome-session --session=gnome-classic' > /rhome/$USER/.vnc/xstartup
 ```
 
-After your vncserver is configured, run it again to get it started:
+After your vncserver is configured, submit a job yo get it started:
+
+```bash
+sbatch -p short,batch --cpus-per-task=4 --mem=10g --time=2:00:00 --wrap='vncserver -fg' --output='vncserver-%j.out'
+```
+
+Appropriate job resources should be requested based on the processes you will be running from within the VNC session.
+
+
+Check the contents of your job log to determine the node name and port you were assigned:
+
+```bash
+cat vncserver-*.out
+```
+
+The contents of your slurm job log should be similar to the following:
 
 ```bash
 vncserver
@@ -353,23 +366,48 @@ Log file is /rhome/username/.vnc/i54:1.log
 ```
 
 The VNC port used should be 5900+N, N being the display number mentioned above in the format NodeName:DisplayNumber (ie. `i54:1`).
-The default is `5901`, unless it is already in use, in that case vncserver will increment the DisplayNumber until an unused one is found.
+In this example (default), the port is `5901`, unless it is already in use, in that case vncserver will automatically increment the DisplayNumber and you might find something like `i54:2` or even `i54:3` and so on.
+
+##### Stop VNC Server
+
+To stop the vncserver, you can click on the logout option from the upper right hand menu from within your VNC desktop environment.
+If you want to kill your vncserver manually, then you will need to do the following:
+
+```bash
+ssh NodeName 'vncserver -kill :PORT'
+```
+
+You will need to replace NodeName with the node name of your where your job is running, and the PORT with the VNC Port your vncserver is using.
 
 #### VNC Client (Desktop/Laptop)
 
-Create a tunnel on your local machine (desktop/laptop) using the NodeName and VNC Port from above:
+After you know the NodeName and VNC Port you should be able to create an SSH tunnel to your vncserver, like so:
 
 ```bash
-ssh -N -L 5901:i54:5901 cluster.hpcc.ucr.edu
+ssh -N -L Port:NodeName:Port cluster.hpcc.ucr.edu
 ```
 
-You may need to provide a password, then this command will hang, this is normal.
+Now let us create an SSH tunnel on your local machine (desktop/laptop) using the NodeName and VNC Port from above:
 
-Launch vncviewer on local port
+```bash
+ssh -L 5901:i54:5901 cluster.hpcc.ucr.edu
+```
+
+After you have logged into the cluster with this shell, log into the node where your VNC server is running:
+
+```bash
+ssh NodeName
+```
+
+After you have logged into the correct compute node, just let this terminal sit here, do not close it.
+
+Then, launch vncviewer on your local system (laptop/workstation)
 
 ```bash
 vncviewer localhost:5901
 ```
+
+After launching the vncviewer, and providing your VNC password (not your cluster password) you should be able to see a Linux desktop environment.
 
 For more information regarding tunnels and VNC in MS Windows, please refer [More VNC Info](https://docs.ycrc.yale.edu/clusters-at-yale/access/vnc/).
 
