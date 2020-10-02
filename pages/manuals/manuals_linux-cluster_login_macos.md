@@ -12,20 +12,18 @@ permalink: manuals_linux-cluster_login_macos.html
 The private key remains on the system being used to access the HPCC and is used to decrypt information that is exchanged in the transfer between the HPCC and your PC.
 
 A public key is used to encrypt information, can be shared, and is used by the user and the HPCC. On HPCC's end, the public key is saved in a file that contains a list of authorized public keys.
+
 #### Why do you need them?
 HPCC supports two authentication methods, Password+DUO and SSH Keys. So you will have to create a public key and save your public key in the server end for file exchange purposes. 
-## How to create the SSH Key with the Terminal
 ## How to create the SSH Key with a GUI (Graphical User Interface)
 #### Step by step:
-1. If you have a Github / Atlassian / Azure Dev Ops / Bitbucket account:
-  * Log in
-2. Otherwise, enter your username or a few characters.
-3. Under the **`Sourcetree`** click on the `Preferences...` button to bring up the menu.
-4. Click on `Accounts` and double click on your icon or press `Edit...`.
-5. Make sure `SSH` is selected in the `Protocol:` dropdown menu. 
+1. Enter your UCR NetID in the `Username` field.
+2. Under the **`Sourcetree`** click on the `Preferences...` button to bring up the menu.
+3. Click on `Accounts` and double click on your icon or press `Edit...`.
+4. Make sure `SSH` is selected in the `Protocol:` dropdown menu. 
   *  If you have any existing keys, they will appear on the menu.
 ![fig0](/images/13e.png)
-6. If you don't, hold down the Mac's option key to switch the `Copy to Clipboard` button to `Generate Key`:
+5. If you don't, hold down the Mac's option key to switch the `Copy to Clipboard` button to `Generate Key`:
 ![fig1](/images/14e.png)
 
 #### Key Location
@@ -41,7 +39,7 @@ By default, your key is created in the path: `Users\YourUsername\.ssh\` which wi
 #### A visual walkthrough
 ![fig2](https://confluence.atlassian.com/bitbucket/files/304578655/935365609/1/1502738321650/create_ssh_mac.gif)
 
-## Using Filezilla to transfer files
+## Filezilla
 ### Downloading & Installing Filezilla
 1. Download the `Filezilla Client` for Mac OS X [here](https://filezilla-project.org).
 	* Make sure your Mac OS X system is updated to the latest version.
@@ -53,9 +51,12 @@ By default, your key is created in the path: `Users\YourUsername\.ssh\` which wi
 ![fig4](/images/3e.png)
 5. Click on the `Add key file` button.
 ![fig4](/images/26.png)
-6. Navigate to the folder you saved your key file in (Or the default in `/yourusername/.ssh`) and open it. Press ![fig4](/images/31.png) to open the "Go to..." pane.
+6. Navigate to the folder you saved your key file in (Or the default in `/Users/YourUserName/.ssh`) and open it.
+  * This is the window that will pop up.
 ![fig4](/images/27.png)
+  * Either use the search bar to find your file by name.
 ![fig4](/images/28.png)
+  * Or press ![fig4](/images/31.png) to open the "Go to..." pane and then enter the folder you want to go into.
 ![fig4](/images/29.png)
 7. You should see the added keyfile under the `Private keys:` heading.
 ![fig5](/images/30.png)
