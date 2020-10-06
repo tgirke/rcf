@@ -32,7 +32,7 @@ In the past we used queues under the old Torque system, we now refer to these lo
     * RAM: 1 GB default
     * Time (walltime): 48 hours (2 days) default
 * short
-    * Nodes: Mixed set of nodes from batch, intel, and group patitions
+    * Nodes: Mixed set of nodes from batch, intel, and group partitions
     * Cores: AMD/Intel, 256 per user
     * RAM: 1 GB default
     * Time (walltime): 2 hours Maximum
