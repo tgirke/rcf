@@ -4,96 +4,157 @@ title: Linux Cluster - Login macOS
 permalink: manuals_linux-cluster_login_macos.html
 ---
 
-#  GUI Cluster Connection
-## SSH Keys
-#### What are they?
- SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.
+## SSH Keys on macOS
 
-The private key remains on the system being used to access the HPCC and is used to decrypt information that is exchanged in the transfer between the HPCC and your PC.
+### What are SSH keys?
 
-A public key is used to encrypt information, can be shared, and is used by the user and the HPCC. On HPCC's end, the public key is saved in a file that contains a list of authorized public keys.
+SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.
 
-#### Why do you need them?
-HPCC supports two authentication methods, Password+DUO and SSH Keys. So you will have to create a public key and save your public key in the server end for file exchange purposes. 
-## How to create the SSH Key with a GUI (Graphical User Interface)
+The private key remains on the system being used to access the HPCC cluster and is used to decrypt information that is exchanged in the transfer between the HPCC cluster and your system.
+
+A public key file is used to encrypt information, and is stored on your own system.
+The public key file is stored on the HPCC cluster and contains a list of authorized public keys.
+
+### Why do you need SSH keys?
+
+HPCC supports two authentication methods; `Password+DUO` and `SSH Keys`.
+The `Password+DUO` method requires a UCR NetID, if you do not have this then you will need to use `SSH keys` in order to access the HPCC cluster.
+
+## Create SSH Keys (GUI)
+
 #### Step by step:
-1. Enter your UCR NetID in the `Username` field.
-2. Under the **`Sourcetree`** click on the `Preferences...` button to bring up the menu.
-3. Click on `Accounts` and double click on your icon or press `Edit...`.
-4. Make sure `SSH` is selected in the `Protocol:` dropdown menu. 
-  *  If you have any existing keys, they will appear on the menu.
-![fig0](/images/13e.png)
-5. If you don't, hold down the Mac's option key to switch the `Copy to Clipboard` button to `Generate Key`:
-![fig1](/images/14e.png)
+
+0. **ADD STEP FOR DOWNLOADING SOURCETREE**
+
+0. **ADD STEP FOR INSTALLING SOURCETREE**
+
+0. **ADD STEP FOR OPENING SOURCETREE**
+
+1. Under the `Sourcetree` click on the `Preferences...` button to bring up the menu. **WHERE, TOP APPLICATION MENU?**
+
+2. Click on `Accounts` and double click on your icon or press `Edit...`. **NEED A SCREENSHOT FOR THIS**
+
+3. Enter your HPCC username in the `Username` field. **WHAT FIELD, WHICH ONE**
+
+4. Make sure `SSH` is selected in the `Protocol:` dropdown menu.
+
+5. Create your `SSH keys` by holding down the Mac's option key to update the `Copy to Clipboard` button to `Generate Key`.
+
+   ![fig0](images/13e.png)
+   
+   If you have existing keys, they will appear next to the `SSH Key:` locked field, however you should create new ones for explicit HPCC access.
+
+6. Click the `Generate Key` button.
+   
+   ![fig1](images/14e.png)
+
+   
 
 #### Key Location
-By default, your key is created in the path: `Users\YourUsername\.ssh\` which will generate the ``id_rsa`` and ``id_rsa.pub`` key files.
-7. To verify it is there, open a new finder window and make sure you go to your home folder.
-![fig1](/images/23.png)
-8. Click on `Go` then `Go to Folder...`
-![fig1](/images/21.png)
-9. Type in .ssh
-![fig1](/images/24.png)
-10. You should see your generated key file in the folder.
-![fig1](/images/25.png)
+
+By default, your key is created in the path: `/Users/macOSUsername/.ssh/`, the private ``id_rsa`` and public ``id_rsa.pub`` key files.
+
+To verify that the keys were created, do the following:
+
+1. Open a new finder window.
+   
+   ![fig1](images/23.png)
+
+2. Click on `Go` then `Go to Folder...`
+
+   ![fig1](images/21.png)
+
+3. Type in `.ssh`
+
+   ![fig1](images/24.png)
+
+4. You should see your generated key file in the folder. **MISSING id_rsa key file?**
+
+   ![fig1](images/25.png)
+
 #### A visual walkthrough
+
+**MIGHT WANT TO CREATE KEYS WITHOUT A USERNAME**
+
 ![fig2](https://confluence.atlassian.com/bitbucket/files/304578655/935365609/1/1502738321650/create_ssh_mac.gif)
 
-## Filezilla
-### Downloading & Installing Filezilla
+## Configure SSH Keys (GUI)
+
+
+### Filezilla
+
+You will need to install `Filezilla` in order to transfer the public SSH key to the HPCC cluster.
+
 1. Download the `Filezilla Client` for Mac OS X [here](https://filezilla-project.org).
 	* Make sure your Mac OS X system is updated to the latest version.
-2. Follow the package walkthrough to install Filezilla.
-### Adding the previously created Key file
-3. Open Filezilla's "`Settings...`" option under the **`Filezilla`** heading.
-![fig3](/images/7e.png)
-4. Navigate to SFTP settings.
-![fig4](/images/3e.png)
-5. Click on the `Add key file` button.
-![fig4](/images/26.png)
-6. Navigate to the folder you saved your key file in (Or the default in `/Users/YourUserName/.ssh`) and open it.
-  * This is the window that will pop up.
-![fig4](/images/27.png)
-  * Either use the search bar to find your file by name.
-![fig4](/images/28.png)
-  * Or press ![fig4](/images/31.png) to open the "Go to..." pane and then enter the folder you want to go into.
-![fig4](/images/29.png)
-7. You should see the added keyfile under the `Private keys:` heading.
-![fig5](/images/30.png)
-8. Click on the red x in the top left corner of the window to exit out of the window.
-![fig4](/images/32.png)
-### Connecting to the HPCC with your SSH Keys
+2. Follow the install wizard to complete the install of `Filezilla`.
+
+### Public SSH Key
+
 1. When you start the application, you should be greeted to an empty field like so:
-![fig4](/images/1e.png)
+
+![fig4](images/1e.png)
+
 2. Enter your username in the `username` field.
+
 3. Enter the HPCC servername `cluster.hpcc.ucr.edu` or `secure.hpcc.ucr.edu` with the `sftp://` prefix for SFTP/SSH connection.
+
 4. Enter your password.
+
 5. Enter `22` in the `Port` field.
-![fig7](/images/8e.png)
+
+![fig7](images/8e.png)
+
 6. Click on `Quick Connect`
+
 7. If a pop up that prompts you to save your password comes up, press the `Save password` button, click `OK`.
-8. If the following prompt shows up, click `OK`.
-![fig8](/images/6e.png)
-9. Now you are connected to Filezilla!
-![fig9](/images/4e.png)
-#### Connecting to the HPCC with your Password+DUO
-These will be the same instructions as above, the difference will be when you press `Quick Connect` then you will see the DUO pop up prompt.
-1. Enter your username in the `username` field.
-2. Enter the HPCC servername `secure.hpcc.ucr.edu` with the `sftp://` prefix for SFTP/SSH connection.
-3. Enter your password.
-4. Enter `22` in the `Port` field.
-5. Select `Connect` in the window.
-6. When prompted, type a `1` to send a Duo Push to your mobile device, then authenticate with your Duo device.
-7. Upon successful authentication, you will be logged in to the cluster through FileZilla.
 
-## Final Verification
-### Moving private key to HPCC
-1.  Move your key file by dragging it from your finder window to the `.ssh` folder on the right side of the pane as shown below:
-![fig10](/images/4e.png)
-2. You have your key file set up!
+8. If the following prompt shows up, click `OK`. **CREATE NEW SCREENSHOT, WITHOUT MARS**
 
-### Transferring files
-1. Your local computer files are on your left.
-2. Your remote repository of files from the HPCC is on your right.
-3. Make sure your directory path is correct. 
-4. For more help, refer to Filezilla's help file or press `Help` on the topbar.
+![fig8](images/6e.png)
+
+9. Now that you are connected to Filezilla transfer your public SSH key from your macOS system at `/Users/macOSUSername/.ssh/id_rsa.pub` to the HPCC cluster at `/rhome/username/.ssh/id_rsa.pub`.
+
+![fig10](images/4e.png)
+
+
+#### Private SSH Key
+
+Once your public key is in place, configure `Filezilla` to use your private SSH key.
+
+1. Open Filezilla `Settings...` option under the `Filezilla` heading.
+
+![fig3](images/7e.png)
+
+2. Navigate to SFTP settings.
+
+![fig4](images/3e.png)
+
+3. Click on the `Add key file` button.
+
+![fig4](images/26.png)
+
+4. Navigate to the folder you saved your key file in (Or the default in `/Users/macOSUsername/.ssh`) and open it.
+
+   * This is the window that will pop up.
+
+   ![fig4](images/27.png)
+
+   * Either use the search bar to find your file by name.
+
+   ![fig4](images/28.png)
+
+   * Or press ![fig4](images/31.png) to open the "Go to..." pane and then enter the folder you want to go into.
+
+   ![fig4](images/29.png)
+
+5. You should see the added keyfile under the `Private keys:` heading.
+
+![fig5](images/30.png)
+
+6. Click on the red `x` in the top left corner of the window to exit out of the window.
+
+![fig4](images/32.png)
+
+7. Then reconnect to the HPCC cluster with `Filezilla` and transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist [Filezilla Usage](some_other_page).
+
