@@ -37,12 +37,7 @@ Sometimes it is best to create your own environment in which you have full contr
 Conda allows you to do this through virtual environments.
 
 ##### Initialize
-First, you need to initialize conda for your shell (bash).
-You only need to do this once, which will modify your `~/.bashrc` file to allow you to activate conda environmnents:
-
-```bash
-conda init bash && source ~/.bashrc
-```
+Conda will now auto initialize when you load the corresponding module. No need to run the `conda init` or make any modifications to your `~/.bashrc` file.
 
 ##### Configure
 Installing many packages can consume a large (ie. >20GB) amount of disk space, thus it is recommended to store conda environments under your bigdata space.
