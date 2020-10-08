@@ -104,7 +104,7 @@ You will need to install `Filezilla` in order to transfer the public SSH key to 
 
 8. If the following prompt shows up, click `OK`.
 
-![fig8](images/6e.png)
+![fig8](images/6b.png)
 
 9. Now that you are connected to Filezilla transfer your public SSH key from your macOS system at `/Users/macOSUSername/.ssh/id_rsa.pub` to the HPCC cluster at `/rhome/username/.ssh/id_rsa.pub`.
 
