@@ -23,28 +23,32 @@ The `Password+DUO` method requires a UCR NetID, if you do not have this then you
 ## Create SSH Keys (GUI)
 
 #### Step by step:
+1. Download Sourcetree [here](https://www.sourcetreeapp.com)
+2. Click on `Download for Mac OS X`.
+3. Instlal Sourcetree.
+4. Open Sourcetree application and under the `Sourcetree` click on the `Preferences...` button to bring up the menu as shown in the screenshot below.
 
-0. **ADD STEP FOR DOWNLOADING SOURCETREE**
+   ![fig0](images/41.png)
+   
+5. Navigate to `Accounts` and click on `Add...`.
 
-0. **ADD STEP FOR INSTALLING SOURCETREE**
+   ![fig0](images/42.png)
 
-0. **ADD STEP FOR OPENING SOURCETREE**
+6. The following screenshot should be what greets you, click on `Auth Type:` and change the drop down menu from `OAuth` to `Basic`. Make sure `Protocol:` is set to `SSH` in the drop down menu.
 
-1. Under the `Sourcetree` click on the `Preferences...` button to bring up the menu. **WHERE, TOP APPLICATION MENU?**
+   ![fig0](images/43.png)
 
-2. Click on `Accounts` and double click on your icon or press `Edit...`. **NEED A SCREENSHOT FOR THIS**
+7. Enter your HPCC username in the `Username` field.
 
-3. Enter your HPCC username in the `Username` field. **WHAT FIELD, WHICH ONE**
-
-4. Make sure `SSH` is selected in the `Protocol:` dropdown menu.
-
-5. Create your `SSH keys` by holding down the Mac's option key to update the `Copy to Clipboard` button to `Generate Key`.
+   ![fig0](images/44.png)
+   
+8. Create your `SSH keys` by holding down the Mac's option key to update the `Copy to Clipboard` button to `Generate Key`.
 
    ![fig0](images/13e.png)
    
    If you have existing keys, they will appear next to the `SSH Key:` locked field, however you should create new ones for explicit HPCC access.
 
-6. Click the `Generate Key` button.
+9. Click the `Generate Key` button.
    
    ![fig1](images/14e.png)
 
@@ -109,7 +113,7 @@ You will need to install `Filezilla` in order to transfer the public SSH key to 
 
 7. If a pop up that prompts you to save your password comes up, press the `Save password` button, click `OK`.
 
-8. If the following prompt shows up, click `OK`. **CREATE NEW SCREENSHOT, WITHOUT MARS**
+8. If the following prompt shows up, click `OK`.
 
 ![fig8](images/6e.png)
 
