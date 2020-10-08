@@ -50,7 +50,7 @@ The `Password+DUO` method requires a UCR NetID, if you do not have this then you
  
 #### Key Location
 
-By default, your key is created in the path: `/Users/macOSUsername/.ssh/`, the private ``id_rsa`` and public ``id_rsa.pub`` key files.
+By default, your key files are created in the path: `/Users/macOSUsername/.ssh/`.
 
 To verify that the keys were created, do the following:
 
