@@ -40,20 +40,14 @@ The `Password+DUO` method requires a UCR NetID, if you do not have this then you
 
 7. Enter your HPCC username in the `Username` field.
 
-   ![fig0](images/44.png)
+   ![fig0](images/44.png)  
+ 
+ 
+8. Click the `Generate Key` button.
    
-8. Create your `SSH keys` by holding down the Mac's option key to update the `Copy to Clipboard` button to `Generate Key`.
-
-   ![fig0](images/13e.png)
-   
-   If you have existing keys, they will appear next to the `SSH Key:` locked field, however you should create new ones for explicit HPCC access.
-
-9. Click the `Generate Key` button.
-   
-   ![fig1](images/45b.png)
-
-   
-
+   ![fig1](images/45b.png)  
+ 
+ 
 #### Key Location
 
 By default, your key is created in the path: `/Users/macOSUsername/.ssh/`, the private ``id_rsa`` and public ``id_rsa.pub`` key files.
@@ -71,7 +65,7 @@ To verify that the keys were created, do the following:
 3. Type in `.ssh`
 
    ![fig1](images/24.png)
-
+ 
 4. You should see your generated pair of key files in the folder. 
 
    ![fig1](images/46.png)
