@@ -34,7 +34,7 @@ The `Password+DUO` method requires a UCR NetID, if you do not have this then you
 
    ![fig0](images/42.png)
 
-6. The following screenshot should be what greets you, click on `Auth Type:` and change the drop down menu from `OAuth` to `Basic`. Make sure `Protocol:` is set to `SSH` in the drop down menu.
+6. The following screenshot should be what greets you, click on `Auth Type:` and change the drop down menu from `OAuth` to `Basic`. Make sure `Protocol:` is set to `SSH` in the drop down menu. The other fields won't matter.
 
    ![fig0](images/43.png)
 
@@ -50,7 +50,7 @@ The `Password+DUO` method requires a UCR NetID, if you do not have this then you
 
 9. Click the `Generate Key` button.
    
-   ![fig1](images/14e.png)
+   ![fig1](images/45b.png)
 
    
 
@@ -72,15 +72,10 @@ To verify that the keys were created, do the following:
 
    ![fig1](images/24.png)
 
-4. You should see your generated key file in the folder. **MISSING id_rsa key file?**
+4. You should see your generated pair of key files in the folder. 
 
-   ![fig1](images/25.png)
+   ![fig1](images/46.png)
 
-#### A visual walkthrough
-
-**MIGHT WANT TO CREATE KEYS WITHOUT A USERNAME**
-
-![fig2](https://confluence.atlassian.com/bitbucket/files/304578655/935365609/1/1502738321650/create_ssh_mac.gif)
 
 ## Configure SSH Keys (GUI)
 
