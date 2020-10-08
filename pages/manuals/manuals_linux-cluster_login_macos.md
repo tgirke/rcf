@@ -54,21 +54,21 @@ By default, your key files are created in the path: `/Users/macOSUsername/.ssh/`
 
 To verify that the keys were created, do the following:
 
-1. Open a new finder window.
+1. Open a new finder window. Click on your home directory on the left side pane.
    
    ![fig1](images/23.png)
 
-2. Click on `Go` then `Go to Folder...`
-
-   ![fig1](images/21.png)
-
-3. Type in `.ssh`
-
-   ![fig1](images/24.png)
+2. Press (`Command`) and (`Shift`) and (`.`) buttons together (visualized below):
+   
+   ![fig1](images/47.png)
  
+3. You will now be able to see your hidden files and folders, click on the `.ssh` folder.
+   
+   ![fig1](images/48.png)
+
 4. You should see your generated pair of key files in the folder. 
 
-   ![fig1](images/46.png)
+   ![fig1](images/49.png)
 
 
 ## Configure SSH Keys (GUI)
