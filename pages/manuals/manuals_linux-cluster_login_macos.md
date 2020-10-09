@@ -38,16 +38,16 @@ The `Password+DUO` method requires a UCR NetID, if you do not have this then you
 
    ![fig0](images/43.png)
 
-7. Enter your HPCC username in the `Username` field.
+7. Enter `id_rsa` in the `Username` field.
 
    ![fig0](images/44.png)  
  
  
 8. Click the `Generate Key` button.
    
-   ![fig1](images/45b.png)  
+   ![fig1](images/50.png)  
  
- 
+ 9. Press `Cancel` to exit out of the window.
 #### Key Location
 
 By default, your key files are created in the path: `/Users/macOSUsername/.ssh/`.
@@ -60,7 +60,7 @@ To verify that the keys were created, do the following:
 
 2. Press (`Command`) and (`Shift`) and (`.`) buttons together (visualized below):
    
-   ![fig1](images/47.png)
+   ![fig1](images/47b.png)
  
 3. You will now be able to see your hidden files and folders, click on the `.ssh` folder.
    
@@ -68,10 +68,17 @@ To verify that the keys were created, do the following:
 
 4. You should see your generated pair of key files in the folder. 
 
-   ![fig1](images/49.png)
+   ![fig1](images/51.png)
 
+5. Sourcetree adds the `-Bitbucket` to the end of the key files. We don't want that, so click on the file you want and press the `Enter` key which allows us to rename the file before the extension.
 
-## Configure SSH Keys (GUI)
+   ![fig1](images/52.png)
+
+6. Delete the `-Bitbucket` part of the filename to get a uniform filename for both files below:
+
+   ![fig1](images/53.png)
+
+## Configure SSH Keys
 
 
 ### Filezilla
@@ -82,15 +89,15 @@ You will need to install `Filezilla` in order to transfer the public SSH key to 
 	* Make sure your Mac OS X system is updated to the latest version.
 2. Follow the install wizard to complete the install of `Filezilla`.
 
-### Public SSH Key
+#### Public SSH Key
 
-1. When you start the application, you should be greeted to an empty field like so:
+1. When you start the application, you should be greeted by an empty field like so:
 
 ![fig4](images/1e.png)
 
 2. Enter your username in the `username` field.
 
-3. Enter the HPCC servername `cluster.hpcc.ucr.edu` or `secure.hpcc.ucr.edu` with the `sftp://` prefix for SFTP/SSH connection.
+3. Enter the HPCC servername `cluster.hpcc.ucr.edu` with the `sftp://` prefix for SFTP/SSH connection. The first time you try to connect to the HPCC, you MUST use the `cluster.hpcc.ucr.edu` hostname. After this, you must use the `secure.hpcc.ucr.edu` hostname subsequently.
 
 4. Enter your password.
 
@@ -102,11 +109,11 @@ You will need to install `Filezilla` in order to transfer the public SSH key to 
 
 7. If a pop up that prompts you to save your password comes up, press the `Save password` button, click `OK`.
 
-8. If the following prompt shows up, click `OK`.
+8. If the following prompt shows up, before clicking `OK`, check the box that `Always trust this host, add this key to the cache`. Then click `OK`.
 
-![fig8](images/6b.png)
+![fig8](images/6be.png)
 
-9. Now that you are connected to Filezilla transfer your public SSH key from your macOS system at `/Users/macOSUSername/.ssh/id_rsa.pub` to the HPCC cluster at `/rhome/username/.ssh/id_rsa.pub`.
+9. Now that you are connected to Filezilla transfer your public SSH key from your macOS system at `/Users/macOSUsername/.ssh/id_rsa.pub` to the HPCC cluster at `/rhome/username/.ssh/id_rsa.pub`.
 
 ![fig10](images/4e.png)
 
@@ -115,39 +122,41 @@ You will need to install `Filezilla` in order to transfer the public SSH key to 
 
 Once your public key is in place, configure `Filezilla` to use your private SSH key.
 
-1. Open Filezilla `Settings...` option under the `Filezilla` heading.
+1. Open Filezilla `Site Manager` button in the top bar of icons.
 
-![fig3](images/7e.png)
+![fig3](images/60.png)
 
-2. Navigate to SFTP settings.
+2. Click on `New Site`, the name doesn't matter, either press enter or name it.
 
-![fig4](images/3e.png)
+![fig3](images/54.png)
 
-3. Click on the `Add key file` button.
+3. Make sure the following fields are correctly modified before clicking on `Browse...`:
+    * `Protocol`: should be set to `SFTP - SSH File Transfer Protocol`
+    * `Host`: type in `cluster.hpcc.ucr.edu` **for the first time connecting only**! 
+    * `Port`: type `22`
+    * `Logon Type`: set to `Key file`
+    * `User`: type in your HPCC username
 
-![fig4](images/26.png)
+![fig4](images/56.png)
 
-4. Navigate to the folder you saved your key file in (Or the default in `/Users/macOSUsername/.ssh`) and open it.
+4. Navigate to the folder you saved your key file in (Or the default in `/Users/macOSUsername/.ssh`) and open the private key file which should be simply `id_rsa`.
 
-   * This is the window that will pop up.
+   ![fig4](images/57.png)
+   
+5. You should see the added keyfile in the `Key file:` box now. Press `Connect`.
 
-   ![fig4](images/27.png)
+![fig5](images/58.png)
 
-   * Either use the search bar to find your file by name.
+7. Click on the `Site Manager` button as shown in step 1. Change the `Host:` field to `secure.hpcc.ucr.edu`, which you MUST use now to connect to the cluster. Press `OK`.
 
-   ![fig4](images/28.png)
+![fig5](images/59.png)
 
-   * Or press ![fig4](images/31.png) to open the "Go to..." pane and then enter the folder you want to go into.
+8. Now you can reconnect to the cluster by the quick connect bar by clicking on the arrow at the end.
 
-   ![fig4](images/29.png)
+![fig5](images/61.png)
 
-5. You should see the added keyfile under the `Private keys:` heading.
+9. Remember to ONLY use the `secure.hpcc.ucr.edu` address.
 
-![fig5](images/30.png)
+![fig5](images/62.png)
 
-6. Click on the red `x` in the top left corner of the window to exit out of the window.
-
-![fig4](images/32.png)
-
-7. Then reconnect to the HPCC cluster with `Filezilla` and transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist [Filezilla Usage](some_other_page).
-
+10. Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist [Filezilla Usage](some_other_page).
