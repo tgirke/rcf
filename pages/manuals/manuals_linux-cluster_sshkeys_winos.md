@@ -22,6 +22,8 @@ The `Password+DUO` method requires a UCR NetID, if you do not have this then you
 
 ### What you need
 
+#### MobaXterm
+
 You will need to install `MobaXterm` in order to generate your `SSH keys` and also to transfer the keys to the cluster.
 
 1. Download `MobaXterm` from [`here`](https://mobaxterm.mobatek.net/download-home-edition.html).
