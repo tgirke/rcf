@@ -32,23 +32,23 @@ You will need to install `MobaXterm` in order to generate your `SSH keys` and al
 
 1. Begin by clicking on the tools drop down on the upper menu bar
    
-   ![mobasshkey1](/images/ssh1moba.png)
+   ![mobasshkey1](images/ssh1moba.png)
 
 2. Find and click on the MobaKeyGen (SSH key generator) option
    
-   ![mobasshkey2](/images/ssh2moba.png)
+   ![mobasshkey2](images/ssh2moba.png)
 
 3. A window should appear to create a new SSH key. Click on generate to create a new SSH key pair. Follow the on menu instructions.
    
-   ![mobasshkey3](/images/ssh3moba.png)
+   ![mobasshkey3](images/ssh3moba.png)
 
 4. Once your key has been created, enter a password in the key passphrase field to password protect your key.
    
-   ![mobasshkey4](/images/ssh4moba.png)
+   ![mobasshkey4](images/ssh4moba.png)
 
 5. Click on save public key and name the file "id_rsa.pub". Click on save private key and name the file "id_rsa". Follow the on screen instructions as follows when saving.
    
-   ![mobasshkey5](/images/ssh5moba.png)
+   ![mobasshkey5](images/ssh5moba.png)
 
 6. Once you have saved both public and private keys, go ahead and close the window.
 
@@ -62,17 +62,17 @@ You will need to install `MobaXterm` in order to generate your `SSH keys` and al
 
 1. Click the `Settings` icon in the upper toolbar menu in `MobaXterm`.
    
-   ![mobasshkey6](/images/ssh6moba.png)
+   ![mobasshkey6](images/ssh6moba.png)
 
 2. Within the new configuration window, click the `SSH` configuration tab. Next check the box "Use internal SSH agent MobAgent" to enable it. Click on the "+" symbol on the right hand side to add your previously generated keys.
    
-   ![mobasshkey7](/images/ssh7moba.png)
+   ![mobasshkey7](images/ssh7moba.png)
 
 2. Locate the previously generated keys (in our case id_rsa.pub and id_rsa) and add them to the agent. Follow the on screen instructions that may appear during this process.
    
-   ![mobasshkey8](/images/ssh8moba.png)
+   ![mobasshkey8](images/ssh8moba.png)
 
 3. Once you restart MobaXterm, you will be greeted with a window to unlock your ssh key. Enter your password and you will be able to login using your keys.
    
-   ![mobasshkey9](/images/ssh9moba.png)
+   ![mobasshkey9](images/ssh9moba.png)
 
