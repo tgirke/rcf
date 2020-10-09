@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Linux Cluster - Login macOS 
-permalink: manuals_linux-cluster_login_macos.html
+title: Linux Cluster - SSH Keys Apple macOS 
+permalink: manuals_linux-cluster_sshkeys_macos.html
 ---
 
 ## SSH Keys on macOS
 
-### What are SSH keys?
+### What are SSH Keys?
 
 SSH (Secure Shell) keys are an access credential that is used in the SSH protocol.
 
@@ -15,12 +15,12 @@ The private key remains on the system being used to access the HPCC cluster and 
 A public key file is used to encrypt information, and is stored on your own system.
 The public key file is stored on the HPCC cluster and contains a list of authorized public keys.
 
-### Why do you need SSH keys?
+### Why do you need SSH Keys?
 
 HPCC supports two authentication methods; `Password+DUO` and `SSH Keys`.
 The `Password+DUO` method requires a UCR NetID, if you do not have this then you will need to use `SSH keys` in order to access the HPCC cluster.
 
-### What you Need
+### What you need
 
 #### Filezilla
 
@@ -34,7 +34,7 @@ You will need to install `Filezilla` in order to transfer the public SSH key to 
 
 You will need to install `Sourcetree` in order to generate your `SSH keys` (or use the command line method mentioned here: [Manage SSH Keys via Command Line](some_other_page).
 
-1. Download `Sourcetree` [here](https://www.sourcetreeapp.com)
+1. Download `Sourcetree` from [here](https://www.sourcetreeapp.com).
 2. Click on `Download for Mac OS X`.
 3. Install `Sourcetree`.
 
@@ -63,7 +63,7 @@ You will need to install `Sourcetree` in order to generate your `SSH keys` (or u
  
 6. Press `Cancel` to exit out of the window.
 
-### Key Location
+### SSH Keys Location
 
 By default, your key files are created in the path: `/Users/macOSUsername/.ssh/`.
 
