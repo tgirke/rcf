@@ -79,7 +79,7 @@ The destination for sensitive data on the cluster must also be encrypted at rest
 
 * /dev/shm/ - This location is in RAM, so it does not exist at rest (ensure proper ACLs)
 * /secure - This location is encrypted at rest with AES 256 key length (ensure proper ACLs)
-* /usr/tmp/$USER/unencrypted - This location is managed by the individual $USER (gocryptfs) and is password protected
+* /run/user/$EUID/unencrypted - This location is manually managed, and should be created for access to unencrypted files.
 
 
 It is also possible to encrypt your files with GPG ([GPG Example](https://kb.iu.edu/d/awio)), before they are transferred.
@@ -97,21 +97,29 @@ There are 3 methods available on the cluster for encryption at rest:
 # Load cyptfs software
 module load gocryptfs
 
-# Create empty directory, must name it exactly as below:
-mkdir ~/.encrypted
-gocryptfs -aessiv -init ~/.encrypted
+# Create empty encrypted directory, must name it exactly as below:
+mkdir ~/bigdata/encrypted/
 
-# Create unencrypted directory
-mkdir -p /var/tmp/$USER/unencrypted
+# You can have multiple encrypted data sets, if desired, but they all most be under the above directory
+mkdir ~/bigdata/encrypted/privatedata
 
-# Mount encrypted directory and open new shell within unencrypted directory
-gocryptfssh ~/.encrypted /var/tmp/$USER/unencrypted
+# Then intialize empty directory and encrypt it
+gocryptfs -aessiv -init ~/bigdata/encrypted/privatedata
+
+# Create directory for mounting (access point)
+mkdir -p /run/user/$EUID/unencrypted/privatedata
+
+# Mount one of the encrypted directories and open new shell within it
+gocryptfssh -sharedstorage ~/bigdata/encrypted/privatedata /run/user/$EUID/unencrypted/privatedata
 
 # Transfer files (ie. SCP,SFTP,RSYNC), Filezilla can be used
-scp user@remote-server:sensitive_file.txt /var/tmp/$USER/unencrypted/sensitive_file.txt
+scp user@remote-server:sensitive_file.txt /run/user/$EUID/unencrypted/sensitive_file.txt
 
-# Exiting the above shell will automatically unmount the unencrypted directory
+# Exiting this shell will automatically unmount the unencrypted directory
 exit
+
+# Manually remove old mount point directory
+rmdir /run/user/$EUID/unencrypted/privatedata
 ```
 
 For subsequent access to the encrypted space, (ie. computation or analysis) the follow procedure is recommended:
@@ -124,26 +132,21 @@ srun -p short --exclusive=user --pty bash -l
 module load gocryptfs
 
 # Create unencrypted directory
-mkdir -p /var/tmp/$USER/unencrypted
+mkdir -p /run/user/$EUID/unencrypted
 
-# Get remaining time of job
-squeue -j $SLURM_JOB_ID -h -O timeleft
-
-# Mount encrypted filesystem, and unmount before job ends, be sure to repalce TIME_REMAINING with an appropriate amount of time
-gocryptfs -ro -i TIME_REMAINING -sharedstorage ~/.encrypted /var/tmp/$USER/unencrypted
+# Mount encrypted filesystem as read-only and unmount idling for 1 hour
+gocryptfs -ro -i 1h -sharedstorage ~/bigdata/encrypted/privatedata /run/user/$EUID/unencrypted/privatedata
 
 # Read test file, simulating your work or any analysis that you would do here
-cd /var/tmp/unencrypted/
-cat sensitive_file.txt
+cat /run/user/$EUID/unencrypted/privatedata/sensitive_file.txt
 
-# Manually unmount and remove unencrypted directories, when analysis has completed, or no longer requires access
-fusermount -u /var/tmp/$USER/unencrypted/
-rmdir /var/tmp/$USER/unencrypted
-rmdir /var/tmp/$USER
+# Manually unmount and remove empty mount point directory, when analysis has completed
+fusermount -u /run/user/$EUID/unencrypted/privatedata
+rmdir /run/user/$EUID/unencrypted/privatedata
 ```
 
 > WARNING: Avoid writing to the same file at the same time from different nodes. The encrypted file system cannot handle simultaneous writes and will corrupt the file. If simultaneous jobs are necessary then using write mode from a head node and read-only mode from compute nodes may be the best solution here.
- Also, be mindful of reamaining job time and make sure that you have unmounted the unencrypted directory before your job ends.
+ Also, be mindful of reamaining job time and make sure that you have unmounted the unencrypted directories before your job ends.
 
 For another example on how to use gocrypfs on an HPC cluster: [Luxembourg HPC gocryptfs Example](https://hpc.uni.lu/blog/2018/sensitive-data-encryption-using-gocryptfs/)
 
