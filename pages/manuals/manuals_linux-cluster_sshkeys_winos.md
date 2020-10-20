@@ -83,7 +83,7 @@ Now that you have created your `SSH keys`, and renamed them, you will need to pl
 
    ![filezilla3](images/filezilla3.png)
 
-6. Now that you are connected to Filezilla transfer your public SSH key from your macOS system by dragging the file 'id_rsa.pub' and drop
+6. Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file `id_rsa.pub` and drop
 
    ![filezilla4](images/filezilla4.png)
 
