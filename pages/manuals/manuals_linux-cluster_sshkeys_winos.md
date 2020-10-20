@@ -81,7 +81,7 @@ Now that you have created your `SSH keys`, and renamed them, you will need to pl
 
 8. If the next pop up prompts you, then check the box that states `Always trust this host, add this key to the cache`, then click the `OK` button.
 
-   ![fig8](filezilla3/filezilla3.png)
+   ![filezilla3](images/filezilla3.png)
 
 9. Now that you are connected to Filezilla transfer your public SSH key from your macOS system by dragging the file 'id_rsa.pub' and drop
 
