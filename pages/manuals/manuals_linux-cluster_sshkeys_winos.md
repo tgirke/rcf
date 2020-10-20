@@ -60,21 +60,71 @@ You will need to install `MobaXterm` in order to generate your `SSH keys` and al
 
 #### Public SSH Key
 
+Now that you have created your `SSH keys`, and renamed them, you will need to placed the public key (`id_rsa.pub`) on the cluster using the `cluster.hpcc.ucr.edu`
+
+1. Start the `Filezilla` application.
+
+2. Fill in the `Quickconnect` fields at the top of the application window:
+
+   * Enter your HPCC username in the `Username` field.
+   * Enter the HPCC servername `cluster.hpcc.ucr.edu` for the `Host` field.
+   * Enter your password in the `Password` field.
+   * Enter `22` in the `Port` field.
+
+   ![filezilla1](images/filezilla1.png)
+
+6. Click on `Quickconnect`
+
+   ![filezilla2](images/filezilla2.png)
+
+7. If a pop up prompts you to save your password, select the `Save passwords` option, then click the `OK` button.
+
+8. If the next pop up prompts you, then check the box that states `Always trust this host, add this key to the cache`, then click the `OK` button.
+
+   ![fig8](filezilla3/filezilla3.png)
+
+9. Now that you are connected to Filezilla transfer your public SSH key from your macOS system by dragging the file 'id_rsa.pub' and drop
+
+   ![filezilla4](images/filezilla4.png)
+
+
 #### Private SSH Key
 
-1. Click the `Settings` icon in the upper toolbar menu in `MobaXterm`.
-   
-   ![mobasshkey6](images/ssh6moba.png)
+Once your public key is in place, now you can configure `Filezilla` to use your private `SSH key` and connect to the cluster through the `secure.hpcc.ucr.edu` server.
 
-2. Within the new configuration window, click the `SSH` configuration tab. Next check the box "Use internal SSH agent MobAgent" to enable it. Click on the "+" symbol on the right hand side to add your previously generated keys.
-   
-   ![mobasshkey7](images/ssh7moba.png)
+1. Open Filezilla `Site Manager` button in the top bar of icons.
 
-2. Locate the previously generated keys (in our case id_rsa.pub and id_rsa) and add them to the agent. Follow the on screen instructions that may appear during this process.
-   
-   ![mobasshkey8](images/ssh8moba.png)
+   ![filezilla5](images/filezilla5.png)
 
-3. Once you restart MobaXterm, you will be greeted with a window to unlock your ssh key. Enter your password and you will be able to login using your keys.
-   
-   ![mobasshkey9](images/ssh9moba.png)
+2. Click on `New Site`, rename it (optional) and press enter.
 
+   ![filezilla6](images/filezilla6.png)
+
+3. Make sure the following fields are correctly filled before adding your `SSH key` file:
+
+   * `Protocol`: should be set to `SFTP - SSH File Transfer Protocol`
+   * `Host`: type in `secure.hpcc.ucr.edu`
+   * `Port`: type `22`
+   * `Logon Type`: set to `Key file`
+   * `User`: type in your HPCC username
+
+   After these fields are finalized, click the `Browse..` button.
+
+   ![filezilla7](images/filezilla7.png)
+
+4. Navigate to the folder you saved your key file in and open the private key file `id_rsa`.
+
+   ![filezilla8](images/filezilla8.png)
+
+5. You should see the added keyfile in the `Key file:` box, then click `Connect`.
+
+   ![filezilla9](images/filezilla9.png)
+
+   Subsequnt connections can be done from the `Quickconnect` history by clicking on the down arrow to the right side of the `Quickconnect` button.
+
+
+9. Remember to select the `secure.hpcc.ucr.edu` address.
+
+   ![filezilla11](images/filezilla11.png)
+
+10. Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist [Filezilla Usage](some_other_page).
