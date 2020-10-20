@@ -132,7 +132,7 @@ srun -p short --exclusive=user --pty bash -l
 module load gocryptfs
 
 # Create unencrypted directory
-mkdir -p /run/user/$EUID/unencrypted
+mkdir -p /run/user/$EUID/unencrypted/privatedata
 
 # Mount encrypted filesystem as read-only and unmount idling for 1 hour
 gocryptfs -ro -i 1h -sharedstorage ~/bigdata/encrypted/privatedata /run/user/$EUID/unencrypted/privatedata
