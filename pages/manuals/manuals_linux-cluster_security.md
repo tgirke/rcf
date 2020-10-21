@@ -141,7 +141,7 @@ gocryptfsmgr close privatedata1
 exit
 ```
 
-With the above methods you can create multiple encrypted directories and access points and move between.
+With the above methods you can create multiple encrypted directories and access points and move between them.
 
 #### Gocryptfs
 
