@@ -91,35 +91,42 @@ Thus, during transfer they will be GPG encrypted. However, decryption must occur
 There are 3 methods available on the cluster for encryption at rest:
   1. GPG encryption of files via the command line [GPG Example](https://kb.iu.edu/d/awio), however you must ensure proper ACLs and decryption must occur in a secure location.
   2. The location "/secure" is encrypted and is mounted on the head nodes, however you must ensure proper ACLs.
-  3. Create your own location with [gocryptfs](https://nuetzlich.net/gocryptfs/forward_mode_crypto/), like so:
+  3. Create your own location with [gocryptfs](https://nuetzlich.net/gocryptfs/forward_mode_crypto/).
+
+#### Gocryptfs
+
+When using the `gocryptfs` module on the HPCC cluster there are some variables predefined to make this process easier:
+  1. `HOME_ENCRYPTED` = `/rhome/$USER/encrypted` - Very small encrypted space, not recommended to use
+  2. `BIGDATA_ENCRYPTED` = `/rhome/$USER/bigdata/encrypted` - Best encrypted space for private data sets
+  3. `SHARED_ENCRYPTED` = `/rhome/$USER/shared/encrypted` - Encrypted space when intending to share data sets with group
+  4. `UNENCRYPTED` = `/run/user/$UID/unencrypted` - Access directory where encrypted data will be viewed as unencrypted
+
+Here is a simple example on how to create an encrypted directory under `BIGDATA_ENCRYPTED` using `gocryptfs`:
 
 ```bash
-# Load cyptfs software
+# Load gocyptfs software
 module load gocryptfs
 
-# Create empty encrypted directory, must name it exactly as below:
-mkdir ~/bigdata/encrypted/
-
-# You can have multiple encrypted data sets, if desired, but they all most be under the above directory
-mkdir ~/bigdata/encrypted/privatedata
+# Create empty data directory
+mkdir -p $BIGDATA_ENCRYPTED/privatedata1
 
 # Then intialize empty directory and encrypt it
-gocryptfs -aessiv -init ~/bigdata/encrypted/privatedata
+gocryptfs -aessiv -init $BIGDATA_ENCRYPTED/privatedata1
 
-# Create directory for mounting (access point)
-mkdir -p /run/user/$EUID/unencrypted/privatedata
+# Create access point directory where encrypted files will be viewed as unencrypted
+mkdir -p $UNENCRYPTED/privatedata1
 
-# Mount one of the encrypted directories and open new shell within it
-gocryptfssh -sharedstorage ~/bigdata/encrypted/privatedata /run/user/$EUID/unencrypted/privatedata
+# After that mount the encrypted directory on the access point and open a new shell within it
+gocryptfssh $BIGDATA_ENCRYPTED/privatedata1 $UNENCRYPTED/privatedata1
 
-# Transfer files (ie. SCP,SFTP,RSYNC), Filezilla can be used
-scp user@remote-server:sensitive_file.txt /run/user/$EUID/unencrypted/sensitive_file.txt
+# Transfer files (ie. SCP,SFTP,RSYNC)
+scp user@remote-server:sensitive_file.txt $UNENCRYPTED/sensitive_file.txt
 
 # Exiting this shell will automatically unmount the unencrypted directory
 exit
 
-# Manually remove old mount point directory
-rmdir /run/user/$EUID/unencrypted/privatedata
+# Manually remove old access point directory
+rmdir $UNENCRYPTED/privatedata1
 ```
 
 For subsequent access to the encrypted space, (ie. computation or analysis) the follow procedure is recommended:
@@ -132,17 +139,19 @@ srun -p short --exclusive=user --pty bash -l
 module load gocryptfs
 
 # Create unencrypted directory
-mkdir -p /run/user/$EUID/unencrypted/privatedata
+mkdir -p $UNENCRYPTED/privatedata1
 
 # Mount encrypted filesystem as read-only and unmount idling for 1 hour
-gocryptfs -ro -i 1h -sharedstorage ~/bigdata/encrypted/privatedata /run/user/$EUID/unencrypted/privatedata
+gocryptfs -ro -i 1h -sharedstorage $BIGDATA_ENCRYPTED/privatedata1 $UNENCRYPTED/privatedata1
 
-# Read test file, simulating your work or any analysis that you would do here
-cat /run/user/$EUID/unencrypted/privatedata/sensitive_file.txt
+# Read file contents (simulating work or analysis)
+cat $UNENCRYPTED/privatedata1/sensitive_file.txt
 
-# Manually unmount and remove empty mount point directory, when analysis has completed
-fusermount -u /run/user/$EUID/unencrypted/privatedata
-rmdir /run/user/$EUID/unencrypted/privatedata
+# Manually close access point when analysis has completed
+fusermount -u $UNENCRYPTED/privatedata1
+
+# Delete old empty access point
+rmdir $UNENCRYPTED/privatedata1
 ```
 
 > WARNING: Avoid writing to the same file at the same time from different nodes. The encrypted file system cannot handle simultaneous writes and will corrupt the file. If simultaneous jobs are necessary then using write mode from a head node and read-only mode from compute nodes may be the best solution here.
