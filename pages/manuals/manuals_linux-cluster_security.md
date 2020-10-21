@@ -93,15 +93,66 @@ There are 3 methods available on the cluster for encryption at rest:
   2. The location "/secure" is encrypted and is mounted on the head nodes, however you must ensure proper ACLs.
   3. Create your own location with [gocryptfs](https://nuetzlich.net/gocryptfs/forward_mode_crypto/).
 
+#### GocryptfsMgr
+
+You can use `gocryptfs` directly or use the `gocryptfsmgr`, which automates a few steps in order to simplify things.
+
+Here are the basics when using `gocryptfsmgr`:
+
+```bash
+# Create new encrypted data directory
+gocryptfsmgr create bigdata privatedata1
+
+# List all encrypted and unencrypted (access point) directories
+gocryptfsmgr list
+
+# Unencrypted privatedata1 (create access point)
+gocryptfsmgr open bigdata privatedata1 rw
+
+# Transfer files (ie. SCP,SFTP,RSYNC)
+scp user@remote-server:sensitive_file.txt $UNENCRYPTED/privatedata1/sensitive_file.txt
+
+# Remove access point (re-encrypt) privatedata1
+gocryptfsmgr close privatedata1
+
+# Remove all access points (re-encrypt all)
+gocryptfsmgr quit
+```
+
+For subsequent access to the encrypted space, (ie. computation or analysis) the follow procedure is recommended:
+
+```bash
+# Request a 2hr interactive job on an exclusive node, resources can be adjusted as needed
+srun -p short --exclusive=user --pty bash -l
+
+# Unencrypted privatedata1 in read-only mode (create access point)
+gocryptfsmgr open bigdata privatedata1 ro
+
+# Read file contents from privatedata1 (simulating work or analysis)
+cat $UNENCRYPTED/privatedata1/sensitive_file.txt
+
+# List all encrypted and unencrypted (access points) directories
+gocryptfsmgr list
+
+# Make sure we re-encrypt (close access point) for privatedata1
+gocryptfsmgr close privatedata1
+
+# Exit from interactive job
+exit
+```
+
+With the above methods you can create multiple encrypted directories and access points and move between.
+
 #### Gocryptfs
 
-When using the `gocryptfs` module on the HPCC cluster there are some variables predefined to make this process easier:
+When using the `gocryptfs` directly, you will need to know a bit more details on how it works.
+The `gocryptfs` module on the HPCC cluster uses these predefined variables:
   1. `HOME_ENCRYPTED` = `/rhome/$USER/encrypted` - Very small encrypted space, not recommended to use
   2. `BIGDATA_ENCRYPTED` = `/rhome/$USER/bigdata/encrypted` - Best encrypted space for private data sets
   3. `SHARED_ENCRYPTED` = `/rhome/$USER/shared/encrypted` - Encrypted space when intending to share data sets with group
   4. `UNENCRYPTED` = `/run/user/$UID/unencrypted` - Access directory where encrypted data will be viewed as unencrypted
 
-Here is a simple example on how to create an encrypted directory under `BIGDATA_ENCRYPTED` using `gocryptfs`:
+Here is an example how to create an encrypted directory under the `BIGDATA_ENCRYPTED` location using `gocryptfs`:
 
 ```bash
 # Load gocyptfs software
