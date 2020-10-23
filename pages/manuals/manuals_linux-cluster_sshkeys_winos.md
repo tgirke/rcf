@@ -42,17 +42,17 @@ You will need to install `MobaXterm` in order to generate your `SSH keys` and al
 
 3. A window should appear to create a new SSH key. Click on generate to create a new SSH key pair. Follow the on menu instructions.
    
-   ![mobasshkey3](images/ssh3moba.png)
+   ![revisedkeygen](images/revisedkeygen.png)
 
-4. Once your key has been created, enter a password in the key passphrase field to password protect your key.
+4. Once your key has been created, enter a password in the key passphrase field to password protect your key. Click on `conversions` in the tool bar and click on `Export OpenSSH Key`. Save this key as `id_rsa` and put the file in an easy to access location. 
+Click on `Save private key` to save the private key with an extension of `.ppk` to use with MobaXterm or FileZilla. Save the key as `mobaxterm_privkey` and put the file in an easy to access location.
    
-   ![mobasshkey4](images/ssh4moba.png)
+   ![revisedkeygen2](images/revisedkeygen2.png)
 
-5. Click on save public key and name the file "id_rsa.pub". Click on save private key and name the file "id_rsa". Follow the on screen instructions as follows when saving.
+5. Highlight EVERYTHING in the box labeled "Public key for pasting into OpenSSH authorized_keys file" then right-click on it and choose Copy. Open `Notepad` and paste the copied text. Save the file as `id_rsa.pub` and put the file in an easy to access location.
    
-   ![mobasshkey5](images/ssh5moba.png)
+   ![revisedkeygen3](images/revisedkeygen3.png)
 
-6. Once you have saved both public and private keys, go ahead and close the window.
 
 ### Keys Location
 
@@ -112,11 +112,7 @@ Once your public key is in place, now you can configure `Filezilla` to use your 
 
    ![filezilla7](images/filezilla7.png)
 
-4. Navigate to the folder you saved your key file in and open the private key file `id_rsa`.
-
-   ![filezilla8](images/filezilla8.png)
-
-5. You should see the added keyfile in the `Key file:` box, then click `Connect`.
+4. Navigate to the folder you saved your private key file in and open the private key file `mobaxterm_privkey.ppk`. You should see the added keyfile in the `Key file:` box, then click `Connect`.
 
    ![filezilla9](images/filezilla9.png)
 
