@@ -168,16 +168,13 @@ gocryptfs -aessiv -init $BIGDATA_ENCRYPTED/privatedata1
 mkdir -p $UNENCRYPTED/privatedata1
 
 # After that mount the encrypted directory on the access point and open a new shell within it
-gocryptfssh $BIGDATA_ENCRYPTED/privatedata1 $UNENCRYPTED/privatedata1
+gocryptfssh $BIGDATA_ENCRYPTED/privatedata1
 
 # Transfer files (ie. SCP,SFTP,RSYNC)
 scp user@remote-server:sensitive_file.txt $UNENCRYPTED/sensitive_file.txt
 
 # Exiting this shell will automatically unmount the unencrypted directory
 exit
-
-# Manually remove old access point directory
-rmdir $UNENCRYPTED/privatedata1
 ```
 
 For subsequent access to the encrypted space, (ie. computation or analysis) the follow procedure is recommended:
