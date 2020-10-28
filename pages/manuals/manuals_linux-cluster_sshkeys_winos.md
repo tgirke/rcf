@@ -22,6 +22,14 @@ The `Password+DUO` method requires a UCR NetID, if you do not have this then you
 
 ### What you need
 
+#### Filezilla
+
+You will need to install `Filezilla` in order to transfer the public SSH key to the HPCC cluster.
+
+1. Download the `Filezilla Client` for Windows [here](https://filezilla-project.org/download.php?show_all=1).
+        * Make sure your Windows system is updated to the latest version.
+2. Follow the install wizard to complete the install of `Filezilla`.
+
 #### MobaXterm
 
 You will need to install `MobaXterm` in order to generate your `SSH keys` and also to transfer the keys to the cluster.
@@ -56,6 +64,12 @@ Click on `Save private key` to save the private key with an extension of `.ppk` 
 
 ### Keys Location
 
+SSH keys should be saved under the location `C:\Users\username\.ssh`. 
+
+   ![sshkeyloc](images/sshkeyloc.png)
+
+
+
 ### Configure SSH Keys
 
 #### Public SSH Key
@@ -77,13 +91,11 @@ Now that you have created your `SSH keys`, and renamed them, you will need to pl
 
    ![filezilla2](images/filezilla2.png)
 
-4. If a pop up prompts you to save your password, select the `Save passwords` option, then click the `OK` button.
-
-5. If the next pop up prompts you, then check the box that states `Always trust this host, add this key to the cache`, then click the `OK` button.
+4. If the next pop up prompts you, then check the box that states `Always trust this host, add this key to the cache`, then click the `OK` button.
 
    ![filezilla3](images/filezilla3.png)
 
-6. Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file `id_rsa.pub` and drop
+5. Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file `id_rsa.pub` and dropping it into the HPCC cluster direcotry `/rhome/username/.ssh/`.
 
    ![filezilla4](images/filezilla4.png)
 
@@ -116,11 +128,8 @@ Once your public key is in place, now you can configure `Filezilla` to use your 
 
    ![filezilla9](images/filezilla9.png)
 
-   Subsequnt connections can be done from the `Quickconnect` history by clicking on the down arrow to the right side of the `Quickconnect` button.
-
-
-9. Remember to select the `secure.hpcc.ucr.edu` address.
+5. Subsequnt connections can be done from the `Quickconnect` history by clicking on the down arrow to the right side of the `Quickconnect` button. Remember to select the `secure.hpcc.ucr.edu` address.
 
    ![filezilla11](images/filezilla11.png)
 
-10. Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist [Filezilla Usage](some_other_page).
+6. Transfer files by double clicking or drag-n-drop. For more details regarding file transfers vist [Filezilla Usage](some_other_page).
