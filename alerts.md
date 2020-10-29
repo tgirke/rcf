@@ -20,6 +20,11 @@ If users need to get in contact with us then please email your questions to [sup
 
 ## Unannounced exceptions
 
+### 28-Oct-2020: Cluster jobs failed due to storage suspension
+
+* 3:00 PM - During a routine extension of the bigdata filesystem, there were some complications and disk i/o had to be suspended.
+* 5:30 PM - We have repaired the issue, and everything should be functioning as usual. However, this means that all computing jobs running during timeframe were stopped and will need to be restarted.
+
 ### 19-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg
 * 11:30 PM - All systems were restored by Jordan Hayes and are opterational again. 
 * 10:30 PM - HPC systems admin Jordan Hayes is trying to restart the network, storage and cluster again.
