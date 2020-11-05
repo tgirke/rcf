@@ -95,7 +95,19 @@ Now that you have created your `SSH keys`, and renamed them, you will need to pl
 
    ![filezilla3](images/filezilla3.png)
 
-5. Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file `id_rsa.pub` and dropping it into the HPCC cluster direcotry `/rhome/username/.ssh/`.
+5. You will need to create a `.ssh` directory to hold your SSH keys. On the right hand side, right click and click on the `Create directory option` under your home folder location.
+   ![createsshdir](images/createsshdir.png)
+
+6. A window will appear to name the new directory. Name should be the following format: `/rhome/username/.ssh`. After naming the new directory click on `OK`.
+   ![createsshdir](images/createsshdir2.png)
+
+7. Right click on the new `.ssh` directory that has been created. Find and click on `File permissions`.
+   ![createsshdir](images/createsshdir3.png)
+
+8. A window with the directory permissions will appear. The `.ssh` directory needs exact permissions in order for it to function properly. Follow the image below to apply the permissions.
+   ![createsshdir](images/createsshdir4.png)
+
+9. Now that you are connected to Filezilla transfer your public SSH key from your system by dragging the file `id_rsa.pub` and dropping it into the HPCC cluster direcotry `/rhome/username/.ssh/`.
 
    ![filezilla4](images/filezilla4.png)
 
