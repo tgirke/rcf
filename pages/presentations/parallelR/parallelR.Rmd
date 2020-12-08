@@ -1,6 +1,6 @@
 ---
 title: "R on HPC Systems"
-author: Thomas Girke
+author: Jordan Hayes and Thomas Girke
 date: December 22, 2020
 output: 
   ioslides_presentation:
@@ -54,15 +54,19 @@ pre[class] {
 
 # Outline
 
-- <div class="white">__Basics__</div>
-- Scalable Complexity via Scrolling
-- Images and Graphics
-- References
+- <div class="white">__Neovim-based IDE for R__</div>
+- Parallel R with `batchtools`
 
-## Introduction 
+## R on Cluster of HPCC 
 
-- The tutorial for ioslides is [here](https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html) 
-- To render the slides to html and also extract the code chunks to a separate file, run from the command-line:
+- Knowledge of command-line interface is essential for working on a computer cluster efficiently 
+- Advantage: language agnostic approach that works with most computer languages. GUI applications like RStudio are limited to R. 
+- This tutorial introduces the Nvim-R-Tmux environment
+- Users of Emacs may want to consider using ESS instead. 
+- Alternative for beginners: RStudio Server instance on HPCC/biocluster
+    - The URL is: [https://rstudio.hpcc.ucr.edu](https://rstudio.hpcc.ucr.edu)
+    - Username and password: same as for HPCC
+
 
 ```{sh eval=FALSE}
 Rscript -e "rmarkdown::render('ioslide_template.Rmd'); knitr::knit('ioslide_template.Rmd', tangle=TRUE)"
