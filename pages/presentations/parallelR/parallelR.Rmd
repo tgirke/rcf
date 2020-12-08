@@ -67,22 +67,12 @@ pre[class] {
     - The URL is: [https://rstudio.hpcc.ucr.edu](https://rstudio.hpcc.ucr.edu)
     - Username and password: same as for HPCC
 
+## Nim-R-Tmux: Terminal-based R Environment
 
-```{sh eval=FALSE}
-Rscript -e "rmarkdown::render('ioslide_template.Rmd'); knitr::knit('ioslide_template.Rmd', tangle=TRUE)"
-```
+__Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R)):__
 
-- Shortcuts for different display modes
-    - 'f': enable fullscreen mode
-    - 'w': toggle widescreen mode
-    - 'o': enable overview mode
-    - 'h': enable code highlight mode
-    - 'p': show presenter notes
+<center><img title="Nvim-R-Tmux" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" ></center> 
 
-## Math Expressions
-
-$$f(k) = {n \choose k} p^{k} (1-p)^{n-k} \tag{1}$$
-$$\sigma_{M} = \frac{\sigma}{\sqrt(N)} \tag{2}$$
 
 ## Citations and Bibliographies
 

@@ -25,9 +25,6 @@
 ## }
 
 
-## Rscript -e "rmarkdown::render('ioslide_template.Rmd'); knitr::knit('ioslide_template.Rmd', tangle=TRUE)"
-
-
 ## ----eval=FALSE---------------------------------------------------------------
 ## z <- "dajfdfkfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
 ## z
