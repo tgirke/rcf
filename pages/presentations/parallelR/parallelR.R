@@ -31,33 +31,8 @@
 ## wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/nvim_demo.R
 
 
-## ----eval=FALSE---------------------------------------------------------------
-## z <- "dajfdfkfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
-## z
-## z
-## z
-## z
-## z
-## z
-## z
-## z
-## z
-
-
-## ----eval=TRUE, rows.print=75-------------------------------------------------
-x <- cbind(iris, iris[,5:1])
-x
-
-
-## sinfo
-
-
-## sbatch script_name.sh
-
-
 ## #!/bin/bash -l
 
-## 
 ## #SBATCH --nodes=1
 
 ## #SBATCH --ntasks=1
@@ -74,26 +49,11 @@ x
 
 ## #SBATCH --job-name="some_test"
 
-## #SBATCH -p batch # Choose queue/parition from: intel, batch, highmem, gpu, short
+## #SBATCH -p batch # Choose queue/partition from: intel, batch, highmem, gpu, short
 
 ## 
-## myscript.sh
+## Rscript my_script.R}
 
 
-## srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
-
-
-## ----eval=TRUE----------------------------------------------------------------
-library(DT)
-datatable(iris)
-
-
-## ----plyr_chaining1, eval=TRUE, message=FALSE, warning=FALSE------------------
-library(dplyr); library(ggplot2); library(reshape2)
-iris %>% 
-    group_by(Species) %>% 
-    summarize_all(mean) %>% 
-    reshape2::melt(id.vars=c("Species"), variable.name = "Samples", value.name="Values") %>%
-    ggplot(aes(Samples, Values, fill = Species)) + 
-    geom_bar(position="dodge", stat="identity")
+## sbatch script_name.sh
 

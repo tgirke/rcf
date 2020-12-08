@@ -105,52 +105,13 @@ wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_suppo
   files, most schedulers and queueing systems are supported (e.g. Torque, Sun
   Grid Engine, Slurm). 
 
+## Traditional Job Submission for R
 
-## Scrolling within Code Blocks, Tables and Beyond Slide Boundaries
+1. Create Slurm submission script, here called `sscript_name.sh` with:
 
-- Scrolling of code chunks supported by css code after preamble.
-
-```{r eval=FALSE}
-z <- "dajfdfkfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
-z
-z
-z
-z
-z
-z
-z
-z
-z
-```
-
-- Note: the print behavior of `data.frames` is autmatically paged when including `df_print: paged` in preamble. 
-  In addition, one can set how many rows are shown on each page by assigning the desired number to the `rows.print` 
-  argument in the header of the corresponding code chunk (_e.g._ below it is set to 75 rows).
-
-```{r eval=TRUE, rows.print=75}
-x <- cbind(iris, iris[,5:1])
-x
-```
-
-## Job Submission with `sbatch`
-
-Print information about queues/partitions available on a cluster.
-
-```{bash eval=FALSE}
-sinfo 
-```
-
-Compute jobs are submitted with `sbatch` via a submission script (here `script_name.sh`).
-
-```{bash eval=FALSE}
-sbatch script_name.sh
-```
-
-Sample submission script
 
 ```{bash eval=FALSE}
 #!/bin/bash -l
-
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
@@ -159,98 +120,20 @@ Sample submission script
 #SBATCH --mail-user=useremail@address.com
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="some_test"
-#SBATCH -p batch # Choose queue/parition from: intel, batch, highmem, gpu, short
+#SBATCH -p batch # Choose queue/partition from: intel, batch, highmem, gpu, short
 
-myscript.sh
+Rscript my_script.R}
 ```
 
-Interactive session with specific resource requests
+2. Submit script with:
 
 ```{bash eval=FALSE}
-srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
+sbatch script_name.sh
 ```
 
-## DataTables support
+## Parallel Evaluations on Clusters with `batchtools` {.flexbox .vcenter .center}
 
-```{r eval=TRUE}
-library(DT)
-datatable(iris)
-```
-
-## Font Size 
-
-- Note: the default in ioslides uses larger font sizes where `'smaller: false'` is used. You usually have it set to `'smaller: true'`
-- With default turned one can also set smaller font sizes on a per slide basis by specifying `'{.smaller}'` at the end of a slide title
-- To have more fine control over font size use embedded HTML code. Here are some examples:
-   + <span style="font-size: 28px;">
-        HTML font size 28px
-     </span>
-   + <span style="font-size: 18px;">
-        HTML font size 18px
-     </span>
-   + <span style="font-size: 14px;">
-        HTML font size 14px
-     </span>
-   + <span style="font-size: 12px;">
-        HTML font size 12px
-     </span>
-
-## Center Text {.flexbox .vcenter}
-
-- To vertically center content, use the `{.flexbox .vcenter}` option after the title of a slide
-- <div class="centered">HTML tags can also be used. </div>
-
-## Two Column Layout
-
-This can be useful to have a figure on the right and bullets describing it on the left.
-
-<div class="columns-2">
-  - Bullet 1
-  - Bullet 2
-  - Bullet 3
-  
-  ![](./images/nia_logo.png)
-</div>
-
-
-# Outline
-
-- Basics
-- Scalable Complexity via Scrolling 
-- <div class="white">__Images and Graphics __</div>
-- References
-
-## Images {.flexbox .vcenter .smaller}
-
-<img src="./images/DSC02629.jpg" alt="Drawing" style="width: 800px;"/>
-</div><br></br>
-
-- Using HTML code to insert image is most flexible
-
-## Background Images {data-background=./images/DSC02629.jpg data-background-size=cover}
-
-- Bullet 1
-- Bullet 2
-- Bullet 3
-
-## Real-time Graphics Code Evaluation {.flexbox .vcenter .smaller}
-
-```{r plyr_chaining1, eval=TRUE, message=FALSE, warning=FALSE}
-library(dplyr); library(ggplot2); library(reshape2)
-iris %>% 
-    group_by(Species) %>% 
-    summarize_all(mean) %>% 
-    reshape2::melt(id.vars=c("Species"), variable.name = "Samples", value.name="Values") %>%
-    ggplot(aes(Samples, Values, fill = Species)) + 
-    geom_bar(position="dodge", stat="identity")
-```
-
-# Outline
-
-- Basics
-- Scalable Complexity via Scrolling 
-- Images and Graphics
-- <div class="white">__References __</div>
+Continue on `batchtools` tutorial [here](https://hpcc.ucr.edu/manuals_linux-cluster_parallelR.html)
 
 
 ## References {.smaller}
