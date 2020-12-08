@@ -1,7 +1,7 @@
 ---
-title: "Template for ioslides"
+title: "How to Work in R on HPC Systems?"
 author: Thomas Girke
-date: November 21, 2020
+date: December 22, 2020
 output: 
   ioslides_presentation:
     keep_md: yes
@@ -9,7 +9,7 @@ output:
     widescreen: yes
     df_print: paged
     smaller: true
-subtitle: "How create ioslides with Rmarkdown" 
+subtitle: "Tutorial for R Users" 
 bibliography: bibtex.bib
 ---
 
@@ -18,7 +18,7 @@ bibliography: bibtex.bib
    https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
 
 - Compile from command-line
-Rscript -e "rmarkdown::render('ioslide_template.Rmd'); knitr::knit('ioslide_template.Rmd', tangle=TRUE)"
+Rscript -e "rmarkdown::render('parallelR.Rmd'); knitr::knit('parallelR.Rmd', tangle=TRUE)"
 -->
 
 <!---
