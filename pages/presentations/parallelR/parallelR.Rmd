@@ -1,5 +1,5 @@
 ---
-title: "How to Work in R on HPC Systems?"
+title: "R on HPC Systems"
 author: Thomas Girke
 date: December 22, 2020
 output: 
