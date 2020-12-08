@@ -92,10 +92,19 @@ wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_suppo
 
 # Outline
 
-- Basics
-- <div class="white">__Scalable Complexity via Scrolling __</div>
-- Images and Graphics
-- References
+- Neovim-based IDE for R
+- <div class="white">__Parallel R with `batchtools`__</div>
+
+## Parallel R
+
+- R provides a large number of packages for parallel evaluations on multi-core systems as well as computer clusters
+- For a package overview see [here](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
+- One of the most comprehensive parallel computing environments for R is
+  [batchtools](https://mllg.github.io/batchtools/articles/batchtools.html#migration) (formerly BatchJobs). It supports both multi-core and multi-node
+  computations with and without schedulers. By making use of cluster template
+  files, most schedulers and queueing systems are supported (e.g. Torque, Sun
+  Grid Engine, Slurm). 
+
 
 ## Scrolling within Code Blocks, Tables and Beyond Slide Boundaries
 
