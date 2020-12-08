@@ -25,6 +25,8 @@ Rscript -e "rmarkdown::render('parallelR.Rmd'); knitr::knit('parallelR.Rmd', tan
   Note: following css chunks are required for scrolling support beyond slide boundaries
 -->
 
+<link rel="shortcut icon" href="{https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/images/favicon.ico}" />
+
 <style>
 slides > slide {
   overflow-x: auto !important;
