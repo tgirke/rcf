@@ -75,14 +75,20 @@ __Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R)
 
 <center><img title="Nvim-R-Tmux" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif" ></center> 
 
+## Introduction to Nvim-R-Tmux
 
-## Citations and Bibliographies
+- Continue on Nvim-R-Tmux tutorial [here](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html)
+- After ssh into cluster headnode, log in to one of the nodes
 
-- Citations can be included autmatically by including them in BibTex format in file `bibtex.bib` and then citing the them in the text with this syntax 
-  __[\@refid1; \@refid2]__
-- For example, the citation syntax __[\@Huber2015-ag; \@Howard2013-fq]__ renders to: [@Huber2015-ag; @Howard2013-fq], and the corresponding references will then automatically 
-  be included at the end on a slide entitled 'References'.
-- More citations [@Kim2013-vg; @Langmead2012-bs; @Li2009-oc; @Li2013-oy; @Liao2013-bn; @Lawrence2013-kt]
+```{bash eval=FALSE}
+srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
+```
+
+Upload demo file to HPCC/biocluster:
+
+```{bash eval=FALSE}
+wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/nvim_demo.R
+```
 
 # Outline
 
