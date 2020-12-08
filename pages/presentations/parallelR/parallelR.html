@@ -4494,8 +4494,6 @@ Rscript -e "rmarkdown::render('parallelR.Rmd'); knitr::knit('parallelR.Rmd', tan
   Note: following css chunks are required for scrolling support beyond slide boundaries
 -->
 
-<p><link rel="shortcut icon" href="{./images/favicon.ico}" /></p>
-
 <style>
 slides > slide {
   overflow-x: auto !important;
@@ -4581,7 +4579,7 @@ pre[class] {
 <ul>
 <li>R provides a large number of packages for parallel evaluations on multi-core systems as well as computer clusters</li>
 <li>For a package overview see <a href='https://cran.r-project.org/web/views/HighPerformanceComputing.html' title=''>here</a></li>
-<li>One of the most comprehensive parallel computing environments for R is <a href='https://mllg.github.io/batchtools/articles/batchtools.html#migration' title=''>batchtools</a> (formerly BatchJobs). It supports both multi-core and multi-node computations with and without schedulers. By making use of cluster template files, most schedulers and queueing systems are supported (e.g. Torque, Sun Grid Engine, Slurm).</li>
+<li>One of the most comprehensive parallel computing environments for R is <a href='https://mllg.github.io/batchtools/articles/batchtools.html#migration' title=''>batchtools</a> (formerly BatchJobs)<span class="cite">(Bischl et al. 2015)</span>. It supports both multi-core and multi-node computations with and without schedulers. By making use of cluster template files, most schedulers and queueing systems are supported (e.g. Torque, Sun Grid Engine, Slurm).</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Traditional Job Submission for R</h2></hgroup><article  id="traditional-job-submission-for-r" class="smaller ">
@@ -4613,7 +4611,11 @@ Rscript my_script.R}</pre>
 
 <p>Continue on <code>batchtools</code> tutorial <a href='https://hpcc.ucr.edu/manuals_linux-cluster_parallelR.html' title=''>here</a></p>
 
-</article></slide><slide class=""><hgroup><h2>References</h2></hgroup><article  id="references" class="smaller smaller"></article></slide>
+</article></slide><slide class=""><hgroup><h2>References</h2></hgroup><article  id="references" class="smaller unnumbered smaller">
+
+<div id="refs" class="references">
+<div id="ref-Bischl2015-rf">
+<p>Bischl, Bernd, Michel Lang, Olaf Mersmann, Jörg Rahnenführer, and Claus Weihs. 2015. “BatchJobs and BatchExperiments: Abstraction Mechanisms for Using R in Batch Environments.” <em>Journal of Statistical Software</em>. <a href='http://www.jstatsoft.org/v64/i11/' title=''>http://www.jstatsoft.org/v64/i11/</a>.</p></div></div></article></slide>
 
 
   <slide class="backdrop"></slide>

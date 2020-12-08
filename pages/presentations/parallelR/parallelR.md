@@ -25,8 +25,6 @@ Rscript -e "rmarkdown::render('parallelR.Rmd'); knitr::knit('parallelR.Rmd', tan
   Note: following css chunks are required for scrolling support beyond slide boundaries
 -->
 
-<link rel="shortcut icon" href="{./images/favicon.ico}" />
-
 <style>
 slides > slide {
   overflow-x: auto !important;
@@ -102,7 +100,7 @@ wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_suppo
 - R provides a large number of packages for parallel evaluations on multi-core systems as well as computer clusters
 - For a package overview see [here](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
 - One of the most comprehensive parallel computing environments for R is
-  [batchtools](https://mllg.github.io/batchtools/articles/batchtools.html#migration) (formerly BatchJobs). It supports both multi-core and multi-node
+  [batchtools](https://mllg.github.io/batchtools/articles/batchtools.html#migration) (formerly BatchJobs)[@Bischl2015-rf]. It supports both multi-core and multi-node
   computations with and without schedulers. By making use of cluster template
   files, most schedulers and queueing systems are supported (e.g. Torque, Sun
   Grid Engine, Slurm). 
@@ -110,7 +108,6 @@ wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_suppo
 ## Traditional Job Submission for R
 
 1. Create Slurm submission script, here called `sscript_name.sh` with:
-
 
 
 ```bash
