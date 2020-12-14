@@ -9,8 +9,9 @@ output:
     widescreen: yes
     df_print: paged
     smaller: false
-    nature:
-      autoplay: 30000
+    xaringan::moon_reader:
+      nature:
+        autoplay: 30000
 subtitle: "Short Overview" 
 bibliography: bibtex.bib
 ---

@@ -3,6 +3,4 @@ layout: page
 title: Overview slides for HPCC
 ---
 
-[ [View Slides in Separate Tab](https://hpcc.ucr.edu/presentations/2020-12-18_Workshop/hpcc_infrastructure/hpcc_infrastructure.html) ]
-
-<iframe src="https://hpcc.ucr.edu/presentations/2020-12-18_Workshop/hpcc_infrastructure/hpcc_infrastructure.html" frameborder="1" width="1060" height="700" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQIuy-2Z50zj3wr5dNjyes5tnUjGP84vUBn2vFxM5y5qb_kCOpWfjKu_G-F9a-46JniTsgVWWmQn_9m/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
