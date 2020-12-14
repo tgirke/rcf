@@ -9,9 +9,6 @@ output:
     widescreen: yes
     df_print: paged
     smaller: false
-    xaringan::moon_reader:
-      nature:
-        autoplay: 30000
 subtitle: "Short Overview" 
 bibliography: bibtex.bib
 ---
@@ -60,7 +57,7 @@ pre[class] {
 - Partners with other IT/HPC units at UCR and UC system
 - Training in HPC, big data processing and cloud computing
 
-## Usage
+## Usage Stats
 
 <div class="columns-2">
   <img src="https://docs.google.com/drawings/d/e/2PACX-1vRmW_GQ7paFTIAjwlg72AnItS6ULp7RLqL9-r7wH7jZmVpxhi4I6pRRytOF49-OY2FALZrDgsPzgDjd/pub?w=293&amp;h=478">
@@ -106,6 +103,10 @@ pre[class] {
     - UCR contribution 
   </span>
 
+## Hardware Infrastructure
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vTjw-xM8B_-UxlwgYWzaSt07A6S8y7GSPq75sYB0AMQjcOVTdW7pf4SiagrZQ6UMxLxzt1mzbznn3-W/pub?w=955&amp;h=505">
+
 ## Recharging and Quotas
 
 - Subscription fee
@@ -133,6 +134,9 @@ Ownership models for computer nodes and data storage. Attractive to labs that ne
 - Purchase nodes at current market price with compatible network cards
 - Administered under a priority queueing system via private queue for owners; also increases overall CPU quota by the number of owned CPU cores.
 
+## Questions {.flexbox .vcenter .smaller}
 
+### Email: [support@hpcc.ucr.edu](mailto:support@hpcc.ucr.edu)
+### Website: [hpcc.ucr.edu](https://hpcc.ucr.edu/)
 
 
