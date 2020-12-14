@@ -66,6 +66,7 @@ pre[class] {
 - Large stack of __thousands__ of free and/or open-source __software tools__ and packages managed via __module system__
 - Facility frequently installs new software upon user request
 - Users can __install software themselves__ manually or via package manager and environment management systems such as Conda, CRAN/Bioc, etc.
+- Containerization using Singularity
 - Web-based environments: Jupyter Hub and RStudio Server
 - Commercial tools only where necessary:
      <span style="font-size: 14px;">
