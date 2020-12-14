@@ -63,18 +63,18 @@ pre[class] {
 
 ## Software {.smaller}
 
-- __Large stack of thousands of free and/or open-source software tools and packages managed via module system__
+- Large stack of __thousands__ of free and/or open-source __software tools__ and packages managed via __module system__
 - Facility installs new software upon user requests on a daily basis 
-- Users can __install software themselves__ on their own via package manager and environment management systems such as Conda, CRAN/Bioc, etc.
+- Users can __install software themselves__ manually or via package manager and environment management systems such as Conda, CRAN/Bioc, etc.
 - Web-based environments: Jupyter Hub and RStudio Server
 - Commercial tools only where necessary:
-  <span style="font-size: 16px;">
+     <span style="font-size: 14px;">
      - GPFS for parallel storage system
      - Gaussian
      - MATLAB (to use ask to be added to license!)
      - Intel Parallel Suite
      - SAS and Stata
-  </span>
+     </span>
 - Additional commercial software can be installed if funding for license is available
 
 ## Usage Stats
