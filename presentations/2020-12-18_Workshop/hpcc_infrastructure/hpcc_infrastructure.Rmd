@@ -57,6 +57,10 @@ pre[class] {
 - Partners with other IT/HPC units at UCR and UC system
 - Training in HPC, big data processing and cloud computing
 
+## Hardware Infrastructure
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vTjw-xM8B_-UxlwgYWzaSt07A6S8y7GSPq75sYB0AMQjcOVTdW7pf4SiagrZQ6UMxLxzt1mzbznn3-W/pub?w=955&amp;h=505">
+
 ## Usage Stats
 
 <div class="columns-2">
@@ -102,10 +106,6 @@ pre[class] {
         - Research grants (many agencies and programs)
     - UCR contribution 
   </span>
-
-## Hardware Infrastructure
-
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vTjw-xM8B_-UxlwgYWzaSt07A6S8y7GSPq75sYB0AMQjcOVTdW7pf4SiagrZQ6UMxLxzt1mzbznn3-W/pub?w=955&amp;h=505">
 
 ## Recharging and Quotas
 
