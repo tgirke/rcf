@@ -61,6 +61,18 @@ pre[class] {
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vTjw-xM8B_-UxlwgYWzaSt07A6S8y7GSPq75sYB0AMQjcOVTdW7pf4SiagrZQ6UMxLxzt1mzbznn3-W/pub?w=955&amp;h=505">
 
+## Software
+
+- Large stack of over 1000 free and/or open-source software tools
+- Facility installs new software upon user requests on a daily basis often with less than 24 hours turnaround time. Difficult installs may take longer.
+- Commercial tools only where necessary:
+     - GPFS for parallel storage system
+     - Gaussian
+     - MATLAB (to use ask to be added to license!)
+     - Intel Parallel Suite
+     - SAS
+- Additional commercial software can be installed if funding for license can be resolved
+
 ## Usage Stats
 
 <div class="columns-2">
