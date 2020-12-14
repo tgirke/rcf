@@ -63,7 +63,7 @@ pre[class] {
 
 ## Software {.smaller}
 
-- Large stack of over 1000 free and/or open-source software tools managed via __module system_
+- __Large stack of thousands of free and/or open-source software tools and packages managed via module system__
 - Facility installs new software upon user requests on a daily basis 
 - Users can __install software themselves__ on their own via package manager and environment management systems such as Conda, CRAN/Bioc, etc.
 - Web-based environments: Jupyter Hub and RStudio Server
