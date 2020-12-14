@@ -147,10 +147,10 @@ Since we should already have IRkernel install in the latest version of R, you wo
 IRkernel::installspec(name = 'ir44', displayname = 'R 4.0.1')
 ```
 
-### R
-This section is a automatically on how to manage R packages
+## R
+This section is regarding how to manage R packages.
 
-#### Current R Version
+### Current R Version
 Currently the default version of R is 4.0.1 and is loaded automatically for you.
 This can be seen by running:
 
@@ -158,7 +158,7 @@ This can be seen by running:
 module list
 ```
 
-#### Older R Versions
+### Older R Versions
 You can load older versions of R with the following:
 
 ```bash
@@ -166,11 +166,11 @@ module unload R
 module load R/3.4.2
 ```
 
-#### Installing R Packages
+### Installing R Packages
 The default version of R has many of the most popular R packages available already installed.
 It is also possible for you to install additional R packages in your local environments. 
 
-##### Bioconductor Packages
+#### Bioconductor Packages
 To install from Bioconductor you can use the following method:
 
 ```R
@@ -180,14 +180,14 @@ Update all/some/none? [a/s/n]: n
 
 For more information please visit [Bioconductor Install Page](https://www.bioconductor.org/install/).
 
-##### GitHub Packages
+#### GitHub Packages
 
 ```R
 library(devtools)
 install_github("duncantl/RGoogleDocs") # replace name with the GitHub account/repo
 ```
 
-##### Local Packages
+#### Local Packages
 
 ```R
 install.packages("http://hartleys.github.io/QoRTs/QoRTs_LATEST.tar.gz",repos=NULL,type="source") # replace URL with your URL or local path to your .tar.gz file
