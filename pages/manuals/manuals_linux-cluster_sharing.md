@@ -174,5 +174,5 @@ There are several tools used to transfer files from Google Drive to the cluster,
      rclone config
      ```
 
-  3. After that, follow this [RClone Walkthough](https://rclone.org/drive/) to complete your setup.
+  3. After that, follow this [RClone Walkthrough](https://rclone.org/drive/) to complete your setup.
 
