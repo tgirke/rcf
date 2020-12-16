@@ -80,6 +80,7 @@ chgrp groupname file_name
 ## File Permissions: Advanced Permissions
 
 __GPFS ACLs__
+
 ACLs provide greater control over file permissions
 
 ```bash
@@ -120,6 +121,7 @@ __Transferring file to the cluster__
 scp local_file username@cluster.hpcc.ucr.edu:~/directory_name/local_file
 ```
 
+__Transferring file from the cluster__
 ```bash
 scp username@cluster.hpcc.ucr.edu:~/directory_name/local_file local_file
 ```
