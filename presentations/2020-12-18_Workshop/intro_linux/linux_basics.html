@@ -4525,7 +4525,7 @@ jupyter nbconvert Cluster_Usage.ipynb --to markdown && Rscript -e "rmarkdown::re
 
 <p>Permissions are given in the following format:</p>
 
-<p><code>drwxrwxrwx 1 user group size date filename</code></p>
+<pre class = 'prettyprint lang-bash'>drwxrwxrwx 1 user group size date filename</pre>
 
 <hr style='clear:both;'>
 
@@ -4533,11 +4533,15 @@ jupyter nbconvert Cluster_Usage.ipynb --to markdown && Rscript -e "rmarkdown::re
 
 <p>Change the permissions of a file:</p>
 
-<p><code>chmod u+x file_name</code> <code>chmod g+w file_name</code> <code>chmod o-r file_name</code></p>
+<pre class = 'prettyprint lang-bash'>chmod u+x file_name</pre>
+
+<pre class = 'prettyprint lang-bash'>chmod g+w file_name</pre>
+
+<pre class = 'prettyprint lang-bash'>chmod o-r file_name</pre>
 
 <p>Change the group association of a file:</p>
 
-<p><code>chgrp groupname file_name</code></p>
+<pre class = 'prettyprint lang-bash'>chgrp groupname file_name</pre>
 
 <hr style='clear:both;'>
 
@@ -4577,7 +4581,11 @@ rm ~/acls.txt</pre>
 
 <p>Using scp on the command line:</p>
 
-<p><strong>Transferring file to the cluster</strong> <code>scp local_file username@cluster.hpcc.ucrc.edu:/rhome/username/directory_name/local_file</code></p>
+<p><strong>Transferring file to the cluster</strong></p>
+
+<pre class = 'prettyprint lang-bash'>scp local_file username@cluster.hpcc.ucr.edu:~/directory_name/local_file</pre>
+
+<pre class = 'prettyprint lang-bash'>scp username@cluster.hpcc.ucr.edu:~/directory_name/local_file local_file</pre>
 
 <hr style='clear:both;'>
 
@@ -4585,7 +4593,13 @@ rm ~/acls.txt</pre>
 
 <p>Using rsync on the command line:</p>
 
-<p><strong>Transferring file to the cluster</strong> <code>rsync -av --progress local_file username@cluster.hpcc.ucrc.edu:/rhome/username/directory_name/local_file</code></p>
+<p><strong>Transferring file to the cluster</strong></p>
+
+<pre class = 'prettyprint lang-bash'>rsync -av --progress FOLDER_A/ username@cluster.hpcc.ucr.edu:~/FOLDER_A/</pre>
+
+<p><strong>Transferring file from the cluster</strong></p>
+
+<pre class = 'prettyprint lang-bash'>rsync -av --progress username@cluster.hpcc.ucr.edu:~/FOLDER_A/ FOLDER_A/</pre>
 
 <hr style='clear:both;'></article></slide>
 
