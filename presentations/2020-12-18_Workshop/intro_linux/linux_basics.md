@@ -47,7 +47,9 @@ Every file and directory has permissions:
 
 Permissions are given in the following format:
 
-`drwxrwxrwx 1 user group size date filename`
+```bash
+drwxrwxrwx 1 user group size date filename
+```
 
 <hr style='clear:both;'>
 
@@ -55,13 +57,23 @@ Permissions are given in the following format:
 
 Change the permissions of a file:
 
-`chmod u+x file_name`
-`chmod g+w file_name`
-`chmod o-r file_name`
+```bash
+chmod u+x file_name
+```
+
+```bash
+chmod g+w file_name
+```
+
+```bash
+chmod o-r file_name
+```
 
 Change the group association of a file:
 
-`chgrp groupname file_name`
+```bash
+chgrp groupname file_name
+```
 
 <hr style='clear:both;'>
 
@@ -104,7 +116,13 @@ rm ~/acls.txt
 Using scp on the command line:
 
 __Transferring file to the cluster__
-`scp local_file username@cluster.hpcc.ucrc.edu:/rhome/username/directory_name/local_file`
+```bash
+scp local_file username@cluster.hpcc.ucr.edu:~/directory_name/local_file
+```
+
+```bash
+scp username@cluster.hpcc.ucr.edu:~/directory_name/local_file local_file
+```
 
 <hr style='clear:both;'>
 
@@ -113,6 +131,12 @@ __Transferring file to the cluster__
 Using rsync on the command line:
 
 __Transferring file to the cluster__
-`rsync -av --progress local_file username@cluster.hpcc.ucrc.edu:/rhome/username/directory_name/local_file`
+```bash
+rsync -av --progress FOLDER_A/ username@cluster.hpcc.ucr.edu:~/FOLDER_A/
+```
 
+__Transferring file from the cluster__
+```bash
+rsync -av --progress username@cluster.hpcc.ucr.edu:~/FOLDER_A/ FOLDER_A/
+```
 <hr style='clear:both;'>
