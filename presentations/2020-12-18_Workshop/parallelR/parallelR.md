@@ -39,13 +39,13 @@ pre {
 }
 
 pre[class] {
-  max-height: 100px;
+  max-height: 300px;
 }
 </style>
 
 <style type="text/css">
-.scroll-100 {
-  max-height: 100px;
+.scroll-300 {
+  max-height: 300px;
   overflow-y: auto;
   background-color: inherit;
 }
@@ -138,7 +138,7 @@ srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:
 - The other settings chosen above are suitable for a short testing tasks 
 - For more details on argument settings for `srun`, see [here](http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html)
 
-## Vim/Nvim overview
+## Vim/Nvim Overview
 
 The following opens a file (here `myfile.txt`) with nvim (or vim). This can be a new file or an existing one. 
 
@@ -156,6 +156,9 @@ In Vim/Nvim there are three main modes: __normal__, __insert__ and __command__ m
 
 The cursor is moved with the arrow keys. In Nvim one can also enable mouse-based movements of the cursor. `Fn Up/Down` allows to page. In the following, all 
 commands starting with `:` need to be typed in the command mode. All other commands are typed in the normal mode after pushing the `Esc` key. 
+
+<p style='text-align: right;'> __[ Scroll down for additional details ]__ </p>
+<br/><br/>
 
 ### Important modifier keys to control Vim/Nvim
 
@@ -220,7 +223,7 @@ __3. Send R code from nvim to the R pane__
 Single lines of code can be sent from nvim to the R console by pressing the space bar. To send 
 several lines at once, one can select them in nvim's visual mode and then hit the space bar. 
 
-- Scroll down for additional details!
+<p style='text-align: right;'> __[ Scroll down for additional details ]__ </p>
 <br/><br/>
 
 - Please note, the default command for sending code lines in the nvim-r-plugin is `\l`. This key 
@@ -244,7 +247,7 @@ several lines at once, one can select them in nvim's visual mode and then hit th
 * `:resize <+5 or -5>`: resizes height by specified value
 
 <br/><br/>
-- Scroll down for additional details!
+<p style='text-align: right;'> __[ Scroll down for additional details ]__ </p>
 <br/><br/><br/><br/>
 
 * `:vertical resize <+5 or -5>`: resizes width by specified value
@@ -326,8 +329,7 @@ wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_suppo
 
 Open `nvim_demo.R` with nvim. The contnent of this file is shown in the following code 
 block. Next, initialize a Nvim-connected R session with `\rf`, and then execute the 
-code by pressing the space bar on your keyboard. If X11 is enabled in a user session then the 
-following bar plot will be displayed in a separate graphics window.
+code by pressing the space bar on your keyboard. 
 
 
 ```r
@@ -342,7 +344,12 @@ read_tsv("iris.txt") %>% # Import with read_tbv from readr package
     geom_bar(position="dodge", stat="identity")
 ```
 
-![](parallelR_files/figure-html/nvim-r-tmux-demo-1.png)<!-- -->
+<p style='text-align: right;'> __[ Scroll down for additional details ]__ </p>
+<br/><br/><br/><br/>
+
+If X11 is enabled in a user session then the above code will generate the following bar plot in a separate graphics window.
+
+![](parallelR_files/figure-html/nvim-r-tmux-demo_run-1.png)<!-- -->
 
 ## Selecting R Versions on HPCC
 
