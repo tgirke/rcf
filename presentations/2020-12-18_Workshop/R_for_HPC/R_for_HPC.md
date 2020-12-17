@@ -495,7 +495,7 @@ waitForJobs() # Wait until jobs are completed
 ```
 
 ### Summarize job status 
-After the jobs are completed one instect their status as follows.
+After the jobs are completed one can inspect their status as follows.
 
 
 ```r
