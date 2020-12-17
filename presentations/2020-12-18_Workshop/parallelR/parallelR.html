@@ -4691,7 +4691,7 @@ pre[class] {
 
 <p></br></br></br></br></p>
 
-</article></slide><slide class=""><hgroup><h2>Quick configuration in HPCC user accounts</h2></hgroup><article  id="quick-configuration-in-hpcc-user-accounts" class="smaller ">
+</article></slide><slide class=""><hgroup><h2>Quick Configuration in HPCC User Accounts</h2></hgroup><article  id="quick-configuration-in-hpcc-user-accounts" class="smaller ">
 
 <p>Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the <a href='https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899' title=''>detailed instructions</a> to install Nvim-R-Tmux from scratch on your own system (<em>e.g.</em> laptop or computer).</p>
 
@@ -4888,19 +4888,20 @@ read_tsv(&quot;iris.txt&quot;) %&gt;% # Import with read_tbv from readr package
 <li>References</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Parallel R</h2></hgroup><article  id="parallel-r" class="smaller ">
+</article></slide><slide class=""><hgroup><h2>Parallel Code Evaluation in R</h2></hgroup><article  id="parallel-code-evaluation-in-r" class="smaller ">
 
 <ul>
 <li>R provides a large number of packages for parallel evaluations on multi-core systems as well as computer clusters</li>
 <li>For a package overview see <a href='https://cran.r-project.org/web/views/HighPerformanceComputing.html' title=''>here</a></li>
-<li>One of the most comprehensive parallel computing environments for R is <a href='https://mllg.github.io/batchtools/articles/batchtools.html#migration' title=''>batchtools</a>, formerly BatchJobs <span class="cite">(Bischl et al. 2015)</span>. It supports both multi-core and multi-node computations with and without schedulers. By making use of cluster template files, most schedulers and queueing systems are supported (<em>e.g.</em> Torque, Sun Grid Engine, Slurm).</li>
+<li>One of the most comprehensive parallel computing environments for R is <a href='https://mllg.github.io/batchtools/articles/batchtools.html#migration' title=''><code>batchtools</code></a>. Older versions of this package were released under the name <code>BatchJobs</code> <span class="cite">(Bischl et al. 2015)</span>.</li>
+<li><code>batchtools</code> supports both multi-core and multi-node computations with and without schedulers. By making use of cluster template files, most schedulers and queueing systems are supported (<em>e.g.</em> Torque, Sun Grid Engine, Slurm).</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Traditional Job Submission for R</h2></hgroup><article  id="traditional-job-submission-for-r" class="smaller ">
 
-<ol>
-<li>Create Slurm submission script, here called <code>script_name.sh</code> with:</li>
-</ol>
+<p>Note: this topic is covered in more detail in other sections of this workshop. The following only provides a very brief overview of this submission method.</p>
+
+<p><strong>1.</strong> Create Slurm submission script, here called <code>script_name.sh</code> with:</p>
 
 <pre class = 'prettyprint lang-bash'>#!/bin/bash -l
 #SBATCH --nodes=1
@@ -4911,13 +4912,11 @@ read_tsv(&quot;iris.txt&quot;) %&gt;% # Import with read_tbv from readr package
 #SBATCH --mail-user=useremail@address.com
 #SBATCH --mail-type=ALL
 #SBATCH --job-name=&quot;some_test&quot;
-#SBATCH -p batch # Choose queue/partition from: intel, batch, highmem, gpu, short
+#SBATCH -p short # Choose queue/partition from: intel, batch, highmem, gpu, short
 
 Rscript my_script.R</pre>
 
-<ol>
-<li>Submit script with:</li>
-</ol>
+<p><strong>2.</strong> Submit script with:</p>
 
 <pre class = 'prettyprint lang-bash'>sbatch script_name.sh</pre>
 

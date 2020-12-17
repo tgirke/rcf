@@ -186,7 +186,7 @@ commands starting with `:` need to be typed in the command mode. All other comma
 
 </br></br></br></br>
 
-## Quick configuration in HPCC user accounts
+## Quick Configuration in HPCC User Accounts
 
 Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the [detailed
 instructions](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) to install Nvim-R-Tmux from scratch on your own system (_e.g._ laptop or computer).
@@ -386,17 +386,20 @@ module list
 - <div class="white">__Parallel R with _batchtools_ __</div>
 - References
 
-## Parallel R
+## Parallel Code Evaluation in R 
 
-- R provides a large number of packages for parallel evaluations on multi-core systems as well as computer clusters
+- R provides a large number of packages for parallel evaluations on multi-core systems as well as computer clusters 
 - For a package overview see [here](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
 - One of the most comprehensive parallel computing environments for R is
-  [batchtools](https://mllg.github.io/batchtools/articles/batchtools.html#migration), formerly BatchJobs [@Bischl2015-rf]. It supports both multi-core and multi-node
-  computations with and without schedulers. By making use of cluster template files, most schedulers and queueing systems are supported (_e.g._ Torque, Sun Grid Engine, Slurm). 
+  [`batchtools`](https://mllg.github.io/batchtools/articles/batchtools.html#migration). Older versions of this package were released under the name `BatchJobs` [@Bischl2015-rf]. 
+- `batchtools` supports both multi-core and multi-node computations with and without schedulers. By making use of
+  cluster template files, most schedulers and queueing systems are supported (_e.g._ Torque, Sun Grid Engine, Slurm). 
 
-## Traditional Job Submission for R
+## Traditional Job Submission for R 
 
-1. Create Slurm submission script, here called `script_name.sh` with:
+Note: this topic is covered in more detail in other sections of this workshop. The following only provides a very brief overview of this submission method. 
+
+__1.__ Create Slurm submission script, here called `script_name.sh` with:
 
 
 ```bash
@@ -409,12 +412,12 @@ module list
 #SBATCH --mail-user=useremail@address.com
 #SBATCH --mail-type=ALL
 #SBATCH --job-name="some_test"
-#SBATCH -p batch # Choose queue/partition from: intel, batch, highmem, gpu, short
+#SBATCH -p short # Choose queue/partition from: intel, batch, highmem, gpu, short
 
 Rscript my_script.R
 ```
 
-2. Submit script with:
+__2.__ Submit script with:
 
 
 ```bash

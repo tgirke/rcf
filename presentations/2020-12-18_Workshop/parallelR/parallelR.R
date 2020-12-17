@@ -82,7 +82,7 @@ read_tsv("iris.txt") %>% # Import with read_tbv from readr package
 
 ## #SBATCH --job-name="some_test"
 
-## #SBATCH -p batch # Choose queue/partition from: intel, batch, highmem, gpu, short
+## #SBATCH -p short # Choose queue/partition from: intel, batch, highmem, gpu, short
 
 ## 
 ## Rscript my_script.R
