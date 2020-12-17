@@ -420,7 +420,7 @@ __1.__ Create Slurm submission script, here called `script_name.sh` with:
 Rscript my_script.R
 ```
 
-__2.__ Submit script with:
+__2.__ Submit R script (`my_script.R`) called by above Slurm script with:
 
 ```{bash eval=FALSE}
 sbatch script_name.sh
