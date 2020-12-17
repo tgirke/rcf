@@ -18,7 +18,7 @@ bibliography: bibtex.bib
    https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
 
 - Compile from command-line
-Rscript -e "rmarkdown::render('parallelR.Rmd'); knitr::knit('parallelR.Rmd', tangle=TRUE)"
+Rscript -e "rmarkdown::render('R_on_HPC.Rmd'); knitr::knit('R_on_HPC.Rmd', tangle=TRUE)"
 -->
 
 <!---
@@ -32,7 +32,7 @@ slides > slide {
 }
 </style>
 
-```{css, echo=FALSE}
+<style type="text/css">
 pre {
   max-height: 300px;
   overflow-y: auto;
@@ -41,15 +41,15 @@ pre {
 pre[class] {
   max-height: 300px;
 }
-```
+</style>
 
-```{css, echo=FALSE}
+<style type="text/css">
 .scroll-300 {
   max-height: 300px;
   overflow-y: auto;
   background-color: inherit;
 }
-```
+</style>
 
 # Outline
 
@@ -126,7 +126,8 @@ Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R))
 - The following introduces Nvim-R combined with Tmux. Similar instructions are available in HPCC's Nvim-R-Tmux tutorial [here](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html).
 - To try out the following instructions, users want to log into their HPCC account via `ssh`, and then preferentially connect to a node by initializing an interactive `srun` session:
 
-```{bash eval=FALSE}
+
+```bash
 srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
 ```
 
@@ -321,7 +322,8 @@ with the space bar. More details are available [here](https://github.com/jalvesa
 
 Download `nvim_demo.R` demo file to you HPCC account as follows.  
 
-```{bash eval=FALSE}
+
+```bash
 wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/nvim_demo.R
 ```
 
@@ -329,7 +331,8 @@ Open `nvim_demo.R` with nvim. The contnent of this file is shown in the followin
 block. Next, initialize a Nvim-connected R session with `\rf`, and then execute the 
 code by pressing the space bar on your keyboard. 
 
-```{r nvim-r-tmux-demo_show, eval=FALSE, message=FALSE, warning=FALSE}
+
+```r
 library(tidyverse)                                                                                                                                                            
 write_tsv(iris, "iris.txt") # Creates sample file                                                                                                                             
 read_tsv("iris.txt") %>% # Import with read_tbv from readr package                                                                                                            
@@ -346,17 +349,7 @@ read_tsv("iris.txt") %>% # Import with read_tbv from readr package
 
 If X11 is enabled in a user session then the above code will generate the following bar plot in a separate graphics window.
 
-```{r nvim-r-tmux-demo_run, echo=FALSE, eval=TRUE, message=FALSE, warning=FALSE}
-library(tidyverse)                                                                                                                                                            
-write_tsv(iris, "iris.txt") # Creates sample file                                                                                                                             
-read_tsv("iris.txt") %>% # Import with read_tbv from readr package                                                                                                            
-    as_tibble() %>%                                                                                                                                                           
-    group_by(Species) %>%                                                                                                                                                     
-    summarize_all(mean) %>%                                                                                                                                                   
-    reshape2::melt(id.vars=c("Species"), variable.name = "Samples", value.name="Values") %>%                                                                                  
-    ggplot(aes(Samples, Values, fill = Species)) +                                                                                                                            
-    geom_bar(position="dodge", stat="identity")
-```
+![](R_on_HPC_files/figure-html/nvim-r-tmux-demo_run-1.png)<!-- -->
 
 ## Selecting R Versions on HPCC
 
@@ -366,19 +359,22 @@ read_tsv("iris.txt") %>% # Import with read_tbv from readr package
 
 Available R version can be listed with the following command.
 
-```{bash eval=FALSE}
+
+```bash
 module avail R
 ```
 
 The version labeled `default` is used by default. A specific R version can be loaded as follows.
 
-```{bash eval=FALSE}
+
+```bash
 module load R/4.0.1
 ```
 
 To check which modules (including R) are loaded, one can use this command: 
 
-```{bash eval=FALSE}
+
+```bash
 module list
 ```
 
@@ -405,7 +401,8 @@ This topic is covered in more detail in other tutorials. The following only prov
 
 __1.__ Create Slurm submission script, here called `script_name.sh` with:
 
-```{bash eval=FALSE}
+
+```bash
 #!/bin/bash -l
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -422,7 +419,8 @@ Rscript my_script.R
 
 __2.__ Submit R script (`my_script.R`) called by above Slurm script with:
 
-```{bash eval=FALSE}
+
+```bash
 sbatch script_name.sh
 ```
 
@@ -448,7 +446,8 @@ the required files:
 + [`slurm.tmpl`](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/slurm.tmpl)
 + [`.batchtools.conf.R`](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/.batchtools.conf.R)
 
-```{r working_env, eval=FALSE}
+
+```r
 dir.create("mytestdir")
 setwd("mytestdir")
 download.file("https://goo.gl/tLMddb", "slurm.tmpl")
@@ -467,7 +466,8 @@ The test function (`myFct`) subsets the `iris` data frame by rows, and appends t
 node where the function was executed. The R version to be used on each node can be
 specified in the `slurm.tmpl` file (under `module load`).
 
-```{r load_pkgs, eval=FALSE}
+
+```r
 library('RenvModule')
 module('load','slurm') # Loads slurm among other modules
 
@@ -484,7 +484,8 @@ myFct <- function(x) {
 The following creates a `batchtools` registry, defines the number of jobs and resource requests, and then submits the jobs to the cluster
 via SLURM.
 
-```{r submit_jobs, eval=FALSE}
+
+```r
 reg <- makeRegistry(file.dir="myregdir", conf.file=".batchtools.conf.R")
 Njobs <- 1:4 # Define number of jobs (here 4)
 ids <- batchMap(fun=myFct, x=Njobs) 
@@ -495,7 +496,8 @@ waitForJobs() # Wait until jobs are completed
 ### Summarize job status 
 After the jobs are completed one instect their status as follows.
 
-```{r job_status, eval=FALSE}
+
+```r
 getStatus() # Summarize job status
 showLog(Njobs[1])
 # killJobs(Njobs) # # Possible from within R or outside with scancel
@@ -507,7 +509,8 @@ The results are stored as `.rds` files in the registry directory (here `myregdir
 can access them manually via `readRDS` or use various convenience utilities provided
 by the `batchtools` package.
 
-```{r assemble_results, eval=FALSE}
+
+```r
 readRDS("myregdir/results/1.rds") # reads from rds file first result chunk
 loadResult(1) 
 lapply(Njobs, loadResult)
@@ -520,7 +523,8 @@ do.call("rbind", lapply(Njobs, loadResult))
 By default existing registries will not be overwritten. If required one can exlicitly
 clean and delete them with the following functions. 
 
-```{r clear_delete_registry, eval=FALSE}
+
+```r
 clearRegistry() # Clear registry in R session
 removeRegistry(wait=0, reg=reg) # Delete registry directory
 # unlink("myregdir", recursive=TRUE) # Same as previous line
@@ -531,7 +535,8 @@ removeRegistry(wait=0, reg=reg) # Delete registry directory
 Loading a registry can be useful when accessing the results at a later state or 
 after moving them to a local system. 
 
-```{r load_registry, eval=FALSE}
+
+```r
 from_file <- loadRegistry("myregdir", conf.file=".batchtools.conf.R")
 reduceResults(rbind)
 ```
@@ -540,20 +545,19 @@ reduceResults(rbind)
 
 ### Nvim-R-Tmux
 
-- Steeper learning curve than RStudio or Jupyter Notebooks
+- Steeper learning curve than GUI-based IDEs, including RStudio or Jupyter Notebooks
 - However, it is much more
     - powerful, flexible, robust and language agnostic solution for working on remote systems
     - time learning it is well invested, especially for students and reasearchers with complex data analysis and programming needs
 
 ### Advantages of `batchtools`
 
-- Supports
-   - many parallelization methods multiple cores, and across both multiple CPU sockets and nodes
-   - most schedulers
-   - takes full advantage of a cluster
-   - robust job management by organizing results in registry file-based database
-   - simplifies submission, montitoring and restart of jobs 
-- Well supported and maintained package
+- many parallelization methods multiple cores, and across both multiple CPU sockets and nodes
+- most schedulers
+- takes full advantage of a cluster
+- robust job management by organizing results in registry file-based database
+- simplifies submission, montitoring and restart of jobs 
+- well supported and maintained package
 
 # Outline
 

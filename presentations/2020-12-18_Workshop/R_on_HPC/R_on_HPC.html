@@ -4487,7 +4487,7 @@ slide:not(.current) .plotly.html-widget{
    https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
 
 - Compile from command-line
-Rscript -e "rmarkdown::render('parallelR.Rmd'); knitr::knit('parallelR.Rmd', tangle=TRUE)"
+Rscript -e "rmarkdown::render('R_on_HPC.Rmd'); knitr::knit('R_on_HPC.Rmd', tangle=TRUE)"
 -->
 
 <!---
@@ -5011,10 +5011,21 @@ removeRegistry(wait=0, reg=reg) # Delete registry directory
 <pre class = 'prettyprint lang-r'>from_file &lt;- loadRegistry(&quot;myregdir&quot;, conf.file=&quot;.batchtools.conf.R&quot;)
 reduceResults(rbind)</pre>
 
-</article></slide><slide class=""><hgroup><h2>Advantages of <code>batchtools</code></h2></hgroup><article  id="advantages-of-batchtools" class="smaller ">
+</article></slide><slide class=""><hgroup><h2>Conclusions</h2></hgroup><article  id="conclusions" class="smaller ">
+
+<h3>Nvim-R-Tmux</h3>
 
 <ul>
-<li>Supports
+<li>Steeper learning curve than GUI-based IDEs, including RStudio or Jupyter Notebooks</li>
+<li>However, it is much more
+
+<ul>
+<li>powerful, flexible, robust and language agnostic solution for working on remote systems</li>
+<li>time learning it is well invested, especially for students and reasearchers with complex data analysis and programming needs</li>
+</ul></li>
+</ul>
+
+<h3>Advantages of <code>batchtools</code></h3>
 
 <ul>
 <li>many parallelization methods multiple cores, and across both multiple CPU sockets and nodes</li>
@@ -5022,8 +5033,7 @@ reduceResults(rbind)</pre>
 <li>takes full advantage of a cluster</li>
 <li>robust job management by organizing results in registry file-based database</li>
 <li>simplifies submission, montitoring and restart of jobs</li>
-</ul></li>
-<li>Well supported and maintained package</li>
+<li>well supported and maintained package</li>
 </ul>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Outline</h2></hgroup><article  id="outline-3" class="smaller ">
