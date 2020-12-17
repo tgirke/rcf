@@ -18,7 +18,7 @@ bibliography: bibtex.bib
    https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
 
 - Compile from command-line
-Rscript -e "rmarkdown::render('R_on_HPC.Rmd'); knitr::knit('R_on_HPC.Rmd', tangle=TRUE)"
+Rscript -e "rmarkdown::render('R_for_HPC.Rmd'); knitr::knit('R_for_HPC.Rmd', tangle=TRUE)"
 -->
 
 <!---
@@ -349,7 +349,7 @@ read_tsv("iris.txt") %>% # Import with read_tbv from readr package
 
 If X11 is enabled in a user session then the above code will generate the following bar plot in a separate graphics window.
 
-![](R_on_HPC_files/figure-html/nvim-r-tmux-demo_run-1.png)<!-- -->
+![](R_for_HPC_files/figure-html/nvim-r-tmux-demo_run-1.png)<!-- -->
 
 ## Selecting R Versions on HPCC
 

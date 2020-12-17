@@ -18,7 +18,7 @@ bibliography: bibtex.bib
    https://bookdown.org/yihui/rmarkdown/ioslides-presentation.html
 
 - Compile from command-line
-Rscript -e "rmarkdown::render('R_on_HPC.Rmd'); knitr::knit('R_on_HPC.Rmd', tangle=TRUE)"
+Rscript -e "rmarkdown::render('R_for_HPC.Rmd'); knitr::knit('R_for_HPC.Rmd', tangle=TRUE)"
 -->
 
 <!---
