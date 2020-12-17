@@ -1,20 +1,59 @@
+---  
+
+title: "Linux basics"  
+author: Melody Asghari  
+date: December 18, 2020  
+output:  
+  ioslides_presentation:  
+    keep_md: yes  
+    widescreen: yes  
+    df_print: paged  
+    smaller: true  
+subtitle: "Login and Basic Commands"
+
+---------------------
+
+## Summary
+
+- Accessing the cluster
+  
+  - with Mac OS X
+  
+  - with Windows
+    
+    - from anywhere!
+
+- Glossary of Common Terms
+
+- Basic commands in linux 
+  
+  - Starting from where you are (Square One)
+  
+  - Manipulating Files/Directories
+  
+  - Moving Files and Directories
+  
+  - Helpful Utilities
+  
+  - Utilities Cont.
+
 ## Mac - OS X Users
 
 Type the `command` + `space` bar key on the keyboard to pull up the "Spotlight Search" bar
 
-![Screen Shot 2020-12-17 at 10.01.33.png](/Users/mela/Library/Application%20Support/marktext/images/4ba8304c01f10dfbaa4edd1267625c2d3d88d22d.png)
+![Screen Shot 2020-12-17 at 10.01.33.png](1.png)
 
 Or press the following highlighted magnifying glass icon in the top right of the screen:
 
-![4uC7nxfTf4N4hUCNsfHoGK-970-80.png](/Users/mela/Library/Application%20Support/marktext/images/79bdc49f885fea81559ea1e48711e8882ed21204.png)
+![4uC7nxfTf4N4hUCNsfHoGK-970-80.png](2.png)
 
 The search bar will pop up in the middle of the screen:
 
-![Screen Shot 2020-12-15 at 14.58.32.png](/Users/mela/Library/Application%20Support/marktext/images/3f8bcedebe2e04b463d2febb659ad6aa40f9367e.png)
+![Screen Shot 2020-12-15 at 14.58.32.png](3.png)
 
 Type "terminal" to search for and highlight the terminal app, then press the `enter` key.
 
-![Untitled2.png](/Users/mela/Library/Application%20Support/marktext/images/98550f70c64c0a51115aefdaef5a1284c0a3ebc3.png)
+![Untitled2.png](4.png)
 
 ## Windows Users
 
@@ -22,15 +61,39 @@ Type "terminal" to search for and highlight the terminal app, then press the `en
 
 2. Click on "Start local terminal"
 
-![Screen Shot 2020-12-15 at 15.53.54.png](/Users/mela/Library/Application%20Support/marktext/images/7e7cd5811c9c885bd16ffc4945e5e4c102157dfe.png)
+![Screen Shot 2020-12-15 at 15.53.54.png](5.png)
 
 ## Logging in (any operating System)
 
-You can log in anywhere! Using the helpful protocol: ssh. Whether you're using Windows or OS X (Mac) you'll inevitably reach the same step once the terminal is open:
+You can log in anywhere! Using the helpful protocol: ssh.  SSH is a. Secure SHell program that lets us access a Linux computer across the internet while encrypting the data sent and received.
+
+ Whether you're using Windows or OS X (Mac) you'll inevitably reach the same step once the terminal is open:
 
 `ssh -X YourUsername@cluster.hpcc.ucr.edu`
 
-## Basic Commands
+## Glossary of Common Terms
+
+Before we start, we should go over some common vocabulary we use and you should become familiar with. However, for the purpose of this presentation, I will try to make this as easy to understand as possible.  
+
+- **(binary) executable**: another way of referring to a program that has been compiled so it can be used day to day. Windows users might notice their programs end with .exe
+
+- **command**: input we're going to type in the shell to perform a specific task
+
+- **directory**: areas on a hard disk in which files can be stored/organized aka a Folder
+
+- **Path:** environment variable in linux that tells the shell which directories to search for ready-to-run programs (executables).
+
+- **shell**: within our circle, a program that lets you control the system using commands via your keyboard. Bash, Zsh are shells.
+
+- **variable**: a changeable value that stores a certain data type, remembering it for future reference by the system, these are vital to the linux kernal.
+  
+  - **environment variable**: a user will have unique configurations, such as variables that tell the shell where the programs are located
+
+## Basic Commands: Square One
+
+**P**rint **W**orking **D**irectory
+
+- `pwd` → returns the location (path) of where you have ended up currently
 
 **L**i**s**(ting the contents of the current directory)
 
@@ -40,25 +103,19 @@ You can log in anywhere! Using the helpful protocol: ssh. Whether you're using W
 
 - `ls -a` + `ls -l` = **`ls -la`** → **l**i**s**t **a**ll files with **l**onger details
 
-Display **C**ontents (of **a** file **t**o the screen)
-
-- `cat filename`
-
-- `cat -n filename`
-
-**P**rint **W**orking **D**irectory
-
-- `pwd` → returns the location (path) of where you have ended up currently
-
 **C**hange **D**irectory
 
 - `cd` → **c**hanges your current location to your home **d**irectory
 
 - `cd ..` → **c**hanges **d**irectory to the one above
 
-- `cd ../../` → **c**hanges **d**irectory to two above
+- `cd ../../` → **c**hanges **d**irectory to two folders above
 
-## Basic Commands Cont.
+## Basic Commands: Manipulating Files/Folders
+
+**M**a**k**e a new **Dir**ectory
+
+- `mkdir my_directory` → makes a new folder called *my_directory* located in your curmkrent location
 
 Create a new file (**touch** your fingers on the keyboard)
 
@@ -66,15 +123,31 @@ Create a new file (**touch** your fingers on the keyboard)
 
 - `touch file.txt` → creates an empty file named *file* with the *txt* extension
 
-- `touch PowerAt.Your.FingerTips` creates a file named *PowerAt.Your* with the *FingerTips* extensionss
+- `touch PowerAt.Your.FingerTips` creates a file named *PowerAt.Your* with the *FingerTips* extensions
+
+**R**e**m**ove (a file)
+
+- `rm filename` → removes *filename* from where you are currently in the directory
+
+**R**e**m**ove an empty **Dir**ectory (no files/sub-directories)
+
+- `rmdir directory_name/` → removes *directory_name/* from where you currently are
+
+Display **C**ontents (of **a** file **t**o the screen)p
+
+- `cat filename` → outputs the content of the file
+
+- `cat -n filename` → outputs the content of the file with line numbers
+
+## Basic Commands: Moving Files/Folders
 
 **C**o**p**y (file OR directory to somewhere else ) 
 
-- `cp file_source/ destination/`→
+- `cp file_source/file.txt destination/` → copies the file named *file.txt* in the *file_source/* folder to the *destination/* folder
 
 - `cp -r directory_source/ destination/` → copies the folder *directory_source/* recursively to the *destination/*
 
-- `cp file_source file_backup` →
+- `cp file_source file_backup` → renames the *file_source* to *file_backup* in the same directory
 
 **M**o**v**e (file or directory to somewhere else)
 
@@ -82,23 +155,13 @@ Create a new file (**touch** your fingers on the keyboard)
 
 - `mv file_name path/` → moves *file_name* to the folder *path/*
 
-**M**a**k**e a new **Dir**ectory
+## Basic Commands: Helpful Utilities
 
-- `mkdir your_new_directory_name` → makes a new folder called *your_new_directory_name/* located in your current location
+**Man**ual
 
-**R**e**m**ove an empty **Dir**ectory (no files/sub-directories)
+- `man ls` → displays the linux manual page for the `ls` command
 
-- `rmdir directory_name/` → removes *directory_name/* from where you currently are
-
-**R**e**m**ove (a file)
-
-- `rm filename` → removes *filename* from where you are currently in the directory
-
-## Basic Commands Cont.
-
-**Which** is the correct location of my program (that is executed when you type its name in the terminal)  ? 
-
-- `which python` → returns the location (path) of the program
+- `man -k HELP` → searches the linux manual page titles and synopses for the word *HELP*
 
 **Find** my file in this folder or file
 
@@ -124,9 +187,13 @@ Create a new file (**touch** your fingers on the keyboard)
 
 - `ps aux` → displays processes of all users with all the background processes started at boot time
 
-## Basic Commands Cont.
+## Basic Commands: Utilities Cont.
 
-**G**lobal **R**egular **E**xpression **P**rint - Search for a file for lines with your criteria
+**Which** is the correct location of my program (that is executed when you type its name in the terminal) ?
+
+- `which python` → returns the location (path) of the program
+
+**G**lobal **R**egular **E**xpression **P**rint - Search for a file for lines with your criteria  using regular expressions, a powerful/complex method of describing your search material with a string that can use various symbols to indicate patterns
 
 - `grep your_search_pattern file_name` 
 
@@ -145,9 +212,3 @@ Create a new file (**touch** your fingers on the keyboard)
 - `echo $?` → returns the exit code of the last command
 
 - `echo $PATH` → returns the current executable variables within your path (programs you can run)
-
-**Man**ual
-
-- `man ls`  → displays the linux manual page for the `ls` command
-
-- `man -k HELP` → searches the linux manual page titles and synopses for the word *HELP*
