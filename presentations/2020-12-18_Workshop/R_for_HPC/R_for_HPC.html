@@ -4891,7 +4891,8 @@ read_tsv(&quot;iris.txt&quot;) %&gt;% # Import with read_tbv from readr package
 </article></slide><slide class=""><hgroup><h2>Parallel Evaluations in R</h2></hgroup><article  id="parallel-evaluations-in-r" class="smaller ">
 
 <ul>
-<li>R provides a large number of packages for parallel evaluations on multi-core systems as well as computer clusters</li>
+<li>R provides a large number of packages for parallel evaluations on multi-core, multi-socket and multi-node systems. The latter are usually referred to as computer clusters.</li>
+<li>MPI is also supported</li>
 <li>For an overview of parallelization packages available for R see <a href='https://cran.r-project.org/web/views/HighPerformanceComputing.html' title=''>here</a></li>
 <li>One of the most comprehensive parallel computing environments for R is <a href='https://mllg.github.io/batchtools/articles/batchtools.html#migration' title=''><code>batchtools</code></a>. Older versions of this package were released under the name <code>BatchJobs</code> <span class="cite">(Bischl et al. 2015)</span>.</li>
 <li><code>batchtools</code> supports both multi-core and multi-node computations with and without schedulers. By making use of cluster template files, most schedulers and queueing systems are supported (<em>e.g.</em> Torque, Sun Grid Engine, Slurm).</li>
