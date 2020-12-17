@@ -123,22 +123,10 @@ Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R))
 
 ## Introduction to Nvim-R-Tmux
 
-- The following introduces Nvim-R combined with Tmux. Similar instructions are available in HPCC's Nvim-R-Tmux tutorial [here](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html).
-- To try out the following instructions, users want to log into their HPCC account via `ssh`, and then preferentially connect to a node by initializing an interactive `srun` session:
+- The following introduces Nvim-R combined with Tmux. 
+- Similar instructions are available in HPCC's Nvim-R-Tmux tutorial [here](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html).
 
-
-```bash
-srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
-```
-
-- Under `--partition` it is important to assign the name of a partition a user has access to 
-    - Most users have access to: `short`, `batch`, `intel` and `highmem` 
-    - Students registered under the statistics department, only have access to: `statsdept`  
-    - Users of labs owning computer nodes also can access: `<pi_name>lab` 
-- The other settings chosen above are suitable for a short testing tasks 
-- For more details on argument settings for `srun`, see [here](http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html)
-
-## Vim/Nvim Overview
+## Vim/Nvim Basics
 
 The following opens a file (here `myfile.txt`) with nvim (or vim). This can be a new file or an existing one. 
 
@@ -319,6 +307,23 @@ by pressing the key sequence `\s` (corresponds to `\rf` under `nvim-R`). Subsequ
 with the space bar. More details are available [here](https://github.com/jalvesaq/vimcmdline). 
 
 ## Nvim-R Demo 
+
+To try out the following instructions, users want to log into their HPCC
+account via `ssh`, and then preferentially connect to a node by initializing an
+interactive `srun` session. The latter mimics the best practices for a real workflow 
+but is not necessary for this basic exercise.
+
+
+```bash
+srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
+```
+
+- Under `--partition` it is important to assign the name of a partition a user has access to 
+    - Most users have access to: `short`, `batch`, `intel` and `highmem` 
+    - Students registered under the statistics department, only have access to: `statsdept`  
+    - Users of labs owning computer nodes also can access: `<pi_name>lab` 
+- The other settings chosen above are suitable for a short testing tasks 
+- For more details on argument settings for `srun`, see [here](http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html)
 
 Download `nvim_demo.R` demo file to you HPCC account as follows.  
 
@@ -554,7 +559,7 @@ reduceResults(rbind)
 ### Advantages of `batchtools`
 
 - many parallelization methods multiple cores, and across both multiple CPU sockets and nodes
-- most schedulers
+- most schedulers supported
 - takes full advantage of a cluster
 - robust job management by organizing results in registry file-based database
 - simplifies submission, montitoring and restart of jobs 

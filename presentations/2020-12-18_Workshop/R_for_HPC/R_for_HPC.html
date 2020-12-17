@@ -4611,25 +4611,11 @@ pre[class] {
 </article></slide><slide class=""><hgroup><h2>Introduction to Nvim-R-Tmux</h2></hgroup><article  id="introduction-to-nvim-r-tmux" class="smaller ">
 
 <ul>
-<li>The following introduces Nvim-R combined with Tmux. Similar instructions are available in HPCC’s Nvim-R-Tmux tutorial <a href='http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html' title=''>here</a>.</li>
-<li>To try out the following instructions, users want to log into their HPCC account via <code>ssh</code>, and then preferentially connect to a node by initializing an interactive <code>srun</code> session:</li>
+<li>The following introduces Nvim-R combined with Tmux.</li>
+<li>Similar instructions are available in HPCC’s Nvim-R-Tmux tutorial <a href='http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html' title=''>here</a>.</li>
 </ul>
 
-<pre class = 'prettyprint lang-bash'>srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l</pre>
-
-<ul>
-<li>Under <code>--partition</code> it is important to assign the name of a partition a user has access to
-
-<ul>
-<li>Most users have access to: <code>short</code>, <code>batch</code>, <code>intel</code> and <code>highmem</code></li>
-<li>Students registered under the statistics department, only have access to: <code>statsdept</code><br/></li>
-<li>Users of labs owning computer nodes also can access: <code>&lt;pi_name&gt;lab</code></li>
-</ul></li>
-<li>The other settings chosen above are suitable for a short testing tasks</li>
-<li>For more details on argument settings for <code>srun</code>, see <a href='http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html' title=''>here</a></li>
-</ul>
-
-</article></slide><slide class=""><hgroup><h2>Vim/Nvim Overview</h2></hgroup><article  id="vimnvim-overview" class="smaller ">
+</article></slide><slide class=""><hgroup><h2>Vim/Nvim Basics</h2></hgroup><article  id="vimnvim-basics" class="smaller ">
 
 <p>The following opens a file (here <code>myfile.txt</code>) with nvim (or vim). This can be a new file or an existing one.</p>
 
@@ -4831,6 +4817,22 @@ vimcmdline
 
 </article></slide><slide class=""><hgroup><h2>Nvim-R Demo</h2></hgroup><article  id="nvim-r-demo" class="smaller ">
 
+<p>To try out the following instructions, users want to log into their HPCC account via <code>ssh</code>, and then preferentially connect to a node by initializing an interactive <code>srun</code> session. The latter mimics the best practices for a real workflow but is not necessary for this basic exercise.</p>
+
+<pre class = 'prettyprint lang-bash'>srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l</pre>
+
+<ul>
+<li>Under <code>--partition</code> it is important to assign the name of a partition a user has access to
+
+<ul>
+<li>Most users have access to: <code>short</code>, <code>batch</code>, <code>intel</code> and <code>highmem</code></li>
+<li>Students registered under the statistics department, only have access to: <code>statsdept</code><br/></li>
+<li>Users of labs owning computer nodes also can access: <code>&lt;pi_name&gt;lab</code></li>
+</ul></li>
+<li>The other settings chosen above are suitable for a short testing tasks</li>
+<li>For more details on argument settings for <code>srun</code>, see <a href='http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html' title=''>here</a></li>
+</ul>
+
 <p>Download <code>nvim_demo.R</code> demo file to you HPCC account as follows.</p>
 
 <pre class = 'prettyprint lang-bash'>wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/nvim_demo.R</pre>
@@ -5030,7 +5032,7 @@ reduceResults(rbind)</pre>
 
 <ul>
 <li>many parallelization methods multiple cores, and across both multiple CPU sockets and nodes</li>
-<li>most schedulers</li>
+<li>most schedulers supported</li>
 <li>takes full advantage of a cluster</li>
 <li>robust job management by organizing results in registry file-based database</li>
 <li>simplifies submission, montitoring and restart of jobs</li>
