@@ -549,7 +549,7 @@ reduceResults(rbind)
 ### Advantages of `batchtools`
 
 - many parallelization methods multiple cores, and across both multiple CPU sockets and nodes
-- most schedulers
+- most schedulers supported
 - takes full advantage of a cluster
 - robust job management by organizing results in registry file-based database
 - simplifies submission, montitoring and restart of jobs 
