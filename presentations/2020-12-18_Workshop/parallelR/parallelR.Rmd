@@ -536,7 +536,16 @@ from_file <- loadRegistry("myregdir", conf.file=".batchtools.conf.R")
 reduceResults(rbind)
 ```
 
-## Advantages of `batchtools`
+## Conclustions
+
+### Nvim-R-Tmux
+
+- Steeper learning curve than RStudio or Jupyter Notebooks
+- However, it is much more
+    - powerful, flexible, robust and language agnostic solution for working on remote systems
+    - time learning it is well invested, especially for students and reasearchers with complex data analysis and programming needs
+
+### Advantages of `batchtools`
 
 - Supports
    - many parallelization methods multiple cores, and across both multiple CPU sockets and nodes
