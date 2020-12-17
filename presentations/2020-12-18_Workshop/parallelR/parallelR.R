@@ -31,6 +31,27 @@
 ## wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/nvim_demo.R
 
 
+## ----nvim-r-tmux-demo, eval=TRUE, message=FALSE, warning=FALSE----------------
+library(tidyverse)                                                                                                                                                            
+write_tsv(iris, "iris.txt") # Creates sample file                                                                                                                             
+read_tsv("iris.txt") %>% # Import with read_tbv from readr package                                                                                                            
+    as_tibble() %>%                                                                                                                                                           
+    group_by(Species) %>%                                                                                                                                                     
+    summarize_all(mean) %>%                                                                                                                                                   
+    reshape2::melt(id.vars=c("Species"), variable.name = "Samples", value.name="Values") %>%                                                                                  
+    ggplot(aes(Samples, Values, fill = Species)) +                                                                                                                            
+    geom_bar(position="dodge", stat="identity")
+
+
+## module avail R
+
+
+## module load R/4.0.1
+
+
+## module list
+
+
 ## #!/bin/bash -l
 
 ## #SBATCH --nodes=1
@@ -52,7 +73,7 @@
 ## #SBATCH -p batch # Choose queue/partition from: intel, batch, highmem, gpu, short
 
 ## 
-## Rscript my_script.R}
+## Rscript my_script.R
 
 
 ## sbatch script_name.sh
