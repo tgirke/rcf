@@ -286,7 +286,7 @@ __Session-level comands__
 * `$ tmux attach -t <id>`: attaches to specific tmux session  
 * `$ tmux attach`: reattaches to session 
 * `$ tmux kill-session -t <id>`: kills a specific tmux session
-* `Ctrl-a : kill-session`: kills a session from tmux command mode that can be initiated with `Ctrl-a :`
+* `Ctrl-a : kill-session`: kills a session from tmux command mode 
 
 ## Use Same Environment for Other Languages
 
@@ -357,7 +357,7 @@ If X11 is enabled in a user session then the above code will generate the follow
 - To use a specific R version in Nvim-R, one simply loads it prior to starting Nvim. Instructions
   for enabling additional R version toggle options are provided [here](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899#rversion_toggle).
 
-Available R version can be listed with the following command.
+Which R versions are available can be listed with the following command.
 
 
 ```bash
@@ -371,7 +371,7 @@ The version labeled `default` is used by default. A specific R version can be lo
 module load R/4.0.1
 ```
 
-To check which modules (including R) are loaded, one can use this command: 
+Check which modules (including R) are loaded in a user's environment.
 
 
 ```bash

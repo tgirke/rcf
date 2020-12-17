@@ -4800,7 +4800,7 @@ tmux a # attaches to an existing session </pre>
 <li><code>$ tmux attach -t &lt;id&gt;</code>: attaches to specific tmux session<br/></li>
 <li><code>$ tmux attach</code>: reattaches to session</li>
 <li><code>$ tmux kill-session -t &lt;id&gt;</code>: kills a specific tmux session</li>
-<li><code>Ctrl-a : kill-session</code>: kills a session from tmux command mode that can be initiated with <code>Ctrl-a :</code></li>
+<li><code>Ctrl-a : kill-session</code>: kills a session from tmux command mode</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Use Same Environment for Other Languages</h2></hgroup><article  id="use-same-environment-for-other-languages" class="smaller ">
@@ -4866,7 +4866,7 @@ read_tsv(&quot;iris.txt&quot;) %&gt;% # Import with read_tbv from readr package
 <li>To use a specific R version in Nvim-R, one simply loads it prior to starting Nvim. Instructions for enabling additional R version toggle options are provided <a href='https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899#rversion_toggle' title=''>here</a>.</li>
 </ul>
 
-<p>Available R version can be listed with the following command.</p>
+<p>Which R versions are available can be listed with the following command.</p>
 
 <pre class = 'prettyprint lang-bash'>module avail R</pre>
 
@@ -4874,7 +4874,7 @@ read_tsv(&quot;iris.txt&quot;) %&gt;% # Import with read_tbv from readr package
 
 <pre class = 'prettyprint lang-bash'>module load R/4.0.1</pre>
 
-<p>To check which modules (including R) are loaded, one can use this command:</p>
+<p>Check which modules (including R) are loaded in a user’s environment.</p>
 
 <pre class = 'prettyprint lang-bash'>module list</pre>
 
