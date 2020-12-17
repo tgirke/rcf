@@ -1,7 +1,7 @@
 ---
 title: "R on HPC Systems"
 author: Jordan Hayes and Thomas Girke
-date: December 22, 2020
+date: December 18, 2020
 output: 
   ioslides_presentation:
     keep_md: yes
