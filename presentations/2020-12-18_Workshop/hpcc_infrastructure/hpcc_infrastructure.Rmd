@@ -53,7 +53,7 @@ pre[class] {
 
 ## Mission of HPCC {.flexbox .vcenter}
 
-- Campus-wide research high-performance computing (HPC) infrastructure
+- Campus-wide high-performance computing (HPC) infrastructure
 - Partners with other IT/HPC units at UCR and UC system
 - Training in HPC, big data processing and cloud computing
 
@@ -67,7 +67,7 @@ pre[class] {
 - Facility frequently installs new software upon user request
 - Users can __install software themselves__ manually or via package manager and environment management systems such as Conda, CRAN/Bioc, etc.
 - Containerization using Singularity
-- Web-based environments: Jupyter Hub and RStudio Server
+- Web-based environments: Jupyter Notebooks and RStudio Server
 - Commercial tools only where necessary:
      <span style="font-size: 14px;">
      - GPFS for parallel storage system
@@ -89,7 +89,7 @@ pre[class] {
   - over 600 users
 </div>
 
-## Communication and Location 
+## Contacts and Location 
 
 - Contacts and Communication
    - Website: [hpcc.ucr.edu](https://hpcc.ucr.edu/)
@@ -104,7 +104,7 @@ pre[class] {
 
 ## Organization and Management of HPCC
 
-- Part of UCR-wide Office of Research and Economic Development (RED) 
+- Adminstered under UCR-wide Office of Research and Economic Development (RED) 
 - Staff
   <span style="font-size: 20px;">
     - Faculty director (Thomas Girke)
