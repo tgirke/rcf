@@ -393,7 +393,7 @@ module list
 ## Parallel Code Evaluation in R 
 
 - R provides a large number of packages for parallel evaluations on multi-core systems as well as computer clusters 
-- For a package overview see [here](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
+- For an overview of parallelization packages available for R see [here](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
 - One of the most comprehensive parallel computing environments for R is
   [`batchtools`](https://mllg.github.io/batchtools/articles/batchtools.html#migration). Older versions of this package were released under the name `BatchJobs` [@Bischl2015-rf]. 
 - `batchtools` supports both multi-core and multi-node computations with and without schedulers. By making use of
