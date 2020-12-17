@@ -101,7 +101,7 @@ Some useful RStudio shortcuts:
 
 ## Nim-R-Tmux: Terminal-based R Environment {.flexbox .vcenter}
 
-URLs: [1, main page](https://github.com/jalvesaq/Nvim-R), [2. HPCC manual](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html), [3. custom installs](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) 
+URLs: [1. main page](https://github.com/jalvesaq/Nvim-R), [2. HPCC manual](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html), [3. custom installs](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) 
 
 <center><img title="Nvim-R-Tmux" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif"></center>
 
