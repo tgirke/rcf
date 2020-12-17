@@ -133,7 +133,8 @@ Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R))
 
 The following opens a file (here `myfile.txt`) with nvim (or vim). This can be a new file or an existing one. 
 
-```sh
+
+```bash
 nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 ```
 
@@ -193,7 +194,8 @@ __1. Start tmux session from login node (not compute node!)__
 
 Running Nvim from tmux provides reattachment functionality. Skip this step if this is not required.
 
-```sh
+
+```bash
 tmux # starts a new tmux session 
 tmux a # attaches to an existing session 
 ```
@@ -205,7 +207,8 @@ with `\rf`. Note, the resulting split window among Nvim and R behaves like a spl
 viewport in `nvim` or `vim` meaning the usage of `Ctrl-w w` followed by `i` and
 `Esc` is important for session navigation.
 
-```sh
+
+```bash
 nvim myscript.R # or *.Rmd file
 ```
 

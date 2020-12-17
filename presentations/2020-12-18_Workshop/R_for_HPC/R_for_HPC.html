@@ -4621,7 +4621,7 @@ pre[class] {
 
 <p>The following opens a file (here <code>myfile.txt</code>) with nvim (or vim). This can be a new file or an existing one.</p>
 
-<pre class = 'prettyprint lang-sh'>nvim myfile.txt # for neovim (or &#39;vim myfile.txt&#39; for vim)</pre>
+<pre class = 'prettyprint lang-bash'>nvim myfile.txt # for neovim (or &#39;vim myfile.txt&#39; for vim)</pre>
 
 <h3>Modes</h3>
 
@@ -4695,14 +4695,14 @@ pre[class] {
 
 <p>Running Nvim from tmux provides reattachment functionality. Skip this step if this is not required.</p>
 
-<pre class = 'prettyprint lang-sh'>tmux # starts a new tmux session 
+<pre class = 'prettyprint lang-bash'>tmux # starts a new tmux session 
 tmux a # attaches to an existing session </pre>
 
 <p><strong>2. Open nvim-connected R session</strong></p>
 
 <p>Open a <code>*.R</code> or <code>*.Rmd</code> file with <code>nvim</code> and intialize a connected R session with <code>\rf</code>. Note, the resulting split window among Nvim and R behaves like a split viewport in <code>nvim</code> or <code>vim</code> meaning the usage of <code>Ctrl-w w</code> followed by <code>i</code> and <code>Esc</code> is important for session navigation.</p>
 
-<pre class = 'prettyprint lang-sh'>nvim myscript.R # or *.Rmd file</pre>
+<pre class = 'prettyprint lang-bash'>nvim myscript.R # or *.Rmd file</pre>
 
 <p><strong>3. Send R code from nvim to the R pane</strong></p>
 

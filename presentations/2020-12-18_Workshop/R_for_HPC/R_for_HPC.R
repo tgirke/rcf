@@ -25,6 +25,17 @@
 ## }
 
 
+## nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
+
+
+## tmux # starts a new tmux session
+
+## tmux a # attaches to an existing session
+
+
+## nvim myscript.R # or *.Rmd file
+
+
 ## srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
 
 
