@@ -2,7 +2,7 @@
 
 Type the `command` + `space` bar key on the keyboard to pull up the "Spotlight Search" bar
 
-![Untitled.png](/Users/mela/Library/Application%20Support/marktext/images/b87fd74584c5702e36bbbefe9d5f8254370911cf.png)
+![Screen Shot 2020-12-17 at 10.01.33.png](/Users/mela/Library/Application%20Support/marktext/images/4ba8304c01f10dfbaa4edd1267625c2d3d88d22d.png)
 
 Or press the following highlighted magnifying glass icon in the top right of the screen:
 
@@ -16,11 +16,9 @@ Type "terminal" to search for and highlight the terminal app, then press the `en
 
 ![Untitled2.png](/Users/mela/Library/Application%20Support/marktext/images/98550f70c64c0a51115aefdaef5a1284c0a3ebc3.png)
 
-
-
 ## Windows Users
 
-1. After installing MobaXterm, start the program by clicking on the "MobaXterm_Personal.exe" file.
+1. After [downloading](https://mobaxterm.mobatek.net/download-home-edition.html) and installing MobaXterm, start the program by clicking on the "MobaXterm_Personal.exe" file.
 
 2. Click on "Start local terminal"
 
@@ -72,41 +70,43 @@ Create a new file (**touch** your fingers on the keyboard)
 
 **C**o**p**y (file OR directory to somewhere else ) 
 
-- `cp file_source destination`
+- `cp file_source/ destination/`→
 
-- `cp -r directory_source destination` 
+- `cp -r directory_source/ destination/` → copies the folder *directory_source/* recursively to the *destination/*
 
-- `cp file_source file_backup` 
+- `cp file_source file_backup` →
 
 **M**o**v**e (file or directory to somewhere else)
 
-- `mv old_file_name new_file_name` → rename file
+- `mv old_file_name new_file_name` → renames the file *old_file_name* to *new_file_name*
 
-- `mv file_name path`
+- `mv file_name path/` → moves *file_name* to the folder *path/*
 
 **M**a**k**e a new **Dir**ectory
 
-- `mkdir your_new_directory_name` 
+- `mkdir your_new_directory_name` → makes a new folder called *your_new_directory_name/* located in your current location
 
 **R**e**m**ove an empty **Dir**ectory (no files/sub-directories)
 
-- `rmdir directory_name`
+- `rmdir directory_name/` → removes *directory_name/* from where you currently are
 
 **R**e**m**ove (a file)
 
-- `rm filename`
+- `rm filename` → removes *filename* from where you are currently in the directory
 
 ## Basic Commands Cont.
 
 **Which** is the correct location of my program (that is executed when you type its name in the terminal)  ? 
 
-- `which python`
+- `which python` → returns the location (path) of the program
 
 **Find** my file in this folder or file
 
 - `find . -name '*.txt'` → find any files in my current directory with the ".txt" extension in the name of the file
 
-- `find . name 'my_file_name'` → find any files in my current directory with the "my_file_name" name
+- `find . -name 'my_file_name'` → find any files in my current directory with the "my_file_name" name
+
+- `find some/folder/ -name "*.json"` → find any files with any name with the ".json" extension in the some/folder/ path
 
 **W**ord **C**ount (or lines/characters)
 
@@ -122,7 +122,7 @@ Create a new file (**touch** your fingers on the keyboard)
 
 - `ps` → your processes!
 
-- `ps aux` 
+- `ps aux` → displays processes of all users with all the background processes started at boot time
 
 ## Basic Commands Cont.
 
@@ -151,5 +151,3 @@ Create a new file (**touch** your fingers on the keyboard)
 - `man ls`  → displays the linux manual page for the `ls` command
 
 - `man -k HELP` → searches the linux manual page titles and synopses for the word *HELP*
-
-
