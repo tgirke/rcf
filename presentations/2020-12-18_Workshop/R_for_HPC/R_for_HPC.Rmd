@@ -64,7 +64,7 @@ pre[class] {
 
 ### About
 
-- Statistical environment and programming language ([CRAN](https://cran.r-project.org/))
+- Statistical environment and programming language ([CRAN](https://cran.r-project.org/)) widely used in academia and data science.
 - Free and runs on all common operating systems
 - Large ecosystem of extension packages, _e.g._ [Bioconductor](http://bioconductor.org) and [CRAN](https://cran.r-project.org/web/packages/index.html) 
 
