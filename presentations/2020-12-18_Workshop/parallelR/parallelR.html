@@ -4649,7 +4649,7 @@ pre[class] {
 
 <p style="text-align: right;">
 
-<strong>[ Scroll down for additional details ]</strong>
+<strong>[ Scroll down to continue ]</strong>
 
 </p>
 
@@ -4722,7 +4722,7 @@ tmux a # attaches to an existing session </pre>
 
 <p style="text-align: right;">
 
-<strong>[ Scroll down for additional details ]</strong>
+<strong>[ Scroll down to continue ]</strong>
 
 </p>
 
@@ -4752,7 +4752,7 @@ tmux a # attaches to an existing session </pre>
 
 <p style="text-align: right;">
 
-<strong>[ Scroll down for additional details ]</strong>
+<strong>[ Scroll down to continue ]</strong>
 
 </p>
 
@@ -4849,7 +4849,7 @@ read_tsv(&quot;iris.txt&quot;) %&gt;% # Import with read_tbv from readr package
 
 <p style="text-align: right;">
 
-<strong>[ Scroll down for additional details ]</strong>
+<strong>[ Scroll down to continue ]</strong>
 
 </p>
 
@@ -4920,9 +4920,111 @@ Rscript my_script.R</pre>
 
 <pre class = 'prettyprint lang-bash'>sbatch script_name.sh</pre>
 
-</article></slide><slide class=""><hgroup><h2>Parallel Evaluations on Clusters with <code>batchtools</code></h2></hgroup><article  id="parallel-evaluations-on-clusters-with-batchtools" class="smaller flexbox vcenter center">
+</article></slide><slide class=""><hgroup><h2>Parallel Evaluations on Clusters with <code>batchtools</code></h2></hgroup><article  id="parallel-evaluations-on-clusters-with-batchtools" class="smaller ">
 
-<p>Continue on <code>batchtools</code> tutorial <a href='https://hpcc.ucr.edu/manuals_linux-cluster_parallelR.html' title=''>here</a></p>
+<ul>
+<li>The following introduces the usage of <code>batchtools</code> for a computer cluster using SLURM as scheduler (workload manager). SLURM is the scheduler used by the HPCC.</li>
+<li>Similar instructions are provided in HPCC’s manual section covering <code>batchtools</code> <a href='https://hpcc.ucr.edu/manuals_linux-cluster_parallelR.html' title=''>here</a></li>
+<li>To simplify the evaluation of the R code on the following slides, the corresponding text version is available for download from <a href='https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/batchtools_test.R' title=''>here</a>.</li>
+</ul>
+
+</article></slide><slide class=""><hgroup><h2>Hands-on Demo of <code>batchtools</code></h2></hgroup><article  id="hands-on-demo-of-batchtools" class="smaller ">
+
+<h3>Set up working directory for SLURM</h3>
+
+<p>First login to your cluster account, open R and execute the following lines. This will create a test directory (here <code>mytestdir</code>), redirect R into this directory and then download the required files:</p>
+
+<ul>
+<li><a href='https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/slurm.tmpl' title=''><code>slurm.tmpl</code></a></li>
+<li><a href='https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/.batchtools.conf.R' title=''><code>.batchtools.conf.R</code></a></li>
+</ul>
+
+<pre class = 'prettyprint lang-r'>dir.create(&quot;mytestdir&quot;)
+setwd(&quot;mytestdir&quot;)
+download.file(&quot;https://goo.gl/tLMddb&quot;, &quot;slurm.tmpl&quot;)
+download.file(&quot;https://goo.gl/5HrYkE&quot;, &quot;.batchtools.conf.R&quot;)</pre>
+
+<h3>Load package and define some custom function</h3>
+
+<p>The following code defines a test function (here <code>myFct</code>) that will be run on the cluster for demonstration purposes.</p>
+
+<p style="text-align: right;">
+
+<strong>[ Scroll down to continue ]</strong>
+
+</p>
+
+<p><br/><br/></p>
+
+<p>The test function (<code>myFct</code>) subsets the <code>iris</code> data frame by rows, and appends the host name and R version of each node where the function was executed. The R version to be used on each node can be specified in the <code>slurm.tmpl</code> file (under <code>module load</code>).</p>
+
+<pre class = 'prettyprint lang-r'>library(&#39;RenvModule&#39;)
+module(&#39;load&#39;,&#39;slurm&#39;) # Loads slurm among other modules
+
+library(batchtools)
+myFct &lt;- function(x) {
+    result &lt;- cbind(iris[x, 1:4,],
+    Node=system(&quot;hostname&quot;, intern=TRUE),
+    Rversion=paste(R.Version()[6:7], collapse=&quot;.&quot;))
+}</pre>
+
+<h3>Submit jobs from R to cluster</h3>
+
+<p>The following creates a <code>batchtools</code> registry, defines the number of jobs and resource requests, and then submits the jobs to the cluster via SLURM.</p>
+
+<pre class = 'prettyprint lang-r'>reg &lt;- makeRegistry(file.dir=&quot;myregdir&quot;, conf.file=&quot;.batchtools.conf.R&quot;)
+Njobs &lt;- 1:4 # Define number of jobs (here 4)
+ids &lt;- batchMap(fun=myFct, x=Njobs) 
+done &lt;- submitJobs(ids, reg=reg, resources=list(partition=&quot;short&quot;, walltime=60, ntasks=1, ncpus=1, memory=1024))
+waitForJobs() # Wait until jobs are completed</pre>
+
+<h3>Summarize job status</h3>
+
+<p>After the jobs are completed one instect their status as follows.</p>
+
+<pre class = 'prettyprint lang-r'>getStatus() # Summarize job status
+showLog(Njobs[1])
+# killJobs(Njobs) # # Possible from within R or outside with scancel</pre>
+
+<h3>Access/assemble results</h3>
+
+<p>The results are stored as <code>.rds</code> files in the registry directory (here <code>myregdir</code>). One can access them manually via <code>readRDS</code> or use various convenience utilities provided by the <code>batchtools</code> package.</p>
+
+<pre class = 'prettyprint lang-r'>readRDS(&quot;myregdir/results/1.rds&quot;) # reads from rds file first result chunk
+loadResult(1) 
+lapply(Njobs, loadResult)
+reduceResults(rbind) # Assemble result chunks in single data.frame
+do.call(&quot;rbind&quot;, lapply(Njobs, loadResult))</pre>
+
+<h3>Remove registry directory from file system</h3>
+
+<p>By default existing registries will not be overwritten. If required one can exlicitly clean and delete them with the following functions.</p>
+
+<pre class = 'prettyprint lang-r'>clearRegistry() # Clear registry in R session
+removeRegistry(wait=0, reg=reg) # Delete registry directory
+# unlink(&quot;myregdir&quot;, recursive=TRUE) # Same as previous line</pre>
+
+<h3>Load registry into R</h3>
+
+<p>Loading a registry can be useful when accessing the results at a later state or after moving them to a local system.</p>
+
+<pre class = 'prettyprint lang-r'>from_file &lt;- loadRegistry(&quot;myregdir&quot;, conf.file=&quot;.batchtools.conf.R&quot;)
+reduceResults(rbind)</pre>
+
+</article></slide><slide class=""><hgroup><h2>Advantages of <code>batchtools</code></h2></hgroup><article  id="advantages-of-batchtools" class="smaller ">
+
+<ul>
+<li>Supports
+
+<ul>
+<li>many parallelization methods multiple cores, and across both multiple CPU sockets and nodes</li>
+<li>most schedulers</li>
+<li>takes full advantage of a cluster</li>
+<li>robust job management by organizing results in registry file-based database</li>
+<li>simplifies submission, montitoring and restart of jobs</li>
+</ul></li>
+<li>Well supported and maintained package</li>
+</ul>
 
 </article></slide><slide class="segue dark nobackground level1"><hgroup class = 'auto-fadein'><h2>Outline</h2></hgroup><article  id="outline-3" class="smaller ">
 
