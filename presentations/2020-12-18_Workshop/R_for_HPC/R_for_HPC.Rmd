@@ -99,7 +99,7 @@ Some useful RStudio shortcuts:
 ![](./images/rstudio.png)
 </div>
 
-## Nim-R-Tmux: Terminal-based R Environment {.flexbox .vcenter}
+## Nvim-R-Tmux: Terminal-based R Environment {.flexbox .vcenter}
 
 URLs: [1. main page](https://github.com/jalvesaq/Nvim-R), [2. HPCC manual](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html), [3. custom installs](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) 
 
