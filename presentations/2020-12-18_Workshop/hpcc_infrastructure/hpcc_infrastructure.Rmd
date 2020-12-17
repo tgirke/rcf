@@ -51,11 +51,17 @@ pre[class] {
 }
 ```
 
-## Mission of HPCC {.flexbox .vcenter}
+## Mission of HPCC {.vcenter}
+
+### Mission
 
 - Campus-wide high-performance computing (HPC) infrastructure
 - Partners with other IT/HPC units at UCR and UC system
 - Training in HPC, big data processing and cloud computing
+
+### Online Portal
+
+- [HPCC Website](http://hpcc.ucr.edu/)
 
 ## Hardware Infrastructure
 
