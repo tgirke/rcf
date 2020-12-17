@@ -4663,7 +4663,7 @@ pre[class] {
 <li><code>:wq</code>: saves and quits file</li>
 </ul>
 
-<h3>Useful resources for learning vim/nvim</h3>
+<h3>Useful resources for learning Vim/Nvim</h3>
 
 <ul>
 <li><a href='http://www.openvim.com' title=''>Interactive Vim Tutorial</a></li>
@@ -4829,7 +4829,7 @@ vimcmdline
 
 <p>The usage of <code>vimcmdline</code> is very similar to <code>nvim-R</code>. To start a connected terminal session, one opens with nvim a code file with the extension of a given language (<em>e.g.</em> <code>*.sh</code> for Bash or <code>*.py</code> for Python), while the corresponding interactive interpreter session is initiated by pressing the key sequence <code>\s</code> (corresponds to <code>\rf</code> under <code>nvim-R</code>). Subsequently, code lines can be sent with the space bar. More details are available <a href='https://github.com/jalvesaq/vimcmdline' title=''>here</a>.</p>
 
-</article></slide><slide class=""><hgroup><h2>Demo with Some R Code</h2></hgroup><article  id="demo-with-some-r-code" class="smaller ">
+</article></slide><slide class=""><hgroup><h2>Nvim-R Demo</h2></hgroup><article  id="nvim-r-demo" class="smaller ">
 
 <p>Download <code>nvim_demo.R</code> demo file to you HPCC account as follows.</p>
 
@@ -4888,18 +4888,18 @@ read_tsv(&quot;iris.txt&quot;) %&gt;% # Import with read_tbv from readr package
 <li>References</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Parallel Code Evaluation in R</h2></hgroup><article  id="parallel-code-evaluation-in-r" class="smaller ">
+</article></slide><slide class=""><hgroup><h2>Parallel Evaluations in R</h2></hgroup><article  id="parallel-evaluations-in-r" class="smaller ">
 
 <ul>
 <li>R provides a large number of packages for parallel evaluations on multi-core systems as well as computer clusters</li>
-<li>For a package overview see <a href='https://cran.r-project.org/web/views/HighPerformanceComputing.html' title=''>here</a></li>
+<li>For an overview of parallelization packages available for R see <a href='https://cran.r-project.org/web/views/HighPerformanceComputing.html' title=''>here</a></li>
 <li>One of the most comprehensive parallel computing environments for R is <a href='https://mllg.github.io/batchtools/articles/batchtools.html#migration' title=''><code>batchtools</code></a>. Older versions of this package were released under the name <code>BatchJobs</code> <span class="cite">(Bischl et al. 2015)</span>.</li>
 <li><code>batchtools</code> supports both multi-core and multi-node computations with and without schedulers. By making use of cluster template files, most schedulers and queueing systems are supported (<em>e.g.</em> Torque, Sun Grid Engine, Slurm).</li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Traditional Job Submission for R</h2></hgroup><article  id="traditional-job-submission-for-r" class="smaller ">
+</article></slide><slide class=""><hgroup><h2>Reminder: Traditional Job Submission for R</h2></hgroup><article  id="reminder-traditional-job-submission-for-r" class="smaller ">
 
-<p>Note: this topic is covered in more detail in other sections of this workshop. The following only provides a very brief overview of this submission method.</p>
+<p>This topic is covered in more detail in other tutorials. The following only provides a very brief overview of this submission method.</p>
 
 <p><strong>1.</strong> Create Slurm submission script, here called <code>script_name.sh</code> with:</p>
 
@@ -4916,7 +4916,7 @@ read_tsv(&quot;iris.txt&quot;) %&gt;% # Import with read_tbv from readr package
 
 Rscript my_script.R</pre>
 
-<p><strong>2.</strong> Submit script with:</p>
+<p><strong>2.</strong> Submit R script (<code>my_script.R</code>) called by above Slurm script with:</p>
 
 <pre class = 'prettyprint lang-bash'>sbatch script_name.sh</pre>
 
@@ -4934,7 +4934,7 @@ Rscript my_script.R</pre>
 <strong>References</strong></div></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>References</h2></hgroup><article  id="references" class="smaller unnumbered smaller">
+</article></slide><slide class=""><hgroup><h2>References</h2></hgroup><article  id="references" class="smaller unnumbered">
 
 <div id="refs" class="references">
 <div id="ref-Bischl2015-rf">

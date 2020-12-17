@@ -166,7 +166,7 @@ commands starting with `:` need to be typed in the command mode. All other comma
 * `:q`: quits file that has not been changed; use `q!` to quit file without saving changes.
 * `:wq`: saves and quits file
 
-### Useful resources for learning vim/nvim
+### Useful resources for learning Vim/Nvim
 
 * [Interactive Vim Tutorial](http://www.openvim.com)
 * [Official Vim Documentation](http://vimdoc.sourceforge.net/)
@@ -318,7 +318,7 @@ while the corresponding interactive interpreter session is initiated
 by pressing the key sequence `\s` (corresponds to `\rf` under `nvim-R`). Subsequently, code lines can be sent 
 with the space bar. More details are available [here](https://github.com/jalvesaq/vimcmdline). 
 
-## Demo with Some R Code
+## Nvim-R Demo 
 
 Download `nvim_demo.R` demo file to you HPCC account as follows.  
 
@@ -386,18 +386,18 @@ module list
 - <div class="white">__Parallel R with _batchtools_ __</div>
 - References
 
-## Parallel Code Evaluation in R 
+## Parallel Evaluations in R 
 
 - R provides a large number of packages for parallel evaluations on multi-core systems as well as computer clusters 
-- For a package overview see [here](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
+- For an overview of parallelization packages available for R see [here](https://cran.r-project.org/web/views/HighPerformanceComputing.html)
 - One of the most comprehensive parallel computing environments for R is
   [`batchtools`](https://mllg.github.io/batchtools/articles/batchtools.html#migration). Older versions of this package were released under the name `BatchJobs` [@Bischl2015-rf]. 
 - `batchtools` supports both multi-core and multi-node computations with and without schedulers. By making use of
   cluster template files, most schedulers and queueing systems are supported (_e.g._ Torque, Sun Grid Engine, Slurm). 
 
-## Traditional Job Submission for R 
+## Reminder: Traditional Job Submission for R 
 
-Note: this topic is covered in more detail in other sections of this workshop. The following only provides a very brief overview of this submission method. 
+This topic is covered in more detail in other tutorials. The following only provides a very brief overview of this submission method. 
 
 __1.__ Create Slurm submission script, here called `script_name.sh` with:
 
@@ -417,7 +417,7 @@ __1.__ Create Slurm submission script, here called `script_name.sh` with:
 Rscript my_script.R
 ```
 
-__2.__ Submit script with:
+__2.__ Submit R script (`my_script.R`) called by above Slurm script with:
 
 
 ```bash
@@ -436,5 +436,5 @@ Continue on `batchtools` tutorial [here](https://hpcc.ucr.edu/manuals_linux-clus
 - <div class="white">__References__</div>
 
 
-## References {.smaller}
+## References 
 
