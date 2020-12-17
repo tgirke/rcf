@@ -125,6 +125,9 @@ Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R))
 
 - The following introduces Nvim-R combined with Tmux. 
 - Similar instructions are available in HPCC's Nvim-R-Tmux tutorial [here](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html).
+- Note: Nvim-R and Tmux are two independent tools that can be used indpendently or in combination, and both are useful for remote terminal work. 
+- For simplicity, some of the following examples use Nvim-R without Tmux. Once users know the basics of both then it is trival to combine them as needed. 
+
 
 ## Vim/Nvim Basics
 
@@ -293,7 +296,7 @@ line.
 
 ### Install
 
-To install it, one needs to copy from the `vimcmdline` resository the directories
+To install it, one needs to copy from the `vimcmdline` repository the directories
 `ftplugin`, `plugin` and `syntax` and their files to `~/.config/nvim/`. For
 user accounts of UCR’s HPCC, the above install script `install_nvimRtmux` includes the 
 install of `vimcmdline` (since 09-Jun-18).
