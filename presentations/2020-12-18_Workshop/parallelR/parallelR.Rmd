@@ -536,7 +536,7 @@ from_file <- loadRegistry("myregdir", conf.file=".batchtools.conf.R")
 reduceResults(rbind)
 ```
 
-## Conclustions
+## Conclusions
 
 ### Nvim-R-Tmux
 
