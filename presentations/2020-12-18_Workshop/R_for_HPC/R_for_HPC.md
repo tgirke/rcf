@@ -198,7 +198,7 @@ instructions](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) t
 ## Typical Usage Workflow for Nvim-R-Tmux
 
 
-__1. Start tmux session__ (optional)
+__1. Start tmux session from login node (not compute node!)__
 
 Running Nvim from tmux provides reattachment functionality. Skip this step if this is not required.
 
@@ -230,8 +230,8 @@ several lines at once, one can select them in nvim's visual mode and then hit th
   binding has been remapped in the provided `.config/nvim/init.vim` file to the
   space bar. Most other key bindings (shortcuts) still start with the `\` as
   LocalLeader, _e.g._ `\rh` opens the help for a function/object where the curser
-  is located in nvim. More details on this are given below.
-- For details, visit the official `Nvim-R` [user manual](https://github.com/jalvesaq/Nvim-R/blob/master/doc/Nvim-R.txt).
+  is located in nvim. More details on this are given on the next slide(s).
+- The most comprehensive manual on this is the official `Nvim-R` documentation [here](https://github.com/jalvesaq/Nvim-R/blob/master/doc/Nvim-R.txt).
 
 ## Keybindings to Control Environment
 

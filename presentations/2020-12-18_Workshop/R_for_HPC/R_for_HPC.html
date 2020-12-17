@@ -4703,7 +4703,7 @@ pre[class] {
 
 </article></slide><slide class=""><hgroup><h2>Typical Usage Workflow for Nvim-R-Tmux</h2></hgroup><article  id="typical-usage-workflow-for-nvim-r-tmux" class="smaller ">
 
-<p><strong>1. Start tmux session</strong> (optional)</p>
+<p><strong>1. Start tmux session from login node (not compute node!)</strong></p>
 
 <p>Running Nvim from tmux provides reattachment functionality. Skip this step if this is not required.</p>
 
@@ -4729,8 +4729,8 @@ tmux a # attaches to an existing session </pre>
 <p><br/><br/></p>
 
 <ul>
-<li>Please note, the default command for sending code lines in the nvim-r-plugin is <code>\l</code>. This key binding has been remapped in the provided <code>.config/nvim/init.vim</code> file to the space bar. Most other key bindings (shortcuts) still start with the <code>\</code> as LocalLeader, <em>e.g.</em> <code>\rh</code> opens the help for a function/object where the curser is located in nvim. More details on this are given below.</li>
-<li>For details, visit the official <code>Nvim-R</code> <a href='https://github.com/jalvesaq/Nvim-R/blob/master/doc/Nvim-R.txt' title=''>user manual</a>.</li>
+<li>Please note, the default command for sending code lines in the nvim-r-plugin is <code>\l</code>. This key binding has been remapped in the provided <code>.config/nvim/init.vim</code> file to the space bar. Most other key bindings (shortcuts) still start with the <code>\</code> as LocalLeader, <em>e.g.</em> <code>\rh</code> opens the help for a function/object where the curser is located in nvim. More details on this are given on the next slide(s).</li>
+<li>The most comprehensive manual on this is the official <code>Nvim-R</code> documentation <a href='https://github.com/jalvesaq/Nvim-R/blob/master/doc/Nvim-R.txt' title=''>here</a>.</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Keybindings to Control Environment</h2></hgroup><article  id="keybindings-to-control-environment" class="smaller ">
