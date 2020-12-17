@@ -159,3 +159,20 @@ require user newwebuser
 Now, test it out by pointing your web-browser to http://cluster.hpcc.ucr.edu/~username/locked_dir
 Be sure to replace `username` with your actual user name for the above code and URL.
 
+## Google Drive
+
+There are several tools used to transfer files from Google Drive to the cluster, however RClone may be the easiest to setup.
+
+  1. Create an `SSH` tunnel to the cluster, (MS Windows users should use `MobaXterm`):
+     ```
+     ssh -L 53682:localhost:53682 username@cluster.hpcc.ucr.edu
+     ```
+
+  2. Once you have logged into the cluster with the above command, then load `rclone` via the module system and run it, like so:
+     ```
+     module load rclone
+     rclone config
+     ```
+
+  3. After that, follow this [RClone Walkthrough](https://rclone.org/drive/) to complete your setup.
+

@@ -1,5 +1,5 @@
 ---
-title: "Introduction to the HPCC"
+title: "Cluster Usage"
 author: Jordan Hayes
 date: December 18, 2020
 output: 
@@ -8,7 +8,7 @@ output:
     widescreen: yes
     df_print: paged
     smaller: true
-subtitle: "Cluster Usage" 
+subtitle: "Just the Basics" 
 ---
 <!--
 - ioslides manual: 
@@ -45,7 +45,7 @@ jupyter nbconvert Cluster_Usage.ipynb --to markdown && Rscript -e "rmarkdown::re
 
 ## Filesystem: Paths
 
-<img width='900px' src='images/filesystem.png' />
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vRjaVs9P2GF9oXUem-NNRH6gUD-VQ_N03wKYYHlJ373Qrqb9KPd_oZuFkTzHVFUawNX9ShIHW4u-u2l/pub?w=936&amp;h=380">
 
 <hr style='clear:both;'>
 
@@ -100,7 +100,7 @@ All storage has limits.
 
 __Shared Storage__
 
-<img width='900px' src='images/cluster.png'/>
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vQWU7EGfVNGIhebu953CqTx3y-jufY-0ja6zcV65LN3KWLX5hBY7R2mEavvy34Gbq9fnDQeT80jEqfT/pub?w=933&amp;h=401">
 
 <hr style='clear:both;'>
 
@@ -260,7 +260,7 @@ If package fails to be found, search on the [Anaconda Website](https://anaconda.
 
 __What is a Compute Node?__
 
-<img width='900px' src='images/node.png'/>
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vQuTFQYXJmcIXx4873q1TlH0-44-yf1GwZicu6t7l5UrVnww08cMxD_ubYc0mpkfZ0Gsku43TT90DY0/pub?w=941&amp;h=250">
 
 [https://hpcc.ucr.edu/hardware](https://hpcc.ucr.edu/hardware)
 
@@ -268,7 +268,7 @@ __What is a Compute Node?__
 
 ## Job Scheduling: Partition
 
-<img style="float:right;" src='images/partition.png' width='350px'/>
+<img style="float:right;" width='350px' src="https://docs.google.com/drawings/d/e/2PACX-1vQcl8tr-Tsi6TlUrUMREbrEk5ygkhllfoq82ZzrItDF13uqY-FmPwLpUqcpRGBTE7VajnpgDBwgox-v/pub?w=417&amp;h=551">
 
 __What is a Partition?__
 
