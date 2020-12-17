@@ -293,7 +293,7 @@ line.
 
 ### Install
 
-To install it, one needs to copy from the `vimcmdline` resository the directories
+To install it, one needs to copy from the `vimcmdline` repository the directories
 `ftplugin`, `plugin` and `syntax` and their files to `~/.config/nvim/`. For
 user accounts of UCR’s HPCC, the above install script `install_nvimRtmux` includes the 
 install of `vimcmdline` (since 09-Jun-18).
