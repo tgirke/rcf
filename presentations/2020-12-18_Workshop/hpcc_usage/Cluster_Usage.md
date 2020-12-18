@@ -303,6 +303,10 @@ You may need a singularity image if...
 * Your software requires older, or newer, libraries
 * Installation instructions are for `Ubuntu`
 
+## Software: Management
+
+__Singularity__
+
 First you must get your own Linux machine, and install Singularity.
 Perhaps the easiest way to do this is mentioned [here](https://sylabs.io/guides/3.7/admin-guide/installation.html#installation-on-windows-or-mac).
 
