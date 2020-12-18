@@ -105,7 +105,7 @@ URLs: [1. main page](https://github.com/jalvesaq/Nvim-R), [2. HPCC manual](http:
 
 <center><img title="Nvim-R-Tmux" src="https://raw.githubusercontent.com/jalvesaq/Nvim-R/master/Nvim-R.gif"></center>
 
-Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R))
+Animated screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R))
 
 ## Advantages of Command-line UI {.flexbox .vcenter} 
 
@@ -125,8 +125,8 @@ Animated Screenshot of Nvim-R (from [here](https://github.com/jalvesaq/Nvim-R))
 
 - The following introduces Nvim-R combined with Tmux. 
 - Similar instructions are available in HPCC's Nvim-R-Tmux tutorial [here](http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html).
-- Note: Nvim-R and Tmux are two independent tools that can be used indpendently or in combination, and both are useful for remote terminal work. 
-- For simplicity, some of the following examples use Nvim-R without Tmux. Once users know the basics of both then it is trival to combine them as needed. 
+- Note: Nvim-R and Tmux are two independent tools that can be used independently or in combination, and both are useful for remote terminal work. 
+- For simplicity, some of the following examples use Nvim-R without Tmux. Once users know the basics of both then it is trivial to combine them as needed. 
 
 
 ## Vim/Nvim Basics
@@ -168,9 +168,9 @@ commands starting with `:` need to be typed in the command mode. All other comma
 
 ### What is Tmux?
 
-- Tmux is a virtual terminal multiplexer providing reattachable terminal sessions
+- Tmux is a virtual terminal multiplexer providing re-attachable terminal sessions
 - Advantage: work in a terminal session cannot get lost due to internet disruptions or even when switching computers
-- Combinded with the `Nvim-r` plugin it provides a flexible working environment for R 
+- Combined with the `Nvim-r` plugin it provides a flexible working environment for R 
 - Users can send code from a script to the R console or command-line.
 - On HPCC both Nvim-R and Tmux are pre-configured and easy to install 
 
@@ -208,7 +208,7 @@ tmux a # attaches to an existing session
 
 __2. Open nvim-connected R session__ 
 
-Open a `*.R` or `*.Rmd` file with `nvim` and intialize a connected R session
+Open a `*.R` or `*.Rmd` file with `nvim` and initialize a connected R session
 with `\rf`. Note, the resulting split window among Nvim and R behaves like a split
 viewport in `nvim` or `vim` meaning the usage of `Ctrl-w w` followed by `i` and
 `Esc` is important for session navigation.
@@ -229,7 +229,7 @@ several lines at once, one can select them in nvim's visual mode and then hit th
 - Please note, the default command for sending code lines in the nvim-r-plugin is `\l`. This key 
   binding has been remapped in the provided `.config/nvim/init.vim` file to the
   space bar. Most other key bindings (shortcuts) still start with the `\` as
-  LocalLeader, _e.g._ `\rh` opens the help for a function/object where the curser
+  LocalLeader, _e.g._ `\rh` opens the help for a function/object where the cursor
   is located in nvim. More details on this are given on the next slide(s).
 - The most comprehensive manual on this is the official `Nvim-R` documentation [here](https://github.com/jalvesaq/Nvim-R/blob/master/doc/Nvim-R.txt).
 
@@ -280,7 +280,7 @@ __Window-level comands__
 __Session-level comands__
 
 * `Ctrl-a d`: detaches from current session
-* `Ctrl-a s`: switch between available tmux sesssions
+* `Ctrl-a s`: switch between available tmux sessions
 * `$ tmux new -s <name>`: starts new session with a specific name
 * `$ tmux ls`: lists available tmux session(s)
 * `$ tmux attach -t <id>`: attaches to specific tmux session  
@@ -344,7 +344,7 @@ Download `R_for_HPC_demo.R` file to you HPCC account as follows.
 wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/R_for_HPC_demo.R
 ```
 
-Open `nvim_demo.R` with nvim. The contnent of this file is shown in the following code 
+Open `nvim_demo.R` with nvim. The content of this file is shown in the following code 
 block. Next, initialize a Nvim-connected R session with `\rf`, and then execute the 
 code by pressing the space bar on your keyboard. 
 
@@ -539,7 +539,7 @@ do.call("rbind", lapply(Njobs, loadResult))
 
 ### Remove registry directory from file system
 
-By default existing registries will not be overwritten. If required one can exlicitly
+By default existing registries will not be overwritten. If required one can explicitly
 clean and delete them with the following functions. 
 
 
@@ -567,7 +567,7 @@ reduceResults(rbind)
 - Steeper learning curve than GUI-based IDEs, including RStudio or Jupyter Notebooks
 - However, it is much more
     - powerful, flexible, robust and language agnostic solution for working on remote systems
-    - time learning it is well invested, especially for students and reasearchers with complex data analysis and programming needs
+    - time learning it is well invested, especially for students and researchers with complex data analysis and programming needs
 
 ### Advantages of `batchtools`
 
@@ -575,7 +575,7 @@ reduceResults(rbind)
 - most schedulers supported
 - takes full advantage of a cluster
 - robust job management by organizing results in registry file-based database
-- simplifies submission, montitoring and restart of jobs 
+- simplifies submission, monitoring and restart of jobs 
 - well supported and maintained package
 
 # Outline
