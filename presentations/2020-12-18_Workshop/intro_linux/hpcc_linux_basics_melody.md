@@ -41,19 +41,21 @@ subtitle: "Login and Basic Commands"
 
 Type the `command` + `space` bar key on the keyboard to pull up the "Spotlight Search" bar
 
-![Screen Shot 2020-12-17 at 10.01.33.png](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/1.png)
+![key presses highlighted](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/1.png)
 
 Or press the following highlighted magnifying glass icon in the top right of the screen:
 
-![4uC7nxfTf4N4hUCNsfHoGK-970-80.png](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/2.png)
+![Spotlight icon](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/2.png)
+
+## Mac - OS X Users Cont. 
 
 The search bar will pop up in the middle of the screen:
 
-![Screen Shot 2020-12-15 at 14.58.32.png](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/3.png)
+![Spotlight Search bar](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/3.png)
 
 Type "terminal" to search for and highlight the terminal app, then press the `enter` key.
 
-![Untitled2.png](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/4.png)
+![Terminal Selected](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/4.png)
 
 ## Windows Users
 
@@ -89,7 +91,7 @@ Before we start, we should go over some common vocabulary we use and you should 
   
   - **environment variable**: a user will have unique configurations, such as variables that tell the shell where the programs are located
 
-## Basic Commands: Square One
+## Basic Commands: Square One 
 
 **P**rint **W**orking **D**irectory
 
@@ -102,6 +104,8 @@ Before we start, we should go over some common vocabulary we use and you should 
 - `ls -l` → **l**ist with **l**onger details
 
 - `ls -a` + `ls -l` = **`ls -la`** → **l**i**s**t **a**ll files with **l**onger details
+
+## Basic Commands: Square One Cont.
 
 **C**hange **D**irectory
 
@@ -124,6 +128,8 @@ Create a new file (**touch** your fingers on the keyboard)
 - `touch file.txt` → creates an empty file named *file* with the *txt* extension
 
 - `touch PowerAt.Your.FingerTips` creates a file named *PowerAt.Your* with the *FingerTips* extensions
+
+## Basic Commands: Manipulating Files/Folders Cont. 
 
 **R**e**m**ove (a file)
 
@@ -171,6 +177,8 @@ Display **C**ontents (of **a** file **t**o the screen)p
 
 - `find some/folder/ -name "*.json"` → find any files with any name with the ".json" extension in the some/folder/ path
 
+## Basic Commands: Helpful Utilities Cont.
+
 **W**ord **C**ount (or lines/characters)
 
 - `wc file.txt` → word/line/character count of the supplied file.txt
@@ -187,7 +195,7 @@ Display **C**ontents (of **a** file **t**o the screen)p
 
 - `ps aux` → displays processes of all users with all the background processes started at boot time
 
-## Basic Commands: Utilities Cont.
+## Basic Commands: Other Utilities
 
 **Which** is the correct location of my program (that is executed when you type its name in the terminal) ?
 
@@ -198,6 +206,8 @@ Display **C**ontents (of **a** file **t**o the screen)p
 - `grep your_search_pattern file_name` 
 
 - `grep "hello" /path/file` → searches the word *hello* in the file named *file* within the location
+
+## Basic Commands: Other Utilities Cont.
 
 **less**, or more but backwards
 
