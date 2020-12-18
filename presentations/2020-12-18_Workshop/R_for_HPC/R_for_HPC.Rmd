@@ -338,6 +338,9 @@ Download `R_for_HPC_demo.R` file to you HPCC account as follows.
 wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/R_for_HPC_demo.R
 ```
 
+<p style='text-align: right;'> __[ Scroll down to continue ]__ </p>
+<br/><br/>
+
 Open `nvim_demo.R` with nvim. The content of this file is shown in the following code 
 block. Next, initialize a Nvim-connected R session with `\rf`, and then execute the 
 code by pressing the space bar on your keyboard. 
