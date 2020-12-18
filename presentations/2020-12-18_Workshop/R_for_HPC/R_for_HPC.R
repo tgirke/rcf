@@ -28,6 +28,9 @@
 ## nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 
 
+## install_nvimRtmux
+
+
 ## tmux # starts a new tmux session
 
 ## tmux a # attaches to an existing session
