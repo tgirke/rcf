@@ -81,6 +81,12 @@ bigdata/
 
 <hr style='clear:both;'>
 
+## Filesystem: Paths
+
+  * Symlink (<span style='color:blue;'>dotted lines</span>) - A shortcut to another directory or file
+  
+  * Mount (<span style='color:green;'>Local</span>/<span style='color:red;'>Shared</span>) - An entry point to a disk or storage device (ie. `'C:/'`)
+
 ## Filesystem: Quotas
 
 All storage has limits.
@@ -204,31 +210,68 @@ module unload samtools
 
 ## Software: Installs
 
-For a basic `Python` package you can use `pip` to install it:
+__Python__
+
+For a basic `Python` package ([pypi](https://pypi.org/)) you can use `pip` to install it:
 
 ```bash
 pip install PKGNAME --user
 ```
 
-For an `R` package you can use the built-in install function or the install function from `BiocManager`:
+For example, here is how you would install the `camelcase` package:
 
-```r
+```bash
+pip install camelcase --user
+```
+
+__R__
+
+For an `R` package you can use the built-in install function:
+
+```bash
+Rscript -e "install.packages('PKGNAME')"
+```
+
+OR
+
+```bash
+R
+```
+
+```
 install.packages('PKGNAME')
 ```
 
-```r
-BiocManager::install('PKGNAME')
+Or you can use the install function from [BiocManager](https://www.bioconductor.org/):
+
+```bash
+Rscript -e "BiocManager::install('PKGNAME')"
 ```
 
-[https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html](https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html)
+OR
+
+```bash
+R
+```
+
+```
+install.packages('PKGNAME')
+```
+
+[https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html#r-1](https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html#r-1)
 
 <hr style='clear:both;'>
 
 ## Software: Management
 
-* <span style='font-weight:bold;color:green;'>Conda</span> - A software management system that allows you to install thousands of software packages and tools, including `R` and `Python` languages.
+  * <span style='font-weight:bold;color:green;'>Conda</span> - A software management system that allows you to install thousands of software packages and tools, including `R` and `Python` languages.
 
-* <span style='font-weight:bold;color:red;'>Singularity</span> - A Linux container system (similar to Docker) which allows users to prepare a Linux environment from scratch.
+  Full instructions regarding conda setup can be found [here](https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html).
+  
+
+  * <span style='font-weight:bold;color:red;'>Singularity</span> - A Linux container system (similar to Docker) which allows users to prepare a Linux environment from scratch.
+  
+  Some singularity examples can be found [here](https://github.com/ucr-hpcc/hpcc_slurm_examples/tree/master/singularity).
 
 A previous workshop regarding custom software installs utilizing the above technologies can be found [here](https://bit.ly/2PXGWEq).
 
@@ -238,7 +281,14 @@ A previous workshop regarding custom software installs utilizing the above techn
 
 __Conda__
 
-Install `Python` 3 environment:
+List current conda virtual environments:
+
+
+```bash
+conda env list
+```
+
+Create a `Python` 3 environment named `python3`:
 
 
 ```bash
@@ -252,7 +302,101 @@ Install Python package with conda:
 conda install -n python3 numpy
 ```
 
-If package fails to be found, search on the [Anaconda Website](https://anaconda.org/). After searching click on one of the results and the command for installing will be provided. Remember to add your `-n python3` environment name.
+> __Note:__ If package fails to be found, search on the [Anaconda Website](https://anaconda.org/). After searching click on one of the results and the command for installing will be provided. Remember to add your `-n python3` environment name.
+
+<hr style='clear:both;'>
+
+## Software: Management
+
+__Conda__
+
+After the conda environment is setup and `numpy` is installed, we can test it with the following:
+
+
+```bash
+conda activate python3
+python -c 'import numpy as np; a = np.arange(15).reshape(3, 5); print(a)'
+```
+
+## Software: Management
+
+__Singularity__
+
+> __Warning:__ This is more for advanced projects
+
+You may need a singularity image if...
+
+* You may want to build/control your own Linux environment
+* Your software requires older, or newer, libraries
+* Installation instructions are for `Ubuntu`
+
+First you must get your own Linux machine, and install Singularity.
+Perhaps the easiest way to do this is mentioned [here](https://sylabs.io/guides/3.7/admin-guide/installation.html#installation-on-windows-or-mac).
+
+After this you can use __pre-built__ images or try to build a __custom__ singularity image:
+
+__Pre-Built__
+
+```
+singularity exec docker://ubuntu:latest echo "Hello Dinosaur!"
+```
+
+__Custom__
+
+1. Create a Singularity definition file
+2. Build container image based on definition file
+3. Run shell inside image to test
+
+## Software Management
+
+__Definition File__
+
+Make file `myLinuxEnv.def` with the following content:
+
+```
+bootstrap: docker
+From: ubuntu:latest
+
+%post
+  apt update
+  apt install httpd
+```
+
+## Software Management
+
+__Build Container Image__
+
+Run the following command using defenition file:
+
+
+```bash
+singularity build myLinuxEnv.sing myLinuxEnv.def
+```
+
+## Software Management
+
+__Test__
+
+Test the image buy going inside it:
+
+
+```bash
+singularity shell myLinuxEnv.sing
+```
+
+Once the `Singularity` image is tested, transfer it to the cluster, and execute it within a job like so:
+
+
+```bash
+module load singularity
+singularity exec myLinuxEnv.sing 'cat /etc/lsb-release'
+```
+
+## Job Scheduling: Slurm
+
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vQWU7EGfVNGIhebu953CqTx3y-jufY-0ja6zcV65LN3KWLX5hBY7R2mEavvy34Gbq9fnDQeT80jEqfT/pub?w=933&amp;h=401">
+
+[https://slurm.schedmd.com/archive/slurm-19.05.0/](https://slurm.schedmd.com/archive/slurm-19.05.0/)
 
 <hr style='clear:both;'>
 
@@ -266,7 +410,7 @@ __What is a Compute Node?__
 
 <hr style='clear:both;'>
 
-## Job Scheduling: Partition
+## Job Scheduling: Partitions
 
 <img style="float:right;" width='350px' src="https://docs.google.com/drawings/d/e/2PACX-1vQcl8tr-Tsi6TlUrUMREbrEk5ygkhllfoq82ZzrItDF13uqY-FmPwLpUqcpRGBTE7VajnpgDBwgox-v/pub?w=417&amp;h=551">
 
@@ -284,7 +428,7 @@ __Intel Partition__
 
 <hr style='clear:both;'>
 
-## Scheduling: Partitions
+## Job Scheduling: Partitions
 
 
 * __Default?__
@@ -301,7 +445,7 @@ For more details regarding our partitions, please review our [Cluster Jobs: Part
 
 <hr style='clear:both;'>
 
-## Scheduling: Status
+## Job Scheduling: Status
 
 List all jobs owned by you and status:
 
@@ -319,7 +463,7 @@ squeue -A $GROUP
 
 <hr style='clear:both;'>
 
-## Scheduling: Limits
+## Job Scheduling: Limits
 
 List current Slurm limits:
 
@@ -344,7 +488,7 @@ group_cpus
 
 <hr style='clear:both;'>
 
-## Scheduling: Jobs
+## Job Scheduling: Jobs
 
 __Submission__
 
@@ -371,7 +515,7 @@ cat basic_job.sh
 
 <hr style='clear:both;'>
 
-## Scheduling: Jobs
+## Job Scheduling: Jobs
 
 __Submission__
 
@@ -390,7 +534,7 @@ srun -p short --pty bash -l
 
 <hr style='clear:both;'>
 
-## Scheduling: Jobs
+## Job Scheduling: Jobs
 
 __Status__
 
