@@ -51,6 +51,12 @@ jupyter nbconvert Cluster_Usage.ipynb --to markdown && Rscript -e "rmarkdown::re
 
 ## Filesystem: Paths
 
+  * Symlink (<span style='color:blue;'>dotted lines</span>) - A shortcut to another directory or file
+  
+  * Mount (<span style='color:green;'>Local</span>/<span style='color:red;'>Shared</span>) - An entry point to a disk or storage device (ie. `'C:/'` or `Google Drive`)
+
+## Filesystem: Paths
+
 __Case sensitive__
 
 All paths and commands are case sensitive, an uppercase letter is not the same as a lowercase letter.
@@ -65,7 +71,9 @@ __Path Types__
 
 ## Filesystem: Paths
 
-Absolute paths for `bigdata`:
+### Examples
+
+__Absolute__ paths for `bigdata`:
 
 ```
 /rhome/username/bigdata/
@@ -73,7 +81,7 @@ Absolute paths for `bigdata`:
 ```
 
 
-Relative path for `bigdata` (assume currently in `/rhome/username`):
+__Relative__ path for `bigdata` (assume currently in `/rhome/username`):
 
 ```
 bigdata/
@@ -81,33 +89,19 @@ bigdata/
 
 <hr style='clear:both;'>
 
-## Filesystem: Paths
-
-  * Symlink (<span style='color:blue;'>dotted lines</span>) - A shortcut to another directory or file
-  
-  * Mount (<span style='color:green;'>Local</span>/<span style='color:red;'>Shared</span>) - An entry point to a disk or storage device (ie. `'C:/'`)
-
 ## Filesystem: Quotas
 
 All storage has limits.
 
-* __Local Storage__ (ie. laptop)
+* <span style='font-weight:bold;color:green;'>Local Storage</span> (ie. laptop hard drive)
 
   Only exists on a single machine (node) and is limited by disk size.
 
 
-* __Shared Storage__ (ie. Cloud)
+* <span style='font-weight:bold;color:red;'>Shared Storage</span> (ie. Google Drive)
 
   Exists accross all machines (nodes) and is limited by a quota.
   
-<hr style='clear:both;'>
-
-## Filesystem: Quotas
-
-__Shared Storage__
-
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vQWU7EGfVNGIhebu953CqTx3y-jufY-0ja6zcV65LN3KWLX5hBY7R2mEavvy34Gbq9fnDQeT80jEqfT/pub?w=933&amp;h=401">
-
 <hr style='clear:both;'>
 
 ## Filesystem: Usage
