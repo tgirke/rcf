@@ -41,19 +41,19 @@ subtitle: "Login and Basic Commands"
 
 Type the `command` + `space` bar key on the keyboard to pull up the "Spotlight Search" bar
 
-![Screen Shot 2020-12-17 at 10.01.33.png](1.png)
+![Screen Shot 2020-12-17 at 10.01.33.png](/images/1.png)
 
 Or press the following highlighted magnifying glass icon in the top right of the screen:
 
-![4uC7nxfTf4N4hUCNsfHoGK-970-80.png](2.png)
+![4uC7nxfTf4N4hUCNsfHoGK-970-80.png](/images/2.png)
 
 The search bar will pop up in the middle of the screen:
 
-![Screen Shot 2020-12-15 at 14.58.32.png](3.png)
+![Screen Shot 2020-12-15 at 14.58.32.png](/images/3.png)
 
 Type "terminal" to search for and highlight the terminal app, then press the `enter` key.
 
-![Untitled2.png](4.png)
+![Untitled2.png](/images/4.png)
 
 ## Windows Users
 
@@ -61,7 +61,7 @@ Type "terminal" to search for and highlight the terminal app, then press the `en
 
 2. Click on "Start local terminal"
 
-![Screen Shot 2020-12-15 at 15.53.54.png](5.png)
+![Screen Shot 2020-12-15 at 15.53.54.png](/images/5.png)
 
 ## Logging in (any operating System)
 
