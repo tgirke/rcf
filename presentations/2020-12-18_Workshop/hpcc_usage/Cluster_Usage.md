@@ -68,14 +68,13 @@ __Path Types__
   * Absolute path - Full path from root to current working directory
   
   ```
-  /rhome/username/bigdata/
-  /bigdata/labname/username/
+  /rhome/username/workshop_dir/
   ```
 
   * Relative path - Partial path or non-absolute path (current directory implied)
   
   ```
-  bigdata/
+  workshop_dir/
   ```
   
 <hr style='clear:both;'>
@@ -489,11 +488,11 @@ wget -O basic_job.sh https://bit.ly/33rozLX
 wget -O basic_job.sh https://bit.ly/2KBaIOs
 ```
 
-Check job submission script contents:
+Check job submission script contents (use arrow keys to navigate and `ctrl+x` to quit):
 
 
 ```bash
-cat basic_job.sh
+nano basic_job.sh
 ```
 
 <hr style='clear:both;'>
