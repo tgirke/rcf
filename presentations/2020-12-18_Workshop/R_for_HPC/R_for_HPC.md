@@ -334,7 +334,6 @@ srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:
     - Most users have access to: `short`, `batch`, `intel` and `highmem` 
     - Students registered under the statistics department, only have access to: `statsdept`  
     - Users of labs owning computer nodes also can access: `<pi_name>lab` 
-- The other settings chosen above are suitable for a short testing tasks 
 - For more details on argument settings for `srun`, see [here](http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html)
 
 Download `R_for_HPC_demo.R` file to you HPCC account as follows.  
