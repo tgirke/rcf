@@ -178,7 +178,7 @@ commands starting with `:` need to be typed in the command mode. All other comma
 
 </br></br></br></br>
 
-## Quick Configuration in HPCC User Accounts
+## Nvim-R-Tmux Configuration in HPCC User Accounts
 
 Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the [detailed
 instructions](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) to install Nvim-R-Tmux from scratch on your own system (_e.g._ laptop or computer).
@@ -455,15 +455,15 @@ First login to your cluster account, open R and execute the following lines. Thi
 create a test directory (here `mytestdir`), redirect R into this directory and then download
 the required files: 
 
-+ [`slurm.tmpl`](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/slurm.tmpl)
-+ [`.batchtools.conf.R`](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/.batchtools.conf.R)
++ [`slurm.tmpl`](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/slurm.tmpl)
++ [`.batchtools.conf.R`](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/.batchtools.conf.R)
 
 
 ```r
 dir.create("mytestdir")
 setwd("mytestdir")
-download.file("https://goo.gl/tLMddb", "slurm.tmpl")
-download.file("https://goo.gl/5HrYkE", ".batchtools.conf.R")
+download.file("https://bit.ly/3gZJBsy", "slurm.tmpl")
+download.file("https://bit.ly/3nvSNHA", ".batchtools.conf.R")
 ```
 
 ### Load package and define some custom function

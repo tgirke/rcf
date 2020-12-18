@@ -177,7 +177,7 @@ commands starting with `:` need to be typed in the command mode. All other comma
 
 </br></br></br></br>
 
-## Quick Configuration in HPCC User Accounts
+## Nvim-R-Tmux Configuration in HPCC User Accounts
 
 Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the [detailed
 instructions](https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899) to install Nvim-R-Tmux from scratch on your own system (_e.g._ laptop or computer).

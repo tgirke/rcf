@@ -4679,7 +4679,7 @@ pre[class] {
 
 <p></br></br></br></br></p>
 
-</article></slide><slide class=""><hgroup><h2>Quick Configuration in HPCC User Accounts</h2></hgroup><article  id="quick-configuration-in-hpcc-user-accounts" class="smaller ">
+</article></slide><slide class=""><hgroup><h2>Nvim-R-Tmux Configuration in HPCC User Accounts</h2></hgroup><article  id="nvim-r-tmux-configuration-in-hpcc-user-accounts" class="smaller ">
 
 <p>Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the <a href='https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899' title=''>detailed instructions</a> to install Nvim-R-Tmux from scratch on your own system (<em>e.g.</em> laptop or computer).</p>
 
@@ -4940,14 +4940,14 @@ Rscript my_script.R</pre>
 <p>First login to your cluster account, open R and execute the following lines. This will create a test directory (here <code>mytestdir</code>), redirect R into this directory and then download the required files:</p>
 
 <ul>
-<li><a href='https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/slurm.tmpl' title=''><code>slurm.tmpl</code></a></li>
-<li><a href='https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/.batchtools.conf.R' title=''><code>.batchtools.conf.R</code></a></li>
+<li><a href='https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/slurm.tmpl' title=''><code>slurm.tmpl</code></a></li>
+<li><a href='https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/.batchtools.conf.R' title=''><code>.batchtools.conf.R</code></a></li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>dir.create(&quot;mytestdir&quot;)
 setwd(&quot;mytestdir&quot;)
-download.file(&quot;https://goo.gl/tLMddb&quot;, &quot;slurm.tmpl&quot;)
-download.file(&quot;https://goo.gl/5HrYkE&quot;, &quot;.batchtools.conf.R&quot;)</pre>
+download.file(&quot;https://bit.ly/3gZJBsy&quot;, &quot;slurm.tmpl&quot;)
+download.file(&quot;https://bit.ly/3nvSNHA&quot;, &quot;.batchtools.conf.R&quot;)</pre>
 
 <h3>Load package and define some custom function</h3>
 
