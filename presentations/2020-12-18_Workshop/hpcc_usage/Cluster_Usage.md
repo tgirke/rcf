@@ -209,6 +209,8 @@ For example, here is how you would install the `camelcase` package:
 pip install camelcase --user
 ```
 
+## Software: Installs
+
 __R__
 
 For an `R` package you can use the install fuction ([CRAN](https://cran.r-project.org/)):
