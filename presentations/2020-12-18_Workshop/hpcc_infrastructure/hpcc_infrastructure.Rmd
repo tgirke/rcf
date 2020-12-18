@@ -133,15 +133,14 @@ pre[class] {
 ## Recharging and Quotas
 
 - Subscription fee
-   - Subscription based access model: $1000 per lab/yr
+   - Subscription based access model: $1000 per lab/yr. Includes any number of user accounts per lab, each with 20GB storage
    - Big data storage:
       - GB plan: $25/yr for 100GB (usable and backed up space)
       - TB plan: $1000/yr for 10TB (usable and backed-up space)
    - Ownership models: see next slide
 - Quota
    - Maximum CPU core usage limited to 512 CPU cores per lab and 256 CPU cores per user per partition
-   - No charge for CPU hours!!!
-   - RAM quotas are queue specific 
+   - No charge for CPU hours! RAM quotas are queue specific.
 - Details about recharging rates: see [here](http://hpcc.ucr.edu/docs.html)
 
 ## Ownership Options
