@@ -331,11 +331,11 @@ srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:
 - The other settings chosen above are suitable for a short testing tasks 
 - For more details on argument settings for `srun`, see [here](http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html)
 
-Download `nvim_demo.R` demo file to you HPCC account as follows.  
+Download `R_for_HPC_demo.R` file to you HPCC account as follows.  
 
 
 ```bash
-wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/nvim_demo.R
+wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/R_for_HPC_demo.R
 ```
 
 Open `nvim_demo.R` with nvim. The contnent of this file is shown in the following code 
@@ -445,8 +445,8 @@ sbatch script_name.sh
   `batchtools`
   [here](https://hpcc.ucr.edu/manuals_linux-cluster_parallelR.html)
 - To simplify the evaluation of the R code on the following slides, the
-  corresponding text version  is available for download from
-  [here](https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/batchtools_test.R).
+  corresponding text version is available for download from
+  [here](https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/R_for_HPC_demo.R).
 
 ## Hands-on Demo of `batchtools`
 
@@ -502,7 +502,7 @@ via SLURM.
 reg <- makeRegistry(file.dir="myregdir", conf.file=".batchtools.conf.R")
 Njobs <- 1:4 # Define number of jobs (here 4)
 ids <- batchMap(fun=myFct, x=Njobs) 
-done <- submitJobs(ids, reg=reg, resources=list(partition="short", walltime=60, ntasks=1, ncpus=1, memory=1024))
+done <- submitJobs(ids, reg=reg, resources=list(partition="short", walltime=120, ntasks=1, ncpus=1, memory=1024))
 waitForJobs() # Wait until jobs are completed
 ```
 

@@ -4835,9 +4835,9 @@ vimcmdline
 <li>For more details on argument settings for <code>srun</code>, see <a href='http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html' title=''>here</a></li>
 </ul>
 
-<p>Download <code>nvim_demo.R</code> demo file to you HPCC account as follows.</p>
+<p>Download <code>R_for_HPC_demo.R</code> file to you HPCC account as follows.</p>
 
-<pre class = 'prettyprint lang-bash'>wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/nvim_demo.R</pre>
+<pre class = 'prettyprint lang-bash'>wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/R_for_HPC_demo.R</pre>
 
 <p>Open <code>nvim_demo.R</code> with nvim. The contnent of this file is shown in the following code block. Next, initialize a Nvim-connected R session with <code>\rf</code>, and then execute the code by pressing the space bar on your keyboard.</p>
 
@@ -4930,7 +4930,7 @@ Rscript my_script.R</pre>
 <ul>
 <li>The following introduces the usage of <code>batchtools</code> for a computer cluster using SLURM as scheduler (workload manager). SLURM is the scheduler used by the HPCC.</li>
 <li>Similar instructions are provided in HPCC’s manual section covering <code>batchtools</code> <a href='https://hpcc.ucr.edu/manuals_linux-cluster_parallelR.html' title=''>here</a></li>
-<li>To simplify the evaluation of the R code on the following slides, the corresponding text version is available for download from <a href='https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/batchtools_test.R' title=''>here</a>.</li>
+<li>To simplify the evaluation of the R code on the following slides, the corresponding text version is available for download from <a href='https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/R_for_HPC_demo.R' title=''>here</a>.</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Hands-on Demo of <code>batchtools</code></h2></hgroup><article  id="hands-on-demo-of-batchtools" class="smaller ">
@@ -4981,7 +4981,7 @@ myFct &lt;- function(x) {
 <pre class = 'prettyprint lang-r'>reg &lt;- makeRegistry(file.dir=&quot;myregdir&quot;, conf.file=&quot;.batchtools.conf.R&quot;)
 Njobs &lt;- 1:4 # Define number of jobs (here 4)
 ids &lt;- batchMap(fun=myFct, x=Njobs) 
-done &lt;- submitJobs(ids, reg=reg, resources=list(partition=&quot;short&quot;, walltime=60, ntasks=1, ncpus=1, memory=1024))
+done &lt;- submitJobs(ids, reg=reg, resources=list(partition=&quot;short&quot;, walltime=120, ntasks=1, ncpus=1, memory=1024))
 waitForJobs() # Wait until jobs are completed</pre>
 
 <h3>Summarize job status</h3>

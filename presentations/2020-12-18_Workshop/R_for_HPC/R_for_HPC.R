@@ -39,7 +39,7 @@
 ## srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
 
 
-## wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/_support_docs/tutorials/nvim_demo.R
+## wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/R_for_HPC_demo.R
 
 
 ## ----nvim-r-tmux-demo_show, eval=FALSE, message=FALSE, warning=FALSE----------
@@ -126,7 +126,7 @@ read_tsv("iris.txt") %>% # Import with read_tbv from readr package
 ## reg <- makeRegistry(file.dir="myregdir", conf.file=".batchtools.conf.R")
 ## Njobs <- 1:4 # Define number of jobs (here 4)
 ## ids <- batchMap(fun=myFct, x=Njobs)
-## done <- submitJobs(ids, reg=reg, resources=list(partition="short", walltime=60, ntasks=1, ncpus=1, memory=1024))
+## done <- submitJobs(ids, reg=reg, resources=list(partition="short", walltime=120, ntasks=1, ncpus=1, memory=1024))
 ## waitForJobs() # Wait until jobs are completed
 
 
