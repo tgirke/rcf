@@ -21,7 +21,7 @@
       // Slide settings
       settings: {
                 title: 'Cluster Usage',
-                        subtitle: 'Just the Basics',
+                        subtitle: 'Just the Basics…mostly',
                 useBuilds: true,
         usePrettify: true,
         enableSlideAreas: true,
@@ -4523,6 +4523,8 @@ jupyter nbconvert Cluster_Usage.ipynb --to markdown && Rscript -e "rmarkdown::re
 
 </article></slide><slide class=""><hgroup><h2>Filesystem: Paths</h2></hgroup><article  class="smaller " id="filesystem-paths">
 
+<p><strong>RoadMap</strong></p>
+
 <p><img src="https://docs.google.com/drawings/d/e/2PACX-1vRjaVs9P2GF9oXUem-NNRH6gUD-VQ_N03wKYYHlJ373Qrqb9KPd_oZuFkTzHVFUawNX9ShIHW4u-u2l/pub?w=936&amp;h=380"></p>
 
 <hr style='clear:both;'>
@@ -4546,22 +4548,15 @@ Shared</span>) - An entry point to a disk or storage device (ie. <code>&#39;C:/&
 <p><strong>Path Types</strong></p>
 
 <ul>
-<li><p>Absolute path - Full path from root to current working directory</p></li>
-<li><p>Relative path - Partial path or non-absolute path) - Current working directory is implied</p></li>
+<li>Absolute path - Full path from root to current working directory</li>
 </ul>
-
-<hr style='clear:both;'>
-
-</article></slide><slide class=""><hgroup><h2>Filesystem: Paths</h2></hgroup><article  class="smaller " id="filesystem-paths-3">
-
-<h3>Examples</h3>
-
-<p><strong>Absolute</strong> paths for <code>bigdata</code>:</p>
 
 <pre >/rhome/username/bigdata/
 /bigdata/labname/username/</pre>
 
-<p><strong>Relative</strong> path for <code>bigdata</code> (assume currently in <code>/rhome/username</code>):</p>
+<ul>
+<li>Relative path - Partial path or non-absolute path (current directory implied)</li>
+</ul>
 
 <pre >bigdata/</pre>
 
@@ -4595,7 +4590,7 @@ directory</span> size:</p>
 
 <pre class = 'prettyprint lang-bash'>du -hs ~/workshop_dir</pre>
 
-<p>Check <span style="font-weight:bold;color:#1a9988;">
+<p>Check <span style="font-weight:bold;color:green;">
 local</span> node storage:</p>
 
 <pre class = 'prettyprint lang-bash'>df -h /tmp</pre>
@@ -4606,7 +4601,7 @@ local</span> node storage:</p>
 
 </article></slide><slide class=""><hgroup><h2>Filesystem: Usage</h2></hgroup><article  class="smaller " id="filesystem-usage-1">
 
-<p>Check <span style="font-weight:bold;color:blue;">
+<p>Check <span style="font-weight:bold;color:red;">
 GPFS</span> storage, <em>&ldquo;blocks&rdquo;</em> is used space and available space is <em>&ldquo;quota&rdquo;</em>:</p>
 
 <pre class = 'prettyprint lang-bash'>check_quota home</pre>
@@ -4665,11 +4660,7 @@ hpcc-software samtools</pre>
 
 <p><strong>R</strong></p>
 
-<p>For an <code>R</code> package you can use the built-in install function:</p>
-
-<pre class = 'prettyprint lang-bash'>Rscript -e &quot;install.packages(&#39;PKGNAME&#39;)&quot;</pre>
-
-<p>OR</p>
+<p>For an <code>R</code> package you can use the install fuction (<a href='https://cran.r-project.org/' title=''>CRAN</a>):</p>
 
 <pre class = 'prettyprint lang-bash'>R</pre>
 
@@ -4677,13 +4668,9 @@ hpcc-software samtools</pre>
 
 <p>Or you can use the install function from <a href='https://www.bioconductor.org/' title=''>BiocManager</a>:</p>
 
-<pre class = 'prettyprint lang-bash'>Rscript -e &quot;BiocManager::install(&#39;PKGNAME&#39;)&quot;</pre>
-
-<p>OR</p>
-
 <pre class = 'prettyprint lang-bash'>R</pre>
 
-<pre >install.packages(&#39;PKGNAME&#39;)</pre>
+<pre class = 'prettyprint lang-r'>BiocManager::install(&#39;PKGNAME&#39;)</pre>
 
 <p><a href='https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html#r-1' title=''>https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html#r-1</a></p>
 
@@ -4745,7 +4732,7 @@ python -c &#39;import numpy as np; a = np.arange(15).reshape(3, 5); print(a)&#39
 <p><strong>Singularity</strong></p>
 
 <blockquote>
-<p><strong>Warning:</strong> This is more for advanced projects</p>
+<p><strong>Warning:</strong> This is a demo, should be used for advanced projects</p>
 </blockquote>
 
 <p>You may need a singularity image if…</p>
@@ -4801,7 +4788,7 @@ From: ubuntu:latest
 
 <pre class = 'prettyprint lang-bash'>singularity shell myLinuxEnv.sing</pre>
 
-<p>Once the <code>Singularity</code> image is tested, transfer it to the cluster, and execute it within a job like so:</p>
+<p>Once the <code>Singularity</code> image is tested, transfer it to the cluster (SCP/SFTP), and execute it within a job like so:</p>
 
 <pre class = 'prettyprint lang-bash'>module load singularity
 singularity exec myLinuxEnv.sing &#39;cat /etc/lsb-release&#39;</pre>
@@ -4898,7 +4885,11 @@ singularity exec myLinuxEnv.sing &#39;cat /etc/lsb-release&#39;</pre>
 
 <p>Download example job submission script:</p>
 
-<pre class = 'prettyprint lang-bash'>wget -O basic_job.sh https://bit.ly/33rozLX</pre>
+<pre class = 'prettyprint lang-bash'># Non-Stats
+wget -O basic_job.sh https://bit.ly/33rozLX
+
+# Stats Department
+wget -O basic_job.sh https://bit.ly/2KBaIOs</pre>
 
 <p>Check job submission script contents:</p>
 
@@ -4916,7 +4907,11 @@ singularity exec myLinuxEnv.sing &#39;cat /etc/lsb-release&#39;</pre>
 
 <p>Submit interactive job:</p>
 
-<pre class = 'prettyprint lang-bash'>srun -p short --pty bash -l</pre>
+<pre class = 'prettyprint lang-bash'>srun -p short --pty bash -l
+
+# OR
+
+srun -p statsdept --pty bash -l</pre>
 
 <hr style='clear:both;'>
 

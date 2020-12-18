@@ -8,7 +8,7 @@ output:
     widescreen: yes
     df_print: paged
     smaller: true
-subtitle: "Just the Basics" 
+subtitle: "Just the Basics...mostly" 
 ---
 <!--
 - ioslides manual: 
@@ -45,6 +45,8 @@ jupyter nbconvert Cluster_Usage.ipynb --to markdown && Rscript -e "rmarkdown::re
 
 ## Filesystem: Paths
 
+__RoadMap__
+
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vRjaVs9P2GF9oXUem-NNRH6gUD-VQ_N03wKYYHlJ373Qrqb9KPd_oZuFkTzHVFUawNX9ShIHW4u-u2l/pub?w=936&amp;h=380">
 
 <hr style='clear:both;'>
@@ -64,29 +66,18 @@ All paths and commands are case sensitive, an uppercase letter is not the same a
 __Path Types__
 
   * Absolute path - Full path from root to current working directory
-
-  * Relative path - Partial path or non-absolute path) - Current working directory is implied
   
-<hr style='clear:both;'>
+  ```
+  /rhome/username/bigdata/
+  /bigdata/labname/username/
+  ```
 
-## Filesystem: Paths
-
-### Examples
-
-__Absolute__ paths for `bigdata`:
-
-```
-/rhome/username/bigdata/
-/bigdata/labname/username/
-```
-
-
-__Relative__ path for `bigdata` (assume currently in `/rhome/username`):
-
-```
-bigdata/
-```
-
+  * Relative path - Partial path or non-absolute path (current directory implied)
+  
+  ```
+  bigdata/
+  ```
+  
 <hr style='clear:both;'>
 
 ## Filesystem: Quotas
@@ -120,7 +111,7 @@ Check <span style='font-weight:bold;color:black;'>directory</span> size:
 du -hs ~/workshop_dir
 ```
 
-Check <span style='font-weight:bold;color:#1a9988;'>local</span> node storage:
+Check <span style='font-weight:bold;color:green;'>local</span> node storage:
 
 
 ```bash
@@ -136,7 +127,7 @@ df -h /scratch
 
 ## Filesystem: Usage
 
-Check <span style='font-weight:bold;color:blue;'>GPFS</span> storage, _"blocks"_ is used space and available space is _"quota"_:
+Check <span style='font-weight:bold;color:red;'>GPFS</span> storage, _"blocks"_ is used space and available space is _"quota"_:
 
 
 ```bash
@@ -220,13 +211,7 @@ pip install camelcase --user
 
 __R__
 
-For an `R` package you can use the built-in install function:
-
-```bash
-Rscript -e "install.packages('PKGNAME')"
-```
-
-OR
+For an `R` package you can use the install fuction ([CRAN](https://cran.r-project.org/)):
 
 ```bash
 R
@@ -239,17 +224,11 @@ install.packages('PKGNAME')
 Or you can use the install function from [BiocManager](https://www.bioconductor.org/):
 
 ```bash
-Rscript -e "BiocManager::install('PKGNAME')"
-```
-
-OR
-
-```bash
 R
 ```
 
-```
-install.packages('PKGNAME')
+```r
+BiocManager::install('PKGNAME')
 ```
 
 [https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html#r-1](https://hpcc.ucr.edu/manuals_linux-cluster_package-manage.html#r-1)
@@ -316,7 +295,7 @@ python -c 'import numpy as np; a = np.arange(15).reshape(3, 5); print(a)'
 
 __Singularity__
 
-> __Warning:__ This is more for advanced projects
+> __Warning:__ This is a demo, should be used for advanced projects
 
 You may need a singularity image if...
 
@@ -378,7 +357,7 @@ Test the image buy going inside it:
 singularity shell myLinuxEnv.sing
 ```
 
-Once the `Singularity` image is tested, transfer it to the cluster, and execute it within a job like so:
+Once the `Singularity` image is tested, transfer it to the cluster (SCP/SFTP), and execute it within a job like so:
 
 
 ```bash
@@ -497,7 +476,11 @@ Download example job submission script:
 
 
 ```bash
+# Non-Stats
 wget -O basic_job.sh https://bit.ly/33rozLX
+
+# Stats Department
+wget -O basic_job.sh https://bit.ly/2KBaIOs
 ```
 
 Check job submission script contents:
@@ -524,6 +507,10 @@ Submit interactive job:
 
 ```bash
 srun -p short --pty bash -l
+
+# OR
+
+srun -p statsdept --pty bash -l
 ```
 
 <hr style='clear:both;'>
