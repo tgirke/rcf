@@ -56,6 +56,8 @@ __RoadMap__
   * Symlink (<span style='color:blue;'>dotted lines</span>) - A shortcut to another directory or file
   
   * Mount (<span style='color:green;'>Local</span>/<span style='color:red;'>Shared</span>) - An entry point to a disk or storage device (ie. `'C:/'` or `Google Drive`)
+  
+<hr style='clear:both;'>
 
 ## Filesystem: Paths
 
@@ -208,6 +210,8 @@ For example, here is how you would install the `camelcase` package:
 pip install camelcase --user
 ```
 
+<hr style='clear:both;'>
+
 ## Software: Installs
 
 __R__
@@ -292,6 +296,8 @@ conda activate python3
 python -c 'import numpy as np; a = np.arange(15).reshape(3, 5); print(a)'
 ```
 
+<hr style='clear:both;'>
+
 ## Software: Management
 
 __Singularity__
@@ -300,9 +306,11 @@ __Singularity__
 
 You may need a singularity image if...
 
-* You may want to build/control your own Linux environment
-* Your software requires older, or newer, libraries
-* Installation instructions are for `Ubuntu`
+  * You may want to build/control your own Linux environment
+  * Your software requires older, or newer, libraries
+  * Installation instructions are for `Ubuntu`
+
+<hr style='clear:both;'>
 
 ## Software: Management
 
@@ -325,6 +333,8 @@ __Custom__
 2. Build container image based on definition file
 3. Run shell inside image to test
 
+<hr style='clear:both;'>
+
 ## Software Management
 
 __Definition File__
@@ -340,6 +350,8 @@ From: ubuntu:latest
   apt install httpd
 ```
 
+<hr style='clear:both;'>
+
 ## Software Management
 
 __Build Container Image__
@@ -350,6 +362,8 @@ Run the following command using defenition file:
 ```bash
 singularity build myLinuxEnv.sing myLinuxEnv.def
 ```
+
+<hr style='clear:both;'>
 
 ## Software Management
 
@@ -369,6 +383,8 @@ Once the `Singularity` image is tested, transfer it to the cluster (SCP/SFTP), a
 module load singularity
 singularity exec myLinuxEnv.sing 'cat /etc/lsb-release'
 ```
+
+<hr style='clear:both;'>
 
 ## Job Scheduling: Slurm
 

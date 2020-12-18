@@ -4492,7 +4492,7 @@ jupyter nbconvert Cluster_Usage.ipynb --to markdown && Rscript -e "rmarkdown::re
 #jupyter nbconvert HPCC_Intro.ipynb --to slides --reveal-prefix "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.3.0"
 -->
 
-<slide class=""><hgroup><h2>Summary</h2></hgroup><article  class="smaller " id="summary">
+<slide class=""><hgroup><h2>Summary</h2></hgroup><article  id="summary" class="smaller ">
 
 <ul>
 <li>Filesystem
@@ -4521,7 +4521,7 @@ jupyter nbconvert Cluster_Usage.ipynb --to markdown && Rscript -e "rmarkdown::re
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Filesystem: Paths</h2></hgroup><article  class="smaller " id="filesystem-paths">
+</article></slide><slide class=""><hgroup><h2>Filesystem: Paths</h2></hgroup><article  id="filesystem-paths" class="smaller ">
 
 <p><strong>RoadMap</strong></p>
 
@@ -4529,7 +4529,7 @@ jupyter nbconvert Cluster_Usage.ipynb --to markdown && Rscript -e "rmarkdown::re
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Filesystem: Paths</h2></hgroup><article  class="smaller " id="filesystem-paths-1">
+</article></slide><slide class=""><hgroup><h2>Filesystem: Paths</h2></hgroup><article  id="filesystem-paths-1" class="smaller ">
 
 <ul>
 <li><p>Symlink (<span style="color:blue;">
@@ -4539,7 +4539,9 @@ Local</span>/<span style="color:red;">
 Shared</span>) - An entry point to a disk or storage device (ie. <code>&#39;C:/&#39;</code> or <code>Google Drive</code>)</p></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Filesystem: Paths</h2></hgroup><article  class="smaller " id="filesystem-paths-2">
+<hr style='clear:both;'>
+
+</article></slide><slide class=""><hgroup><h2>Filesystem: Paths</h2></hgroup><article  id="filesystem-paths-2" class="smaller ">
 
 <p><strong>Case sensitive</strong></p>
 
@@ -4561,7 +4563,7 @@ Shared</span>) - An entry point to a disk or storage device (ie. <code>&#39;C:/&
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Filesystem: Quotas</h2></hgroup><article  class="smaller " id="filesystem-quotas">
+</article></slide><slide class=""><hgroup><h2>Filesystem: Quotas</h2></hgroup><article  id="filesystem-quotas" class="smaller ">
 
 <p>All storage has limits.</p>
 
@@ -4578,7 +4580,7 @@ Shared Storage</span> (ie. Google Drive)</p>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Filesystem: Usage</h2></hgroup><article  class="smaller " id="filesystem-usage">
+</article></slide><slide class=""><hgroup><h2>Filesystem: Usage</h2></hgroup><article  id="filesystem-usage" class="smaller ">
 
 <p>Make workshop directory, if it does not already exist:</p>
 
@@ -4598,7 +4600,7 @@ local</span> node storage:</p>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Filesystem: Usage</h2></hgroup><article  class="smaller " id="filesystem-usage-1">
+</article></slide><slide class=""><hgroup><h2>Filesystem: Usage</h2></hgroup><article  id="filesystem-usage-1" class="smaller ">
 
 <p>Check <span style="font-weight:bold;color:red;">
 GPFS</span> storage, <em>&ldquo;blocks&rdquo;</em> is used space and available space is <em>&ldquo;quota&rdquo;</em>:</p>
@@ -4611,7 +4613,7 @@ GPFS</span> storage, <em>&ldquo;blocks&rdquo;</em> is used space and available s
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Software: Module System</h2></hgroup><article  class="smaller " id="software-module-system">
+</article></slide><slide class=""><hgroup><h2>Software: Module System</h2></hgroup><article  id="software-module-system" class="smaller ">
 
 <p>This system allows multiple versions of software to be loaded and unloaded.</p>
 
@@ -4627,7 +4629,7 @@ hpcc-software samtools</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Software: Module System</h2></hgroup><article  class="smaller " id="software-module-system-1">
+</article></slide><slide class=""><hgroup><h2>Software: Module System</h2></hgroup><article  id="software-module-system-1" class="smaller ">
 
 <p>Load software into current environment:</p>
 
@@ -4645,7 +4647,7 @@ hpcc-software samtools</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Software: Installs</h2></hgroup><article  class="smaller " id="software-installs">
+</article></slide><slide class=""><hgroup><h2>Software: Installs</h2></hgroup><article  id="software-installs" class="smaller ">
 
 <p><strong>Python</strong></p>
 
@@ -4657,7 +4659,9 @@ hpcc-software samtools</pre>
 
 <pre class = 'prettyprint lang-bash'>pip install camelcase --user</pre>
 
-</article></slide><slide class=""><hgroup><h2>Software: Installs</h2></hgroup><article  class="smaller " id="software-installs-1">
+<hr style='clear:both;'>
+
+</article></slide><slide class=""><hgroup><h2>Software: Installs</h2></hgroup><article  id="software-installs-1" class="smaller ">
 
 <p><strong>R</strong></p>
 
@@ -4677,7 +4681,7 @@ hpcc-software samtools</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Software: Management</h2></hgroup><article  class="smaller " id="software-management">
+</article></slide><slide class=""><hgroup><h2>Software: Management</h2></hgroup><article  id="software-management" class="smaller ">
 
 <ul>
 <li><span style="font-weight:bold;color:green;">
@@ -4697,7 +4701,7 @@ Singularity</span> - A Linux container system (similar to Docker) which allows u
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Software: Management</h2></hgroup><article  class="smaller " id="software-management-1">
+</article></slide><slide class=""><hgroup><h2>Software: Management</h2></hgroup><article  id="software-management-1" class="smaller ">
 
 <p><strong>Conda</strong></p>
 
@@ -4719,7 +4723,7 @@ Singularity</span> - A Linux container system (similar to Docker) which allows u
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Software: Management</h2></hgroup><article  class="smaller " id="software-management-2">
+</article></slide><slide class=""><hgroup><h2>Software: Management</h2></hgroup><article  id="software-management-2" class="smaller ">
 
 <p><strong>Conda</strong></p>
 
@@ -4728,7 +4732,9 @@ Singularity</span> - A Linux container system (similar to Docker) which allows u
 <pre class = 'prettyprint lang-bash'>conda activate python3
 python -c &#39;import numpy as np; a = np.arange(15).reshape(3, 5); print(a)&#39;</pre>
 
-</article></slide><slide class=""><hgroup><h2>Software: Management</h2></hgroup><article  class="smaller " id="software-management-3">
+<hr style='clear:both;'>
+
+</article></slide><slide class=""><hgroup><h2>Software: Management</h2></hgroup><article  id="software-management-3" class="smaller ">
 
 <p><strong>Singularity</strong></p>
 
@@ -4744,7 +4750,9 @@ python -c &#39;import numpy as np; a = np.arange(15).reshape(3, 5); print(a)&#39
 <li>Installation instructions are for <code>Ubuntu</code></li>
 </ul>
 
-</article></slide><slide class=""><hgroup><h2>Software: Management</h2></hgroup><article  class="smaller " id="software-management-4">
+<hr style='clear:both;'>
+
+</article></slide><slide class=""><hgroup><h2>Software: Management</h2></hgroup><article  id="software-management-4" class="smaller ">
 
 <p><strong>Singularity</strong></p>
 
@@ -4764,7 +4772,9 @@ python -c &#39;import numpy as np; a = np.arange(15).reshape(3, 5); print(a)&#39
 <li>Run shell inside image to test</li>
 </ol>
 
-</article></slide><slide class=""><hgroup><h2>Software Management</h2></hgroup><article  class="smaller " id="software-management-5">
+<hr style='clear:both;'>
+
+</article></slide><slide class=""><hgroup><h2>Software Management</h2></hgroup><article  id="software-management-5" class="smaller ">
 
 <p><strong>Definition File</strong></p>
 
@@ -4777,7 +4787,9 @@ From: ubuntu:latest
   apt update
   apt install httpd</pre>
 
-</article></slide><slide class=""><hgroup><h2>Software Management</h2></hgroup><article  class="smaller " id="software-management-6">
+<hr style='clear:both;'>
+
+</article></slide><slide class=""><hgroup><h2>Software Management</h2></hgroup><article  id="software-management-6" class="smaller ">
 
 <p><strong>Build Container Image</strong></p>
 
@@ -4785,7 +4797,9 @@ From: ubuntu:latest
 
 <pre class = 'prettyprint lang-bash'>singularity build myLinuxEnv.sing myLinuxEnv.def</pre>
 
-</article></slide><slide class=""><hgroup><h2>Software Management</h2></hgroup><article  class="smaller " id="software-management-7">
+<hr style='clear:both;'>
+
+</article></slide><slide class=""><hgroup><h2>Software Management</h2></hgroup><article  id="software-management-7" class="smaller ">
 
 <p><strong>Test</strong></p>
 
@@ -4798,7 +4812,9 @@ From: ubuntu:latest
 <pre class = 'prettyprint lang-bash'>module load singularity
 singularity exec myLinuxEnv.sing &#39;cat /etc/lsb-release&#39;</pre>
 
-</article></slide><slide class=""><hgroup><h2>Job Scheduling: Slurm</h2></hgroup><article  class="smaller " id="job-scheduling-slurm">
+<hr style='clear:both;'>
+
+</article></slide><slide class=""><hgroup><h2>Job Scheduling: Slurm</h2></hgroup><article  id="job-scheduling-slurm" class="smaller ">
 
 <p><img src="https://docs.google.com/drawings/d/e/2PACX-1vQWU7EGfVNGIhebu953CqTx3y-jufY-0ja6zcV65LN3KWLX5hBY7R2mEavvy34Gbq9fnDQeT80jEqfT/pub?w=933&amp;h=401"></p>
 
@@ -4806,7 +4822,7 @@ singularity exec myLinuxEnv.sing &#39;cat /etc/lsb-release&#39;</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Job Scheduling: Node</h2></hgroup><article  class="smaller " id="job-scheduling-node">
+</article></slide><slide class=""><hgroup><h2>Job Scheduling: Node</h2></hgroup><article  id="job-scheduling-node" class="smaller ">
 
 <p><strong>What is a Compute Node?</strong></p>
 
@@ -4816,7 +4832,7 @@ singularity exec myLinuxEnv.sing &#39;cat /etc/lsb-release&#39;</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Job Scheduling: Partitions</h2></hgroup><article  class="smaller " id="job-scheduling-partitions">
+</article></slide><slide class=""><hgroup><h2>Job Scheduling: Partitions</h2></hgroup><article  id="job-scheduling-partitions" class="smaller ">
 
 <p><img style="float:right;" width='350px' src="https://docs.google.com/drawings/d/e/2PACX-1vQcl8tr-Tsi6TlUrUMREbrEk5ygkhllfoq82ZzrItDF13uqY-FmPwLpUqcpRGBTE7VajnpgDBwgox-v/pub?w=417&amp;h=551"></p>
 
@@ -4837,7 +4853,7 @@ singularity exec myLinuxEnv.sing &#39;cat /etc/lsb-release&#39;</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Job Scheduling: Partitions</h2></hgroup><article  class="smaller " id="job-scheduling-partitions-1">
+</article></slide><slide class=""><hgroup><h2>Job Scheduling: Partitions</h2></hgroup><article  id="job-scheduling-partitions-1" class="smaller ">
 
 <ul>
 <li><p><strong>Default?</strong></p>
@@ -4852,7 +4868,7 @@ singularity exec myLinuxEnv.sing &#39;cat /etc/lsb-release&#39;</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Job Scheduling: Status</h2></hgroup><article  class="smaller " id="job-scheduling-status">
+</article></slide><slide class=""><hgroup><h2>Job Scheduling: Status</h2></hgroup><article  id="job-scheduling-status" class="smaller ">
 
 <p>List all jobs owned by you and status:</p>
 
@@ -4864,7 +4880,7 @@ singularity exec myLinuxEnv.sing &#39;cat /etc/lsb-release&#39;</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Job Scheduling: Limits</h2></hgroup><article  class="smaller " id="job-scheduling-limits">
+</article></slide><slide class=""><hgroup><h2>Job Scheduling: Limits</h2></hgroup><article  id="job-scheduling-limits" class="smaller ">
 
 <p>List current Slurm limits:</p>
 
@@ -4880,7 +4896,7 @@ singularity exec myLinuxEnv.sing &#39;cat /etc/lsb-release&#39;</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Job Scheduling: Jobs</h2></hgroup><article  class="smaller " id="job-scheduling-jobs">
+</article></slide><slide class=""><hgroup><h2>Job Scheduling: Jobs</h2></hgroup><article  id="job-scheduling-jobs" class="smaller ">
 
 <p><strong>Submission</strong></p>
 
@@ -4902,7 +4918,7 @@ wget -O basic_job.sh https://bit.ly/2KBaIOs</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Job Scheduling: Jobs</h2></hgroup><article  class="smaller " id="job-scheduling-jobs-1">
+</article></slide><slide class=""><hgroup><h2>Job Scheduling: Jobs</h2></hgroup><article  id="job-scheduling-jobs-1" class="smaller ">
 
 <p><strong>Submission</strong></p>
 
@@ -4920,7 +4936,7 @@ srun -p statsdept --pty bash -l</pre>
 
 <hr style='clear:both;'>
 
-</article></slide><slide class=""><hgroup><h2>Job Scheduling: Jobs</h2></hgroup><article  class="smaller " id="job-scheduling-jobs-2">
+</article></slide><slide class=""><hgroup><h2>Job Scheduling: Jobs</h2></hgroup><article  id="job-scheduling-jobs-2" class="smaller ">
 
 <p><strong>Status</strong></p>
 
