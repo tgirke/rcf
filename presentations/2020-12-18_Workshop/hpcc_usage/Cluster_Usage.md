@@ -232,7 +232,7 @@ OR
 R
 ```
 
-```
+```r
 install.packages('PKGNAME')
 ```
 
