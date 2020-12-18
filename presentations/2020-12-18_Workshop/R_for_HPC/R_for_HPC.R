@@ -28,6 +28,9 @@
 ## nvim myfile.txt # for neovim (or 'vim myfile.txt' for vim)
 
 
+## install_nvimRtmux
+
+
 ## tmux # starts a new tmux session
 
 ## tmux a # attaches to an existing session
@@ -105,8 +108,8 @@ read_tsv("iris.txt") %>% # Import with read_tbv from readr package
 ## ----working_env, eval=FALSE--------------------------------------------------
 ## dir.create("mytestdir")
 ## setwd("mytestdir")
-## download.file("https://goo.gl/tLMddb", "slurm.tmpl")
-## download.file("https://goo.gl/5HrYkE", ".batchtools.conf.R")
+## download.file("https://bit.ly/3gZJBsy", "slurm.tmpl")
+## download.file("https://bit.ly/3nvSNHA", ".batchtools.conf.R")
 
 
 ## ----load_pkgs, eval=FALSE----------------------------------------------------

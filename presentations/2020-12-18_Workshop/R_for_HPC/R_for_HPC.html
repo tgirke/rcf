@@ -4588,7 +4588,7 @@ pre[class] {
 
 </center>
 
-<p>Animated Screenshot of Nvim-R (from <a href='https://github.com/jalvesaq/Nvim-R' title=''>here</a>)</p>
+<p>Animated screenshot of Nvim-R (from <a href='https://github.com/jalvesaq/Nvim-R' title=''>here</a>)</p>
 
 </article></slide><slide class=""><hgroup><h2>Advantages of Command-line UI</h2></hgroup><article  id="advantages-of-command-line-ui" class="smaller flexbox vcenter">
 
@@ -4613,8 +4613,8 @@ pre[class] {
 <ul>
 <li>The following introduces Nvim-R combined with Tmux.</li>
 <li>Similar instructions are available in HPCC’s Nvim-R-Tmux tutorial <a href='http://hpcc.ucr.edu/manuals_linux-cluster_terminalIDE.html' title=''>here</a>.</li>
-<li>Note: Nvim-R and Tmux are two independent tools that can be used indpendently or in combination, and both are useful for remote terminal work.</li>
-<li>For simplicity, some of the following examples use Nvim-R without Tmux. Once users know the basics of both then it is trival to combine them as needed.</li>
+<li>Note: Nvim-R and Tmux are two independent tools that can be used independently or in combination, and both are useful for remote terminal work.</li>
+<li>For simplicity, some of the following examples use Nvim-R without Tmux. Once users know the basics of both then it is trivial to combine them as needed.</li>
 </ul>
 
 </article></slide><slide class=""><hgroup><h2>Vim/Nvim Basics</h2></hgroup><article  id="vimnvim-basics" class="smaller ">
@@ -4664,9 +4664,9 @@ pre[class] {
 <h3>What is Tmux?</h3>
 
 <ul>
-<li>Tmux is a virtual terminal multiplexer providing reattachable terminal sessions</li>
+<li>Tmux is a virtual terminal multiplexer providing re-attachable terminal sessions</li>
 <li>Advantage: work in a terminal session cannot get lost due to internet disruptions or even when switching computers</li>
-<li>Combinded with the <code>Nvim-r</code> plugin it provides a flexible working environment for R</li>
+<li>Combined with the <code>Nvim-r</code> plugin it provides a flexible working environment for R</li>
 <li>Users can send code from a script to the R console or command-line.</li>
 <li>On HPCC both Nvim-R and Tmux are pre-configured and easy to install</li>
 </ul>
@@ -4679,15 +4679,17 @@ pre[class] {
 
 <p></br></br></br></br></p>
 
-</article></slide><slide class=""><hgroup><h2>Quick Configuration in HPCC User Accounts</h2></hgroup><article  id="quick-configuration-in-hpcc-user-accounts" class="smaller ">
+</article></slide><slide class=""><hgroup><h2>Nvim-R-Tmux Configuration in HPCC User Accounts</h2></hgroup><article  id="nvim-r-tmux-configuration-in-hpcc-user-accounts" class="smaller ">
 
 <p>Skip these steps if Nvim-R-Tmux is already configured in your account. Or follow the <a href='https://gist.github.com/tgirke/7a7c197b443243937f68c422e5471899' title=''>detailed instructions</a> to install Nvim-R-Tmux from scratch on your own system (<em>e.g.</em> laptop or computer).</p>
 
-<ol>
-<li>Log in to your user account on HPCC and execute <code>install_nvimRtmux</code>.</li>
-<li>To enable the nvim-R-tmux environment, log out and in again.</li>
-<li>Follow usage instructions of next section.</li>
-</ol>
+<p><strong>1.</strong> Log in to your user account on HPCC and execute on the command-line:</p>
+
+<pre class = 'prettyprint lang-bash'>install_nvimRtmux</pre>
+
+<p><strong>2.</strong> To enable the nvim-R-tmux environment, log out and in again.</p>
+
+<p><strong>3.</strong> Follow usage instructions of next section.</p>
 
 </article></slide><slide class=""><hgroup><h2>Typical Usage Workflow for Nvim-R-Tmux</h2></hgroup><article  id="typical-usage-workflow-for-nvim-r-tmux" class="smaller ">
 
@@ -4700,7 +4702,7 @@ tmux a # attaches to an existing session </pre>
 
 <p><strong>2. Open nvim-connected R session</strong></p>
 
-<p>Open a <code>*.R</code> or <code>*.Rmd</code> file with <code>nvim</code> and intialize a connected R session with <code>\rf</code>. Note, the resulting split window among Nvim and R behaves like a split viewport in <code>nvim</code> or <code>vim</code> meaning the usage of <code>Ctrl-w w</code> followed by <code>i</code> and <code>Esc</code> is important for session navigation.</p>
+<p>Open a <code>*.R</code> or <code>*.Rmd</code> file with <code>nvim</code> and initialize a connected R session with <code>\rf</code>. Note, the resulting split window among Nvim and R behaves like a split viewport in <code>nvim</code> or <code>vim</code> meaning the usage of <code>Ctrl-w w</code> followed by <code>i</code> and <code>Esc</code> is important for session navigation.</p>
 
 <pre class = 'prettyprint lang-bash'>nvim myscript.R # or *.Rmd file</pre>
 
@@ -4717,7 +4719,7 @@ tmux a # attaches to an existing session </pre>
 <p><br/><br/></p>
 
 <ul>
-<li>Please note, the default command for sending code lines in the nvim-r-plugin is <code>\l</code>. This key binding has been remapped in the provided <code>.config/nvim/init.vim</code> file to the space bar. Most other key bindings (shortcuts) still start with the <code>\</code> as LocalLeader, <em>e.g.</em> <code>\rh</code> opens the help for a function/object where the curser is located in nvim. More details on this are given on the next slide(s).</li>
+<li>Please note, the default command for sending code lines in the nvim-r-plugin is <code>\l</code>. This key binding has been remapped in the provided <code>.config/nvim/init.vim</code> file to the space bar. Most other key bindings (shortcuts) still start with the <code>\</code> as LocalLeader, <em>e.g.</em> <code>\rh</code> opens the help for a function/object where the cursor is located in nvim. More details on this are given on the next slide(s).</li>
 <li>The most comprehensive manual on this is the official <code>Nvim-R</code> documentation <a href='https://github.com/jalvesaq/Nvim-R/blob/master/doc/Nvim-R.txt' title=''>here</a>.</li>
 </ul>
 
@@ -4782,7 +4784,7 @@ tmux a # attaches to an existing session </pre>
 
 <ul>
 <li><code>Ctrl-a d</code>: detaches from current session</li>
-<li><code>Ctrl-a s</code>: switch between available tmux sesssions</li>
+<li><code>Ctrl-a s</code>: switch between available tmux sessions</li>
 <li><code>$ tmux new -s &lt;name&gt;</code>: starts new session with a specific name</li>
 <li><code>$ tmux ls</code>: lists available tmux session(s)</li>
 <li><code>$ tmux attach -t &lt;id&gt;</code>: attaches to specific tmux session<br/></li>
@@ -4831,7 +4833,6 @@ vimcmdline
 <li>Students registered under the statistics department, only have access to: <code>statsdept</code><br/></li>
 <li>Users of labs owning computer nodes also can access: <code>&lt;pi_name&gt;lab</code></li>
 </ul></li>
-<li>The other settings chosen above are suitable for a short testing tasks</li>
 <li>For more details on argument settings for <code>srun</code>, see <a href='http://hpcc.ucr.edu/manuals_linux-cluster_jobs.html' title=''>here</a></li>
 </ul>
 
@@ -4839,7 +4840,15 @@ vimcmdline
 
 <pre class = 'prettyprint lang-bash'>wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/R_for_HPC_demo.R</pre>
 
-<p>Open <code>nvim_demo.R</code> with nvim. The contnent of this file is shown in the following code block. Next, initialize a Nvim-connected R session with <code>\rf</code>, and then execute the code by pressing the space bar on your keyboard.</p>
+<p style="text-align: right;">
+
+<strong>[ Scroll down to continue ]</strong>
+
+</p>
+
+<p><br/><br/></p>
+
+<p>Open <code>nvim_demo.R</code> with nvim. The content of this file is shown in the following code block. Next, initialize a Nvim-connected R session with <code>\rf</code>, and then execute the code by pressing the space bar on your keyboard.</p>
 
 <pre class = 'prettyprint lang-r'>library(tidyverse)                                                                                                                                                            
 write_tsv(iris, &quot;iris.txt&quot;) # Creates sample file                                                                                                                             
@@ -4940,14 +4949,14 @@ Rscript my_script.R</pre>
 <p>First login to your cluster account, open R and execute the following lines. This will create a test directory (here <code>mytestdir</code>), redirect R into this directory and then download the required files:</p>
 
 <ul>
-<li><a href='https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/slurm.tmpl' title=''><code>slurm.tmpl</code></a></li>
-<li><a href='https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/_support_docs/tutorials/.batchtools.conf.R' title=''><code>.batchtools.conf.R</code></a></li>
+<li><a href='https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/slurm.tmpl' title=''><code>slurm.tmpl</code></a></li>
+<li><a href='https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/.batchtools.conf.R' title=''><code>.batchtools.conf.R</code></a></li>
 </ul>
 
 <pre class = 'prettyprint lang-r'>dir.create(&quot;mytestdir&quot;)
 setwd(&quot;mytestdir&quot;)
-download.file(&quot;https://goo.gl/tLMddb&quot;, &quot;slurm.tmpl&quot;)
-download.file(&quot;https://goo.gl/5HrYkE&quot;, &quot;.batchtools.conf.R&quot;)</pre>
+download.file(&quot;https://bit.ly/3gZJBsy&quot;, &quot;slurm.tmpl&quot;)
+download.file(&quot;https://bit.ly/3nvSNHA&quot;, &quot;.batchtools.conf.R&quot;)</pre>
 
 <h3>Load package and define some custom function</h3>
 
@@ -5004,7 +5013,7 @@ do.call(&quot;rbind&quot;, lapply(Njobs, loadResult))</pre>
 
 <h3>Remove registry directory from file system</h3>
 
-<p>By default existing registries will not be overwritten. If required one can exlicitly clean and delete them with the following functions.</p>
+<p>By default existing registries will not be overwritten. If required one can explicitly clean and delete them with the following functions.</p>
 
 <pre class = 'prettyprint lang-r'>clearRegistry() # Clear registry in R session
 removeRegistry(wait=0, reg=reg) # Delete registry directory
@@ -5027,7 +5036,7 @@ reduceResults(rbind)</pre>
 
 <ul>
 <li>powerful, flexible, robust and language agnostic solution for working on remote systems</li>
-<li>time learning it is well invested, especially for students and reasearchers with complex data analysis and programming needs</li>
+<li>time learning it is well invested, especially for students and researchers with complex data analysis and programming needs</li>
 </ul></li>
 </ul>
 
@@ -5038,7 +5047,7 @@ reduceResults(rbind)</pre>
 <li>most schedulers supported</li>
 <li>takes full advantage of a cluster</li>
 <li>robust job management by organizing results in registry file-based database</li>
-<li>simplifies submission, montitoring and restart of jobs</li>
+<li>simplifies submission, monitoring and restart of jobs</li>
 <li>well supported and maintained package</li>
 </ul>
 
