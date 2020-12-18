@@ -6,4 +6,4 @@ read_tsv("iris.txt") %>% # Import with read_tbv from readr package
     summarize_all(mean) %>%                                                                                                                                                   
     reshape2::melt(id.vars=c("Species"), variable.name = "Samples", value.name="Values") %>%                                                                                  
     ggplot(aes(Samples, Values, fill = Species)) +                                                                                                                            
-        geom_bar(position="dodge", stat="identity")
+    geom_bar(position="dodge", stat="identity")

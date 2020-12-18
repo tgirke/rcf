@@ -4968,9 +4968,10 @@ module(&#39;load&#39;,&#39;slurm&#39;) # Loads slurm among other modules
 
 library(batchtools)
 myFct &lt;- function(x) {
+    Sys.sleep(10) # to see job in queue, pause for 10 sec
     result &lt;- cbind(iris[x, 1:4,],
-    Node=system(&quot;hostname&quot;, intern=TRUE),
-    Rversion=paste(R.Version()[6:7], collapse=&quot;.&quot;))
+        Node=system(&quot;hostname&quot;, intern=TRUE),
+        Rversion=paste(R.Version()[6:7], collapse=&quot;.&quot;))
 }</pre>
 
 <h3>Submit jobs from R to cluster</h3>
