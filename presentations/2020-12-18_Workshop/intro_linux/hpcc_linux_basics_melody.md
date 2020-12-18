@@ -1,5 +1,4 @@
 ---  
-
 title: "Linux basics"  
 author: Melody Asghari  
 date: December 18, 2020  
@@ -10,8 +9,7 @@ output:
     df_print: paged  
     smaller: true  
 subtitle: "Login and Basic Commands"
-
----------------------
+---
 
 ## Summary
 
@@ -41,21 +39,21 @@ subtitle: "Login and Basic Commands"
 
 Type the `command` + `space` bar key on the keyboard to pull up the "Spotlight Search" bar
 
-![key presses highlighted](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/1.png)
+![key presses highlighted](images/1.png)
 
 Or press the following highlighted magnifying glass icon in the top right of the screen:
 
-![Spotlight icon](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/2.png)
+![Spotlight icon](images/2.png)
 
 ## Mac - OS X Users Cont. 
 
 The search bar will pop up in the middle of the screen:
 
-![Spotlight Search bar](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/3.png)
+![Spotlight Search bar](images/3.png)
 
 Type "terminal" to search for and highlight the terminal app, then press the `enter` key.
 
-![Terminal Selected](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/4.png)
+![Terminal Selected](images/4.png)
 
 ## Windows Users
 
@@ -63,7 +61,7 @@ Type "terminal" to search for and highlight the terminal app, then press the `en
 
 2. Click on "Start local terminal"
 
-![Screen Shot 2020-12-15 at 15.53.54.png](https://github.com/ucr-hpcc/ucr-hpcc.github.io/blob/master/presentations/2020-12-18_Workshop/intro_linux/images/5.png)
+![Screen Shot 2020-12-15 at 15.53.54.png](images/5.png)
 
 ## Logging in (any operating System)
 
