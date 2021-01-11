@@ -20,6 +20,21 @@ If users need to get in contact with us then please email your questions to [sup
 
 ## Unannounced exceptions
 
+### 11-Jan-2020: AC unit failed
+
+* 3:00 PM - One of our AC units is under emergency repairs.
+
+New parts may be available tonight or possibly by tomorrow.
+We have reserved all the nodes on the HPCC at this time in order to reduce the amount of heat produced.
+When submitting new jobs you may see the following reason is not running:
+
+```
+(ReqNodeNotAvail, Reserved for maintenance)
+```
+
+This is due to the reservation. This reservation will be lifted as soon as the repairs are complete.
+
+
 ### 28-Oct-2020: Cluster jobs failed due to storage suspension
 
 * 3:00 PM - During a routine extension of the bigdata filesystem, there were some complications and disk i/o had to be suspended.
