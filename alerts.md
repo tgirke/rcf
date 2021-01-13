@@ -20,35 +20,17 @@ If users need to get in contact with us then please email your questions to [sup
 
 ## Unannounced exceptions
 
-### 11-Jan-2020: AC unit failed
-
-* 3:00 PM - One of our AC units is under emergency repairs.
-
-New parts may be available tonight or possibly by tomorrow.
-We have reserved all the nodes on the HPCC at this time in order to reduce the amount of heat produced.
-When submitting new jobs you may see the following reason is not running:
-
-```
-(ReqNodeNotAvail, Reserved for maintenance)
-```
-
-This is due to the reservation. This reservation will be lifted as soon as the repairs are complete.
-
-
-### 28-Oct-2020: Cluster jobs failed due to storage suspension
-
-* 3:00 PM - During a routine extension of the bigdata filesystem, there were some complications and disk i/o had to be suspended.
-* 5:30 PM - We have repaired the issue, and everything should be functioning as usual. However, this means that all computing jobs running during timeframe were stopped and will need to be restarted.
-
-### 19-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg
-* 11:30 PM - All systems were restored by Jordan Hayes and are opterational again. 
-* 10:30 PM - HPC systems admin Jordan Hayes is trying to restart the network, storage and cluster again.
-* 10:00 PM - Facilities was able to bring up the power and cooling again.
-* 8:30 PM - Facilities is investigating and trying to reactivate power and cooling.
-
 <!-- 
 None currently observed.
 -->
+
+### 12-Jan-2020: AC unit repaired
+
+* 5:00 PM - AC repairs have been completed. The reservation has been removed, and new Slurm jobs are now no longer suspended.
+
+### 11-Jan-2020: AC unit failed
+
+* 3:00 PM - One of our AC units is under emergency repairs. A Slurm reservation was put in place to suspend new jobs from running.
 
 ## Scheduled exceptions and downtimes
 None currently scheduled.
@@ -86,7 +68,20 @@ Sign up and use Slack Team Collaboration app here: [ucr-hpcc.slack](https://ucr-
 
 ## Past exceptions
 
+__28-Oct-2020: Cluster jobs failed due to storage suspension__
+
+* 3:00 PM - During a routine extension of the bigdata filesystem, there were some complications and disk i/o had to be suspended.
+* 5:30 PM - We have repaired the issue, and everything should be functioning as usual. However, this means that all computing jobs running during timeframe were stopped and will need to be restarted.
+
+__19-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg__
+
+* 11:30 PM - All systems were restored by Jordan Hayes and are opterational again. 
+* 10:30 PM - HPC systems admin Jordan Hayes is trying to restart the network, storage and cluster again.
+* 10:00 PM - Facilities was able to bring up the power and cooling again.
+* 8:30 PM - Facilities is investigating and trying to reactivate power and cooling.
+
 __10-Aug-2020: Cluster inaccessible due to power outage in Genomics Bdg__
+
 At 5:10 PM: Facilities has restored power and cooling systems in the server room. HPC systems admin Jordan Hayes is restarting the cluster and storage systems.
 At 10:10 PM:  All HPCC services were restored (computing cluster, storage systems, web services).
 
