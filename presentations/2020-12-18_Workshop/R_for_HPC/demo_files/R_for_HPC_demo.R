@@ -5,7 +5,7 @@
 ## Last update: 17-Dec-2020
 
 ## Optional: run in interactive session on node with:
-# srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
+# srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash
 
 ## Start Nvim-connected R session with \rf and then send code by pressing space bar
 library(tidyverse)                                                                                                                                                            

@@ -4823,7 +4823,7 @@ vimcmdline
 
 <p>To try out the following instructions, users want to log into their HPCC account via <code>ssh</code>, and then preferentially connect to a node by initializing an interactive <code>srun</code> session. The latter mimics the best practices for a real workflow but is not necessary for this basic exercise.</p>
 
-<pre class = 'prettyprint lang-bash'>srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l</pre>
+<pre class = 'prettyprint lang-bash'>srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash</pre>
 
 <ul>
 <li>Under <code>--partition</code> it is important to assign the name of a partition a user has access to
@@ -4917,7 +4917,7 @@ read_tsv(&quot;iris.txt&quot;) %&gt;% # Import with read_tbv from readr package
 
 <p><strong>1.</strong> Create Slurm submission script, here called <code>script_name.sh</code> with:</p>
 
-<pre class = 'prettyprint lang-bash'>#!/bin/bash -l
+<pre class = 'prettyprint lang-bash'>#!/bin/bash
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1

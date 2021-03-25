@@ -52,7 +52,7 @@ x
 ## sbatch script_name.sh
 
 
-## #!/bin/bash -l
+## #!/bin/bash
 
 ## 
 ## #SBATCH --nodes=1
@@ -77,7 +77,7 @@ x
 ## myscript.sh
 
 
-## srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
+## srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash
 
 
 ## ----eval=TRUE----------------------------------------------------------------

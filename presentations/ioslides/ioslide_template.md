@@ -150,7 +150,7 @@ Sample submission script
 
 
 ```bash
-#!/bin/bash -l
+#!/bin/bash
 
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -169,7 +169,7 @@ Interactive session with specific resource requests
 
 
 ```bash
-srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
+srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash
 ```
 
 ## DataTables support
