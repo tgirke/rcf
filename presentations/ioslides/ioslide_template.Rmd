@@ -138,7 +138,7 @@ sbatch script_name.sh
 Sample submission script
 
 ```{bash eval=FALSE}
-#!/bin/bash
+#!/bin/bash -l
 
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -156,7 +156,7 @@ myscript.sh
 Interactive session with specific resource requests
 
 ```{bash eval=FALSE}
-srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash
+srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
 ```
 
 ## DataTables support

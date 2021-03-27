@@ -123,7 +123,7 @@ For subsequent access to the encrypted space, (ie. computation or analysis) the 
 
 ```bash
 # Request a 2hr interactive job on an exclusive node, resources can be adjusted as needed
-srun -p short --exclusive=user --pty bash
+srun -p short --exclusive=user --pty bash -l
 
 # Unencrypted privatedata1 in read-only mode (create access point)
 gocryptfsmgr open bigdata privatedata1 ro
@@ -181,7 +181,7 @@ For subsequent access to the encrypted space, (ie. computation or analysis) the 
 
 ```bash
 # Request a 2hr interactive job on an exclusive node, resources can be adjusted as needed
-srun -p short --exclusive=user --pty bash
+srun -p short --exclusive=user --pty bash -l
 
 # Load cyptfs software
 module load gocryptfs

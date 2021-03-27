@@ -327,7 +327,7 @@ but is not necessary for this basic exercise.
 
 
 ```bash
-srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash
+srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
 ```
 
 - Under `--partition` it is important to assign the name of a partition a user has access to 
@@ -423,7 +423,7 @@ __1.__ Create Slurm submission script, here called `script_name.sh` with:
 
 
 ```bash
-#!/bin/bash
+#!/bin/bash -l
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1

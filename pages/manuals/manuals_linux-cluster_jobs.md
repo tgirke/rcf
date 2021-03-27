@@ -86,7 +86,7 @@ sbatch SBATCH_SCRIPT.sh
 Here is an example of an SBATCH script:
 
 ```bash
-#!/bin/bash
+#!/bin/bash -l
 
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -117,7 +117,7 @@ For more information regarding parallel/multi core jobs refer to [Parallelizatio
 Interactive submission:
 
 ```bash
-srun --pty bash
+srun --pty bash -l
 ```
 
 If you do not specify a partition then the intel partition is used by default.
@@ -125,7 +125,7 @@ If you do not specify a partition then the intel partition is used by default.
 Here is a more complete example:
 
 ```bash
-srun --x11 --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --pty bash
+srun --x11 --mem=1gb --cpus-per-task 1 --ntasks 1 --time 10:00:00 --pty bash -l
 ```
 
 The above example enables X11 forwarding and requests, 1GB of memory, 1 cores, for 10 hours within an interactive session.
@@ -190,7 +190,7 @@ Under a single step job your command will hang until appropriate resources are f
 Multi Step submission:
 
 ```bash
-salloc -N 4 bash
+salloc -N 4 bash -l
 srun <command>
 ...
 srun <command>
@@ -211,7 +211,7 @@ sbatch -p highmem --mem=100g --time=24:00:00 SBATCH_SCRIPT.sh
 Interactive
 
 ```bash
-srun -p highmem --mem=100g --time=24:00:00 --pty bash
+srun -p highmem --mem=100g --time=24:00:00 --pty bash -l
 ```
 
 Of course you should adjust the time argument according to your job requirements.
@@ -230,7 +230,7 @@ sbatch -p gpu --gres=gpu:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 Interactive
 
 ```bash
-srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash
+srun -p gpu --gres=gpu:4 --mem=100g --time=1:00:00 --pty bash -l
 ```
 
 Since the HPCC Cluster has two types of GPUs installed (K80s and P100s), GPUs can be requested explicitly by type.
@@ -245,8 +245,8 @@ sbatch -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 SBATCH_SCRIPT.sh
 Interactive
 
 ```bash
-srun -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 --pty bash
-srun -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 --pty bash
+srun -p gpu --gres=gpu:k80:1 --mem=100g --time=1:00:00 --pty bash -l
+srun -p gpu --gres=gpu:p100:1 --mem=100g --time=1:00:00 --pty bash -l
 ```
 
 Of course you should adjust the time argument according to your job requirements.
@@ -418,7 +418,7 @@ The cluster currently supports [Commercial Software](software_commercial). Since
 The `--licenses` flag is used to request a license for Intel compilers, for example:
 
 ```bash
-srun --license=intel:1 -p short --mem=10g --cpus-per-task=10 --time=2:00:00 --pty bash
+srun --license=intel:1 -p short --mem=10g --cpus-per-task=10 --time=2:00:00 --pty bash -l
 module load intel
 icc -help
 ```
@@ -505,7 +505,7 @@ To run a NAMD2 process as an OpenMPI job on the cluster:
 1. Create SBATCH script
 
    ```bash
-   #!/bin/bash
+   #!/bin/bash -l
 
    #SBATCH -J c3d_cr2_md
    #SBATCH -p batch
@@ -536,7 +536,7 @@ OpenMPI does not function properly with Maker, you must use MPICH.
 Our version of MPICH does not use the mpirun/mpiexec wrappers, instead use srun:
 
 ```bash
-#!/bin/bash
+#!/bin/bash -l
 
 #SBATCH -p intel
 #SBATCH --ntasks=32

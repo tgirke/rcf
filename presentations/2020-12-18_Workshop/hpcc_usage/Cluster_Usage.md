@@ -527,11 +527,11 @@ sbatch basic_job.sh
 Submit interactive job:
 
 ```bash
-srun -p short --pty bash
+srun -p short --pty bash -l
 
 # OR
 
-srun -p statsdept --pty bash
+srun -p statsdept --pty bash -l
 ```
 
 <hr style='clear:both;'>

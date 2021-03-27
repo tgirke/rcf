@@ -91,7 +91,7 @@ cat partitions.txt | sort | uniq -c > count.txt
 Optional, we can alter the above commands by adding some pipes, as well as adding some variables to make this script count records for only a given partition:
 
 ```
-#!/bin/bash
+#!/bin/bash -l
 
 # Gather Slurm job information
 #  filter on partition column

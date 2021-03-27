@@ -39,7 +39,7 @@
 ## nvim myscript.R # or *.Rmd file
 
 
-## srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash
+## srun --x11 --partition=short --mem=2gb --cpus-per-task 4 --ntasks 1 --time 1:00:00 --pty bash -l
 
 
 ## wget https://raw.githubusercontent.com/ucr-hpcc/ucr-hpcc.github.io/master/presentations/2020-12-18_Workshop/R_for_HPC/demo_files/R_for_HPC_demo.R
@@ -78,7 +78,7 @@ read_tsv("iris.txt") %>% # Import with read_tbv from readr package
 ## module list
 
 
-## #!/bin/bash
+## #!/bin/bash -l
 
 ## #SBATCH --nodes=1
 
