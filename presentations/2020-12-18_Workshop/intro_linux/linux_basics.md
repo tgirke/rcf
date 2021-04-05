@@ -79,7 +79,7 @@ chgrp groupname file_name
 
 ## File Permissions: Advanced Permissions
 
-__GPFS ACLs__
+__GPFS ACLs__ 
 
 ACLs provide greater control over file permissions
 

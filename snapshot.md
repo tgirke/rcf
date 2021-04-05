@@ -17,9 +17,3 @@ respect to the following usage parameters:
 <p style="text-align: center;"><font color="red">Click image to enlarge!</font></p>
 
 <div><a href="https://cluster.hpcc.ucr.edu/~tgirke/qstatMonitorWeb.png"><img alt="qstatMonitor_Report" border="0" src="https://cluster.hpcc.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;"></a></div>
-
-
-## Detailed report
-
-Much more detailed activity stats on cluster nodes are collected by Ganglia. To view them, visit this [page](http://ganglia.hpcc.ucr.edu/ganglia/). The user name and password for this page are both `g a n g l i a`
-
