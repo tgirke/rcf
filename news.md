@@ -9,6 +9,9 @@ consult its [Alerts](http://hpcc.ucr.edu/alerts.html) or
 
 ## News
 
+### Mar 2021
+* Viet Pham joins HPCC as HPC systems administrator. - Welcome Viet!
+
 ### May/Jun 2020
 * Melody Asghari joins HPCC as HPC systems administrator assistant. - Welcome Melody!
 

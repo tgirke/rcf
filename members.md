@@ -7,8 +7,9 @@ permalink: members.html
 ## Facility Contacts
 
 * [Jordan Hayes](mailto:jordan.hayes@ucr.edu), HPC Systems Administrator
+* [Viet Pham](mailto:vpham013@ucr.edu), HPC System Administrator
 * [Abraham Park](mailto:apark064@ucr.edu), HPC Systems Administrator, Assistant
-* [Travis Nasser](mailto:tnass001@ucr.edu), HPC Systems Administrator, Assistant
+* [Melody Asghari](mailto:masgh003@ucr.edu), HPC Systems Administrator, Assistant
 * [Thomas Girke](http://girke.bioinformatics.ucr.edu), Director of HPC Center
 
 <!--
