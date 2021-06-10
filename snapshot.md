@@ -16,4 +16,11 @@ respect to the following usage parameters:
 
 <p style="text-align: center;"><font color="red">Click image to enlarge!</font></p>
 
-<div><a href="https://cluster.hpcc.ucr.edu/~tgirke/qstatMonitorWeb.png"><img alt="qstatMonitor_Report" border="0" src="https://cluster.hpcc.ucr.edu/~tgirke/qstatMonitorWeb.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;"></a></div>
+<div>
+    <a href="https://cluster.hpcc.ucr.edu/~jhayes/activity-report/">
+        <img alt="qstatMonitor_Report2" border="0" src="https://cluster.hpcc.ucr.edu/~jhayes/activity-report/pane2.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
+        <img alt="qstatMonitor_Report3" border="0" src="https://cluster.hpcc.ucr.edu/~jhayes/activity-report/pane3.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
+        <img alt="qstatMonitor_Report4" border="0" src="https://cluster.hpcc.ucr.edu/~jhayes/activity-report/pane4.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
+        <img alt="qstatMonitor_Report5" border="0" src="https://cluster.hpcc.ucr.edu/~jhayes/activity-report/pane5.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
+    </a>
+</div>
