@@ -17,10 +17,10 @@ respect to the following usage parameters:
 <p style="text-align: center;"><font color="red">Click image to enlarge!</font></p>
 
 <div>
-    <a href="https://cluster.hpcc.ucr.edu/~jhayes/activity-report/">
-        <img alt="qstatMonitor_Report2" border="0" src="https://cluster.hpcc.ucr.edu/~jhayes/activity-report/pane2.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
-        <img alt="qstatMonitor_Report3" border="0" src="https://cluster.hpcc.ucr.edu/~jhayes/activity-report/pane3.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
-        <img alt="qstatMonitor_Report4" border="0" src="https://cluster.hpcc.ucr.edu/~jhayes/activity-report/pane4.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
-        <img alt="qstatMonitor_Report5" border="0" src="https://cluster.hpcc.ucr.edu/~jhayes/activity-report/pane5.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
+    <a href="https://cluster.hpcc.ucr.edu/activity-report/">
+        <img alt="intel_part" border="0" src="https://cluster.hpcc.ucr.edu/activity-report/pane2.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
+        <img alt="batch_part" border="0" src="https://cluster.hpcc.ucr.edu/activity-report/pane3.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
+        <img alt="highmem_part" border="0" src="https://cluster.hpcc.ucr.edu/activity-report/pane4.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
+        <img alt="gpu_part" border="0" src="https://cluster.hpcc.ucr.edu/activity-report/pane5.png" style="display:block;margin-right:auto;margin-left:auto;text-align:center;">
     </a>
 </div>
